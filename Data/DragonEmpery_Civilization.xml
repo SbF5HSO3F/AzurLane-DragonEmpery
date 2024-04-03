@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_Civilization -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/30 15:48:32 -->
+<GameData>
+	<Types>
+		<Row Type="CIVILIZATION_DRAGON_EMPERY"							Kind="KIND_CIVILIZATION"/>
+		<Row Type="TRAIT_CIVILIZATION_ANCIENT_COUNTRY"					Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_IMPROVEMENT_DRAGON_EMPERY_WALL"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_DISTRICT_DRAGON_EMPERY_GARDEN"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_BUILDING_APRICOT_ACADEMY"			Kind="KIND_TRAIT"/>
+	</Types>
+	<Civilizations>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" Name="LOC_CIVILIZATION_DRAGON_EMPERY_NAME" Description="LOC_CIVILIZATION_DRAGON_EMPERY_DESCRIPTION" Adjective="LOC_CIVILIZATION_DRAGON_EMPERY_ADJECTIVE" RandomCityNameDepth="5" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" Ethnicity="ETHNICITY_ASIAN"/>
+	</Civilizations>
+	<Traits>
+		<Row TraitType="TRAIT_CIVILIZATION_ANCIENT_COUNTRY"					Name="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_NAME"	Description="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_DESCRIPTION"/>
+		<Row TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_DRAGON_EMPERY_WALL"	Name="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_NAME"		Description="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION"/>
+		<Row TraitType="TRAIT_CIVILIZATION_DISTRICT_DRAGON_EMPERY_GARDEN"	Name="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_NAME"		Description="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_DESCRIPTION"/>
+		<Row TraitType="TRAIT_CIVILIZATION_BUILDING_APRICOT_ACADEMY"		Name="LOC_BUILDING_APRICOT_ACADEMY_NAME"			Description="LOC_BUILDING_APRICOT_ACADEMY_DESCRIPTION"/>
+	</Traits>
+	<CivilizationTraits>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" TraitType="TRAIT_CIVILIZATION_ANCIENT_COUNTRY"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_DRAGON_EMPERY_WALL"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" TraitType="TRAIT_CIVILIZATION_DISTRICT_DRAGON_EMPERY_GARDEN"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" TraitType="TRAIT_CIVILIZATION_BUILDING_APRICOT_ACADEMY"/>
+	</CivilizationTraits>
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_HEI_TIEN" CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_1"/>
+	</CivilizationLeaders>
+	<CityNames>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_2"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_3"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_4"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_5"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_6"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_7"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_8"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_9"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_10"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_11"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_12"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_13"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_14"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_15"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_16"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_17"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_18"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_19"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_20"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_21"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_22"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_23"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_24"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_25"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_26"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_27"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_28"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_29"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_30"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_31"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_32"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_33"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_34"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_35"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_36"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_37"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_38"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_39"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_40"/>
+	</CityNames>
+	<CivilizationCitizenNames>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_1" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_2" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_3" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_4" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_5" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_6" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_7" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_8" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_9" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_10" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_11" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_12" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_13" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_14" Female="1"/>
+	</CivilizationCitizenNames>
+	<TraitModifiers>
+		<!--允许黑暗政策-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_ANCIENT_COUNTRY</TraitType>
+			<ModifierId>ANCIENT_COUNTRY_UNLOCK_DARK_POLICIES</ModifierId>
+		</Row>
+		<!--文化炸弹-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_DISTRICT_DRAGON_EMPERY_GARDEN</TraitType>
+			<ModifierId>DRAGON_EMPERY_GARDEN_CULTURE_BOMB</ModifierId>
+		</Row>
+		<!--可建造在森林上-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_DISTRICT_DRAGON_EMPERY_GARDEN</TraitType>
+			<ModifierId>DRAGON_EMPERY_GARDEN_BUILD_ON_FOREST</ModifierId>
+		</Row>
+		<!--黑暗时代buff-->
+		<!--处于黑暗时代加力-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_ANCIENT_COUNTRY</TraitType>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT</ModifierId>
+		</Row>
+		<!--所有单位+1移动力-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_ANCIENT_COUNTRY</TraitType>
+			<ModifierId>DRAGON_EMPERY_DARK_UNITS_MOVEMENT</ModifierId>
+		</Row>
+		<!--黄金时代buff-->
+		<!--全境25%旅游业绩-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_ANCIENT_COUNTRY</TraitType>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_TOURISM</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--允许黑暗政策-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_UNLOCK_DARK_POLICIES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PROPERTY</ModifierType>
+		</Row>
+		<!--额外通配符-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_EXTRA_WILD_SLOT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER</ModifierType>
+		</Row>
+		<!--普通时代buff-->
+		<!--额外区域位-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_NORMAL_EXTRA_DISTRICT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_EXTRA_DISTRICT</ModifierType>
+		</Row>
+		<!--建造区域加生产力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_NORMAL_DISTRICT_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION_MODIFIER</ModifierType>
+		</Row>
+		<!--黑暗时代buff-->
+		<!--处于黑暗时代加力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_PLAYER_HAS_DARK_AGE</SubjectRequirementSetId>
+		</Row>
+		<!--送大将军-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_GRANT_GENERAL</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_GREAT_PERSON_CLASS_IN_CITY</ModifierType>
+		</Row>
+		<!--战斗力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+			<SubjectStackLimit>1</SubjectStackLimit>
+		</Row>
+		<!--所有单位+1移动力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_DARK_UNITS_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_PLAYER_HAS_DARK_AGE</SubjectRequirementSetId>
+		</Row>
+		<!--战斗力property-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT_ATTACH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT_PROPERTY</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_PROPERTY</ModifierType>
+		</Row>
+		<!--军事单位生产力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_MILITARY_UNITS_PRODUCTION</ModifierType>
+		</Row>
+		<!--忠诚度+2-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_IDENTITY_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN</ModifierType>
+		</Row>
+		<!--黄金时代buff-->
+		<!--全境25%旅游业绩-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TOURISM</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_PLAYER_HAS_GOLDEN_AGE</SubjectRequirementSetId>
+		</Row>
+		<!--城市生产力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<!--城市宜居度-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_AMENITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRAIT_AMENITY</ModifierType>
+		</Row>
+		<!--城市金币-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_ATTACH_GOLDEN_TRADE_GOLD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_TRADE_GOLD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD</ModifierType>
+		</Row>
+		<!--英雄时代buff-->
+		<!--全境25%旅游业绩-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TOURISM</ModifierType>
+		</Row>
+		<!--城市生产力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<!--城市宜居度-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_AMENITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRAIT_AMENITY</ModifierType>
+		</Row>
+		<!--城市金币-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_ATTACH_HOERIC_TRADE_GOLD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_TRADE_GOLD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD</ModifierType>
+		</Row>
+		<!--伟人点数-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_GREAT_PERSON</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GOVERNMENT_FLAT_BONUS</ModifierType>
+		</Row>
+		<!--文化炸弹-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_CULTURE_BOMB</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_CULTURE_BOMB_TRIGGER</ModifierType>
+		</Row>
+		<!--可建造在森林上-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_BUILD_ON_FOREST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_VALID_FEATURES_DISTRICTS</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--允许黑暗政策-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_UNLOCK_DARK_POLICIES</ModifierId>
+			<Name>Key</Name>
+			<Value>CanSlotDarkPolicies</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_UNLOCK_DARK_POLICIES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--额外通配符-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_EXTRA_WILD_SLOT</ModifierId>
+			<Name>GovernmentSlotType</Name>
+			<Value>SLOT_WILDCARD</Value>
+		</Row>
+		<!--普通时代buff-->
+		<!--额外区域位-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_NORMAL_EXTRA_DISTRICT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--建造区域加生产力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_NORMAL_DISTRICT_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<!--黑暗时代buff-->
+		<!--处于黑暗时代加力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_DRAGON_EMPERY_COMBAT_UNITS</Value>
+		</Row>
+		<!--送大将军-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_GRANT_GENERAL</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_GRANT_GENERAL</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_GENERAL</Value>
+		</Row>
+		<!--战斗力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT_BUFF</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_DRAGON_EMPERY_COMBAT_UNITS_BUFF</Value>
+		</Row>
+		<!--所有单位+1移动力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_DARK_UNITS_MOVEMENT</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_DRAGON_EMPERY_UNITS_BUFF</Value>
+		</Row>
+		<!--战斗力property-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT_ATTACH</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>ANCIENT_COUNTRY_DARK_COMBAT_PROPERTY</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT_PROPERTY</ModifierId>
+			<Name>Key</Name>
+			<Value>DRAGON_EMPERY_UNITS_COMBAT</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_COMBAT_PROPERTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<!--军事单位生产力-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<!--忠诚度+2-->
+		<Row>
+			<ModifierId>ANCIENT_COUNTRY_DARK_IDENTITY_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<!--黄金时代buff-->
+		<!--全境25%旅游业绩-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_TOURISM</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<!--城市生产力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<!--城市宜居度-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_AMENITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--城市金币-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_ATTACH_GOLDEN_TRADE_GOLD</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>DRAGON_EMPERY_GOLDEN_TRADE_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_TRADE_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GOLDEN_TRADE_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<!--英雄时代buff-->
+		<!--全境25%旅游业绩-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_TOURISM</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<!--城市生产力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<!--城市宜居度-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_AMENITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<!--城市金币-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_ATTACH_HOERIC_TRADE_GOLD</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>DRAGON_EMPERY_HOERIC_TRADE_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_TRADE_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_TRADE_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<!--伟人点数-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_GREAT_PERSON</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_HOERIC_GREAT_PERSON</ModifierId>
+			<Name>BonusType</Name>
+			<Value>GOVERNMENTBONUS_GREAT_PEOPLE</Value>
+		</Row>
+		<!--文化炸弹-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_CULTURE_BOMB</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_DRAGON_EMPERY_GARDEN</Value>
+		</Row>
+		<!--可建造在森林上-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_BUILD_ON_FOREST</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_DRAGON_EMPERY_GARDEN</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_BUILD_ON_FOREST</ModifierId>
+			<Name>FeatureType</Name>
+			<Value>FEATURE_FOREST</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

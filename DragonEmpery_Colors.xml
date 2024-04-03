@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_Colors -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/30 15:47:36 -->
+<GameData>
+	<Colors>
+		<!--海天-->
+		<Row>
+			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY</Type>
+			<Color>113,176,230,255</Color>
+		</Row>
+		<Row>
+			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY</Type>
+			<Color>246,250,255,255</Color>
+		</Row>
+		<Row>
+			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY_ALT1</Type>
+			<Color>225,225,231,255</Color>
+		</Row>
+		<Row>
+			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY_ALT1</Type>
+			<Color>241,211,164,255</Color>
+		</Row>
+	</Colors>
+	<PlayerColors>
+		<!--海天-->
+		<Row>
+			<Type>LEADER_HEI_TIEN</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY</PrimaryColor>
+			<SecondaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY</SecondaryColor>
+			<Alt1PrimaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY_ALT1</Alt1PrimaryColor>
+			<Alt1SecondaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY_ALT1</Alt1SecondaryColor>
+		</Row>
+	</PlayerColors>
+</GameData>

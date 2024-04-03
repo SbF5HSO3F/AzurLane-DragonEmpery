@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_Buildings -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/1/5 23:19:11 -->
+<GameData>
+	<Types>
+		<Row Type="BUILDING_APRICOT_ACADEMY" Kind="KIND_BUILDING"/>
+	</Types>
+	<BuildingReplaces>
+		<Row CivUniqueBuildingType="BUILDING_APRICOT_ACADEMY" ReplacesBuildingType="BUILDING_LIBRARY"/>
+	</BuildingReplaces>
+	<Buildings>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY" Name="LOC_BUILDING_APRICOT_ACADEMY_NAME" Description="LOC_BUILDING_APRICOT_ACADEMY_DESCRIPTION" PrereqTech="TECH_WRITING" PrereqDistrict="DISTRICT_CAMPUS" PurchaseYield="YIELD_GOLD" Cost="45" AdvisorType="ADVISOR_TECHNOLOGY" Maintenance="1" CitizenSlots="1" TraitType="TRAIT_CIVILIZATION_BUILDING_APRICOT_ACADEMY"/>
+	</Buildings>
+	<BuildingPrereqs>
+		<Row Building="BUILDING_UNIVERSITY"		PrereqBuilding="BUILDING_APRICOT_ACADEMY"/>
+		<Row Building="BUILDING_GREAT_LIBRARY"	PrereqBuilding="BUILDING_APRICOT_ACADEMY"/>
+	</BuildingPrereqs>
+	<Building_YieldChanges>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY" YieldType="YIELD_CULTURE" YieldChange="1"/>
+	</Building_YieldChanges>
+	<Building_CitizenYieldChanges>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY"	YieldType="YIELD_SCIENCE"	YieldChange="2"/>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY"	YieldType="YIELD_CULTURE"	YieldChange="2"/>
+	</Building_CitizenYieldChanges>
+	<Building_GreatPersonPoints>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST"	PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY" GreatPersonClassType="GREAT_PERSON_CLASS_WRITER"		PointsPerTurn="1"/>
+	</Building_GreatPersonPoints>
+	<Building_GreatWorks>
+		<Row BuildingType="BUILDING_APRICOT_ACADEMY" GreatWorkSlotType="GREATWORKSLOT_PALACE" NumSlots="3" ThemingUniquePerson="true" ThemingYieldMultiplier="100" ThemingTourismMultiplier="100" ThemingBonusDescription="LOC_BUILDING_THEMINGBONUS_APRICOT_ACADEMY"/>
+	</Building_GreatWorks>
+	<BuildingModifiers>
+		<!--扩张单元格-->
+		<Row>
+			<BuildingType>BUILDING_APRICOT_ACADEMY</BuildingType>
+			<ModifierId>APRICOT_ACADEMY_GREAT_PERSON_EXPENDED</ModifierId>
+		</Row>
+	</BuildingModifiers>
+	<Modifiers>
+		<!--扩张单元格-->
+		<Row>
+			<ModifierId>APRICOT_ACADEMY_GREAT_PERSON_EXPENDED</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_SINGE_CITY_ADD_EXPENDED_GREAT_PERSON_TILES</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--扩张单元格-->
+		<Row>
+			<ModifierId>APRICOT_ACADEMY_GREAT_PERSON_EXPENDED</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

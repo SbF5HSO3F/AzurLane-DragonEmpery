@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_Districts -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/1/1 8:02:58 -->
+<GameData>
+	<Types>
+		<Row Type="DISTRICT_DRAGON_EMPERY_GARDEN" Kind="KIND_DISTRICT"/>
+	</Types>
+	<DistrictReplaces>
+		<Row CivUniqueDistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" ReplacesDistrictType="DISTRICT_CAMPUS"/>
+	</DistrictReplaces>
+	<Districts>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" Name="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_NAME" Description="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_DESCRIPTION" PrereqTech="TECH_WRITING" PlunderType="PLUNDER_SCIENCE" PlunderAmount="25" AdvisorType="ADVISOR_TECHNOLOGY" Cost="27" CostProgressionModel="COST_PROGRESSION_NUM_UNDER_AVG_PLUS_TECH" CostProgressionParam1="40" Maintenance="1" RequiresPlacement="true" RequiresPopulation="true" Aqueduct="false" NoAdjacentCity="false" InternalOnly="false" ZOC="false" CaptureRemovesBuildings="false" CaptureRemovesCityDefenses="false" MilitaryDomain="NO_DOMAIN" CityStrengthModifier="2" Entertainment="2" Appeal="1" TraitType="TRAIT_CIVILIZATION_DISTRICT_DRAGON_EMPERY_GARDEN"/>
+	</Districts>
+	<District_GreatPersonPoints>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
+	</District_GreatPersonPoints>
+	<District_TradeRouteYields>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldType="YIELD_FOOD"	YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldType="YIELD_SCIENCE" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="1"/>
+	</District_TradeRouteYields>
+	<District_Adjacencies>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="Mountains_Science1"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="Mountains_Science2"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="Mountains_Science3"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="Mountains_Science4"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="Mountains_Science5"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="Government_Science"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="DragonEmpery_Garden_Forest_Sinence"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="DragonEmpery_Garden_District_Sinence"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="DragonEmpery_Garden_NaturalWonder_Sinence"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldChangeId="DragonEmpery_Garden_Wonder_Sinence"/>
+	</District_Adjacencies>
+	<Adjacency_YieldChanges>
+		<Row ID="DragonEmpery_Garden_Forest_Sinence"		AdjacentFeature="FEATURE_FOREST"		YieldChange="1" TilesRequired="1" YieldType="YIELD_SCIENCE"	Description="LOC_DragonEmpery_Garden_Forest_Sinence"/>
+		<Row ID="DragonEmpery_Garden_District_Sinence"		OtherDistrictAdjacent="true"			YieldChange="1" TilesRequired="1" YieldType="YIELD_SCIENCE"	Description="LOC_DragonEmpery_Garden_District_Sinence"/>
+		<Row ID="DragonEmpery_Garden_NaturalWonder_Sinence"	AdjacentNaturalWonder="true"			YieldChange="2" TilesRequired="1" YieldType="YIELD_SCIENCE"	Description="LOC_DragonEmpery_Garden_NaturalWonder_Sinence"/>
+		<Row ID="DragonEmpery_Garden_Wonder_Sinence"		AdjacentWonder="true"					YieldChange="2" TilesRequired="1" YieldType="YIELD_SCIENCE"	Description="LOC_DragonEmpery_Garden_Wonder_Sinence"/>
+	</Adjacency_YieldChanges>
+	<District_CitizenYieldChanges>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldType="YIELD_SCIENCE"		YieldChange="2"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldType="YIELD_CULTURE"		YieldChange="2"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldType="YIELD_PRODUCTION"	YieldChange="2"/>
+	</District_CitizenYieldChanges>
+	<!--<Adjacent_AppealYieldChanges>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="-100"	MaximumValue="2"	YieldChange="1"		YieldType="YIELD_PRODUCTION"	Unimproved="false" Description="LOC_TOOLTIP_APPEAL_AVERAGE"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="-100"	MaximumValue="2"	YieldChange="1"		YieldType="YIELD_FOOD"			Unimproved="false" Description="LOC_TOOLTIP_APPEAL_AVERAGE"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="2"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_PRODUCTION"	Unimproved="false" Description="LOC_TOOLTIP_APPEAL_CHARMING"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="2"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_FOOD"			Unimproved="false" Description="LOC_TOOLTIP_APPEAL_CHARMING"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="2"		MaximumValue="3"	YieldChange="1"		YieldType="YIELD_CULTURE"		Unimproved="false" Description="LOC_TOOLTIP_APPEAL_CHARMING"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="4"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_CULTURE"		Unimproved="false" Description="LOC_TOOLTIP_APPEAL_BREATHTAKING"/>
+		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="4"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_SCIENCE"		Unimproved="false" Description="LOC_TOOLTIP_APPEAL_BREATHTAKING"	BuildingType="BUILDING_APRICOT_ACADEMY"/>
+	</Adjacent_AppealYieldChanges>-->
+	<DistrictModifiers>
+		<!--职业道德-->
+		<Row>
+			<DistrictType>DISTRICT_DRAGON_EMPERY_GARDEN</DistrictType>
+			<ModifierId>DRAGON_EMPERY_GARDEN_GRANT_TO_PRODUCTION</ModifierId>
+		</Row>
+		<!--森林+1文化值-->
+		<Row>
+			<DistrictType>DISTRICT_DRAGON_EMPERY_GARDEN</DistrictType>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_CULTURE</ModifierId>
+		</Row>
+		<!--森林+1生产力-->
+		<Row>
+			<DistrictType>DISTRICT_DRAGON_EMPERY_GARDEN</DistrictType>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_PRODUCTION</ModifierId>
+		</Row>
+		<!--两倍旅游业绩-->
+		<Row>
+			<DistrictType>DISTRICT_DRAGON_EMPERY_GARDEN</DistrictType>
+			<ModifierId>DRAGON_EMPERY_GARDEN_TOURISM</ModifierId>
+		</Row>
+	</DistrictModifiers>
+	<Modifiers>
+		<!--职业道德-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_GRANT_TO_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
+		</Row>
+		<!--森林+1文化值-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_PLOT_HAS_FOREST</SubjectRequirementSetId>
+		</Row>
+		<!--森林+1生产力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_PLOT_HAS_FOREST</SubjectRequirementSetId>
+		</Row>
+		<!--两倍旅游业绩-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_PLAYER_DISTRICT_ADJUST_TOURISM_ADJACENCY_YIELD_MOFIFIER</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_PLAYER_HAS_FLIGHT</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--职业道德-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_GRANT_TO_PRODUCTION</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_DRAGON_EMPERY_GARDEN</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_GRANT_TO_PRODUCTION</ModifierId>
+			<Name>YieldTypeToGrant</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_GRANT_TO_PRODUCTION</ModifierId>
+			<Name>YieldTypeToMirror</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<!--森林+1文化值-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<!--森林+1生产力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_ADD_FOREST_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<!--两倍旅游业绩-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_TOURISM</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>DRAGON_EMPERY_GARDEN_TOURISM</ModifierId>
+			<Name>Amount</Name>
+			<Value>200</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

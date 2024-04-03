@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SakuraEmpire_TextCN -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/2 10:35:52 -->
+<GameData>
+	<LocalizedText>
+		<!--文明相关-->
+		<Replace Tag="LOC_CIVILIZATION_DRAGON_EMPERY_NAME" Language="zh_Hans_CN">
+			<Text>东煌古国</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_DRAGON_EMPERY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>东煌古国</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_DRAGON_EMPERY_ADJECTIVE" Language="zh_Hans_CN">
+			<Text>东煌古国的</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_DRAGON_EMPERY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>位于东方大陆「神州」历史悠久的古国，作为碧蓝航线阵营的成员，参与对塞壬和赤色中轴的作战行动。</Text>
+		</Replace>
+		<!--文明能力-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_NAME" Language="zh_Hans_CN">
+			<Text>泱泱古国</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>每回合开始时，你将获得等同于已解锁科技和市政所需花费2%的 [ICON_SCIENCE] 科技值和 [ICON_Culture] 文化值。每当游戏进入新时代后便获得1个通配符槽位，并根据进入和脱离的时代获得不同的加成。允许使用 [ICON_GLORY_DARK_AGE] 黑暗时代政策。</Text>
+		</Replace>
+		<!--特殊区域-->
+		<Replace Tag="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_NAME" Language="zh_Hans_CN">
+			<Text>东煌园林</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>东煌古国特色区域，取代学院，建造费用更低并可建造在森林上。[ICON_SCIENCE] 科技值相邻加成也提供 [ICON_PRODUCTION] 生产力。研究完“飞行”科技后，将获得两倍于 [ICON_SCIENCE] 科技值产量的 [ICON_Tourism] 旅游业绩。[NEWLINE][NEWLINE]建成后对周边单元格释放文化炸弹并在周边单元格生成森林，该城市森林单元格+1 [ICON_Culture] 文化值、+1 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域和森林单元格获得+1 [ICON_SCIENCE] 科技值，从相邻的奇观和自然奇观单元格获得+2 [ICON_SCIENCE] 科技值。</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_DragonEmpery_Garden_District_Sinence" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Science] 科技值来自相邻的区域</Text>
+		</Replace>
+		<Replace Tag="LOC_DragonEmpery_Garden_Wonder_Sinence" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Science] 科技值来自相邻的奇观</Text>
+		</Replace>
+		<Replace Tag="LOC_DragonEmpery_Garden_Forest_Sinence" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Science] 科技值来自相邻的森林单元格</Text>
+		</Replace>
+		<Replace Tag="LOC_DragonEmpery_Garden_NaturalWonder_Sinence" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Science] 科技值来自相邻的自然奇观单元格</Text>
+		</Replace>
+		<!--特殊能力-->
+		<Replace Tag="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+{Property}来自进入的 [ICON_GLORY_DARK_AGE] 黑暗时代</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_DARK_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>处于 [ICON_GLORY_DARK_AGE] 黑暗时代时+{1_Amount} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<!--特殊建筑-->
+		<Replace Tag="LOC_BUILDING_APRICOT_ACADEMY_NAME" Language="zh_Hans_CN">
+			<Text>杏坛书院</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_APRICOT_ACADEMY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>东煌古国特色建筑，取代图书馆，造价更低。在此城市中激活 [ICON_GreatPerson] 伟人时将会获得相应伟人类型的 [ICON_GreatPerson] 伟人点数（获得量基于城市 [ICON_CITIZEN] 人口数量），且城市边界将扩张1个单元格。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_THEMINGBONUS_APRICOT_ACADEMY" Language="zh_Hans_CN">
+			<Text>当展示来自不同艺术家的作品时，主题加成翻倍。</Text>
+		</Replace>
+		<!--特殊改良设施-->
+		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_NAME" Language="zh_Hans_CN">
+			<Text>神州长城</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>解锁建造者建造东煌古国特色改良设施神州长城的能力。[NEWLINE][NEWLINE]+2 [ICON_GOLD] 金币、+1 [icon_PRODUCTION] 生产力和+1 [ICON_Culture] 文化值。与神州长城、资源和区域相邻时将会获得额外产出，且产出将随着更多科技和市政的解锁获得提升。研究“飞行”科技后可通过 [ICON_Culture] 文化值获得 [ICON_Tourism] 旅游业绩。[NEWLINE]占领单位+4 [ICON_Strength] 防御力，并自动获得两回合防御工事。</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION_XP2" Language="zh_Hans_CN">
+			<Text>解锁建造者建造东煌古国特色改良设施神州长城的能力。[NEWLINE][NEWLINE]+2 [ICON_GOLD] 金币、+1 [icon_PRODUCTION] 生产力和+1 [ICON_Culture] 文化值。与神州长城、资源和区域相邻时将会获得额外产出，且产出将随着更多科技和市政的解锁获得提升。研究“飞行”科技后可通过 [ICON_Culture] 文化值获得 [ICON_Tourism] 旅游业绩。[NEWLINE]占领单位+4 [ICON_Strength] 防御力，并自动获得两回合防御工事。无法被自然灾害摧毁。</Text>
+		</Replace>
+		<!--特殊单位-->
+
+		<!--特殊晋升-->
+
+		<!--特殊项目-->
+
+		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_APRICOT_ACADEMY_GREAT_PERSON_DETAIL" Language="zh_Hans_CN">
+			<Text>[COLOR:COLOR_FLOAT_FOOD]+{1_num} {2_text}点数[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_TITLE" Language="zh_Hans_CN">
+			<Text>泱泱古国</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_RESET" Language="zh_Hans_CN">
+			<Text>点击以刷新</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE" Language="zh_Hans_CN">
+			<Text>额外科技值：{1_num}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE" Language="zh_Hans_CN">
+			<Text>额外文化值：{1_num}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="zh_Hans_CN">
+			<Text>根据您已完成的{1_num}个科技，您下回合开始时将获得{2_num}点 [ICON_Science] 科技值。</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="zh_Hans_CN">
+			<Text>根据您已完成的{1_num}个市政，您下回合开始时将获得{2_num}点 [ICON_Culture] 文化值。</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="zh_Hans_CN">
+			<Text>[COLOR:68,66,50,255]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_TITLE" Language="zh_Hans_CN">
+			<Text>您已累计经历{1_num}次 [ICON_GLORY_DARK_AGE] 黑暗时代</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_BUFF" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]所有军事单位+{1_num} [ICON_Strength] 战斗力[NEWLINE][ICON_Bullet]生产军事单位时+{2_num}% [icon_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]所有城市+{3_num}忠诚度</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN" Language="zh_Hans_CN">
+			<Text>[COLOR:COLOR_FLOAT_GOLD]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_TITLE" Language="zh_Hans_CN">
+			<Text>您已累计经历{1_num}次 [ICON_GLORY_GOLDEN_AGE] 黄金时代</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_BUFF" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]城市+{1_num}% [icon_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+{2_num} [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+{3_num} [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_TITLE" Language="zh_Hans_CN">
+			<Text>您已累计经历{1_num}次 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄时代</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_BUFF" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]城市+{1_num}% [icon_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]帝国全境+{2_num}% [ICON_Tourism] 旅游业绩[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+{3_num} [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+{4_num} [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+{5_num}% [ICON_GreatPerson] 伟人点数</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER" Language="zh_Hans_CN">
+			<Text>[COLOR:ButtonCS]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NO_BUFF" Language="zh_Hans_CN">
+			<Text>无任何累计加成效果</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_PERMANENT_BUFF" Language="zh_Hans_CN">
+			<Text>将提供以下累计加成：</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_BUFF" Language="zh_Hans_CN">
+			<Text>将享受以下加成效果：</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_TITLE" Language="zh_Hans_CN">
+			<Text>您已累计进入{1_num}次新时代</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_EXTRA" Language="zh_Hans_CN">
+			<Text>其中：</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet][ICON_GLORY_DARK_AGE] 黑暗时代共有{1_num}次</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet][ICON_GLORY_GOLDEN_AGE] 黄金时代共有{1_num}次</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet][ICON_GLORY_SUPER_GOLDEN_AGE] 英雄时代共有{1_num}次</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet][ICON_GLORY_NORMAL_AGE] 普通时代共有{1_num}次</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_BONUS" Language="zh_Hans_CN">
+			<Text>已额外获得{1_num}个通配符槽位</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW" Language="zh_Hans_CN">
+			<Text>您的文明现在正处于 [ICON_GLORY_DARK_AGE] 黑暗时代！</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]立即在 [ICON_Capital] 首都获得1位 [ICON_GreatGeneral] 大将军[NEWLINE][ICON_Bullet]所有军事单位+5 [ICON_Strength] 战斗力[NEWLINE][ICON_Bullet]生产军事单位时+20% [icon_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]所有单位+1 [ICON_MOVEMENT] 移动力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW" Language="zh_Hans_CN">
+			<Text>您的文明现在正处于 [ICON_GLORY_GOLDEN_AGE] 黄金时代！</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]城市+20% [icon_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]帝国全境+25% [ICON_Tourism] 旅游业绩[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+2 [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+1 [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW" Language="zh_Hans_CN">
+			<Text>您的文明现在正处于 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄时代！</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]城市+50% [icon_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]帝国全境+50% [ICON_Tourism] 旅游业绩[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+4 [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+3 [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+25% [ICON_GreatPerson] 伟人点数</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW" Language="zh_Hans_CN">
+			<Text>您的文明现在正处于 [ICON_GLORY_NORMAL_AGE] 普通时代！</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC" Language="zh_Hans_CN">
+			<Text>进入的 [ICON_GLORY_NORMAL_AGE] 普通时代提供以下加成：</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]城市可额外建造{1_num}个区域[NEWLINE][ICON_Bullet]建造区域时+{2_num}% [icon_PRODUCTION] 生产力</Text>
+		</Replace>
+		<!--城市名-->
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_1" Language="zh_Hans_CN">
+			<Text>北京</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_2" Language="zh_Hans_CN">
+			<Text>上海</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_3" Language="zh_Hans_CN">
+			<Text>广州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_4" Language="zh_Hans_CN">
+			<Text>太原</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_5" Language="zh_Hans_CN">
+			<Text>杭州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_6" Language="zh_Hans_CN">
+			<Text>成都</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_7" Language="zh_Hans_CN">
+			<Text>苏州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_8" Language="zh_Hans_CN">
+			<Text>南京</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_9" Language="zh_Hans_CN">
+			<Text>重庆</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_10" Language="zh_Hans_CN">
+			<Text>武汉</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_11" Language="zh_Hans_CN">
+			<Text>西安</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_12" Language="zh_Hans_CN">
+			<Text>长沙</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_13" Language="zh_Hans_CN">
+			<Text>陇西</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_14" Language="zh_Hans_CN">
+			<Text>邯郸</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_15" Language="zh_Hans_CN">
+			<Text>益阳</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_16" Language="zh_Hans_CN">
+			<Text>喀什</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_17" Language="zh_Hans_CN">
+			<Text>丽江</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_18" Language="zh_Hans_CN">
+			<Text>伊犁</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_19" Language="zh_Hans_CN">
+			<Text>徽州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_20" Language="zh_Hans_CN">
+			<Text>归绥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_21" Language="zh_Hans_CN">
+			<Text>日喀则</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_22" Language="zh_Hans_CN">
+			<Text>绍兴</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_23" Language="zh_Hans_CN">
+			<Text>曲阜</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_24" Language="zh_Hans_CN">
+			<Text>香格里拉</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_25" Language="zh_Hans_CN">
+			<Text>开封</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_26" Language="zh_Hans_CN">
+			<Text>大同</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_27" Language="zh_Hans_CN">
+			<Text>扬州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_28" Language="zh_Hans_CN">
+			<Text>济南</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_29" Language="zh_Hans_CN">
+			<Text>承德</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_30" Language="zh_Hans_CN">
+			<Text>保定</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_31" Language="zh_Hans_CN">
+			<Text>徐州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_32" Language="zh_Hans_CN">
+			<Text>高邮</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_33" Language="zh_Hans_CN">
+			<Text>衢州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_34" Language="zh_Hans_CN">
+			<Text>汾阳</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_35" Language="zh_Hans_CN">
+			<Text>吉林</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_36" Language="zh_Hans_CN">
+			<Text>辽阳</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_37" Language="zh_Hans_CN">
+			<Text>沈阳</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_38" Language="zh_Hans_CN">
+			<Text>长春</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_39" Language="zh_Hans_CN">
+			<Text>镇江</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_40" Language="zh_Hans_CN">
+			<Text>瑞金</Text>
+		</Replace>
+		<!--公民名-->
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_1" Language="zh_Hans_CN">
+			<Text>逸仙</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_2" Language="zh_Hans_CN">
+			<Text>鞍山</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_3" Language="zh_Hans_CN">
+			<Text>长春</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_4" Language="zh_Hans_CN">
+			<Text>太原</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_5" Language="zh_Hans_CN">
+			<Text>抚顺</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_6" Language="zh_Hans_CN">
+			<Text>华甲</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_7" Language="zh_Hans_CN">
+			<Text>肇和</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_8" Language="zh_Hans_CN">
+			<Text>应瑞</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_9" Language="zh_Hans_CN">
+			<Text>海圻</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_10" Language="zh_Hans_CN">
+			<Text>镇海</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_11" Language="zh_Hans_CN">
+			<Text>哈尔滨</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_12" Language="zh_Hans_CN">
+			<Text>定安</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_13" Language="zh_Hans_CN">
+			<Text>宁海</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_14" Language="zh_Hans_CN">
+			<Text>平海</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_15" Language="zh_Hans_CN">
+			<Text>龙武</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_16" Language="zh_Hans_CN">
+			<Text>虎贲</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_17" Language="zh_Hans_CN">
+			<Text>飞云</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_18" Language="zh_Hans_CN">
+			<Text>济安</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_19" Language="zh_Hans_CN">
+			<Text>寰昌</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

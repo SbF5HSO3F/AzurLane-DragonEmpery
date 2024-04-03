@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_HeiTien_Units -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/2/10 10:59:05 -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_HEI_TIEN"		Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_HEI_TIEN"	Kind="KIND_ABILITY"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_HEI_TIEN" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_HEI_TIEN" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_HEI_TIEN" AiType="UNITTYPE_MELEE"/>
+		<Row UnitType="UNIT_HEI_TIEN" AiType="UNITTYPE_NAVAL"/>
+		<Row UnitType="UNIT_HEI_TIEN" AiType="UNITTYPE_RANGED"/>
+	</UnitAiInfos>
+	<Tags>
+		<Row Tag="CLASS_HEI_TIEN" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_HEI_TIEN"		Tag="CLASS_NAVAL_RANGED"/>
+		<Row Type="UNIT_HEI_TIEN"		Tag="CLASS_HEI_TIEN"/>
+		<Row Type="ABILITY_HEI_TIEN"	Tag="CLASS_HEI_TIEN"/>
+	</TypeTags>
+	<Units>
+		<Row UnitType="UNIT_HEI_TIEN" Cost="340" Maintenance="5" BaseMoves="5" BaseSightRange="3" ZoneOfControl="true" StrategicResource="RESOURCE_COAL" Domain="DOMAIN_SEA" Combat="65" Bombard="75" Range="2" FormationClass="FORMATION_CLASS_NAVAL" PrereqCivic="CIVIC_NATIONALISM" PromotionClass="PROMOTION_CLASS_NAVAL_RANGED" Name="LOC_UNIT_HEI_TIEN_NAME" Description="LOC_UNIT_HEI_TIEN_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" TraitType="TRAIT_LEADER_UNIT_HEI_TIEN"/>
+	</Units>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_HEI_TIEN" Texture="Moment_HeiTien.dds"/>
+	</MomentIllustrations>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_HEI_TIEN"	Name="LOC_ABILITY_HEI_TIEN_NAME"	Description="LOC_ABILITY_HEI_TIEN_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_HEI_TIEN</UnitAbilityType>
+			<ModifierId>HEI_TIEN_NO_REDUCTION_DAMAGE</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>HEI_TIEN_NO_REDUCTION_DAMAGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_NO_REDUCTION_DAMAGE</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>HEI_TIEN_NO_REDUCTION_DAMAGE</ModifierId>
+			<Name>NoReduction</Name>
+			<Value>true</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

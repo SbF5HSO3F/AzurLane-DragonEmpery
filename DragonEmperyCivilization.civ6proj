@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>DragonEmperyCivilization</Name>
+    <Guid>7218bdf0-2bb3-43f9-84d8-29dcb6dcc573</Guid>
+    <ProjectGuid>e576f398-1a1d-4c9d-b86f-d7bfb1e1522c</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>LOC_DRAGON_EMPERY_TEASER</Teaser>
+    <Description>LOC_DRAGON_EMPERY_DESCRIPTION</Description>
+    <Authors>SbF5HSO3F</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>DragonEmperyCivilization</AssemblyName>
+    <RootNamespace>DragonEmperyCivilization</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="Art"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateColors id="Colors"><File>DragonEmpery_Colors.xml</File></UpdateColors><UpdateIcons id="Icons"><File>DragonEmpery_Icons.xml</File></UpdateIcons><UpdateDatabase id="Config"><File>DragonEmpery_Config.xml</File></UpdateDatabase><UpdateText id="DragonEmpery"><File priority="100">Text/en_US/DragonEmpery_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_TextCN.xml</File></UpdateText><UpdateText id="HeiTien"><File priority="100">Text/en_US/DragonEmpery_HeiTien_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_HeiTien_TextCN.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="Art"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateIcons id="Icons"><File>DragonEmpery_Icons.xml</File></UpdateIcons><UpdateColors id="Colors"><File>DragonEmpery_Colors.xml</File></UpdateColors><ImportFiles id="Import"><File>Lua/DragonEmpery_Core.lua</File></ImportFiles><AddUserInterfaces id="UI"><Properties><Context>InGame</Context></Properties><File>UI/DragonEmpery_UI.xml</File></AddUserInterfaces><AddGameplayScripts id="Lua"><File>Lua/DragonEmpery.lua</File><File>Lua/DragonEmpery_HeiTien.lua</File></AddGameplayScripts><UpdateDatabase id="DragonEmpery"><File priority="100">Data/DragonEmpery_Core.sql</File><File priority="90">Data/DragonEmpery_Civilization.xml</File><File priority="80">Data/DragonEmpery_UnitAbilities.xml</File><File priority="70">Data/DragonEmpery_Improvements.xml</File><File priority="60">Data/DragonEmpery_Districts.xml</File><File priority="50">Data/DragonEmpery_Buildings.xml</File></UpdateDatabase><DoNothing id="DragonEmpery_Trait"><Properties><LoadOrder>99993</LoadOrder></Properties><File>Data/DragonEmpery_Improvements.sql</File></DoNothing><UpdateDatabase id="DragonEmpery_XP2"><Properties><RuleSet>RULESET_EXPANSION_2</RuleSet></Properties><File>Data/DragonEmpery_NamedPlaces.sql</File><File>Data/DragonEmpery_XP2.sql</File></UpdateDatabase><UpdateDatabase id="DragonEmpery_Mode"><Criteria>DragonEmpery_MODE</Criteria><File>Data/DragonEmpery_SecretSocieties.sql</File></UpdateDatabase><UpdateText id="DragonEmpery_Text"><File priority="100">Text/en_US/DragonEmpery_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_TextCN.xml</File></UpdateText><UpdateDatabase id="HeiTien"><File>Data/Hai Tien/DragonEmpery_HeiTien_Leader.xml</File><File>Data/Hai Tien/DragonEmpery_HeiTien_UnitAbilities.xml</File><File priority="80">Data/Hai Tien/DragonEmpery_HeiTien_Units.xml</File></UpdateDatabase><UpdateDatabase id="HeiTien_XP2"><Properties><RuleSet>RULESET_EXPANSION_2</RuleSet></Properties><File>Data/Hai Tien/DragonEmpery_HeiTien_XP2.sql</File></UpdateDatabase><UpdateText id="HeiTien_Text"><File priority="100">Text/en_US/DragonEmpery_HeiTien_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_HeiTien_TextCN.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="DragonEmpery_MODE"><ConfigurationValueMatches><ConfigurationId>GAMEMODE_SECRETSOCIETIES</ConfigurationId><Group>Game</Group><Value>1</Value></ConfigurationValueMatches></Criteria></ActionCriteria>]]></ActionCriteriaData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="DragonEmperyCivilization.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data" />
+    <Folder Include="Data\Hai Tien" />
+    <Folder Include="Lua" />
+    <Folder Include="Text" />
+    <Folder Include="Text\en_US" />
+    <Folder Include="Text\zh_Hans_CN" />
+    <Folder Include="UI" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\DragonEmpery_Buildings.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_Civilization.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_Core.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_Districts.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_Improvements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_Improvements.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_NamedPlaces.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_SecretSocieties.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_UnitAbilities.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\DragonEmpery_XP2.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Hai Tien\DragonEmpery_HeiTien_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Hai Tien\DragonEmpery_HeiTien_UnitAbilities.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Hai Tien\DragonEmpery_HeiTien_Units.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Hai Tien\DragonEmpery_HeiTien_XP2.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DragonEmpery_Colors.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DragonEmpery_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DragonEmpery_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\DragonEmpery.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\DragonEmpery_Core.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\DragonEmpery_HeiTien.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\en_US\DragonEmpery_HeiTien_TextUS.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\en_US\DragonEmpery_TextUS.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\zh_Hans_CN\DragonEmpery_HeiTien_TextCN.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\zh_Hans_CN\DragonEmpery_TextCN.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\DragonEmpery_UI.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\DragonEmpery_UI.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

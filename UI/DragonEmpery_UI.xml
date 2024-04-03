@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_UI -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/31 8:36:07 -->
+<Context Name="AncientCountryPanelAddon">
+    <Grid ID="AncientCountryPanelGrid" Offset="0,0" Size="296,Auto" AutoSizePadding="0,2" Texture="Controls_DropdownPanel" Color="143,122,82,200" Anchor="L,T" ConsumeMouseOver="1" Hidden="0">
+
+        <Stack ID="AncientCountryPanelStack" Anchor="C,T" Offset="0,4" StackGrowth="Bottom" StackPadding="2">
+            <GridButton ID="AncientScienceButton" Anchor="C,C" Offset="0,0" Size="parent-30,30" Texture="Controls_ButtonControl.dds" Style="AncientCountryPanelHeader" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="150">
+                <Stack ID="AncientScienceStack" Anchor="L,C" Offset="4,0" StackGrowth="Right">
+                    <Label ID="AncientScienceText" Anchor="L,C" Offset="4,1" Style="FontNormal18" ColorSet="ResScienceLabelCS" FontStyle="Stroke" String="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE"/>
+                    <Label ID="AncientSciencehIcon" Anchor="L,C" Offset="6,0" Style="FontNormal18" ColorSet="ResScienceLabelCS" FontStyle="Stroke" String="[ICON_ScienceLarge]"/>
+                </Stack>
+            </GridButton>
+
+            <GridButton ID="AncientCultureButton" Anchor="C,C" Offset="0,0" Size="parent-30,30" Texture="Controls_ButtonControl.dds" Style="AncientCountryPanelHeader" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="150">
+                <Stack ID="AncientCultureStack" Anchor="L,C" Offset="4,0" StackGrowth="Right">
+                    <Label ID="AncientCultureText" Anchor="L,C" Offset="4,1" Style="FontNormal18" ColorSet="ResCultureLabelCS" FontStyle="Stroke" String="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE"/>
+                    <Label ID="AncientCultureIcon" Anchor="L,C" Offset="6,0" Style="FontNormal18" ColorSet="ResCultureLabelCS" FontStyle="Stroke" String="[ICON_CultureLarge]"/>
+                </Stack>
+            </GridButton>
+
+            <Stack ID="AncientCountryPanelEraStack" Anchor="C,C" Offset="0,0" StackGrowth="Right" StackPadding="2">
+                <GridButton ID="AncientDrakButton" Anchor="L,C" Offset="0,0" Size="65,30" Texture="Controls_ButtonControl.dds" Style="AncientCountryPanelHeader" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="150">
+                    <Label ID="AcientDrakCount" Anchor="C,C" Offset="0,2" Style="FontNormal18" FontStyle="Stroke" String="0"/>
+                </GridButton>
+                <GridButton ID="AncientGoldenButton" Anchor="L,C" Offset="0,0" Size="65,30" Texture="Controls_ButtonControl.dds" Style="AncientCountryPanelHeader" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="150">
+                    <!-- <Label ID="AncientGoldenIcon" Anchor="L,C" Offset="3,0" Style="FontNormal18" FontStyle="Stroke" String="[ICON_GLORY_GOLDEN_AGE]"/> -->
+                    <Label ID="AcientGoldenCount" Anchor="C,C" Offset="0,2" Style="FontNormal18" FontStyle="Stroke" String="0"/>
+                </GridButton>
+                <GridButton ID="AncientHeroicButton" Anchor="L,C" Offset="0,0" Size="65,30" Texture="Controls_ButtonControl.dds" Style="AncientCountryPanelHeader" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="150">
+                    <!-- <Label ID="AncientHeroicIcon" Anchor="L,C" Offset="3,0" Style="FontNormal18" FontStyle="Stroke" String="[ICON_GLORY_SUPER_GOLDEN_AGE]"/> -->
+                    <Label ID="AcientHeroicCount" Anchor="C,C" Offset="0,2" Style="FontNormal18" FontStyle="Stroke" String="0"/>
+                </GridButton>
+                <GridButton ID="AncientAgeButton" Anchor="L,C" Offset="0,0" Size="65,30" Texture="Controls_ButtonControl.dds" Style="AncientCountryPanelHeader" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="150">
+                    <!-- <Label ID="AncientAgeIcon" Anchor="L,C" Offset="3,0" Style="FontNormal18" FontStyle="Stroke" String="[ICON_GLORY_NORMAL_AGE]"/> -->
+                    <Label ID="AcientAgeCount" Anchor="C,C" Offset="0,2" Style="FontNormal18" FontStyle="Stroke" String="0"/>
+                </GridButton>
+            </Stack>
+        </Stack>
+
+        <Box ID="AncientTopColumn" Color="143,122,82,200" Anchor="C,T" Size="parent,2" Offset="0,0" Hidden="0">
+            <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+            <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+        </Box>
+        <Box ID="AncientBottomColumn" Color="143,122,82,200" Anchor="C,B" Size="parent,2" Offset="0,0" Hidden="0">
+            <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+            <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+        </Box>
+    </Grid>
+</Context>

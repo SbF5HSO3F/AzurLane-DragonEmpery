@@ -1,0 +1,25 @@
+-- DragonEmpery_XP2
+-- Author: jjj
+-- DateCreated: 2023/12/31 22:09:37
+--------------------------------------------------------------
+--Improvements_XP2
+--INSERT INTO Improvement_ValidTerrains
+		--(ImprovementType,					TerrainType)
+--VALUES	('IMPROVEMENT_DRAGON_EMPERY_WALL',	'TERRAIN_DESERT_MOUNTAIN'),
+		--('IMPROVEMENT_DRAGON_EMPERY_WALL',	'TERRAIN_GRASS_MOUNTAIN'),
+		--('IMPROVEMENT_DRAGON_EMPERY_WALL',	'TERRAIN_PLAINS_MOUNTAIN'),
+		--('IMPROVEMENT_DRAGON_EMPERY_WALL',	'TERRAIN_SNOW_MOUNTAIN'),
+		--('IMPROVEMENT_DRAGON_EMPERY_WALL',	'TERRAIN_TUNDRA_MOUNTAIN');
+
+INSERT INTO Improvement_ValidFeatures
+		(ImprovementType,					FeatureType)
+VALUES	('IMPROVEMENT_DRAGON_EMPERY_WALL',	'FEATURE_VOLCANIC_SOIL');
+
+INSERT INTO Improvements_XP2
+		(ImprovementType,					DisasterResistant)
+VALUES	('IMPROVEMENT_DRAGON_EMPERY_WALL',	1);
+
+--Update
+UPDATE Improvements
+SET Description = 'LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION_XP2'
+WHERE ImprovementType = 'IMPROVEMENT_DRAGON_EMPERY_WALL';

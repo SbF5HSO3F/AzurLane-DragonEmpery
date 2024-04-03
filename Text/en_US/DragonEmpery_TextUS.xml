@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_TextUS -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/2/16 18:39:30 -->
+<GameData>
+	<LocalizedText>
+		<!--文明相关-->
+		<Replace Tag="LOC_CIVILIZATION_DRAGON_EMPERY_NAME" Language="en_US">
+			<Text>Dragon Empery</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_DRAGON_EMPERY_DESCRIPTION" Language="en_US">
+			<Text>Dragon Empery</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_DRAGON_EMPERY_ADJECTIVE" Language="en_US">
+			<Text>Dragon Empery's</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_DRAGON_EMPERY_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>Located in an ancient country with a long history on the eastern continent of "Shenzhou", it participates in combat operations against the Sirens and the Crimson Axis as a member of the Azur Lane.</Text>
+		</Replace>
+		<!--文明能力-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_NAME" Language="en_US">
+			<Text>Ancient Country</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_DESCRIPTION" Language="en_US">
+			<Text>At the start of each turn, you gain [ICON_SCIENCE] Science and [ICON_Culture] Culture equal to 2% of the cost of unlocked Technologies and Civics. You gain 1 wildcard slot whenever the game enters a new era, and gain different bonuses depending on the age you enter and leave. Can use [ICON_GLORY_DARK_AGE] Dark Age Policies.</Text>
+		</Replace>
+		<!--特殊区域-->
+		<Replace Tag="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_NAME" Language="en_US">
+			<Text>Dragon Garden</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_DRAGON_EMPERY_GARDEN_DESCRIPTION" Language="en_US">
+			<Text>Dragon Empery unique district, replacing the Campus district and cheaper to build. Can be built on Woods. [ICON_SCIENCE] Science Adjacent Bonus also provides [ICON_PRODUCTION] Production. After Flight is researched receive [ICON_Tourism] Tourism equal to 200% the [ICON_SCIENCE] Science output.[NEWLINE][NEWLINE]Unleash Culture Bomb on surrounding territory when built and generate Woods in surrounding tiles, and +1 [ICON_Culture] Culture, +1 [ICON_PRODUCTION] Production for this city Woods tile.[NEWLINE]Get a +1 [ICON_SCIENCE] Science bonus from each adjacent Districts and Woods, Get a +2 [ICON_SCIENCE] Science bonus from each adjacent Wonders and Natural Wonders.</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_DragonEmpery_Garden_District_Sinence" Language="en_US">
+			<Text>+{1_num} [ICON_Science] Science from each adjacent Districts tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_DragonEmpery_Garden_Wonder_Sinence" Language="en_US">
+			<Text>+{1_num} [ICON_Science] Science from each adjacent Wonders tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_DragonEmpery_Garden_Forest_Sinence" Language="en_US">
+			<Text>+{1_num} [ICON_Science] Science from each adjacent Woods tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_DragonEmpery_Garden_NaturalWonder_Sinence" Language="en_US">
+			<Text>+{1_num} [ICON_Science] Science from each adjacent Natural Wonders tile.</Text>
+		</Replace>
+		<!--特殊能力-->
+		<Replace Tag="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_BUFF_DESCRIPTION" Language="en_US">
+			<Text>+{Property} from the [ICON_GLORY_DARK_AGE] Dark Ages of Entry</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_DARK_DESCRIPTION" Language="en_US">
+			<Text>+{1_Amount} [ICON_Strength] Combat Strength when in [ICON_GLORY_DARK_AGE] Dark Age</Text>
+		</Replace>
+		<!--特殊建筑-->
+		<Replace Tag="LOC_BUILDING_APRICOT_ACADEMY_NAME" Language="en_US">
+			<Text>Apricot Academy</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_APRICOT_ACADEMY_DESCRIPTION" Language="en_US">
+			<Text>A building unique to Dragon Empery, replacing the Library and cheaper to build. Activating an [ICON_GreatPerson] Great Person in this city will result in [ICON_GreatPerson] Great Person Points of the corresponding Great Person type (the amount gained is based on the city's [ICON_CITIZEN] Citizens) and the city's borders will expand by 1 tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_THEMINGBONUS_APRICOT_ACADEMY" Language="en_US">
+			<Text>Theming bonus doubling output when displaying objects from different artists.</Text>
+		</Replace>
+		<!--特殊改良设施-->
+		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_NAME" Language="en_US">
+			<Text>Shenzhou Wall</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct the Shenzhou Wall, unique to Dragon Empery.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [icon_PRODUCTION] Production and +1 [ICON_Culture] Culture. Additional output will be gained when adjacent to the Shenzhou Walls, Resources and Districts, and output will be boosted as more Technologies and Civics are unlocked. [ICON_Tourism] Tourism from [ICON_Culture] Culture once Flight is researched.[NEWLINE]Occupying unit receives +4 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION_XP2" Language="en_US">
+			<Text>Unlocks the Builder ability to construct the Shenzhou Wall, unique to Dragon Empery.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [icon_PRODUCTION] Production and +1 [ICON_Culture] Culture. Additional output will be gained when adjacent to the Shenzhou Walls, Resources and Districts, and output will be boosted as more Technologies and Civics are unlocked. [ICON_Tourism] Tourism from [ICON_Culture] Culture once Flight is researched.[NEWLINE]Occupying unit receives +4 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification. Never destroyed by natural disasters.</Text>
+		</Replace>
+		<!--特殊单位-->
+
+		<!--特殊晋升-->
+
+		<!--特殊项目-->
+
+		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_APRICOT_ACADEMY_GREAT_PERSON_DETAIL" Language="en_US">
+			<Text>[COLOR:COLOR_FLOAT_FOOD]+{1_num} {2_text} points[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_TITLE" Language="en_US">
+			<Text>Ancient Country</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_RESET" Language="en_US">
+			<Text>Click to refresh</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE" Language="en_US">
+			<Text>Extra Science: {1_num}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE" Language="en_US">
+			<Text>Extra Culture: {1_num}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="en_US">
+			<Text>Based on the {1_num} Technologies you have completed, you gain {2_num} [ICON_Science] Science at the start of your next turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="en_US">
+			<Text>Based on the {1_num} Civics you have completed, you gain {2_num} [ICON_Culture] Culture at the start of your next turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="en_US">
+			<Text>[COLOR:68,66,50,255]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_TITLE" Language="en_US">
+			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_DARK_AGE] Dark {1_num : plural 1?Age; other?Ages;}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_BUFF" Language="en_US">
+			<Text>[ICON_Bullet]All military units +{1_num} [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+{2_num}% [icon_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All cities +{3_num} loyalty</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN" Language="en_US">
+			<Text>[COLOR:COLOR_FLOAT_GOLD]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_TITLE" Language="en_US">
+			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_GOLDEN_AGE] Golden {1_num : plural 1?Age; other?Ages;}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_BUFF" Language="en_US">
+			<Text>[ICON_Bullet]Cities +{1_num}% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{3_num} [ICON_Amenities] {1_num : plural 1?Amenity; other?Amenities;}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC" Language="en_US">
+			<Text>[COLOR:ResGoldLabelCS]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_TITLE" Language="en_US">
+			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_SUPER_GOLDEN_AGE] Heroic {1_num : plural 1?Age; other?Ages;}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_BUFF" Language="en_US">
+			<Text>[ICON_Bullet]Cities +{1_num}% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num}% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+{3_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{4_num} [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+{5_num}% Bonus [ICON_GreatPerson] Great People points</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER" Language="en_US">
+			<Text>[COLOR:ButtonCS]{1_num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NO_BUFF" Language="en_US">
+			<Text>No cumulative bonus effect</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_PERMANENT_BUFF" Language="en_US">
+			<Text>The following cumulative bonuses will be provided:</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_BUFF" Language="en_US">
+			<Text>The following bonus effects will be enjoyed:</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_TITLE" Language="en_US">
+			<Text>You have accumulated a total of {1_num} new {1_num : plural 1?Age; other?Ages;}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_EXTRA" Language="en_US">
+			<Text>Among them:</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK" Language="en_US">
+			<Text>[ICON_Bullet][ICON_GLORY_DARK_AGE] Dark Age has a total of {1_num} times</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN" Language="en_US">
+			<Text>[ICON_Bullet][ICON_GLORY_GOLDEN_AGE] Golden Age has a total of {1_num} times</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC" Language="en_US">
+			<Text>[ICON_Bullet][ICON_GLORY_SUPER_GOLDEN_AGE] Heroic Age has a total of {1_num} times</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL" Language="en_US">
+			<Text>[ICON_Bullet][ICON_GLORY_NORMAL_AGE] Normal Age has a total of {1_num} times</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_BONUS" Language="en_US">
+			<Text>Has gained an additional {1_num} wildcard {1_num : plural 1?slot; other?slots;}</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW" Language="en_US">
+			<Text>Your civilization is now in the [ICON_GLORY_DARK_AGE] Dark Age!</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF" Language="en_US">
+			<Text>[ICON_Bullet]Immediately gain a [ICON_GreatGeneral] Great General in the [ICON_Capital] capital city[NEWLINE][ICON_Bullet]All military units +5 [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+20% [icon_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All units +1 [ICON_MOVEMENT] Movement</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW" Language="en_US">
+			<Text>Your civilization is now in the [ICON_GLORY_GOLDEN_AGE] Golden Age!</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF" Language="en_US">
+			<Text>[ICON_Bullet]Cities +20% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+25% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+2 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +1 [ICON_Amenities] Amenity</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW" Language="en_US">
+			<Text>Your civilization is now in the [ICON_GLORY_SUPER_GOLDEN_AGE] Heroic Age!</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF" Language="en_US">
+			<Text>[ICON_Bullet]Cities +50% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+50% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+4 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +3 [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+25% Bonus [ICON_GreatPerson] Great People points</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW" Language="en_US">
+			<Text>Your civilization is now in the [ICON_GLORY_NORMAL_AGE] Normal Age!</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC" Language="en_US">
+			<Text>The entered [ICON_GLORY_NORMAL_AGE] Normal Ages provides the following bonuses:</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF" Language="en_US">
+			<Text>[ICON_Bullet]Cities can build {1_num} additional {1_num : plural 1?district; other?districts;}[NEWLINE][ICON_Bullet]+{2_num}% [icon_PRODUCTION] Production when building districts</Text>
+		</Replace>
+		<!--城市名-->
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_1" Language="en_US">
+			<Text>Beijing</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_2" Language="en_US">
+			<Text>Shanghai</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_3" Language="en_US">
+			<Text>Guangzhou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_4" Language="en_US">
+			<Text>Taiyuan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_5" Language="en_US">
+			<Text>Hangzhou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_6" Language="en_US">
+			<Text>Chengdu</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_7" Language="en_US">
+			<Text>Suzhou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_8" Language="en_US">
+			<Text>Nanjing</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_9" Language="en_US">
+			<Text>Chongqing</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_10" Language="en_US">
+			<Text>Wuhan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_11" Language="en_US">
+			<Text>Xian</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_12" Language="en_US">
+			<Text>Changsha</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_13" Language="en_US">
+			<Text>Longxi</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_14" Language="en_US">
+			<Text>Handan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_15" Language="en_US">
+			<Text>Yiyang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_16" Language="en_US">
+			<Text>Kashgar</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_17" Language="en_US">
+			<Text>Lijiang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_18" Language="en_US">
+			<Text>lli</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_19" Language="en_US">
+			<Text>Huizhou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_20" Language="en_US">
+			<Text>Kweisui</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_21" Language="en_US">
+			<Text>Shigatse</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_22" Language="en_US">
+			<Text>Shaoxing</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_23" Language="en_US">
+			<Text>Qufu</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_24" Language="en_US">
+			<Text>Shangri-La</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_25" Language="en_US">
+			<Text>Kaifeng</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_26" Language="en_US">
+			<Text>Datong</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_27" Language="en_US">
+			<Text>Yangzhou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_28" Language="en_US">
+			<Text>Jinan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_29" Language="en_US">
+			<Text>Chengde</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_30" Language="en_US">
+			<Text>Baoding</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_31" Language="en_US">
+			<Text>Xuzhou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_32" Language="en_US">
+			<Text>Gaoyou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_33" Language="en_US">
+			<Text>Quzhou</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_34" Language="en_US">
+			<Text>Fenyang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_35" Language="en_US">
+			<Text>Jilin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_36" Language="en_US">
+			<Text>Liaoyang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_37" Language="en_US">
+			<Text>Shenyang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_38" Language="en_US">
+			<Text>Changchun</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_39" Language="en_US">
+			<Text>Zhenjiang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_40" Language="en_US">
+			<Text>Ruijin</Text>
+		</Replace>
+		<!--公民名-->
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_1" Language="en_US">
+			<Text>Yat Sen</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_2" Language="en_US">
+			<Text>An Shan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_3" Language="en_US">
+			<Text>Chang Chun</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_4" Language="en_US">
+			<Text>Tai Yuan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_5" Language="en_US">
+			<Text>Fu Shun</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_6" Language="en_US">
+			<Text>Hwah Jah</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_7" Language="en_US">
+			<Text>Chao Ho</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_8" Language="en_US">
+			<Text>Ying Swei</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_9" Language="en_US">
+			<Text>Hai Chi</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_10" Language="en_US">
+			<Text>Chen Hai</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_11" Language="en_US">
+			<Text>Harbin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_12" Language="en_US">
+			<Text>Ting An</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_13" Language="en_US">
+			<Text>Ning Hai</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_14" Language="en_US">
+			<Text>Ping Hai</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_15" Language="en_US">
+			<Text>Lung Wu</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_16" Language="en_US">
+			<Text>Hu Pen</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_17" Language="en_US">
+			<Text>Fei Yuen</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_18" Language="en_US">
+			<Text>Chi An</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_19" Language="en_US">
+			<Text>Huan Ch'ang</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_UnitAbilities -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/31 20:01:16 -->
+<GameData>
+	<Types>
+		<!--处于黑暗时代-->
+		<Row Type="ABILITY_DRAGON_EMPERY_COMBAT_UNITS"			Kind="KIND_ABILITY"/>
+		<!--黑暗时代后续buff-->
+		<Row Type="ABILITY_DRAGON_EMPERY_COMBAT_UNITS_BUFF"		Kind="KIND_ABILITY"/>
+		<!--黑暗时代+1移动力-->
+		<Row Type="ABILITY_DRAGON_EMPERY_UNITS_BUFF"			Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_DRAGON_EMPERY_COMBAT_UNITS"			Tag="CLASS_ALL_COMBAT_UNITS"/>
+		<Row Type="ABILITY_DRAGON_EMPERY_COMBAT_UNITS"			Tag="CLASS_NAVAL_CARRIER"/>
+		<Row Type="ABILITY_DRAGON_EMPERY_COMBAT_UNITS_BUFF"		Tag="CLASS_ALL_COMBAT_UNITS"/>
+		<Row Type="ABILITY_DRAGON_EMPERY_COMBAT_UNITS_BUFF"		Tag="CLASS_NAVAL_CARRIER"/>
+		<Row Type="ABILITY_DRAGON_EMPERY_UNITS_BUFF"			Tag="CLASS_ALL_UNITS"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_DRAGON_EMPERY_COMBAT_UNITS"			Inactive="true"/>
+		<Row UnitAbilityType="ABILITY_DRAGON_EMPERY_COMBAT_UNITS_BUFF"		Inactive="true"/>
+		<Row UnitAbilityType="ABILITY_DRAGON_EMPERY_UNITS_BUFF"				Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="DRAGON_EMPERY_COMBAT_UNITS_DARK"		Context="Preview" Text="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_DARK_DESCRIPTION"/>
+		<Row ModifierId="DRAGON_EMPERY_COMBAT_UNITS_BUFF"		Context="Preview" Text="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_BUFF_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<!--处于黑暗时代-->
+		<Row>
+			<UnitAbilityType>ABILITY_DRAGON_EMPERY_COMBAT_UNITS</UnitAbilityType>
+			<ModifierId>DRAGON_EMPERY_COMBAT_UNITS_DARK</ModifierId>
+		</Row>
+		<!--黑暗时代后续buff-->
+		<Row>
+			<UnitAbilityType>ABILITY_DRAGON_EMPERY_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>DRAGON_EMPERY_COMBAT_UNITS_BUFF</ModifierId>
+		</Row>
+		<!--黑暗时代+1移动力-->
+		<Row>
+			<UnitAbilityType>ABILITY_DRAGON_EMPERY_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>DRAGON_EMPERY_UNITS_MOVEMENT</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<!--处于黑暗时代-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_COMBAT_UNITS_DARK</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+		<!--黑暗时代后续buff-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_COMBAT_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+		<!--黑暗时代+1移动力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_UNITS_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--处于黑暗时代-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_COMBAT_UNITS_DARK</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<!--黑暗时代后续buff-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_COMBAT_UNITS_BUFF</ModifierId>
+			<Name>Key</Name>
+			<Value>DRAGON_EMPERY_UNITS_COMBAT</Value>
+		</Row>
+		<!--黑暗时代+1移动力-->
+		<Row>
+			<ModifierId>DRAGON_EMPERY_UNITS_MOVEMENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

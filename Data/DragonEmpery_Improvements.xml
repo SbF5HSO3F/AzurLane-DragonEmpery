@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_Imp -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/31 21:29:17 -->
+<GameData>
+	<Types>
+		<Row Type="IMPROVEMENT_DRAGON_EMPERY_WALL" Kind="KIND_IMPROVEMENT"/>
+	</Types>
+	<Improvements>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_DRAGON_EMPERY_WALL" GrantFortification="2" PlunderAmount="50" Name="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_NAME" Icon="ICON_IMPROVEMENT_DRAGON_EMPERY_WALL" Description="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION" PlunderType="PLUNDER_GOLD" BuildInLine="1" DefenseModifier="4" PrereqTech="TECH_MASONRY" />
+	</Improvements>
+	<Improvement_ValidFeatures>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" FeatureType="FEATURE_JUNGLE"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" FeatureType="FEATURE_FOREST"/>
+	</Improvement_ValidFeatures>
+	<Improvement_ValidTerrains>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_DESERT"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_DESERT_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_GRASS"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_PLAINS"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_SNOW"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_SNOW_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+	</Improvement_ValidTerrains>
+	<Improvement_ValidBuildUnits>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" UnitType="UNIT_BUILDER"/>
+	</Improvement_ValidBuildUnits>
+	<Improvement_YieldChanges>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_CULTURE"		YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_GOLD"		YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_FOOD"		YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_PRODUCTION"	YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_SCIENCE"		YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_FAITH"		YieldChange="0"/>
+	</Improvement_YieldChanges>
+	<Improvement_BonusYieldChanges>
+		<Row Id="DragonEmpery_Wall_Castles_Culture"		ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_CULTURE"		BonusYieldChange="1" PrereqTech="TECH_CASTLES"/>
+		<Row Id="DragonEmpery_Wall_Castles_Production"	ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldType="YIELD_PRODUCTION"	BonusYieldChange="1" PrereqTech="TECH_CASTLES"/>
+	</Improvement_BonusYieldChanges>
+	<Improvement_Tourism>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" TourismSource="TOURISMSOURCE_CULTURE" PrereqTech="TECH_FLIGHT" ScalingFactor="100"/>
+	</Improvement_Tourism>
+	<Improvement_Adjacencies>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Gold1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Gold2"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Food1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Food2"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Faith1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Faith2"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Production1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Production2"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Culture1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_Culture2"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_R_Food"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_R_Gold"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_R_Production"/>
+		<!--<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_D_Science1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_D_Faith1"/>-->
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_D_Production1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_D_Production2"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_D_Food_1"/>
+		<Row ImprovementType="IMPROVEMENT_DRAGON_EMPERY_WALL" YieldChangeId="DragonEmpery_Wall_D_Food_2"/>
+	</Improvement_Adjacencies>
+	<!--<District_Adjacencies>
+		<Row DistrictType="DISTRICT_CAMPUS"		YieldChangeId="Campus_DragonEmpery_Wall_1"/>
+		<Row DistrictType="DISTRICT_CAMPUS"		YieldChangeId="Campus_DragonEmpery_Wall_2"/>
+		<Row DistrictType="DISTRICT_HOLY_SITE"	YieldChangeId="HolySite_DragonEmpery_Wall_1"/>
+		<Row DistrictType="DISTRICT_HOLY_SITE"	YieldChangeId="HolySite_DragonEmpery_Wall_2"/>
+		<Row DistrictType="DISTRICT_THEATER"	YieldChangeId="Theater_DragonEmpery_Wall_1"/>
+		<Row DistrictType="DISTRICT_THEATER"	YieldChangeId="Theater_DragonEmpery_Wall_2"/>
+	</District_Adjacencies>-->
+	<Adjacency_YieldChanges>
+		<Row ID="DragonEmpery_Wall_Gold1"			AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="2" TilesRequired="1" YieldType="YIELD_GOLD"		Description="Placeholder"					ObsoleteTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Gold2"			AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="3" TilesRequired="1" YieldType="YIELD_GOLD"		Description="Placeholder"					PrereqTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Culture1"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="1" YieldType="YIELD_CULTURE"		Description="Placeholder"					ObsoleteTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Culture2"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="2" TilesRequired="1" YieldType="YIELD_CULTURE"		Description="Placeholder"					PrereqTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Faith1"			AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="1" YieldType="YIELD_FAITH"		Description="Placeholder"					ObsoleteTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Faith2"			AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="2" TilesRequired="1" YieldType="YIELD_FAITH"		Description="Placeholder"					PrereqTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Food1"			AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="1" YieldType="YIELD_FOOD"		Description="Placeholder"					ObsoleteTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Food2"			AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="2" TilesRequired="1" YieldType="YIELD_FOOD"		Description="Placeholder"					PrereqTech="TECH_CASTLES" />
+		<Row ID="DragonEmpery_Wall_Production1"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="1" YieldType="YIELD_PRODUCTION"	Description="Placeholder"					ObsoleteTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_Production2"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="2" TilesRequired="1" YieldType="YIELD_PRODUCTION"	Description="Placeholder"					PrereqTech="TECH_CASTLES"/>
+		<Row ID="DragonEmpery_Wall_R_Food"			AdjacentResourceClass="RESOURCECLASS_BONUS"				YieldChange="1" TilesRequired="1" YieldType="YIELD_FOOD"		Description="Placeholder"/>
+		<Row ID="DragonEmpery_Wall_R_Gold"			AdjacentResourceClass="RESOURCECLASS_LUXURY"			YieldChange="2" TilesRequired="1" YieldType="YIELD_GOLD"		Description="Placeholder"/>
+		<Row ID="DragonEmpery_Wall_R_Production"	AdjacentResourceClass="RESOURCECLASS_STRATEGIC"			YieldChange="1" TilesRequired="1" YieldType="YIELD_PRODUCTION"	Description="Placeholder"/>
+		<Row ID="DragonEmpery_Wall_D_Production1"	OtherDistrictAdjacent="true"							YieldChange="1" TilesRequired="1" YieldType="YIELD_PRODUCTION"	Description="Placeholder"					ObsoleteTech="TECH_INDUSTRIALIZATION"/>
+		<Row ID="DragonEmpery_Wall_D_Production2"	OtherDistrictAdjacent="true"							YieldChange="2" TilesRequired="1" YieldType="YIELD_PRODUCTION"	Description="Placeholder"					PrereqTech="TECH_INDUSTRIALIZATION"/>
+		<Row ID="DragonEmpery_Wall_D_Food_1"		OtherDistrictAdjacent="true"							YieldChange="1" TilesRequired="2" YieldType="YIELD_FOOD"		Description="Placeholder"					ObsoleteTech="TECH_SANITATION"/>
+		<Row ID="DragonEmpery_Wall_D_Food_2"		OtherDistrictAdjacent="true"							YieldChange="1" TilesRequired="1" YieldType="YIELD_FOOD"		Description="Placeholder"					PrereqTech="TECH_SANITATION"/>
+		<Row ID="DragonEmpery_Wall_D_Science1"		AdjacentDistrict="DISTRICT_CAMPUS"						YieldChange="1" TilesRequired="1" YieldType="YIELD_SCIENCE"		Description="Placeholder"/>
+		<Row ID="DragonEmpery_Wall_D_Science2"		AdjacentDistrict="DISTRICT_CAMPUS"						YieldChange="2" TilesRequired="1" YieldType="YIELD_SCIENCE"		Description="Placeholder"					PrereqCivic="CIVIC_RECORDED_HISTORY"/>
+		<Row ID="DragonEmpery_Wall_D_Faith1"		AdjacentDistrict="DISTRICT_HOLY_SITE"					YieldChange="1" TilesRequired="1" YieldType="YIELD_FAITH"		Description="Placeholder"/>
+		<Row ID="DragonEmpery_Wall_D_Faith2"		AdjacentDistrict="DISTRICT_HOLY_SITE"					YieldChange="2" TilesRequired="1" YieldType="YIELD_FAITH"		Description="Placeholder"					PrereqCivic="CIVIC_THEOLOGY"/>
+		<Row ID="Campus_DragonEmpery_Wall_1"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="2" YieldType="YIELD_SCIENCE"		Description="LOC_DragonEmpery_Wall_Science" ObsoleteTech="TECH_EDUCATION"/>
+		<Row ID="Campus_DragonEmpery_Wall_2"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="1" YieldType="YIELD_SCIENCE"		Description="LOC_DragonEmpery_Wall_Science" PrereqTech="TECH_EDUCATION"/>
+		<Row ID="HolySite_DragonEmpery_Wall_1"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="2" YieldType="YIELD_FAITH"		Description="LOC_DragonEmpery_Wall_Faith"	ObsoleteTech="TECH_CASTLES"/>
+		<Row ID="HolySite_DragonEmpery_Wall_2"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="1" YieldType="YIELD_FAITH"		Description="LOC_DragonEmpery_Wall_Faith"	PrereqTech="TECH_CASTLES"/>
+		<Row ID="Theater_DragonEmpery_Wall_1"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="2" YieldType="YIELD_CULTURE"		Description="LOC_DragonEmpery_Wall_Culture" ObsoleteCivic="CIVIC_MEDIEVAL_FAIRES"/>
+		<Row ID="Theater_DragonEmpery_Wall_2"		AdjacentImprovement="IMPROVEMENT_DRAGON_EMPERY_WALL"	YieldChange="1" TilesRequired="1" YieldType="YIELD_CULTURE"		Description="LOC_DragonEmpery_Wall_Culture" PrereqCivic="CIVIC_MEDIEVAL_FAIRES"/>
+	</Adjacency_YieldChanges>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_IMPROVEMENT" MomentDataType="MOMENT_DATA_IMPROVEMENT" GameDataType="IMPROVEMENT_DRAGON_EMPERY_WALL" Texture="Moment_Infrastructure_China.dds"/>
+	</MomentIllustrations>
+</GameData>

@@ -263,7 +263,7 @@
 			<Text>开封</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_26" Language="zh_Hans_CN">
-			<Text>大同</Text>
+			<Text>青岛</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_27" Language="zh_Hans_CN">
 			<Text>扬州</Text>
@@ -336,7 +336,7 @@
 			<Text>海圻</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_10" Language="zh_Hans_CN">
-			<Text>镇海</Text>
+			<Text>寰昌</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_11" Language="zh_Hans_CN">
 			<Text>哈尔滨</Text>
@@ -361,9 +361,6 @@
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_18" Language="zh_Hans_CN">
 			<Text>济安</Text>
-		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_19" Language="zh_Hans_CN">
-			<Text>寰昌</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

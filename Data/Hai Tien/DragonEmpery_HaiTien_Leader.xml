@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_HaiTien_Leader -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/30 16:20:34 -->
+<GameData>
+	<Types>
+		<Row Type="LEADER_HAI_TIEN"								Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_HAI_TIEN"					Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<Row LeaderType="LEADER_HAI_TIEN" Name="LOC_LEADER_HAI_TIEN_NAME" InheritFrom="LEADER_DEFAULT" Sex="Female" SceneLayers="4"/>
+	</Leaders>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_HAI_TIEN" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_HAI_TIEN_QUOTE"/>
+	</LeaderQuotes>
+	<HistoricalAgendas>
+
+	</HistoricalAgendas>
+	<Agendas>
+
+	</Agendas>
+	<Traits>
+		<Row TraitType="TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS"	Name="LOC_TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS_NAME"	Description="LOC_TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_HAI_TIEN"						Name="LOC_UNIT_HAI_TIEN_NAME"								Description="LOC_UNIT_HAI_TIEN_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<Row LeaderType="LEADER_HAI_TIEN" TraitType="TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS"/>
+		<Row LeaderType="LEADER_HAI_TIEN" TraitType="TRAIT_LEADER_UNIT_HAI_TIEN"/>
+	</LeaderTraits>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_HAI_TIEN" ForegroundImage="IMG_LEADER_HAI_TIEN_LOADING_FOREGROUND" BackgroundImage="IMG_DRAGON_EMPERY_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_HAI_TIEN" BackgroundImage="IMG_DRAGON_EMPERY_DIPLOMACY_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS</TraitType>
+			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS</TraitType>
+			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--巨作buff-->
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+			<SubjectStackLimit>1</SubjectStackLimit>
+		</Row>
+		<!--战斗力property-->
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_ATTACH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_PROPERTY</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_PROPERTY</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--巨作buff-->
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_BUFF</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_HAI_TIEN_COMBAT_UNITS_BUFF</Value>
+		</Row>
+		<!--战斗力property-->
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_ATTACH</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>HAI_TIEN_COMBAT_PROPERTY</Value>
+		</Row>
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_PROPERTY</ModifierId>
+			<Name>Key</Name>
+			<Value>HAI_TIEN_UNITS_COMBAT</Value>
+		</Row>
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_PROPERTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

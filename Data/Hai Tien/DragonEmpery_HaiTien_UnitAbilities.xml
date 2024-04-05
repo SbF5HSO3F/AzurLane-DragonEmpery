@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_HaiTien_UnitAbilities -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/12/31 20:01:45 -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_HAI_TIEN_COMBAT_UNITS_BUFF"		Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_HAI_TIEN_COMBAT_UNITS_BUFF"		Tag="CLASS_ALL_COMBAT_UNITS"/>
+		<Row Type="ABILITY_HAI_TIEN_COMBAT_UNITS_BUFF"		Tag="CLASS_NAVAL_CARRIER"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_HAI_TIEN_COMBAT_UNITS_BUFF"		Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="HAI_TIEN_COMBAT_UNITS_BUFF"		Context="Preview" Text="LOC_PREVIEW_HAI_TIEN_COMBAT_UNITS_BUFF_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_HAI_TIEN_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>HAI_TIEN_COMBAT_UNITS_BUFF</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>HAI_TIEN_COMBAT_UNITS_BUFF</ModifierId>
+			<Name>Key</Name>
+			<Value>HAI_TIEN_UNITS_COMBAT</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

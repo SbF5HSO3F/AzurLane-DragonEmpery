@@ -9,6 +9,7 @@ include('DragonEmpery_Core.lua')
 
 --ExposedMembers
 ExposedMembers.DragonEmpery = ExposedMembers.DragonEmpery or {}
+ExposedMembers.ChenHai = ExposedMembers.ChenHai or {}
 
 --||===================glabol variables===================||--
 

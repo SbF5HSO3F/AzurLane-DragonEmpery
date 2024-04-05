@@ -23,7 +23,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -40,7 +40,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -57,7 +57,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -74,7 +74,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -91,7 +91,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFEAT"/>
+										<m_EntryName text="HAI_TIEN_DEFEAT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -108,7 +108,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_UNHAPPY"/>
+										<m_EntryName text="HAI_TIEN_UNHAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -125,7 +125,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_FIRST_MEET"/>
+										<m_EntryName text="HAI_TIEN_FIRST_MEET"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -142,7 +142,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_FRIEND"/>
+										<m_EntryName text="HAI_TIEN_FRIEND"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -159,7 +159,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_FRIEND"/>
+										<m_EntryName text="HAI_TIEN_FRIEND"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -176,7 +176,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_FRIEND"/>
+										<m_EntryName text="HAI_TIEN_FRIEND"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -193,7 +193,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_HAPPY"/>
+										<m_EntryName text="HAI_TIEN_HAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -210,7 +210,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_FRIEND"/>
+										<m_EntryName text="HAI_TIEN_FRIEND"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -227,7 +227,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -244,7 +244,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -261,7 +261,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -278,7 +278,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_FRIEND"/>
+										<m_EntryName text="HAI_TIEN_FRIEND"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -295,7 +295,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_HAPPY"/>
+										<m_EntryName text="HAI_TIEN_HAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -312,7 +312,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_UNHAPPY"/>
+										<m_EntryName text="HAI_TIEN_UNHAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -329,7 +329,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_HAPPY"/>
+										<m_EntryName text="HAI_TIEN_HAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -346,7 +346,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_FRIEND"/>
+										<m_EntryName text="HAI_TIEN_FRIEND"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -363,7 +363,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_UNHAPPY"/>
+										<m_EntryName text="HAI_TIEN_UNHAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -380,7 +380,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_UNHAPPY"/>
+										<m_EntryName text="HAI_TIEN_UNHAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -397,7 +397,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_UNHAPPY"/>
+										<m_EntryName text="HAI_TIEN_UNHAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -414,7 +414,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_UNHAPPY"/>
+										<m_EntryName text="HAI_TIEN_UNHAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -431,7 +431,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -448,7 +448,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_UNHAPPY"/>
+										<m_EntryName text="HAI_TIEN_UNHAPPY"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -465,7 +465,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="HEI_TIEN_DEFAULT"/>
+										<m_EntryName text="HAI_TIEN_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="leaderfallbacks"/>
@@ -480,10 +480,9 @@
 						</Element>
 					</Element>
 				</m_ChildCollections>
-				<m_Name text="LEADER_HEI_TIEN"/>
+				<m_Name text="LEADER_HAI_TIEN"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
 		</Element>
 	</m_RootCollections>
 </AssetObjects..ArtDefSet>
-

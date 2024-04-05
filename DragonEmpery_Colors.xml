@@ -6,31 +6,57 @@
 	<Colors>
 		<!--海天-->
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY</Type>
+			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY</Type>
 			<Color>113,176,230,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY</Type>
+			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY</Type>
 			<Color>246,250,255,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY_ALT1</Type>
+			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY_ALT1</Type>
 			<Color>225,225,231,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY_ALT1</Type>
+			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY_ALT1</Type>
 			<Color>241,211,164,255</Color>
+		</Row>
+		<!--镇海-->
+		<Row>
+			<Type>CHEN_HAI_DARK_BULE</Type>
+			<Color>40,60,130,255</Color>
+		</Row>
+		<Row>
+			<Type>CHEN_HAI_DARK_GOLDEN</Type>
+			<Color>190,145,80,255</Color>
+		</Row>
+		<Row>
+			<Type>CHEN_HAI_WHITE</Type>
+			<Color>255,255,255,255</Color>
+		</Row>
+		<Row>
+			<Type>CHEN_HAI_DARK_PINK</Type>
+			<Color>195,115,140,255</Color>
 		</Row>
 	</Colors>
 	<PlayerColors>
 		<!--海天-->
 		<Row>
-			<Type>LEADER_HEI_TIEN</Type>
+			<Type>LEADER_HAI_TIEN</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY</PrimaryColor>
-			<SecondaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY</SecondaryColor>
-			<Alt1PrimaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_PRIMARY_ALT1</Alt1PrimaryColor>
-			<Alt1SecondaryColor>COLOR_PLAYER_LEADER_HEI_TIEN_SECONDARY_ALT1</Alt1SecondaryColor>
+			<PrimaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY</PrimaryColor>
+			<SecondaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY</SecondaryColor>
+			<Alt1PrimaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY_ALT1</Alt1PrimaryColor>
+			<Alt1SecondaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY_ALT1</Alt1SecondaryColor>
+		</Row>
+		<!--镇海-->
+		<Row>
+			<Type>LEADER_CHEN_HAI</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>CHEN_HAI_DARK_BULE</PrimaryColor>
+			<SecondaryColor>CHEN_HAI_DARK_GOLDEN</SecondaryColor>
+			<Alt1PrimaryColor>CHEN_HAI_WHITE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>CHEN_HAI_DARK_PINK</Alt1SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>

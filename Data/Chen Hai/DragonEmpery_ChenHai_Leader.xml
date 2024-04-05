@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_ChenHai_Leader -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/4/3 23:00:57 -->
+<GameData>
+	<Types>
+		<Row Type="LEADER_CHEN_HAI"					Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_UNFETTERED_FREEDOM"	Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<Row LeaderType="LEADER_CHEN_HAI" Name="LOC_LEADER_CHEN_HAI_NAME" InheritFrom="LEADER_DEFAULT" Sex="Female" SceneLayers="4"/>
+	</Leaders>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_CHEN_HAI" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_CHEN_HAI_QUOTE"/>
+	</LeaderQuotes>
+	<HistoricalAgendas>
+
+	</HistoricalAgendas>
+	<Agendas>
+
+	</Agendas>
+	<Traits>
+		<Row TraitType="TRAIT_LEADER_UNFETTERED_FREEDOM"	Name="LOC_TRAIT_LEADER_UNFETTERED_FREEDOM_NAME"	Description="LOC_TRAIT_LEADER_UNFETTERED_FREEDOM_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<Row LeaderType="LEADER_CHEN_HAI" TraitType="TRAIT_LEADER_UNFETTERED_FREEDOM"/>
+	</LeaderTraits>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_CHEN_HAI" ForegroundImage="IMG_LEADER_CHEN_HAI_LOADING_FOREGROUND" BackgroundImage="IMG_DRAGON_EMPERY_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_CHEN_HAI" BackgroundImage="IMG_DRAGON_EMPERY_DIPLOMACY_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_UNFETTERED_FREEDOM</TraitType>
+			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_UNFETTERED_FREEDOM</TraitType>
+			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+
+	</Modifiers>
+	<ModifierArguments>
+
+	</ModifierArguments>
+</GameData>

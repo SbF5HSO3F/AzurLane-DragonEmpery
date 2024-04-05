@@ -26,7 +26,8 @@
 		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" TraitType="TRAIT_CIVILIZATION_BUILDING_APRICOT_ACADEMY"/>
 	</CivilizationTraits>
 	<CivilizationLeaders>
-		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_HEI_TIEN" CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_HAI_TIEN" CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_CHEN_HAI" CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_26"/>
 	</CivilizationLeaders>
 	<CityNames>
 		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CityName="LOC_CITY_NAME_DRAGON_EMPERY_1"/>
@@ -85,6 +86,10 @@
 		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_12" Female="1"/>
 		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_13" Female="1"/>
 		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_14" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_15" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_16" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_17" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" CitizenName="LOC_CITIZEN_NAME_DRAGON_EMPERY_18" Female="1"/>
 	</CivilizationCitizenNames>
 	<TraitModifiers>
 		<!--允许黑暗政策-->

@@ -11,6 +11,7 @@ include('DragonEmpery_Core.lua')
 ----ExposedMembers.GameEvents = GameEvents
 --ExposedMembers
 ExposedMembers.DragonEmpery = ExposedMembers.DragonEmpery or {}
+ExposedMembers.ChenHai = ExposedMembers.ChenHai or {}
 
 --||===================glabol variables===================||--
 
@@ -378,13 +379,13 @@ function AcademyOnGreatPersonActived(unitOwner, unitID, greatPersonClassID)
 end
 
 --Hei Tien
-function HeiTienOnGreatPersonActived(unitOwner, unitID, greatPersonClassID, greatPersonIndividualID)
+function HaiTienOnGreatPersonActived(unitOwner, unitID, greatPersonClassID, greatPersonIndividualID)
     --judge the great person
     if greatPersonClassID ~= greatWriter then return end
     --check the loacl player
     if unitOwner ~= Game.GetLocalPlayer() then return end
     --judge the player
-    if DragonEmperyLeaderTypeMatched(unitOwner, 'LEADER_HEI_TIEN') then
+    if DragonEmperyLeaderTypeMatched(unitOwner, 'LEADER_HAI_TIEN') then
         --set the param
         local param = {}
         --get the unit
@@ -401,13 +402,28 @@ function HeiTienOnGreatPersonActived(unitOwner, unitID, greatPersonClassID, grea
         --get the city
         local pCity = Cities.GetPlotPurchaseCity(Map.GetPlot(param.x, param.y))
         param.cityID = pCity and pCity:GetID()
-        param.OnStart = 'HeiTienGreatWriterActivated'
+        param.OnStart = 'HaiTienGreatWriterActivated'
         --request operations
         UI.RequestPlayerOperation(Game.GetLocalPlayer(), PlayerOperations.EXECUTE_SCRIPT, param)
     end
 end
 
 --||=================GameEvents functions=================||--
+
+--||====================ExposedMembers====================||--
+
+--get the player can give token
+function ChenHaiCanGiveTokenTo(MajorID, MinorID)
+    --set the return value
+    local canGiveToken = false
+    --get the Major and the Minor
+    local pMajor, pMinor = Players[MajorID], Players[MinorID]
+    --if major and minor is not nil, the minor is minor
+    if pMajor and pMinor and pMinor:IsMinor() then
+        canGiveToken = pMajor:GetInfluence():CanGiveTokensToPlayer(MinorID)
+    end
+    return canGiveToken
+end
 
 --||======================initialize======================||--
 
@@ -418,7 +434,7 @@ function Initialize()
     Events.ResearchCompleted.Add(ResetPanelTech)
     Events.CivicCompleted.Add(ResetPanelCivic)
     Events.UnitGreatPersonActivated.Add(AcademyOnGreatPersonActived)
-    Events.UnitGreatPersonActivated.Add(HeiTienOnGreatPersonActived)
+    Events.UnitGreatPersonActivated.Add(HaiTienOnGreatPersonActived)
     Events.LocalPlayerChanged.Add(ResetPanelAll)
     ---------------ExposedMembers---------------
     ExposedMembers.DragonEmpery.GetAgeType = DragonEmperyGetPlayerAgeType
@@ -426,6 +442,8 @@ function Initialize()
     ExposedMembers.DragonEmpery.ResetTech = ResetPanelTech
     ExposedMembers.DragonEmpery.ResetCivic = ResetPanelCivic
     ExposedMembers.DragonEmpery.ResetEra = ResetEraAll
+
+    ExposedMembers.ChenHai.CanGiveToken = ChenHaiCanGiveTokenTo
     --------------------------------------------
     print('DragonEmpery_UI Initial success!')
 end

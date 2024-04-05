@@ -62,44 +62,8 @@
 			<m_ObjectName text="ICON_CIVILIZATION_DRAGON_EMPERY_80"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_256"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_32"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_32"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_45"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_45"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_48"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_48"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_50"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_50"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_55"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_55"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_64"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_64"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_LEADER_HEI_TIEN_80"/>
-			<m_ObjectName text="ICON_LEADER_HEI_TIEN_80"/>
-		</Element>
-		<Element>
 			<m_EntryID text="IMG_DRAGON_EMPERY_BACKGROUND"/>
 			<m_ObjectName text="IMG_DRAGON_EMPERY_BACKGROUND"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMG_LEADER_HEI_TIEN_FOREGROUND"/>
-			<m_ObjectName text="IMG_LEADER_HEI_TIEN_FOREGROUND"/>
 		</Element>
 		<Element>
 			<m_EntryID text="IMG_DRAGON_EMPERY_DIPLOMACY_BACKGROUND"/>
@@ -110,12 +74,60 @@
 			<m_ObjectName text="IMG_DRAGON_EMPERY_LOADING_BACKGROUND"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMG_LEADER_HEI_TIEN_LOADING_FOREGROUND"/>
-			<m_ObjectName text="IMG_LEADER_HEI_TIEN_LOADING_FOREGROUND"/>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS"/>
 		</Element>
 		<Element>
-			<m_EntryID text="Moment_HeiTien"/>
-			<m_ObjectName text="Moment_HeiTien"/>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_256"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_32"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_45"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_48"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_50"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_55"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_64"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DRAGON_EMPERY_LEADERS_80"/>
+			<m_ObjectName text="DRAGON_EMPERY_LEADERS_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_HAI_TIEN_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_HAI_TIEN_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_HAI_TIEN_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_HAI_TIEN_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_HaiTien"/>
+			<m_ObjectName text="Moment_HaiTien"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_CHEN_HAI_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_CHEN_HAI_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_CHEN_HAI_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_CHEN_HAI_LOADING_FOREGROUND"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

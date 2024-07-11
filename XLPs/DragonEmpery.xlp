@@ -74,10 +74,6 @@
 			<m_ObjectName text="IMG_DRAGON_EMPERY_LOADING_BACKGROUND"/>
 		</Element>
 		<Element>
-			<m_EntryID text="DRAGON_EMPERY_LEADERS"/>
-			<m_ObjectName text="DRAGON_EMPERY_LEADERS"/>
-		</Element>
-		<Element>
 			<m_EntryID text="DRAGON_EMPERY_LEADERS_256"/>
 			<m_ObjectName text="DRAGON_EMPERY_LEADERS_256"/>
 		</Element>
@@ -128,6 +124,22 @@
 		<Element>
 			<m_EntryID text="IMG_LEADER_CHEN_HAI_LOADING_FOREGROUND"/>
 			<m_ObjectName text="IMG_LEADER_CHEN_HAI_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_AN_SHAN_DD101_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_AN_SHAN_DD101_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_AnSteel"/>
+			<m_ObjectName text="Moment_AnSteel"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_AN_SHAN_DD101_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_AN_SHAN_DD101_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="City_AnSteel_Production"/>
+			<m_ObjectName text="City_AnSteel_Production"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

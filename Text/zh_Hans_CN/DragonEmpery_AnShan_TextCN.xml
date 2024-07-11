@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_AnShan_TextCN -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/6/25 0:09:09 -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_AN_SHAN_DD101_NAME" Language="zh_Hans_CN">
+			<Text>鞍山</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_AN_SHAN_DD101" Language="zh_Hans_CN">
+			<Text></Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_QUOTE" Language="zh_Hans_CN">
+			<Text></Text>
+		</Replace>
+		<!--The beautiful part about poems is not only their rhymes and coupling, but also the many thoughts hidden between the lines...-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text></Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text></Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>1954年10月12日，苏联根据《关于海军交货和关于在建造军舰方面给予中国以技术援助的协定》向我国出售的两艘驱逐舰、两艘扫雷舰和两艘小型潜艇驶抵青岛。10月26日，中方在青岛大港三号码头举行了舰艇交接签字仪式和授旗命名典礼。根据中央军委命令，驱逐舰“列什切内依”号命名为海军“鞍山”舰，舷号为101（不久后改为301），首任舰长苏军、政委刘成章。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>1955年11月，鞍山舰协同抚顺舰参加辽东半岛抗登陆演习，承担蓝方登陆编队的警戒和火力支援任务，同时担任指挥舰并接受首长视察。1957年8月4日，参加在青岛胶州湾举行的纪念人民解放军成立三十周年海军检阅式，担任周恩来总理乘坐的检阅旗舰。1959年5月，南下参加南京军区组织的穿山半岛登陆演习，演练了对岸火力支援、打击“敌”海上船队等科目。1961年9月舷号改为201。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>1962年4月14日至22日间，鞍山舰与长春、太原等舰和扫雷舰两艘、猎潜艇一艘协同，保持两艘驱逐舰加一艘扫雷舰（猎潜艇）的编队形式，持续8天监视在青岛外海我国领海线外活动的美国海军驱逐舰“狄海文”号，并对其侵入我国领海的行为发出了严重警告。1963年9月29日至10月5日，又协同抚顺舰在山东半岛和辽东半岛外海监视在我国国庆期间抵近侦察的美海军“布鲁”号驱逐舰。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>1973年11月至1974年10月，鞍山舰进入大连造船厂结合小修进行导弹化改装，1974年11月完成两发导弹打靶试验，至此07型驱逐舰改装“上游一号”导弹工程全面完成。同年舷号改为101。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN">
+			<Text>1977年5月9日，鞍山舰与抚顺舰南下参加“7713工程”（打捞日本沉船阿波丸）掩护任务，23日抵达福建省平潭县牛山岛附近作业海域。至7月22日回到青岛，历时75天，其中连续航行和锚泊56天，创下了07型驱逐舰的记录。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_6" Language="zh_Hans_CN">
+			<Text>1992年2月21日，鞍山舰退役，4月24日在青岛古镇口海军码头举行退役降旗仪式。当年10月，接替长春舰在青岛海军博物馆海上展舰区展出，直至今日。</Text>
+		</Replace>
+		<!--领袖议程-->
+
+		<!--领袖能力-->
+		<Replace Tag="LOC_LEADER_AN_SHAN_DD101_ABILITY_NAME" Language="zh_Hans_CN">
+			<Text>鞍山能力</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_AN_SHAN_DD101_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>鞍山能力介绍。</Text>
+		</Replace>
+		<!--领袖区域-->
+		<Replace Tag="LOC_DSITRICTS_ANSTEEL_NAME" Language="zh_Hans_CN">
+			<Text>鞍山钢铁</Text>
+		</Replace>
+		<Replace Tag="LOC_DSITRICTS_ANSTEEL_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+100%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。</Text>
+		</Replace>
+		<Replace Tag="LOC_DSITRICTS_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hans_CN">
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+100%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝获得 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_ANSTEEL_DISTRICTS" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的每个区域</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_STRATEGIC" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的战略资源</Text>
+		</Replace>
+		<!--领袖项目-->
+
+		<!--领袖单位-->
+
+		<!--特殊晋升-->
+
+		<!--特殊能力-->
+
+		<!--特殊命令-->
+
+		<!--特殊晋升-->
+
+		<!--Lua浮动文字显示-->
+
+		<!--外交对话-->
+		<![CDATA[<!--同意宣布友谊-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>嗯嗯，让我们一起努力吧！</Text>
+		</Replace>
+		<!--拒绝宣布友谊-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>我要学习了，能不要打扰我吗？</Text>
+		</Replace>
+		<!--请求宣布友谊-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>通往顶点的道路往往艰辛而又漫长，再坚强的人也难免孤独。所以，我想与你结为朋友呢……</Text>
+		</Replace>
+		<!--宣布友谊被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>好，让我们共同学习，一起向顶点前进吧！</Text>
+		</Replace>
+		<!--宣布友谊被拒绝-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>看样子刚才有许多值得检讨的地方呢……</Text>
+		</Replace>
+		<!--被宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>战争？嗯，Z23，到了检验努力成果的时候了！</Text>
+		</Replace>
+		<!--宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>你为人处世的态度实在是太过敷衍，人生绝不能这么荒废。有必要好好督促你了！</Text>
+		</Replace>
+		<!--接受代表团-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>您的代表团已经安全抵达。放心，招待他们的宴席上没有过多的辣椒。</Text>
+		</Replace>
+		<!--拒绝代表团-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>很遗憾，我今天还有好多事情要做。</Text>
+		</Replace>
+		<!--派出代表团-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>请接受我的代表团！他们带着上好的马铃薯和香肠，还有我的好意。</Text>
+		</Replace>
+		<!--被谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>在通往顶峰的道路上，这种诋毁无法避免。</Text>
+		</Replace>
+		<!--谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>世界上怎么会有对自己如此不认真的人？（谴责你）</Text>
+		</Replace>
+		<!--初次见面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>我是1936A型驱逐舰的首舰，Z23，从我开始的妹妹们都只有代号，不像姐姐们有继承前人的名字。虽然有些不近人情不过确实比较方便，所以请不要客气直接叫我Z23就好。</Text>
+		</Replace>
+		<!--初次见面，邀请参观附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>希望造访我们附近的城市么？我会带你欣赏属于铁血的独特文化，同时也会带你品尝各种制法的马铃薯。</Text>
+		</Replace>
+		<!--初次见面，感谢玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>谢谢，这会促进我们之间的交流。</Text>
+		</Replace>
+		<!--初次见面，请求交换城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>我很想了解你的国家，我也会为你讲述我的国家。让我们先从首都开始吧！</Text>
+		</Replace>
+		<!--欢迎语？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>今天还有好多事情要做呢。</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>您努力的背影和取得的成就让我憧憬。我希望能跟你一起进步。</Text>
+		</Replace>
+		<!--敌视-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>比起其他的事，你不如多看看书。</Text>
+		</Replace>
+		<!--请求结盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>让我们结盟，共同登上高峰吧！</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>和平是一个好选择。让我们休战吧！</Text>
+		</Replace>
+		<!--拒绝和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>不，这场考验还没有结束！</Text>
+		</Replace>
+		<!--请求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>这场战争已经背离了它的初衷。我们握手言和吧。</Text>
+		</Replace>
+		<!--接受开放边界请求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>我很高兴能为你开放边境。铁血公国不应是一个封闭的国家。</Text>
+		</Replace>
+		<!--拒绝开放边界请求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>对不起，今天的铁血公国有要事处理。</Text>
+		</Replace>
+		<!--请求开放边界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>愿意为我们开放你的边境吗？</Text>
+		</Replace>
+		<!--要求移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>你的军队在铁血公国周边鬼鬼祟祟的想干什么？我可不是那种随随便便就可以蒙混过去的女孩子哦，请尽快撤军。</Text>
+		</Replace>
+		<!--拒绝移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>很抱歉让你产生了担忧，但你无法命令我。</Text>
+		</Replace>
+		<!--同意移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>我会尽快地移走你领土周边的部队，不必担心。</Text>
+		</Replace>
+		<!--经受不住时间考验-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text>唉，看来准备还不够充分……你赢了。</Text>
+		</Replace>
+		<!--拒绝交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text></Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
+			<Text></Text>
+		</Replace>]]>
+	</LocalizedText>
+</GameData>

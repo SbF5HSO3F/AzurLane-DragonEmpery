@@ -307,12 +307,18 @@
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_40" Language="en_US">
 			<Text>Ruijin</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_41" Language="en_US">
+			<Text>An Shan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_42" Language="en_US">
+			<Text>Haishenwai</Text>
+		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_1" Language="en_US">
 			<Text>Yat Sen</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_2" Language="en_US">
-			<Text>An Shan</Text>
+			<Text>Chi An</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_3" Language="en_US">
 			<Text>Chang Chun</Text>
@@ -336,7 +342,7 @@
 			<Text>Hai Chi</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_10" Language="en_US">
-			<Text>Chen Hai</Text>
+			<Text>Huan Ch'ang</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_11" Language="en_US">
 			<Text>Harbin</Text>
@@ -358,12 +364,6 @@
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_17" Language="en_US">
 			<Text>Fei Yuen</Text>
-		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_18" Language="en_US">
-			<Text>Chi An</Text>
-		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_19" Language="en_US">
-			<Text>Huan Ch'ang</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

@@ -307,12 +307,18 @@
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_40" Language="zh_Hans_CN">
 			<Text>瑞金</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_41" Language="zh_Hans_CN">
+			<Text>鞍山</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_42" Language="zh_Hans_CN">
+			<Text>海参崴</Text>
+		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_1" Language="zh_Hans_CN">
 			<Text>逸仙</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_2" Language="zh_Hans_CN">
-			<Text>鞍山</Text>
+			<Text>济安</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_3" Language="zh_Hans_CN">
 			<Text>长春</Text>
@@ -358,9 +364,6 @@
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_17" Language="zh_Hans_CN">
 			<Text>飞云</Text>
-		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_18" Language="zh_Hans_CN">
-			<Text>济安</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

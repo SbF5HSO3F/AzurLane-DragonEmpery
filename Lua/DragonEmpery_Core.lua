@@ -21,11 +21,15 @@ function DragonEmperyNumRound(num)
     return math.floor((num + 0.05) * 10) / 10
 end
 
---Game Speed Modifier (GamePlay, UI)
-function DragonEmperySpeedModifier(num)
+--Game Speed Modifier. If reset is true, eliminate the impact of game speed; otherwise, apply the impact of game speed. (GamePlay, UI)
+function DragonEmperySpeedModifier(num, reset)
     local gameSpeed = GameInfo.GameSpeeds[GameConfiguration.GetGameSpeedType()]
     if gameSpeed then
-        num = DragonEmperyNumRound(num * gameSpeed.CostMultiplier / 100)
+        if reset then
+            num = DragonEmperyNumRound(num * 100 / gameSpeed.CostMultiplier)
+        else
+            num = DragonEmperyNumRound(num * gameSpeed.CostMultiplier / 100)
+        end
     end
     return num
 end
@@ -156,6 +160,13 @@ function DragonEmperyRandomCivicBoost(pPlayer, iSource, num)
             break
         end
     end
+end
+
+--||=========================UI=========================||--
+
+--mouse enter the button
+function DragonEmperyEnter()
+    UI.PlaySound("Main_Menu_Mouse_Over")
 end
 
 --||========================Test========================||--

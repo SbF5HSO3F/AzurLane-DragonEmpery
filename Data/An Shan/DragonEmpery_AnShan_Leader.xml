@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_AnShan_Leader -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/6/24 23:42:39 -->
+<GameData>
+	<Types>
+		<Row Type="LEADER_AN_SHAN_DD101" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_AN_SHAN_DD101_ABILITY" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_DSITRICTS_ANSTEEL" Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<Row LeaderType="LEADER_AN_SHAN_DD101" Name="LOC_LEADER_AN_SHAN_DD101_NAME" InheritFrom="LEADER_DEFAULT" Sex="Female" SceneLayers="4"/>
+	</Leaders>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_AN_SHAN_DD101" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_QUOTE"/>
+	</LeaderQuotes>
+	<Traits>
+		<Row TraitType="LEADER_AN_SHAN_DD101_ABILITY"		Name="LOC_LEADER_AN_SHAN_DD101_ABILITY_NAME"	Description="LOC_LEADER_AN_SHAN_DD101_ABILITY_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_DSITRICTS_ANSTEEL"		Name="LOC_DSITRICTS_ANSTEEL_NAME"				Description="LOC_DSITRICTS_ANSTEEL_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<Row LeaderType="LEADER_AN_SHAN_DD101" TraitType="LEADER_AN_SHAN_DD101_ABILITY"/>
+		<Row LeaderType="LEADER_AN_SHAN_DD101" TraitType="TRAIT_LEADER_DSITRICTS_ANSTEEL"/>
+	</LeaderTraits>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_AN_SHAN_DD101" ForegroundImage="IMG_LEADER_AN_SHAN_DD101_LOADING_FOREGROUND" BackgroundImage="IMG_DRAGON_EMPERY_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_AN_SHAN_DD101" BackgroundImage="IMG_DRAGON_EMPERY_DIPLOMACY_BACKGROUND"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>LEADER_AN_SHAN_DD101_ABILITY</TraitType>
+			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>LEADER_AN_SHAN_DD101_ABILITY</TraitType>
+			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+	</TraitModifiers>
+</GameData>

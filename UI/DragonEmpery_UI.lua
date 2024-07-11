@@ -338,12 +338,25 @@ function DragonEmperyAttachPanel()
     local parent = ContextPtr:LookUpControl("/InGame/WorldTracker/PanelStack")
     if parent ~= nil then
         Controls.AncientCountryPanelGrid:ChangeParent(parent)
+
         Controls.AncientScienceButton:RegisterCallback(Mouse.eLClick, AncientScienceClicked)
+        Controls.AncientScienceButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
+
         Controls.AncientCultureButton:RegisterCallback(Mouse.eLClick, AncientCultureClicked)
+        Controls.AncientCultureButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
+
         Controls.AncientDrakButton:RegisterCallback(Mouse.eLClick, AncientEraClicked)
+        Controls.AncientDrakButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
+
         Controls.AncientGoldenButton:RegisterCallback(Mouse.eLClick, AncientEraClicked)
+        Controls.AncientGoldenButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
+
         Controls.AncientHeroicButton:RegisterCallback(Mouse.eLClick, AncientEraClicked)
+        Controls.AncientHeroicButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
+
         Controls.AncientAgeButton:RegisterCallback(Mouse.eLClick, AncientEraClicked)
+        Controls.AncientAgeButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
+
         parent:AddChildAtIndex(Controls.AncientCountryPanelGrid, 1)
         parent:CalculateSize()
         parent:ReprocessAnchoring()

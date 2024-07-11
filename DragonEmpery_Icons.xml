@@ -18,7 +18,7 @@
 		<Row Name="ATLAS_ICON_CIVILIZATION_DRAGON_EMPERY" IconSize="128" Filename="ICON_CIVILIZATION_DRAGON_EMPERY_128"/>
 		<Row Name="ATLAS_ICON_CIVILIZATION_DRAGON_EMPERY" IconSize="200" Filename="ICON_CIVILIZATION_DRAGON_EMPERY_200"/>
 		<Row Name="ATLAS_ICON_CIVILIZATION_DRAGON_EMPERY" IconSize="256" Filename="ICON_CIVILIZATION_DRAGON_EMPERY_256"/>
-		<!--海天-->
+		<!--领袖-->
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="32" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_32"/>
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="45" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_45"/>
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="48" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_48"/>
@@ -27,6 +27,8 @@
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="64" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_64"/>
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="80" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_80"/>
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="256" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_256"/>
+		<!--鞍山钢铁图标-->
+		<Row Name="ATLAS_ANSTEEL_PRODUCTION" IconSize="32" IconsPerRow="2"  Filename="City_AnSteel_Production"/>
 	</IconTextureAtlases>
 	<IconDefinitions>
 		<!--东煌-->
@@ -35,6 +37,8 @@
 		<Row Name="ICON_LEADER_HAI_TIEN"							Atlas="ATLAS_DRAGON_EMPERY_LEADERS"					Index="0"/>
 		<!--镇海-->
 		<Row Name="ICON_LEADER_CHEN_HAI"							Atlas="ATLAS_DRAGON_EMPERY_LEADERS"					Index="1"/>
+		<!--鞍山-->
+		<Row Name="ICON_LEADER_AN_SHAN_DD101"						Atlas="ATLAS_DRAGON_EMPERY_LEADERS"					Index="2"/>
 		<!--园林-->
 		<Row Name="ICON_DISTRICT_DRAGON_EMPERY_GARDEN"				Atlas="ICON_ATLAS_DISTRICTS"						Index="2"/>
 		<Row Name="ICON_DISTRICT_DRAGON_EMPERY_GARDEN_FOW"			Atlas="ICON_ATLAS_DISTRICTS_FOW"					Index="2"/>
@@ -52,5 +56,12 @@
 		<Row Name="ICON_ETHNICITY_MEDIT_UNIT_HAI_TIEN_PORTRAIT"		Atlas="ICON_ATLAS_MEDITERRANEAN_UNIT_PORTRAITS_2"	Index="0"/>
 		<Row Name="ICON_ETHNICITY_SOUTHAM_UNIT_HAI_TIEN_PORTRAIT"	Atlas="ICON_ATLAS_SOUTH_AMERICAN_UNIT_PORTRAITS_2"	Index="0"/>
 		<Row Name="ICON_ETHNICITY_AFRICAN_UNIT_HAI_TIEN_PORTRAIT"	Atlas="ICON_ATLAS_AFRICAN_UNIT_PORTRAITS_2"			Index="0"/>
+		<!--鞍山钢铁-->
+		<Row Name="ICON_DSITRICTS_ANSTEEL"							Atlas="ICON_ATLAS_DISTRICTS"						Index="9"/>
+		<Row Name="ICON_DSITRICTS_ANSTEEL_FOW"						Atlas="ICON_ATLAS_DISTRICTS_FOW"					Index="9"/>
+		<Row Name="DSITRICTS_ANSTEEL"								Atlas="ICON_ATLAS_FONT_ICON_BASELINE_4"				Index="185"/>
+		<!--铁转生产力-->
+		<Row Name="ICON_ANSTEEL_IRON"								Atlas="ATLAS_ANSTEEL_PRODUCTION"					Index="0"/>
+		<Row Name="ICON_ANSTEEL_ALUMINUM"							Atlas="ATLAS_ANSTEEL_PRODUCTION"					Index="1"/>
 	</IconDefinitions>
 </GameData>

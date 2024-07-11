@@ -37,6 +37,14 @@
 			<m_EntryID text="HAI_TIEN_UNUNTERSTAND"/>
 			<m_ObjectName text="HAI_TIEN_UNUNTERSTAND"/>
 		</Element>
+		<Element>
+			<m_EntryID text="ZHEN_HAI_DEFAULT"/>
+			<m_ObjectName text="ZHEN_HAI_DEFAULT"/>
+		</Element>
+		<Element>
+			<m_EntryID text="AN_SHAN_DD101_DEFAULT"/>
+			<m_ObjectName text="AN_SHAN_DD101_DEFAULT"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

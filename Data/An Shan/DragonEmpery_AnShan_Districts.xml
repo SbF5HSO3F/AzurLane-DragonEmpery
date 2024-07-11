@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_AnShan_Districts -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/6/25 0:56:29 -->
+<GameData>
+	<Types>
+		<Row Type="DSITRICTS_ANSTEEL" Kind="KIND_DISTRICT"/>
+	</Types>
+	<DistrictReplaces>
+		<Row CivUniqueDistrictType="DSITRICTS_ANSTEEL" ReplacesDistrictType="DISTRICT_INDUSTRIAL_ZONE"/>
+	</DistrictReplaces>
+	<Districts>
+		<Row DistrictType="DSITRICTS_ANSTEEL"
+			 Name="LOC_DSITRICTS_ANSTEEL_NAME"
+			 Description="LOC_DSITRICTS_ANSTEEL_DESCRIPTION"
+			 PrereqTech="TECH_IRON_WORKING"
+			 PlunderType="PLUNDER_SCIENCE"
+			 PlunderAmount="25"
+			 AdvisorType="ADVISOR_GENERIC"
+			 Cost="27"
+			 CostProgressionModel="COST_PROGRESSION_NUM_UNDER_AVG_PLUS_TECH"
+			 CostProgressionParam1="40"
+			 Maintenance="1"
+			 RequiresPlacement="true"
+			 RequiresPopulation="false"
+			 Aqueduct="false"
+			 NoAdjacentCity="false"
+			 InternalOnly="false"
+			 ZOC="false"
+			 CaptureRemovesBuildings="false"
+			 CaptureRemovesCityDefenses="false"
+			 MilitaryDomain="NO_DOMAIN"
+			 CityStrengthModifier="2"
+			 TraitType="TRAIT_LEADER_DSITRICTS_ANSTEEL"/>
+	</Districts>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DSITRICTS_ANSTEEL" Texture="Moment_AnSteel.dds"/>
+	</MomentIllustrations>
+	<District_GreatPersonPoints>
+		<Row DistrictType="DSITRICTS_ANSTEEL" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="2"/>
+	</District_GreatPersonPoints>
+	<District_TradeRouteYields>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_PRODUCTION"	YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="1"/>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_SCIENCE"		YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
+	</District_TradeRouteYields>
+	<District_Adjacencies>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="Mine_Production"/>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="District_Production"/>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="Government_Production"/>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="AnSteel_Districts"/>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="AnSteel_Strategic"/>
+	</District_Adjacencies>
+	<Adjacency_YieldChanges>
+		<Row ID="AnSteel_Districts"	Description="LOC_ANSTEEL_DISTRICTS"	YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
+		<Row ID="AnSteel_Strategic" Description="LOC_ANSTEEL_STRATEGIC" YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentResourceClass="RESOURCECLASS_STRATEGIC"/>
+	</Adjacency_YieldChanges>
+	<District_CitizenYieldChanges>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_SCIENCE"		YieldChange="2"/>
+		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_PRODUCTION"	YieldChange="4"/>
+	</District_CitizenYieldChanges>
+	<DistrictModifiers>
+		<!--相邻生产力提供科技值-->
+		<Row>
+			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>
+		</Row>
+		<!--奖励铁铝-->
+		<Row>
+			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_IRON</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_ALUMINUM</ModifierId>
+		</Row>
+		<!--为相邻鞍钢提供加成-->
+		<!--生产力-->
+		<Row>
+			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<ModifierId>ANSTEEL_ADJUST_ANSTEEL_YIELD</ModifierId>
+		</Row>
+		<!--额外资源-->
+		<Row>
+			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_IRON</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_ALUMINUM</ModifierId>
+		</Row>
+	</DistrictModifiers>
+	<Modifiers>
+		<!--相邻生产力提供科技值-->
+		<Row>
+			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
+		</Row>
+		<!--奖励铁铝-->
+		<Row>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_IRON</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_ALUMINUM</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY</ModifierType>
+		</Row>
+		<!--为相邻鞍钢提供加成-->
+		<!--生产力-->
+		<Row>
+			<ModifierId>ANSTEEL_ADJUST_ANSTEEL_YIELD</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_ANSTEEL_ADJACENT_REQ</SubjectRequirementSetId>
+		</Row>
+		<!--额外资源-->
+		<Row>
+			<ModifierId>ANSTEEL_EXTRA_RESOURCE_IRON</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_IRON</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_PLAYER_DISTRICTS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_ANSTEEL_ADJACENT_REQ</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_EXTRA_RESOURCE_ALUMINUM</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_ALUMINUM</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_PLAYER_DISTRICTS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_ANSTEEL_ADJACENT_REQ</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--相邻生产力提供科技值-->
+		<Row>
+			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DSITRICTS_ANSTEEL</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>
+			<Name>YieldTypeToGrant</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>
+			<Name>YieldTypeToMirror</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<!--奖励铁铝-->
+		<Row>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_IRON</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_IRON</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_IRON</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_ALUMINUM</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_GIVE_RESOURCE_ALUMINUM</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_ALUMINUM</Value>
+		</Row>
+		<!--为相邻鞍钢提供加成-->
+		<!--生产力-->
+		<Row>
+			<ModifierId>ANSTEEL_ADJUST_ANSTEEL_YIELD</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_ADJUST_ANSTEEL_YIELD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<!--额外资源-->
+		<Row>
+			<ModifierId>ANSTEEL_EXTRA_RESOURCE_IRON</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_EXTRA_RESOURCE_IRON</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_IRON</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_IRON</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>ANSTEEL_EXTRA_RESOURCE_IRON</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_EXTRA_RESOURCE_ALUMINUM</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_EXTRA_RESOURCE_ALUMINUM</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_ALUMINUM</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_ALUMINUM</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>ANSTEEL_EXTRA_RESOURCE_ALUMINUM</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

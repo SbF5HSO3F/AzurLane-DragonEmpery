@@ -38,6 +38,15 @@
 			<Type>CHEN_HAI_DARK_PINK</Type>
 			<Color>195,115,140,255</Color>
 		</Row>
+		<!--鞍山-->
+		<Row>
+			<Type>AN_SHAN_DD101_PRIMARY</Type>
+			<Color>189,205,156,255</Color>
+		</Row>
+		<Row>
+			<Type>AN_SHAN_DD101_SECONDARY</Type>
+			<Color>255,255,255,255</Color>
+		</Row>
 	</Colors>
 	<PlayerColors>
 		<!--海天-->
@@ -57,6 +66,13 @@
 			<SecondaryColor>CHEN_HAI_DARK_GOLDEN</SecondaryColor>
 			<Alt1PrimaryColor>CHEN_HAI_WHITE</Alt1PrimaryColor>
 			<Alt1SecondaryColor>CHEN_HAI_DARK_PINK</Alt1SecondaryColor>
+		</Row>
+		<!--鞍山-->
+		<Row>
+			<Type>LEADER_AN_SHAN_DD101</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>AN_SHAN_DD101_PRIMARY</PrimaryColor>
+			<SecondaryColor>AN_SHAN_DD101_SECONDARY</SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>

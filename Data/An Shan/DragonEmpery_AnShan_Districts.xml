@@ -50,9 +50,13 @@
 		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="AnSteel_Districts"/>
 		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="AnSteel_Strategic"/>
 	</District_Adjacencies>
+	<Improvement_Adjacencies>
+		<Row ImprovementType="IMPROVEMENT_MINE" YieldChangeId="AnSteel_Science"/>
+	</Improvement_Adjacencies>
 	<Adjacency_YieldChanges>
 		<Row ID="AnSteel_Districts"	Description="LOC_ANSTEEL_DISTRICTS"	YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
 		<Row ID="AnSteel_Strategic" Description="LOC_ANSTEEL_STRATEGIC" YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentResourceClass="RESOURCECLASS_STRATEGIC"/>
+		<Row ID="AnSteel_Science"	Description="LOC_ANSTEEL_SCIENCE"	YieldType="YIELD_SCIENCE"	 YieldChange="2" TilesRequired="1" AdjacentDistrict="DSITRICTS_ANSTEEL"/>
 	</Adjacency_YieldChanges>
 	<District_CitizenYieldChanges>
 		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_SCIENCE"		YieldChange="2"/>

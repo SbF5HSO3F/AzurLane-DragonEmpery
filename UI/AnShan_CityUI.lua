@@ -10,6 +10,8 @@ include('DragonEmpery_Core.lua')
 local baseResProduction = 5
 local effectResProduction = 10
 local AnSteelIndex = GameInfo.Districts['DSITRICTS_ANSTEEL'].Index
+local ironIndex = GameInfo.Resources['RESOURCE_IRON'].Index
+local aluminumIndex = GameInfo.Resources['RESOURCE_ALUMINUM'].Index
 
 --||====================base functions====================||--
 
@@ -20,7 +22,8 @@ function AnShanJudgeCityResource(pCity)
 end
 
 --disable?
-function AnShanCityDisable(pCity, resource)
+function AnShanButtonDisable(pCity)
+    --if resource is nil, that is Iron
     if pCity then
         --the city has the AnSteel?
         local cityDistricts = pCity.getDistricts()
@@ -30,6 +33,13 @@ function AnShanCityDisable(pCity, resource)
             local cityBuildQueue = pCity.getBuildQueue()
             local currentProductionHash = cityBuildQueue:GetCurrentProductionTypeHash()
             if currentProductionHash ~= 0 then
+                --create a new table to record the detail
+                local detail = {
+                    IronAffordable = false,
+                    IronCost = 0,
+                    AluminumAffordable = false,
+                    AluminumCost = 0,
+                }
                 --get the city resource cost
                 -- local resource = AnShanJudgeCityResource(pCity)
                 --get the currently building producion need
@@ -51,14 +61,20 @@ function AnShanCityDisable(pCity, resource)
                     productionNeed = cityBuildQueue:GetBuildingCost(index) - cityBuildQueue:GetBuildingProgress(index)
                     --remove the gameSpeed modifier
                     local need = DragonEmperySpeedModifier(productionNeed, true)
-                    resourceCost = math.ceil(need / (resource == 'Iron' and effectResProduction or baseResProduction))
+                    --get the iron cost
+                    detail.IronCost = math.ceil(need / effectResProduction)
+                    --get the aluminum cost
+                    detail.AluminumCost = math.ceil(need / baseResProduction)
                 elseif pDistrictDef ~= nil then
                     local index = pDistrictDef.Index
                     --get the district porduction need
                     productionNeed = cityBuildQueue:GetDistrictCost(index) - cityBuildQueue:GetDistrictProgress(index)
                     --remove the gameSpeed modifier
                     local need = DragonEmperySpeedModifier(productionNeed, true)
-                    resourceCost = math.ceil(need / (resource == 'Iron' and effectResProduction or baseResProduction))
+                    --get the iron cost
+                    detail.IronCost = math.ceil(need / effectResProduction)
+                    --get the aluminum cost
+                    detail.AluminumCost = math.ceil(need / baseResProduction)
                 elseif pUnitDef ~= nil then
                     local index = pUnitDef.Index
                     local unitProgress = cityBuildQueue:GetUnitProgress(index)
@@ -73,16 +89,30 @@ function AnShanCityDisable(pCity, resource)
                     end
                     --remove the gameSpeed modifier
                     local need = DragonEmperySpeedModifier(productionNeed, true)
-                    resourceCost = math.ceil(need / (resource == 'Aluminum' and effectResProduction or baseResProduction))
+                    --get the iron cost
+                    detail.IronCost = math.ceil(need / baseResProduction)
+                    --get the aluminum cost
+                    detail.AluminumCost = math.ceil(need / effectResProduction)
                 elseif pProjectDef ~= nil then
                     local index = pProjectDef.Index
                     --get the projecet production need
                     productionNeed = cityBuildQueue:GetProjectCost(index) - cityBuildQueue:GetProjectProgress(index)
                     --remove the gameSpeed modifier
                     local need = DragonEmperySpeedModifier(productionNeed, true)
-                    resourceCost = math.ceil(need / (resource == 'Aluminum' and effectResProduction or baseResProduction))
+                    --get the iron cost
+                    detail.IronCost = math.ceil(need / baseResProduction)
+                    --get the aluminum cost
+                    detail.AluminumCost = math.ceil(need / effectResProduction)
                 end
+                --get player resources
+                local playerResources = Players[pCity:GetOwner()]:GetResources()
+                local IronAmount = playerResources:GetResourceAmount()
+                local AluminumAmount = playerResources:GetResourceAmount()
                 --player has enough resources?
+                detail.IronAffordable = IronAmount >= detail.IronCost
+                detail.AluminumAffordable = AluminumAmount >= detail.AluminumCost
+                --return the detial to reset the button
+                return detail
             else
                 return true
             end
@@ -92,6 +122,11 @@ function AnShanCityDisable(pCity, resource)
     else
         return true
     end
+end
+
+--reset
+function AnShanButtonReset()
+
 end
 
 --||===================Events functions===================||--

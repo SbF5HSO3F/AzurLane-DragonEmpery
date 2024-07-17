@@ -19,7 +19,8 @@ function AnShanFinishCityProduction(playerID, param)
         --print(cityBuildQueue:CurrentlyBuilding(), param.Production)
         if cityBuildQueue and cityBuildQueue:CurrentlyBuilding() == param.Production then
             --finish production
-            cityBuildQueue:FinishProgress()
+            -- cityBuildQueue:FinishProgress()
+            cityBuildQueue:AddProgress(param.Afford)
             --cost the resource
             pPlayer:GetResources():ChangeResourceAmount(param.Resource, -param.Cost)
         end

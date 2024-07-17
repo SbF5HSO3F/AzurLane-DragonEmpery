@@ -51,14 +51,14 @@
 			<Text>鞍山能力介绍。</Text>
 		</Replace>
 		<!--领袖区域-->
-		<Replace Tag="LOC_DSITRICTS_ANSTEEL_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="zh_Hans_CN">
 			<Text>鞍山钢铁</Text>
 		</Replace>
-		<Replace Tag="LOC_DSITRICTS_ANSTEEL_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+100%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。</Text>
 		</Replace>
-		<Replace Tag="LOC_DSITRICTS_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+100%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝完成当前生产。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hans_CN">
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+100%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝为当前生产提供 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_ANSTEEL_DISTRICTS" Language="zh_Hans_CN">
@@ -84,16 +84,16 @@
 
 		<!--Lua浮动文字显示-->
 		<Replace Tag="LOC_ANSTEEL_COST_IRON_DESC" Language="zh_Hans_CN">
-			<Text>消耗 [ICON_RESOURCE_IRON] 铁为城市提供 [ICON_PRODUCTION] 生产力，完成当前生产。每点 [ICON_RESOURCE_IRON] 铁可提供{1_num} [ICON_PRODUCTION] 生产力，为建筑、区域提供 [ICON_PRODUCTION] 生产力时所提供的 [ICON_PRODUCTION] 生产力翻倍。</Text>
+			<Text>消耗 [ICON_RESOURCE_IRON] 铁为城市当前生产提供 [ICON_PRODUCTION] 生产力。每点 [ICON_RESOURCE_IRON] 铁可提供{1_num} [ICON_PRODUCTION] 生产力，为建筑、区域提供 [ICON_PRODUCTION] 生产力时所提供的 [ICON_PRODUCTION] 生产力翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_IRON_DETAIL" Language="zh_Hans_CN">
-			<Text>消耗{1_num}点 [ICON_RESOURCE_IRON] 铁，完成{2_Name}的生产</Text>
+			<Text>消耗{1_num}点 [ICON_RESOURCE_IRON] 铁提供{2_num}点 [ICON_PRODUCTION] 生产力，完成{3_Name}的生产</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DESC" Language="zh_Hans_CN">
-			<Text>消耗 [ICON_RESOURCE_ALUMINUM] 铝为城市提供 [ICON_PRODUCTION] 生产力，完成当前生产。每点 [ICON_RESOURCE_ALUMINUM] 铝可提供{1_num} [ICON_PRODUCTION] 生产力，为单位、项目提供 [ICON_PRODUCTION] 生产力时所提供的 [ICON_PRODUCTION] 生产力翻倍。</Text>
+			<Text>消耗 [ICON_RESOURCE_ALUMINUM] 铝为城市当前生产提供 [ICON_PRODUCTION] 生产力。每点 [ICON_RESOURCE_ALUMINUM] 铝可提供{1_num} [ICON_PRODUCTION] 生产力，为单位、项目提供 [ICON_PRODUCTION] 生产力时所提供的 [ICON_PRODUCTION] 生产力翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DETAIL" Language="zh_Hans_CN">
-			<Text>消耗{1_num}点 [ICON_RESOURCE_ALUMINUM] 铝，完成{2_Name}的生产</Text>
+			<Text>消耗{1_num}点 [ICON_RESOURCE_ALUMINUM] 铝提供{2_num}点 [ICON_PRODUCTION] 生产力，完成{3_Name}的生产</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOCITY_WARNING" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]城市不存在[ENDCOLOR]</Text>

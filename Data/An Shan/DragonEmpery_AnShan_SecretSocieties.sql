@@ -4,4 +4,4 @@
 --------------------------------------------------------------
 INSERT INTO District_Adjacencies
 		(DistrictType,			YieldChangeId)
-VALUES	('DSITRICTS_ANSTEEL',	'LeyLine_Production');
+VALUES	('DISTRICT_ANSTEEL',	'LeyLine_Production');

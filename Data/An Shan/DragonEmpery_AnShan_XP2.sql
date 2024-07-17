@@ -4,17 +4,17 @@
 --------------------------------------------------------------
 --Update
 UPDATE Districts
-SET Description = 'LOC_DSITRICTS_ANSTEEL_DESCRIPTION_XP2'
-WHERE DistrictType = 'DSITRICTS_ANSTEEL';
+SET Description = 'LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2'
+WHERE DistrictType = 'DISTRICT_ANSTEEL';
 
 --District Adjacency
 INSERT INTO District_Adjacencies
 	(DistrictType,			YieldChangeId)
 VALUES	
-	('DSITRICTS_ANSTEEL',	'Aqueduct_Production'),
-	('DSITRICTS_ANSTEEL',	'Bath_Production'),
-	('DSITRICTS_ANSTEEL',	'Canal_Production'),
-	('DSITRICTS_ANSTEEL',	'Dam_Production');
+	('DISTRICT_ANSTEEL',	'Aqueduct_Production'),
+	('DISTRICT_ANSTEEL',	'Bath_Production'),
+	('DISTRICT_ANSTEEL',	'Canal_Production'),
+	('DISTRICT_ANSTEEL',	'Dam_Production');
 
 --Update
 UPDATE Modifiers
@@ -39,7 +39,7 @@ WHERE ModifierId IN (
 INSERT INTO DistrictModifiers
 	(DistrictType,			ModifierId)
 VALUES
-	('DSITRICTS_ANSTEEL',	'ANSTEEL_ADJUST_RESOURCE_STOCKPILE_CAP');
+	('DISTRICT_ANSTEEL',	'ANSTEEL_ADJUST_RESOURCE_STOCKPILE_CAP');
 
 INSERT INTO Modifiers
 	(ModifierId,								ModifierType)

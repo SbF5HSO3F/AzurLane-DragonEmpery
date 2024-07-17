@@ -92,6 +92,31 @@ function DragonEmperyCivicIsNoBoost(type)
     return result
 end
 
+--get the player game progress (GamePlay, UI)
+function DragonEmperyPlayerGameProgress(playerID)
+    local pPlayer = Players[playerID]
+    if pPlayer == nil then return 0 end
+    local playerTech = pPlayer:GetTechs()
+    local techNum, techedNum = 0, 0
+    for row in GameInfo.Technologies() do
+        techNum = (techNum or 0) + 1
+        if playerTech:HasTech(row.Index) then
+            techedNum = (techedNum or 0) + 1
+        end
+    end
+    local playerCulture = pPlayer:GetCulture()
+    local civicNum, civicedNum = 0, 0
+    for row in GameInfo.Civics() do
+        civicNum = (civicNum or 0) + 1
+        if playerCulture:HasCivic(row.Index) then
+            civicedNum = (civicedNum or 0) + 1
+        end
+    end
+    local civicProgress = civicNum ~= 0 and civicedNum / civicNum or 0
+    local techProgress = techNum ~= 0 and techedNum / techNum or 0
+    return math.floor(100 * math.max(techProgress, civicProgress))
+end
+
 --||=====================GamePlay=======================||--
 
 --Random get Technology Boost (GamePlay)

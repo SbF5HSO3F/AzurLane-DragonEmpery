@@ -346,7 +346,7 @@
 						</Element>
 					</Element>
 				</m_ChildCollections>
-				<m_Name text="DSITRICTS_ANSTEEL"/>
+				<m_Name text="DISTRICT_ANSTEEL"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
 		</Element>
@@ -356,4 +356,3 @@
 		</Element>
 	</m_RootCollections>
 </AssetObjects..ArtDefSet>
-

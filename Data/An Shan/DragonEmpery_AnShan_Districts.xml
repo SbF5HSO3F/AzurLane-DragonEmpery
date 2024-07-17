@@ -4,15 +4,15 @@
 <!-- DateCreated: 2024/6/25 0:56:29 -->
 <GameData>
 	<Types>
-		<Row Type="DSITRICTS_ANSTEEL" Kind="KIND_DISTRICT"/>
+		<Row Type="DISTRICT_ANSTEEL" Kind="KIND_DISTRICT"/>
 	</Types>
 	<DistrictReplaces>
-		<Row CivUniqueDistrictType="DSITRICTS_ANSTEEL" ReplacesDistrictType="DISTRICT_INDUSTRIAL_ZONE"/>
+		<Row CivUniqueDistrictType="DISTRICT_ANSTEEL" ReplacesDistrictType="DISTRICT_INDUSTRIAL_ZONE"/>
 	</DistrictReplaces>
 	<Districts>
-		<Row DistrictType="DSITRICTS_ANSTEEL"
-			 Name="LOC_DSITRICTS_ANSTEEL_NAME"
-			 Description="LOC_DSITRICTS_ANSTEEL_DESCRIPTION"
+		<Row DistrictType="DISTRICT_ANSTEEL"
+			 Name="LOC_DISTRICT_ANSTEEL_NAME"
+			 Description="LOC_DISTRICT_ANSTEEL_DESCRIPTION"
 			 PrereqTech="TECH_IRON_WORKING"
 			 PlunderType="PLUNDER_SCIENCE"
 			 PlunderAmount="25"
@@ -22,7 +22,7 @@
 			 CostProgressionParam1="40"
 			 Maintenance="1"
 			 RequiresPlacement="true"
-			 RequiresPopulation="false"
+			 RequiresPopulation="true"
 			 Aqueduct="false"
 			 NoAdjacentCity="false"
 			 InternalOnly="false"
@@ -31,24 +31,24 @@
 			 CaptureRemovesCityDefenses="false"
 			 MilitaryDomain="NO_DOMAIN"
 			 CityStrengthModifier="2"
-			 TraitType="TRAIT_LEADER_DSITRICTS_ANSTEEL"/>
+			 TraitType="TRAIT_LEADER_DISTRICT_ANSTEEL"/>
 	</Districts>
 	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DSITRICTS_ANSTEEL" Texture="Moment_AnSteel.dds"/>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DISTRICT_ANSTEEL" Texture="Moment_AnSteel.dds"/>
 	</MomentIllustrations>
 	<District_GreatPersonPoints>
-		<Row DistrictType="DSITRICTS_ANSTEEL" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="2"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="2"/>
 	</District_GreatPersonPoints>
 	<District_TradeRouteYields>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_PRODUCTION"	YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="1"/>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_SCIENCE"		YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldType="YIELD_PRODUCTION"	YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="1"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldType="YIELD_SCIENCE"		YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
 	</District_TradeRouteYields>
 	<District_Adjacencies>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="Mine_Production"/>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="District_Production"/>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="Government_Production"/>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="AnSteel_Districts"/>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldChangeId="AnSteel_Strategic"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldChangeId="Mine_Production"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldChangeId="District_Production"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldChangeId="Government_Production"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldChangeId="AnSteel_Districts"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldChangeId="AnSteel_Strategic"/>
 	</District_Adjacencies>
 	<Improvement_Adjacencies>
 		<Row ImprovementType="IMPROVEMENT_MINE" YieldChangeId="AnSteel_Science"/>
@@ -56,40 +56,40 @@
 	<Adjacency_YieldChanges>
 		<Row ID="AnSteel_Districts"	Description="LOC_ANSTEEL_DISTRICTS"	YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
 		<Row ID="AnSteel_Strategic" Description="LOC_ANSTEEL_STRATEGIC" YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentResourceClass="RESOURCECLASS_STRATEGIC"/>
-		<Row ID="AnSteel_Science"	Description="LOC_ANSTEEL_SCIENCE"	YieldType="YIELD_SCIENCE"	 YieldChange="2" TilesRequired="1" AdjacentDistrict="DSITRICTS_ANSTEEL"/>
+		<Row ID="AnSteel_Science"	Description="LOC_ANSTEEL_SCIENCE"	YieldType="YIELD_SCIENCE"	 YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_ANSTEEL"/>
 	</Adjacency_YieldChanges>
 	<District_CitizenYieldChanges>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_SCIENCE"		YieldChange="2"/>
-		<Row DistrictType="DSITRICTS_ANSTEEL" YieldType="YIELD_PRODUCTION"	YieldChange="4"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldType="YIELD_SCIENCE"		YieldChange="2"/>
+		<Row DistrictType="DISTRICT_ANSTEEL" YieldType="YIELD_PRODUCTION"	YieldChange="4"/>
 	</District_CitizenYieldChanges>
 	<DistrictModifiers>
 		<!--相邻生产力提供科技值-->
 		<Row>
-			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<DistrictType>DISTRICT_ANSTEEL</DistrictType>
 			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>
 		</Row>
 		<!--奖励铁铝-->
 		<Row>
-			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<DistrictType>DISTRICT_ANSTEEL</DistrictType>
 			<ModifierId>ANSTEEL_GIVE_RESOURCE_IRON</ModifierId>
 		</Row>
 		<Row>
-			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<DistrictType>DISTRICT_ANSTEEL</DistrictType>
 			<ModifierId>ANSTEEL_GIVE_RESOURCE_ALUMINUM</ModifierId>
 		</Row>
 		<!--为相邻鞍钢提供加成-->
 		<!--生产力-->
 		<Row>
-			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<DistrictType>DISTRICT_ANSTEEL</DistrictType>
 			<ModifierId>ANSTEEL_ADJUST_ANSTEEL_YIELD</ModifierId>
 		</Row>
 		<!--额外资源-->
 		<Row>
-			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<DistrictType>DISTRICT_ANSTEEL</DistrictType>
 			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_IRON</ModifierId>
 		</Row>
 		<Row>
-			<DistrictType>DSITRICTS_ANSTEEL</DistrictType>
+			<DistrictType>DISTRICT_ANSTEEL</DistrictType>
 			<ModifierId>ANSTEEL_ATTACH_EXTRA_RESOURCE_ALUMINUM</ModifierId>
 		</Row>
 	</DistrictModifiers>
@@ -140,7 +140,7 @@
 		<Row>
 			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>
 			<Name>DistrictType</Name>
-			<Value>DSITRICTS_ANSTEEL</Value>
+			<Value>DISTRICT_ANSTEEL</Value>
 		</Row>
 		<Row>
 			<ModifierId>ANSTEEL_SCIENCE_COPY</ModifierId>

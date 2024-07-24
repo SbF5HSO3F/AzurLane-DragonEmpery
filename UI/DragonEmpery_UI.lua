@@ -11,7 +11,6 @@ include('DragonEmpery_Core.lua')
 ----ExposedMembers.GameEvents = GameEvents
 --ExposedMembers
 ExposedMembers.DragonEmpery = ExposedMembers.DragonEmpery or {}
-ExposedMembers.ChenHai = ExposedMembers.ChenHai or {}
 
 --||===================glabol variables===================||--
 
@@ -423,21 +422,6 @@ end
 
 --||=================GameEvents functions=================||--
 
---||====================ExposedMembers====================||--
-
---get the player can give token
-function ChenHaiCanGiveTokenTo(MajorID, MinorID)
-    --set the return value
-    local canGiveToken = false
-    --get the Major and the Minor
-    local pMajor, pMinor = Players[MajorID], Players[MinorID]
-    --if major and minor is not nil, the minor is minor
-    if pMajor and pMinor and pMinor:IsMinor() then
-        canGiveToken = pMajor:GetInfluence():CanGiveTokensToPlayer(MinorID)
-    end
-    return canGiveToken
-end
-
 --||======================initialize======================||--
 
 --Initialize
@@ -455,8 +439,6 @@ function Initialize()
     ExposedMembers.DragonEmpery.ResetTech = ResetPanelTech
     ExposedMembers.DragonEmpery.ResetCivic = ResetPanelCivic
     ExposedMembers.DragonEmpery.ResetEra = ResetEraAll
-
-    ExposedMembers.ChenHai.CanGiveToken = ChenHaiCanGiveTokenTo
     --------------------------------------------
     print('DragonEmpery_UI Initial success!')
 end

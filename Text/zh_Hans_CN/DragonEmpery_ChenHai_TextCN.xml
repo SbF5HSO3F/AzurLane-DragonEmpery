@@ -18,13 +18,22 @@
 		</Replace>
 		<!--The beautiful part about poems is not only their rhymes and coupling, but also the many thoughts hidden between the lines...-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CHEN_HAI_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>镇海将掌控城邦，并在科技与市政上一路高歌猛进。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CHEN_HAI_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
 			<Text></Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CHEN_HAI_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>镇海号是1920年代中期，中华民国奉系东北海军改装的一艘水上飞机母舰。“镇海”一名取自民国北京政府授予奉系首领张作霖的称号“镇威上将军”。（除镇海号外，另有一艘炮舰威海号，为原日本废弃商船广利号改装而来）</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CHEN_HAI_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>镇海号前身德国商船马尼拉号，1904年1月在德国不莱梅哈芬的瑞克麦斯船厂下水，登记总吨1790、净吨1108。一战后随着德国战败流落山东，1921年10月由政记轮船公司以银145000两的价格购入，改名为“祥利”轮船。1923年夏天，“祥利”号被奉系张作霖部航警处征用，9月进入日本经营的满洲船渠会社旅顺船渠改造为军舰，由于涉及舱室改动，经与政记公司协商，改为收购，命名为“镇海”军舰。此后，奉军先后购入水上飞机35架（包括FBA-17和8架FBA-19），并在1926年3月在秦皇岛成立“水面飞机队”，在葫芦岛、青岛设立了陆上场地，同时将镇海号被改造为水上飞机母舰，舰艉甲板搭载2架水上飞机（一说最多可携带3架），但起降工作必须通过吊机将飞机放置于水面方可进行。改造完成后，镇海参与了一系列军阀之间的混战以及对抗北伐军的战争。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CHEN_HAI_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>1937年7月7日，七七事变爆发。此时沈鸿烈已经任青岛海陆军总指挥，在沈命令下，12月26日第三舰队司令谢刚哲开始了沉船据守的行动，将镇海号等沉入青岛小港码头外。1938年10月8日，由在日军组织下，青岛港务部门打捞起镇海号，推测之后进行了拆除。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CHEN_HAI_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>在沉船行动前，东北海军将镇海号等舰上的舰炮、机枪拆卸下来，组建起舰炮总队，先行离开青岛奔赴前线，参加了陆地上的对日作战。同年10月21日，舰炮总队以舰炮在禹城徒骇河铁桥处击毁日军装甲列车两列。是役舰炮总队有可能用到了原镇海号上拆下的火炮。</Text>
 		</Replace>
 		<!--领袖议程-->
 
@@ -33,7 +42,29 @@
 			<Text>纵横方圆</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_UNFETTERED_FREEDOM_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>完成科技或市政后，获得所需花费2倍的 [ICON_Gold] 金币并为随机一项科技或市政启动 [ICON_TECHBOOSTED] 尤里卡时刻或 [ICON_CIVICBOOSTED] 鼓舞时刻。</Text>
+			<Text>完成科技或市政后，获得所需花费2倍的 [ICON_Gold] 金币并为随机一项科技或市政启动 [ICON_TECHBOOSTED] 尤里卡时刻或 [ICON_CIVICBOOSTED] 鼓舞时刻。向城邦派遣 [ICON_ENVOY] 使者时，将向该城邦10个单元格范围内的城邦派遣等量的 [ICON_ENVOY] 使者。开放所有城邦的边境，可消耗单位向城邦派遣 [ICON_ENVOY] 使者。</Text>
+		</Replace>
+		<!--Lua文本-->
+		<Replace Tag="LOC_CHENHAI_GIVETOKEN_NAME" Language="zh_Hans_CN">
+			<Text>派遣使者</Text>
+		</Replace>
+		<Replace Tag="LOC_CHENHAI_GIVETOKEN_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>以相邻的城邦为目标，消耗此单位为该城邦派遣1名 [ICON_ENVOY] 使者</Text>
+		</Replace>
+		<Replace Tag="LOC_CHENHAI_GIVETOKEN_DETAIL" Language="zh_Hans_CN">
+			<Text>消耗此单位，向{1_Name}城邦派遣1名 [ICON_ENVOY] 使者</Text>
+		</Replace>
+		<Replace Tag="LOC_CHENHAI_GIVETOKEN_DISABLED" Language="zh_Hans_CN">
+			<Text>因下列原因，该命令不可用：</Text>
+		</Replace>
+		<Replace Tag="LOC_CHENHAI_GIVETOKEN_NOUNIT" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet][COLOR_RED]该单位不存在[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_CHENHAI_GIVETOKEN_NONEXTSTATE" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet][COLOR_RED]需要相邻或位于城邦的市中心[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_CHENHAI_GIVETOKEN_CANTGIVETOKEN" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet][COLOR_RED]您无法向该城邦派遣 [ICON_ENVOY] 使者[ENDCOLOR]</Text>
 		</Replace>
 		<!--特殊加成-->
 

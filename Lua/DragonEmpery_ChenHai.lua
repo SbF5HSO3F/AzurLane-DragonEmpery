@@ -8,6 +8,7 @@ include('DragonEmpery_Core.lua')
 --||===================glabol variables===================||--
 
 local range_1 = 10
+local settlerIndex = GameInfo.Units['UNIT_SETTLER'].Index
 
 --||===================Events functions===================||--
 
@@ -87,21 +88,62 @@ function ChenHaiMoreToken(majorID, minorID, iAmount)
         GameEvents.OnPlayerGaveInfluenceToken.Remove(ChenHaiMoreToken)
         --get the player Influence
         local playerInfluence = Players[majorID]:GetInfluence()
-        --get the given player table
-        local givenPlayerTable = { minorID }
-        --begin the plot
-        for _, minor in ipairs(PlayerManager.GetAliveMinorIDs()) do
-            if not DragonEmperyContains(givenPlayerTable, minor) then
-                --can give the token?
-                if ExposedMembers.ChenHai.CanGiveToken(majorID, minor) then
-                    --give the token to the minor
-                    playerInfluence:GiveFreeTokenToPlayer(minor)
-                    table.insert(givenPlayerTable, minor)
+        --get the minor capital or settler
+        local plot_1 = nil
+        local pMinor = Players[minorID]
+        local capital = pMinor:GetCities():GetCapitalCity()
+        if capital then
+            plot_1 = Map.GetPlot(capital:GetX(), capital:GetY())
+        else
+            for _, unit in pMinor:GetUnits():Members() do
+                if unit:GetType() == settlerIndex then
+                    plot_1 = Map.GetPlot(unit:GetX(), unit:GetY())
+                    break
+                end
+            end
+        end
+        -- get minor in range
+        for _, eMinor in ipairs(PlayerManager.GetAliveMinorIDs()) do
+            if eMinor ~= minorID then
+                --get the minor
+                local minor = Players[eMinor]
+                --get the capital or settler
+                local aCapital = minor:GetCities():GetCapitalCity()
+                if aCapital and DragonEmperyManhattan(
+                        plot_1, Map.GetPlot(aCapital:GetX(), aCapital:GetY())
+                    ) <= range_1 then
+                    playerInfluence:GiveFreeTokenToPlayer(eMinor)
+                else
+                    for _, unit in minor:GetUnits():Members() do
+                        if unit:GetType() == settlerIndex and
+                            DragonEmperyManhattan(
+                                plot_1, Map.GetPlot(unit:GetX(), unit:GetY())
+                            ) <= range_1 then
+                            playerInfluence:GiveFreeTokenToPlayer(eMinor)
+                            break
+                        end
+                    end
                 end
             end
         end
         --add this function again
         GameEvents.OnPlayerGaveInfluenceToken.Add(ChenHaiMoreToken)
+    end
+end
+
+--give token to minor
+function ChenHaiGiveTokenTo(playerID, param)
+    --get the unit
+    local pUnit = UnitManager.GetUnit(playerID, param.unitID)
+    if pUnit then
+        --get the player Influence
+        local playerInfluence = Players[playerID]:GetInfluence()
+        --give the token
+        playerInfluence:GiveFreeTokenToPlayer(param.minorID)
+        --report the unit
+        UnitManager.ReportActivation(pUnit, "CHENHAI_GIVETOKEN")
+        --kill the unit
+        UnitManager.Kill(pUnit)
     end
 end
 
@@ -114,7 +156,8 @@ function Initialize()
     Events.CivicCompleted.Add(ChenHaiCivicCompleted)
     --Events.UnitKilledInCombat.Add(ChenHaiKillUnit)
     ---------------GameEvents---------------
-    --GameEvents.OnPlayerGaveInfluenceToken.Add(ChenHaiMoreToken)
+    GameEvents.OnPlayerGaveInfluenceToken.Add(ChenHaiMoreToken)
+    GameEvents.ChenHaiGiveToken.Add(ChenHaiGiveTokenTo)
     ----------------------------------------
     print('DragonEmpery_ChenHai Initial success!')
 end

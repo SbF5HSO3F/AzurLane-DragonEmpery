@@ -41,11 +41,22 @@
 			<TraitType>TRAIT_LEADER_UNFETTERED_FREEDOM</TraitType>
 			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
+		<!--开放所有城邦边境-->
+		<Row>
+			<TraitType>TRAIT_LEADER_UNFETTERED_FREEDOM</TraitType>
+			<ModifierId>CHEN_HAI_OPEN_STATES_BORDERS</ModifierId>
+		</Row>
 	</TraitModifiers>
 	<Modifiers>
-
+		<!--开放所有城邦边境-->
+		<Row>
+			<ModifierId>CHEN_HAI_OPEN_STATES_BORDERS</ModifierId>
+			<ModifierType>MODIFIER_ADJUST_OPEN_BORDERS_FROM_INFLUENCE</ModifierType>
+			<SubjectRequirementSetId>DRAGON_EMPERY_PLAYER_IS_MINOR</SubjectRequirementSetId>
+		</Row>
 	</Modifiers>
 	<ModifierArguments>
+		<!--开放所有城邦边境-->
 
 	</ModifierArguments>
 </GameData>

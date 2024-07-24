@@ -14,7 +14,7 @@
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_QUOTE" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>整军再战，我们决不能就此退缩！</Text>
 		</Replace>
 		<!--The beautiful part about poems is not only their rhymes and coupling, but also the many thoughts hidden between the lines...-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">

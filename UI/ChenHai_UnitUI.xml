@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ChenHai_UnitUI -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/7/24 15:16:19 -->
+<Context Name="ChenHaiUnitPanelAddon">
+	<!--Grid is used to hold UI parts, Auto is used to automactic size-->
+	<Grid ID="ChenHaiGrid" Anchor="R,B" Size="Auto,41" AutoSizePadding="2,0" Texture="SelectionPanel_ActionGroupSlot" SliceCorner="5,19" SliceSize="1,1" SliceTextureSize="12,41" ConsumeMouse="1" Hidden="1">
+		<!--Stack for automactic size adaptaion-->
+		<Stack ID="ChenHaiActionStack" Anchor="C,B" StackGrowth="Right" StackPadding="2">
+			<!-- Buttons are used to perform actions -->
+			<Button ID="ChenHaiTokenButton" Anchor="L,B" Size="44,53" Texture="UnitPanel_ActionButton">
+				<!-- An Image inside the Button that requires a texture -->
+				<Image ID="ChenHaiTokenIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Icon="ICON_UNITOPERATION_GIVETOKEN"/>
+			</Button>
+		</Stack>
+	</Grid>
+</Context>

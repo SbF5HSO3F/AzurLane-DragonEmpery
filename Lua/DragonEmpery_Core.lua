@@ -117,6 +117,18 @@ function DragonEmperyPlayerGameProgress(playerID)
     return math.floor(100 * math.max(techProgress, civicProgress))
 end
 
+--Manhattan algorithm (GamePlay, UI)
+function DragonEmperyManhattan(pPlot_1, pPlot_2)
+    local result = 0
+    if pPlot_1 and pPlot_2 then
+        local y1, y2 = pPlot_1:GetY(), pPlot_2:GetY()
+        local x1 = pPlot_1:GetX() - math.floor(y1 / 2)
+        local x2 = pPlot_2:GetX() - math.floor(y2 / 2)
+        local z1, z2 = -x1 - y1, -x2 - y2
+        result = math.max(math.abs(x1 - x2), math.abs(y1 - y2), math.abs(z1 - z2))
+    end; return result
+end
+
 --||=====================GamePlay=======================||--
 
 --Random get Technology Boost (GamePlay)
@@ -192,6 +204,19 @@ end
 --mouse enter the button
 function DragonEmperyEnter()
     UI.PlaySound("Main_Menu_Mouse_Over")
+end
+
+--Reset UnitBaseContainer (UI)
+function DragonEmperyResetUnitBaseContainer()
+    local ActionsStack = ContextPtr:LookUpControl("/InGame/UnitPanel/ActionsStack")
+    local UnitPanelBaseContainer = ContextPtr:LookUpControl("/InGame/UnitPanel/UnitPanelBaseContainer")
+    if ActionsStack and UnitPanelBaseContainer then
+        ActionsStack:CalculateSize()
+        local SizeX = ActionsStack:GetSizeX()
+        if SizeX > UnitPanelBaseContainer:GetSizeX() then
+            UnitPanelBaseContainer:SetSizeX(SizeX + 18);
+        end
+    end
 end
 
 --||========================Test========================||--

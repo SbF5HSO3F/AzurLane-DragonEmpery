@@ -5,7 +5,29 @@
 --||=======================include========================||--
 include('DragonEmpery_Core.lua')
 
+--||===================local variables====================||--
+
+local ability = 'ABILITY_AN_SHAN_COMBAT_UNITS_BUFF'
+
 --||=================GameEvents functions=================||--
+
+--Clear the unit abilities
+function AnShanOnPlayerTurnStarted(playerID)
+    --get the player
+    local pPlayer = Players[playerID]
+    if pPlayer and pPlayer:GetProperty('AnShanNeedClearCombat') == true then
+        for _, unit in pPlayer:GetUnits():Members() do
+            --get the unit ability
+            local unitAbility = unit:GetAbility()
+            if unitAbility and unitAbility:GetAbilityCount(ability) > 0 then
+                --if the unit has the ability, clear it
+                unitAbility:ChangeAbilityCount(ability, -unitAbility:GetAbilityCount(ability))
+            end
+        end
+        --reset the player property
+        pPlayer:SetProperty('AnShanNeedClearCombat', false)
+    end
+end
 
 --finish the city production
 function AnShanFinishCityProduction(playerID, param)
@@ -27,6 +49,31 @@ function AnShanFinishCityProduction(playerID, param)
     end
 end
 
+--add the combat
+function AnShanAddUnitCombat(playerID, param)
+    --get the unit
+    local pUnit = UnitManager.GetUnit(playerID, param.unitID)
+    if pUnit == nil then return end
+    --add the combat
+    pUnit:SetProperty('AnShanCombatAdd', param.combat)
+    pUnit:SetProperty('AnShanCombatTurn', Game.GetCurrentGameTurn())
+    pUnit:GetAbility():ChangeAbilityCount(ability, 1)
+    --report the unit active
+    UnitManager.ReportActivation(pUnit, "ANSHAN_ADDCOMBAT")
+    --add Text
+    local message = Locale.Lookup('LOC_ANSTEEL_UNIT_COMBAT_NAME')
+    --add the message text
+    local messageData = {
+        MessageType = 0,
+        MessageText = message,
+        PlotX       = pUnit:GetX(),
+        PlotY       = pUnit:GetY(),
+        Visibility  = RevealedState.VISIBLE,
+    }; Game.AddWorldViewText(messageData)
+    --set the player property to clear the ability every turn
+    Players[playerID]:SetProperty('AnShanNeedClearCombat', true)
+end
+
 --||======================initialize======================||--
 
 --initialization function
@@ -34,7 +81,9 @@ function Initialize()
     -----------------Events-----------------
 
     ---------------GameEvents---------------
+    GameEvents.PlayerTurnStarted.Add(AnShanOnPlayerTurnStarted)
     GameEvents.AnShanFinishProduction.Add(AnShanFinishCityProduction)
+    GameEvents.AnShanAddCombat.Add(AnShanAddUnitCombat)
     ----------------------------------------
     print('Initial success!')
 end

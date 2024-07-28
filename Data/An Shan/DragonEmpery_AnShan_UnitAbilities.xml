@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_AnShan_UnitAbilities -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/7/28 8:52:47 -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"		Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"		Tag="CLASS_ALL_COMBAT_UNITS"/>
+		<Row Type="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"		Tag="CLASS_NAVAL_CARRIER"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"	Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="AN_SHAN_COMBAT_UNITS_BUFF"		Context="Preview" Text="LOC_PREVIEW_AN_SHAN_COMBAT_UNITS_BUFF_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_AN_SHAN_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>AN_SHAN_COMBAT_UNITS_BUFF</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>AN_SHAN_COMBAT_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>AN_SHAN_COMBAT_UNITS_BUFF</ModifierId>
+			<Name>Key</Name>
+			<Value>AnShanCombatAdd</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

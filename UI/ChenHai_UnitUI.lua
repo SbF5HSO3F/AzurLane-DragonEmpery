@@ -96,7 +96,9 @@ function ChenHaiButtonClick()
     local pUnit = UI.GetHeadSelectedUnit()
     if pUnit then
         local detail = ChenHaiButtonDisable(pUnit)
-        UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+        if detail.disable then return end
+        UI.RequestPlayerOperation(
+            Game.GetLocalPlayer(),
             PlayerOperations.EXECUTE_SCRIPT, {
                 unitID  = pUnit:GetID(),
                 minorID = detail.Id,

@@ -44,18 +44,18 @@
 		<!--领袖议程-->
 
 		<!--领袖能力-->
-		<Replace Tag="LOC_LEADER_AN_SHAN_DD101_ABILITY_NAME" Language="zh_Hans_CN">
-			<Text>鞍山能力</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_DRAGON_S_DANCE_NAME" Language="zh_Hans_CN">
+			<Text>青龙演武</Text>
 		</Replace>
-		<Replace Tag="LOC_LEADER_AN_SHAN_DD101_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>鞍山能力介绍。</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_DRAGON_S_DANCE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>拥有 [ICON_Strength] 战斗力的单位获得“青龙演武”单位命令。</Text>
 		</Replace>
 		<!--领袖区域-->
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="zh_Hans_CN">
 			<Text>鞍山钢铁</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+100%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。</Text>
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+100%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hans_CN">
 			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+100%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝为当前生产提供 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
@@ -77,12 +77,23 @@
 		<!--特殊晋升-->
 
 		<!--特殊能力-->
-
+		<Replace Tag="LOC_PREVIEW_AN_SHAN_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+{Property}来自青龙演武提升</Text>
+		</Replace>
 		<!--特殊命令-->
 
 		<!--特殊晋升-->
 
 		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_NAME" Language="zh_Hans_CN">
+			<Text>青龙演武</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_DESC" Language="zh_Hans_CN">
+			<Text>每回合限一次，该单位在本回合内获得 [ICON_Strength] 战斗力提升，为相邻单位中的最高基础战斗力与自身基础战斗力之差。</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_DETAIL" Language="zh_Hans_CN">
+			<Text>将获得{1_num}点 [ICON_Strength] 战斗力提升</Text>
+		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_IRON_DESC" Language="zh_Hans_CN">
 			<Text>消耗 [ICON_RESOURCE_IRON] 铁为城市当前生产提供 [ICON_PRODUCTION] 生产力。每点 [ICON_RESOURCE_IRON] 铁可提供{1_num} [ICON_PRODUCTION] 生产力，为建筑、区域提供 [ICON_PRODUCTION] 生产力时所提供的 [ICON_PRODUCTION] 生产力翻倍。</Text>
 		</Replace>
@@ -94,6 +105,15 @@
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DETAIL" Language="zh_Hans_CN">
 			<Text>消耗{1_num}点 [ICON_RESOURCE_ALUMINUM] 铝提供{2_num}点 [ICON_PRODUCTION] 生产力，完成{3_Name}的生产</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]单位不存在[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCHARGE_WARNING" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]本回合已发动[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCOMBAT_WARNING" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]无法获得 [ICON_Strength] 战斗力提升[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOCITY_WARNING" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]城市不存在[ENDCOLOR]</Text>

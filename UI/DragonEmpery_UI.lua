@@ -440,7 +440,7 @@ function Initialize()
     ExposedMembers.DragonEmpery.ResetCivic = ResetPanelCivic
     ExposedMembers.DragonEmpery.ResetEra = ResetEraAll
     --------------------------------------------
-    print('DragonEmpery_UI Initial success!')
+    print('Initial success!')
 end
 
 Initialize()

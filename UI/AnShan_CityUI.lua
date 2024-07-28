@@ -316,8 +316,9 @@ function Initialize()
     Events.CityRemovedFromMap.Add(AnShanButtonReset)
 
     Events.PlayerResourceChanged.Add(AnShanButtonReset)
-    ---------------ExposedMembers---------------
 
+    ---------------ExposedMembers---------------
+    -- table.sort(arr, function (a, b) return a > b end)
     --------------------------------------------
     print('Initial success!')
 end

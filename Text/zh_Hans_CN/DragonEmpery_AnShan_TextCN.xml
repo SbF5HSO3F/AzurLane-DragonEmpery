@@ -48,7 +48,7 @@
 			<Text>青龙演武</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_AZURE_DRAGON_S_DANCE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>拥有 [ICON_Strength] 战斗力的单位获得“青龙演武”单位命令。</Text>
+			<Text>拥有 [ICON_Strength] 战斗力的单位获得“青龙演武”单位命令。单位每拥有15点经验，便+1 [ICON_Strength] 战斗力。</Text>
 		</Replace>
 		<!--领袖区域-->
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="zh_Hans_CN">

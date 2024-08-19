@@ -48,6 +48,8 @@
 		<Row Name="ICON_BUILDING_APRICOT_ACADEMY_FOW"				Atlas="ICON_ATLAS_BUILDINGS_FOW"					Index="4"/>
 		<!--长城-->
 		<Row Name="ICON_IMPROVEMENT_DRAGON_EMPERY_WALL"				Atlas="ICON_ATLAS_UNIT_ACTIONS"						Index="18"/>
+		<!--产出预览-->
+		<Row Name="ICON_UNITOPERATION_HAITIEN"						Atlas="ICON_ATLAS_UNIT_ACTIONS"						Index="88"/>
 		<!--海天级护卫巡洋舰-->
 		<Row Name="ICON_UNIT_HAI_TIEN"								Atlas="ICON_ATLAS_UNITS"							Index="66"/>
 		<Row Name="ICON_UNIT_HAI_TIEN_FOW"							Atlas="ICON_ATLAS_UNITS_FOW"						Index="66"/>

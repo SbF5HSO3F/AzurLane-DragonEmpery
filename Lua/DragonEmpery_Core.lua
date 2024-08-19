@@ -132,37 +132,6 @@ function DragonEmperyManhattan(pPlot_1, pPlot_2)
     end; return result
 end
 
---quick sort, Main function (GamePlay, UI)
-function DragonEmperyQuickMianSort(arr, left, right)
-    if left >= right then return end
-    local i, j = left, right
-    local temp = arr[left]
-
-    while i < j do
-        while temp >= arr[i] and i < j do
-            j = j - 1
-        end
-        while temp <= arr[i] and i < j do
-            i = i + 1
-        end
-        if i < j then
-            arr[i], arr[j] = arr[j], arr[i]
-        end
-    end
-
-    arr[left] = arr[i]
-    arr[i] = temp
-
-    DragonEmperyQuickMianSort(arr, left, i - 1)
-    DragonEmperyQuickMianSort(arr, i + 1, right)
-end
-
---quick sort (GamePlay, UI)
-function DragonEmperyQuickSort(arr)
-    DragonEmperyQuickMianSort(arr, 1, #arr)
-end
-
-
 --||=====================GamePlay=======================||--
 
 --Random get Technology Boost (GamePlay)

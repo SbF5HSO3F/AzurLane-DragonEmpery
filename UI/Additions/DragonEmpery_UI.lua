@@ -390,35 +390,7 @@ function AcademyOnGreatPersonActived(unitOwner, unitID, greatPersonClassID)
     end
 end
 
---Hei Tien
-function HaiTienOnGreatPersonActived(unitOwner, unitID, greatPersonClassID, greatPersonIndividualID)
-    --judge the great person
-    if greatPersonClassID ~= greatWriter then return end
-    --check the loacl player
-    if unitOwner ~= Game.GetLocalPlayer() then return end
-    --judge the player
-    if DragonEmperyLeaderTypeMatched(unitOwner, 'LEADER_HAI_TIEN') then
-        --set the param
-        local param = {}
-        --get the unit
-        local pUnit = UnitManager.GetUnit(unitOwner, unitID)
-        param.x = pUnit:GetX()
-        param.y = pUnit:GetY()
-        --get the great person era
-        local greatPersonEra = GameInfo.GreatPersonIndividuals[greatPersonIndividualID].EraType
-        local eraIndex = GameInfo.Eras[greatPersonEra].ChronologyIndex
-        --set the value
-        param.culture = DragonEmperySpeedModifier(cultureAmount + cultureExtra * (eraIndex - 1))
-        param.production = DragonEmperySpeedModifier(productionAmount + productionExtra * (eraIndex - 1))
 
-        --get the city
-        local pCity = Cities.GetPlotPurchaseCity(Map.GetPlot(param.x, param.y))
-        param.cityID = pCity and pCity:GetID()
-        param.OnStart = 'HaiTienGreatWriterActivated'
-        --request operations
-        UI.RequestPlayerOperation(Game.GetLocalPlayer(), PlayerOperations.EXECUTE_SCRIPT, param)
-    end
-end
 
 --||=================GameEvents functions=================||--
 
@@ -431,7 +403,6 @@ function Initialize()
     Events.ResearchCompleted.Add(ResetPanelTech)
     Events.CivicCompleted.Add(ResetPanelCivic)
     Events.UnitGreatPersonActivated.Add(AcademyOnGreatPersonActived)
-    Events.UnitGreatPersonActivated.Add(HaiTienOnGreatPersonActived)
     Events.LocalPlayerChanged.Add(ResetPanelAll)
     ---------------ExposedMembers---------------
     ExposedMembers.DragonEmpery.GetAgeType = DragonEmperyGetPlayerAgeType

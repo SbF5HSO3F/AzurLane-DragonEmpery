@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_HaiTien_TextHK -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/8/19 12:48:44 -->
+<GameData>
+	<LocalizedText>
+		<!--領袖介紹-->
+		<Replace Tag="LOC_LEADER_HAI_TIEN_NAME" Language="zh_Hant_HK">
+			<Text>海天</Text>
+		</Replace>
+		<!--加載-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_HAI_TIEN" Language="zh_Hant_HK">
+			<Text>作為當時東煌的艦隊裏最為強大的戰艦，海天，你本當大有所為。只可惜您早早地觸礁沈沒，再也無法繼續為祖國奉獻。不過東煌現已重新崛起，世人再也不必為東煌的沈淪而落淚。快用您的紙筆與才華譜寫屬於東煌的恢弘篇章吧，您將目睹東煌後續的無盡輝煌。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HAI_TIEN_QUOTE" Language="zh_Hant_HK">
+			<Text>詩詞之美，不僅在於押韻與對仗，更在於其寥寥數語間抒發的萬千情感。</Text>
+		</Replace>
+		<!--The beautiful part about poems is not only their rhymes and coupling, but also the many thoughts hidden between the lines...-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HAI_TIEN_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<Text>海天會利用 [ICON_GreatWriter] 大作家鋪平她通往勝利的道路。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HAI_TIEN_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<Text>還有什麽是比海天所擁有的 [ICON_GreatWriter] 大作家更為強力的呢？當海天激活 [ICON_GreatWriter] 大作家時，她將獲得豐厚的 [ICON_Culture] 文化值與 [ICON_PRODUCTION] 生產力。並且，她的軍隊還將因為 [ICON_GreatWork_WRITING] 著作巨作被創作獲得 [ICON_Strength] 戰鬥力提升。利用好「泱泱古國」所帶來的巨額 [ICON_SCIENCE] 科技值與 [ICON_Culture] 文化值，海天將在勝利道路上暢通無阻！[NEWLINE][NEWLINE]激活 [ICON_GreatWriter] 大作家獲得的 [ICON_Culture] 文化值和 [ICON_PRODUCTION] 生產力計算：[NEWLINE]獲得量 = (基礎獲得量 + (額外獲得量 x n)) x 遊戲速度修正（為遠古時代偉人則n為0，為古典時代偉人n則為1，後續時代以此類推）[NEWLINE][ICON_Bullet][ICON_Culture] 文化值基礎獲得量為100，額外獲得量為50[NEWLINE][ICON_Bullet][ICON_PRODUCTION] 生產力基礎獲得量為200，額外獲得量為100。[ICON_PRODUCTION] 生產力將提供至偉人激活時所處城市。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HAI_TIEN_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>海天號防護巡洋艦是清朝末期訂購的一艘防護巡洋艦，為海天級防護巡洋艦首艦。本艦為清朝在甲午戰爭後重建海軍時期擁有的大型軍艦之一，然並未來得及發揮太多作用，便在日俄戰爭之初觸礁沈沒。</Text>
+		</Replace>
+		<!--領袖議程-->
+
+		<!--領袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS_NAME" Language="zh_Hant_HK">
+			<Text>筆墨驚濤</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SCROLLBEARER_OF_TURBULENT_SEAS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>完成科技後獲得等同於該科技20%所需花費的 [ICON_GreatWriter] 大作家點數。每當您的文明創作 [ICON_GreatWork_WRITING] 著作巨作後，所有軍事單位+1 [ICON_Strength] 戰鬥力。激活 [ICON_GreatWriter] 大作家後將基於偉人時代獲得 [ICON_Culture] 文化值和 [ICON_PRODUCTION] 生產力。解鎖「民族主義」市政後將獲得特色單位「海天級防護巡洋艦」。</Text>
+		</Replace>
+		<!--特殊加成-->
+
+		<!--領袖項目-->
+
+		<!--領袖單位-->
+		<Replace Tag="LOC_UNIT_HAI_TIEN_NAME" Language="zh_Hant_HK">
+			<Text>海天級防護巡洋艦</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HAI_TIEN_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>海天特色工業時代海軍遠程單位，擁有 [ICON_Bombard] 轟炸攻擊力而不是 [ICON_Ranged] 遠程攻擊力。不會蒙受受傷減益。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HAI_TIEN_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>海天級防護巡洋艦，是清朝在經過甲午戰爭慘敗、北洋水師主力艦艇損失殆盡的情況下，為了重建海軍而購買的一型防護巡洋艦。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HAI_TIEN_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>甲午戰爭中，清朝北洋水師全軍覆沒。戰爭結束後不久，日漸衰落的清政府依然傾盡全力重建北洋水師。作為重建北洋艦隊的核心力量，清朝政府向英國阿姆斯特朗公司訂購了2艘防護巡洋艦即海天、海圻。她們是清朝在海軍重建時期噸位最大、也是清朝噸位僅次於定遠級鐵甲艦的大型作戰軍艦。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HAI_TIEN_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>本級由英國設計師菲利浦·瓦茨主持設計。其與母型——阿根廷巡洋艦布宜諾斯艾利斯號防護巡洋艦基本相同，只是在細節上根據中方要求進行了修改。本級全長129.2米、寬14.26米，最大吃水5.91米，標準排水量4300噸。武器方面，本級擁有2門203mm/45主炮、10門120mm副炮以及眾多47mm速射炮，堪稱晚清海軍乃至民國海軍中的最強火力。本級艦的整體性能已趕上當時世界水平，但因該時期海軍技術的快速發展而很快就過時了，不免令人感到可惜。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HAI_TIEN_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+			<Text>本級兩艦中，海天僅服役數年即在1904年日俄戰爭期間因觸礁事故早早損失。海圻號則渡過了漫長的服役生涯，見證了日俄戰爭和第一次世界大戰，在辛亥革命爆發時投向新生的中華民國，經歷了民國初年的軍閥混戰，在抗日戰爭爆發初期，已經老舊不堪的海圻號自沈於長江，成為了江陰封鎖線的一部分。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HAI_TIEN_NAME" Language="zh_Hant_HK">
+			<Text>霧灑碧海</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HAI_TIEN_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>不會蒙受受傷減益</Text>
+		</Replace>
+		<!--特殊晉升-->
+
+		<!--特殊能力-->
+		<Replace Tag="LOC_PREVIEW_HAI_TIEN_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>+{Property}來自創作的 [ICON_GreatWork_WRITING] 著作巨作</Text>
+		</Replace>
+		<!--特殊命令-->
+
+		<!--特殊晉升-->
+
+		<!--Lua浮動文字顯示-->
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_TITLE" Language="zh_Hant_HK">
+			<Text>筆墨驚濤-預覽</Text>
+		</Replace>
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_PREVIEW" Language="zh_Hant_HK">
+			<Text>{1_Name}為{2_EraName} [ICON_GreatWriter] 大作家[NEWLINE]創作巨作後將獲得：[NEWLINE][ICON_Bullet]{3_Num}點 [ICON_Culture] 文化值[NEWLINE][ICON_Bullet]{4_Num}點 [ICON_PRODUCTION] 生產力</Text>
+		</Replace>
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_CULTURE" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_CULTURE]+{1_num}[ENDCOLOR] [ICON_CultureLarge]</Text>
+		</Replace>
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_PRODUCTION" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_PRODUCTION]+{1_num}[ENDCOLOR] [ICON_ProductionLarge]</Text>
+		</Replace>
+		<!--外交對話-->
+		<![CDATA[<!--同意宣布友誼-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>嗯嗯，讓我們一起努力吧！</Text>
+		</Replace>
+		<!--拒絕宣布友誼-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>我要學習了，能不要打擾我嗎？</Text>
+		</Replace>
+		<!--請求宣布友誼-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>通往頂點的道路往往艱辛而又漫長，再堅強的人也難免孤獨。所以，我想與你結為朋友呢……</Text>
+		</Replace>
+		<!--宣布友誼被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>好，讓我們共同學習，一起向頂點前進吧！</Text>
+		</Replace>
+		<!--宣布友誼被拒絕-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>看樣子剛才有許多值得檢討的地方呢……</Text>
+		</Replace>
+		<!--被宣戰-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>戰爭？嗯，Z23，到了檢驗努力成果的時候了！</Text>
+		</Replace>
+		<!--宣戰-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>你為人處世的態度實在是太過敷衍，人生絕不能這麽荒廢。有必要好好督促你了！</Text>
+		</Replace>
+		<!--接受代表團-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>您的代表團已經安全抵達。放心，招待他們的宴席上沒有過多的辣椒。</Text>
+		</Replace>
+		<!--拒絕代表團-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>很遺憾，我今天還有好多事情要做。</Text>
+		</Replace>
+		<!--派出代表團-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>請接受我的代表團！他們帶著上好的馬鈴薯和香腸，還有我的好意。</Text>
+		</Replace>
+		<!--被譴責-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>在通往頂峰的道路上，這種詆毀無法避免。</Text>
+		</Replace>
+		<!--譴責-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>世界上怎麽會有對自己如此不認真的人？（譴責你）</Text>
+		</Replace>
+		<!--初次見面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>我是1936A型驅逐艦的首艦，Z23，從我開始的妹妹們都只有代號，不像姐姐們有繼承前人的名字。雖然有些不近人情不過確實比較方便，所以請不要客氣直接叫我Z23就好。</Text>
+		</Replace>
+		<!--初次見面，邀請參觀附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>希望造訪我們附近的城市麽？我會帶你欣賞屬於鐵血的獨特文化，同時也會帶你品嘗各種製法的馬鈴薯。</Text>
+		</Replace>
+		<!--初次見面，感謝玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>謝謝，這會促進我們之間的交流。</Text>
+		</Replace>
+		<!--初次見面，請求交換城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>我很想了解你的國家，我也會為你講述我的國家。讓我們先從首都開始吧！</Text>
+		</Replace>
+		<!--歡迎語？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>今天還有好多事情要做呢。</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>您努力的背影和取得的成就讓我憧憬。我希望能跟你一起進步。</Text>
+		</Replace>
+		<!--敵視-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>比起其他的事，你不如多看看書。</Text>
+		</Replace>
+		<!--請求結盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>讓我們結盟，共同登上高峰吧！</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>和平是一個好選擇。讓我們休戰吧！</Text>
+		</Replace>
+		<!--拒絕和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>不，這場考驗還沒有結束！</Text>
+		</Replace>
+		<!--請求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>這場戰爭已經背離了它的初衷。我們握手言和吧。</Text>
+		</Replace>
+		<!--接受開放邊界請求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>我很高興能為你開放邊境。鐵血公國不應是一個封閉的國家。</Text>
+		</Replace>
+		<!--拒絕開放邊界請求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>對不起，今天的鐵血公國有要事處理。</Text>
+		</Replace>
+		<!--請求開放邊界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>願意為我們開放你的邊境嗎？</Text>
+		</Replace>
+		<!--要求移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>你的軍隊在鐵血公國周邊鬼鬼祟祟的想幹什麽？我可不是那種隨隨便便就可以蒙混過去的女孩子哦，請盡快撤軍。</Text>
+		</Replace>
+		<!--拒絕移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>很抱歉讓你產生了擔憂，但你無法命令我。</Text>
+		</Replace>
+		<!--同意移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>我會盡快地移走你領土周邊的部隊，不必擔心。</Text>
+		</Replace>
+		<!--經受不住時間考驗-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text>唉，看來準備還不夠充分……你贏了。</Text>
+		</Replace>
+		<!--拒絕交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text></Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_HAI_TIEN_ANY" Language="zh_Hant_HK">
+			<Text></Text>
+		</Replace>]]>
+	</LocalizedText>
+</GameData>

@@ -79,7 +79,7 @@ end
 --initialization function
 function Initialize()
     -----------------Events-----------------
-    GameEvents.UnitExperienceChanged.Add(TestPrint)
+
     ---------------GameEvents---------------
     GameEvents.PlayerTurnStarted.Add(AnShanOnPlayerTurnStarted)
     GameEvents.AnShanFinishProduction.Add(AnShanFinishCityProduction)

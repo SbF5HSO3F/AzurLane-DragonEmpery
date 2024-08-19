@@ -75,6 +75,12 @@
 		<!--特殊晋升-->
 
 		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_TITLE" Language="zh_Hans_CN">
+			<Text>笔墨惊涛-预览</Text>
+		</Replace>
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_PREVIEW" Language="zh_Hans_CN">
+			<Text>{1_Name}为{2_EraName} [ICON_GreatWriter] 大作家[NEWLINE]创作巨作后将获得：[NEWLINE][ICON_Bullet]{3_Num}点 [ICON_Culture] 文化值[NEWLINE][ICON_Bullet]{4_Num}点 [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
 		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_CULTURE" Language="zh_Hans_CN">
 			<Text>[COLOR_FLOAT_CULTURE]+{1_num}[ENDCOLOR] [ICON_CultureLarge]</Text>
 		</Replace>

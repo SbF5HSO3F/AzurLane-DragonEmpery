@@ -75,6 +75,12 @@
 		<!--特殊晋升-->
 
 		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_TITLE" Language="en_US">
+			<Text>Scrollbearer of Turbulent Seas-Perview</Text>
+		</Replace>
+		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_PREVIEW" Language="en_US">
+			<Text>{1_Name} is {2_EraName} [ICON_GreatWriter] Great Writer[NEWLINE]Create Great Work will gain:[NEWLINE][ICON_Bullet]{3_Num} [ICON_Culture] Culture[NEWLINE][ICON_Bullet]{4_Num} [ICON_PRODUCTION] Production</Text>
+		</Replace>
 		<Replace Tag="LOC_HAI_TIEN_GREAT_WRITER_CULTURE" Language="en_US">
 			<Text>[COLOR_FLOAT_CULTURE]+{1_num}[ENDCOLOR] [ICON_CultureLarge]</Text>
 		</Replace>

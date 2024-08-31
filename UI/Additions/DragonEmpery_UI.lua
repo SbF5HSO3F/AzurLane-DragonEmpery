@@ -25,12 +25,6 @@ local ThroughGolden = 'DragonEmperyThroughGolden'
 local ThroughHeroic = 'DragonEmperyThroughHeroic'
 --great writer
 local greatWriter = GameInfo.GreatPersonClasses['GREAT_PERSON_CLASS_WRITER'].Index
---the culture values
-local cultureAmount = 100
-local cultureExtra = 50
---the production values
-local productionAmount = 200
-local productionExtra = 100
 --the Apricot Academy
 local ApricotAcademy = GameInfo.Buildings['BUILDING_APRICOT_ACADEMY'].Index
 

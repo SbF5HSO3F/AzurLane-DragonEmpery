@@ -11,8 +11,8 @@ local eReason_1 = DB.MakeHash('ANSHAN_ADDCOMBAT')
 
 --||====================base functions====================||--
 
---button diable
-function AnShanUnitButtonDisable(pUnit)
+--button disable
+function AnShanGetUnitButtonDetail(pUnit)
     --the detail
     local detail = {
         disable = true,
@@ -61,7 +61,7 @@ function AnShanUnitButtonDisable(pUnit)
 end
 
 --button reset
-function AnShanUnitButtonReset()
+function AnShanResetUnitButton()
     --get the selected unit
     local pUnit = UI.GetHeadSelectedUnit()
     if pUnit and DragonEmperyLeaderTypeMatched(
@@ -69,7 +69,7 @@ function AnShanUnitButtonReset()
         ) and pUnit:GetCombat() > 0 then
         Controls.AnShanGrid:SetHide(false)
         --get the detail
-        local detail = AnShanUnitButtonDisable(pUnit)
+        local detail = AnShanGetUnitButtonDetail(pUnit)
         --get the disabled
         local disabled = detail.disable
         Controls.AnShanCombatButton:SetDisabled(disabled)
@@ -83,8 +83,8 @@ function AnShanUnitButtonReset()
     else
         Controls.AnShanGrid:SetHide(true)
     end
-    --reset the base container
-    DragonEmperyResetUnitBaseContainer()
+    --reset the Unit Panel
+    ContextPtr:LookUpControl("/InGame/UnitPanel"):RequestRefresh()
 end
 
 --when button is clicked
@@ -92,7 +92,7 @@ function AnShanUnitButtonClick()
     --get the unit
     local pUnit = UI.GetHeadSelectedUnit()
     if pUnit then
-        local detail = AnShanUnitButtonDisable(pUnit)
+        local detail = AnShanGetUnitButtonDetail(pUnit)
         if detail.disable then return end
         UI.RequestPlayerOperation(
             Game.GetLocalPlayer(),
@@ -101,7 +101,7 @@ function AnShanUnitButtonClick()
                 combat  = detail.combat,
                 OnStart = 'AnShanAddCombat'
             }
-        )
+        ); UI.PlaySound("Unit_CondemnHeretic_2D")
     end
 end
 
@@ -110,7 +110,7 @@ end
 --When the unit is selected
 function AnShanOnUnitSelectChanged(playerId, unitId, locationX, locationY, locationZ, isSelected)
     if isSelected and playerId == Game.GetLocalPlayer() then
-        AnShanUnitButtonReset()
+        AnShanResetUnitButton()
     end
 end
 
@@ -122,7 +122,7 @@ function AnShanUnitActive(owner, unitID, x, y, eReason)
         SimUnitSystem.SetAnimationState(pUnit, "SPAWN", "IDLE")
     end
     --reset the button
-    AnShanUnitButtonReset()
+    AnShanResetUnitButton()
 end
 
 --Add a button to Unit Panel
@@ -134,7 +134,7 @@ function AnShanOnLoadGameViewStateDone()
         Controls.AnShanCombatButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
     end
 
-    AnShanUnitButtonReset()
+    AnShanResetUnitButton()
 end
 
 --||======================initialize======================||--
@@ -146,20 +146,20 @@ function Initialize()
     Events.UnitSelectionChanged.Add(AnShanOnUnitSelectChanged)
     Events.UnitActivate.Add(AnShanUnitActive)
     --------------------------------------------
-    Events.UnitOperationSegmentComplete.Add(AnShanUnitButtonReset)
-    Events.UnitCommandStarted.Add(AnShanUnitButtonReset)
-    Events.UnitDamageChanged.Add(AnShanUnitButtonReset)
-    Events.UnitMoveComplete.Add(AnShanUnitButtonReset)
-    Events.UnitChargesChanged.Add(AnShanUnitButtonReset)
-    Events.UnitPromoted.Add(AnShanUnitButtonReset)
-    Events.UnitOperationsCleared.Add(AnShanUnitButtonReset)
-    Events.UnitOperationAdded.Add(AnShanUnitButtonReset)
-    Events.UnitOperationDeactivated.Add(AnShanUnitButtonReset)
-    Events.UnitMovementPointsChanged.Add(AnShanUnitButtonReset)
-    Events.UnitMovementPointsCleared.Add(AnShanUnitButtonReset)
-    Events.UnitMovementPointsRestored.Add(AnShanUnitButtonReset)
-    Events.UnitAbilityLost.Add(AnShanUnitButtonReset)
-    Events.PhaseBegin.Add(AnShanUnitButtonReset)
+    Events.UnitOperationSegmentComplete.Add(AnShanResetUnitButton)
+    Events.UnitCommandStarted.Add(AnShanResetUnitButton)
+    Events.UnitDamageChanged.Add(AnShanResetUnitButton)
+    Events.UnitMoveComplete.Add(AnShanResetUnitButton)
+    Events.UnitChargesChanged.Add(AnShanResetUnitButton)
+    Events.UnitPromoted.Add(AnShanResetUnitButton)
+    Events.UnitOperationsCleared.Add(AnShanResetUnitButton)
+    Events.UnitOperationAdded.Add(AnShanResetUnitButton)
+    Events.UnitOperationDeactivated.Add(AnShanResetUnitButton)
+    Events.UnitMovementPointsChanged.Add(AnShanResetUnitButton)
+    Events.UnitMovementPointsCleared.Add(AnShanResetUnitButton)
+    Events.UnitMovementPointsRestored.Add(AnShanResetUnitButton)
+    Events.UnitAbilityLost.Add(AnShanResetUnitButton)
+    Events.PhaseBegin.Add(AnShanResetUnitButton)
     ---------------ExposedMembers---------------
 
     --------------------------------------------

@@ -46,42 +46,11 @@ function ChenHaiCivicCompleted(playerID, iCivic)
     end
 end
 
---Kill Unit grant the envoy
-function ChenHaiKillUnit(killedPlayerID, killedUnitID, playerID, unitID)
-    --check the Leader is Chen Hai
-    if DragonEmperyLeaderTypeMatched(playerID, 'LEADER_CHEN_HAI') then
-        --get the player Influence
-        local playerInfluence = Players[playerID]:GetInfluence()
-        --add the envoy
-        playerInfluence:ChangeTokensToGive(1)
-        --get the unit
-        local pUnit = UnitManager.GetUnit(playerID, unitID)
-        if pUnit == nil then return end
-        --get the tplot
-        local tPlot = Map.GetNeighborPlots(pUnit:GetX(), pUnit:GetY(), range_1)
-        --get the given player table
-        local givenPlayerTable = {}
-        --begin the plot
-        for _, plot in ipairs(tPlot) do
-            --get the city owner
-            local city = CityManager.GetCityAt(plot:GetX(), plot:GetY())
-            local cityOwnerID = city and city:GetOwner()
-            if cityOwnerID and not DragonEmperyContains(givenPlayerTable, cityOwnerID) then
-                --can give the token?
-                if ExposedMembers.ChenHai.CanGiveToken(playerID, cityOwnerID) then
-                    --give the token to the minor
-                    playerInfluence:GiveFreeTokenToPlayer(cityOwnerID)
-                    table.insert(givenPlayerTable, cityOwnerID)
-                end
-            end
-        end
-    end
-end
-
 --||=================GameEvents functions=================||--
 
 --give token to the minor in 10-tiles
 function ChenHaiMoreToken(majorID, minorID, iAmount)
+    if iAmount <= 0 then return end
     --check the Leader is Chen Hai
     if DragonEmperyLeaderTypeMatched(majorID, 'LEADER_CHEN_HAI') then
         --remove this function, to prevent dead cycle
@@ -112,14 +81,18 @@ function ChenHaiMoreToken(majorID, minorID, iAmount)
                 if aCapital and DragonEmperyManhattan(
                         plot_1, Map.GetPlot(aCapital:GetX(), aCapital:GetY())
                     ) <= range_1 then
-                    playerInfluence:GiveFreeTokenToPlayer(eMinor)
+                    for i = 1, iAmount, 1 do
+                        playerInfluence:GiveFreeTokenToPlayer(eMinor)
+                    end
                 else
                     for _, unit in minor:GetUnits():Members() do
                         if unit:GetType() == settlerIndex and
                             DragonEmperyManhattan(
                                 plot_1, Map.GetPlot(unit:GetX(), unit:GetY())
                             ) <= range_1 then
-                            playerInfluence:GiveFreeTokenToPlayer(eMinor)
+                            for i = 1, iAmount, 1 do
+                                playerInfluence:GiveFreeTokenToPlayer(eMinor)
+                            end
                             break
                         end
                     end

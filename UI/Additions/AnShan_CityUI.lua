@@ -22,7 +22,7 @@ function AnShanJudgeCityResource(pCity)
 end
 
 --disable?
-function AnShanButtonDisable(pCity)
+function AnShanGetCityButtonDetail(pCity)
     --the detail that needs return
     local detail = {
         AllDisable            = true,
@@ -163,7 +163,7 @@ function AnShanButtonDisable(pCity)
 end
 
 --reset
-function AnShanButtonReset()
+function AnShanResetCityButton()
     --get local player
     --local localPlayer = Players[Game.GetLocalPlayer()]
     --get the selected city
@@ -174,7 +174,7 @@ function AnShanButtonReset()
         if cityDistricts:HasDistrict(AnSteelIndex) and cityDistricts:GetDistrict(AnSteelIndex):IsComplete() then
             Controls.AnShanCity_Stack:SetHide(false)
             --get the disabled
-            local detail = AnShanButtonDisable(pCity)
+            local detail = AnShanGetCityButtonDetail(pCity)
             local reason = detail.reason
             --the tooltip
             local tooltip1 = Locale.Lookup('LOC_DISTRICT_ANSTEEL_NAME') ..
@@ -232,7 +232,7 @@ end
 function AnShanIronClick()
     local pCity = UI.GetHeadSelectedCity()
     if pCity then
-        local detail = AnShanButtonDisable(pCity)
+        local detail = AnShanGetCityButtonDetail(pCity)
         if detail.AllDisable then return end
         UI.RequestPlayerOperation(Game.GetLocalPlayer(),
             PlayerOperations.EXECUTE_SCRIPT, {
@@ -251,7 +251,7 @@ end
 function AluminumIronClick()
     local pCity = UI.GetHeadSelectedCity()
     if pCity then
-        local detail = AnShanButtonDisable(pCity)
+        local detail = AnShanGetCityButtonDetail(pCity)
         if detail.AllDisable then return end
         UI.RequestPlayerOperation(Game.GetLocalPlayer(),
             PlayerOperations.EXECUTE_SCRIPT, {
@@ -275,7 +275,7 @@ function AnShanCitySelectChange(owner, cityID, i, j, k, isSelected)
     --check the leader
     if owner == loaclPlayerID and isSelected then
         --Reset the button
-        AnShanButtonReset()
+        AnShanResetCityButton()
     end
 end
 
@@ -290,7 +290,7 @@ function AnShanOnLoadGameViewStateDone()
 
         Controls.AnShanCity_AluminumButton:RegisterCallback(Mouse.eLClick, AluminumIronClick)
         Controls.AnShanCity_AluminumButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
-        AnShanButtonReset()
+        AnShanResetCityButton()
     end
 end
 
@@ -301,21 +301,21 @@ function Initialize()
     Events.LoadGameViewStateDone.Add(AnShanOnLoadGameViewStateDone)
     Events.CitySelectionChanged.Add(AnShanCitySelectChange)
     -------------------Resets-------------------
-    Events.LocalPlayerChanged.Add(AnShanButtonReset)
+    Events.LocalPlayerChanged.Add(AnShanResetCityButton)
 
-    Events.DistrictAddedToMap.Add(AnShanButtonReset)
-    Events.DistrictBuildProgressChanged.Add(AnShanButtonReset)
-    Events.DistrictRemovedFromMap.Add(AnShanButtonReset)
-    Events.DistrictPillaged.Add(AnShanButtonReset)
+    Events.DistrictAddedToMap.Add(AnShanResetCityButton)
+    Events.DistrictBuildProgressChanged.Add(AnShanResetCityButton)
+    Events.DistrictRemovedFromMap.Add(AnShanResetCityButton)
+    Events.DistrictPillaged.Add(AnShanResetCityButton)
 
-    Events.CityAddedToMap.Add(AnShanButtonReset)
-    Events.CityProductionQueueChanged.Add(AnShanButtonReset)
-    Events.CityProductionUpdated.Add(AnShanButtonReset)
-    Events.CityProductionChanged.Add(AnShanButtonReset)
-    Events.CityProductionCompleted.Add(AnShanButtonReset)
-    Events.CityRemovedFromMap.Add(AnShanButtonReset)
+    Events.CityAddedToMap.Add(AnShanResetCityButton)
+    Events.CityProductionQueueChanged.Add(AnShanResetCityButton)
+    Events.CityProductionUpdated.Add(AnShanResetCityButton)
+    Events.CityProductionChanged.Add(AnShanResetCityButton)
+    Events.CityProductionCompleted.Add(AnShanResetCityButton)
+    Events.CityRemovedFromMap.Add(AnShanResetCityButton)
 
-    Events.PlayerResourceChanged.Add(AnShanButtonReset)
+    Events.PlayerResourceChanged.Add(AnShanResetCityButton)
 
     ---------------ExposedMembers---------------
     -- table.sort(arr, function (a, b) return a > b end)

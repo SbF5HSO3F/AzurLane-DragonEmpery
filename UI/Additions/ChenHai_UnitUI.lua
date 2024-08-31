@@ -16,7 +16,7 @@ local eReason_1 = DB.MakeHash("CHENHAI_GIVETOKEN")
 --||====================base functions====================||--
 
 --button diable
-function ChenHaiButtonDisable(pUnit)
+function ChenHaiGetButtonDetail(pUnit)
     --set the detail table
     local detail = { disable = true, reason = 'NONE', Name = 'NONE', Id = nil }
     -- the unit isn't nil?
@@ -58,7 +58,7 @@ function ChenHaiButtonDisable(pUnit)
 end
 
 --button reset
-function ChenHaiButtonReset()
+function ChenHaiResetButton()
     --get the unit
     local pUnit = UI.GetHeadSelectedUnit()
     if pUnit and DragonEmperyLeaderTypeMatched(
@@ -66,7 +66,7 @@ function ChenHaiButtonReset()
         ) then
         Controls.ChenHaiGrid:SetHide(false)
         --get the detail
-        local detail = ChenHaiButtonDisable(pUnit)
+        local detail = ChenHaiGetButtonDetail(pUnit)
         --get the diable
         local disable = detail.disable
         --reset the button
@@ -86,8 +86,9 @@ function ChenHaiButtonReset()
     else
         Controls.ChenHaiGrid:SetHide(true)
     end
+
     --reset the base container
-    DragonEmperyResetUnitBaseContainer()
+    ContextPtr:LookUpControl("/InGame/UnitPanel"):RequestRefresh()
 end
 
 --click the button
@@ -95,7 +96,7 @@ function ChenHaiButtonClick()
     --get the unit
     local pUnit = UI.GetHeadSelectedUnit()
     if pUnit then
-        local detail = ChenHaiButtonDisable(pUnit)
+        local detail = ChenHaiGetButtonDetail(pUnit)
         if detail.disable then return end
         UI.RequestPlayerOperation(
             Game.GetLocalPlayer(),
@@ -113,7 +114,7 @@ end
 --When the unit is selected
 function ChenHaiOnUnitSelectChanged(playerId, unitId, locationX, locationY, locationZ, isSelected)
     if isSelected and playerId == Game.GetLocalPlayer() then
-        ChenHaiButtonReset()
+        ChenHaiResetButton()
     end
 end
 
@@ -125,7 +126,7 @@ function ChenHaiUnitActive(owner, unitID, x, y, eReason)
         SimUnitSystem.SetAnimationState(pUnit, "ACTION_1", "IDLE")
     end
     --reset the button
-    ChenHaiButtonReset()
+    ChenHaiResetButton()
 end
 
 --Add a button to Unit Panel
@@ -137,7 +138,7 @@ function ChenHaiOnLoadGameViewStateDone()
         Controls.ChenHaiTokenButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
     end
 
-    ChenHaiButtonReset()
+    ChenHaiResetButton()
 end
 
 --||====================ExposedMembers====================||--
@@ -170,20 +171,20 @@ function Initialize()
     Events.UnitSelectionChanged.Add(ChenHaiOnUnitSelectChanged)
     Events.UnitActivate.Add(ChenHaiUnitActive)
     --------------------------------------------
-    Events.UnitOperationSegmentComplete.Add(ChenHaiButtonReset)
-    Events.UnitCommandStarted.Add(ChenHaiButtonReset)
-    Events.UnitDamageChanged.Add(ChenHaiButtonReset)
-    Events.UnitMoveComplete.Add(ChenHaiButtonReset)
-    Events.UnitChargesChanged.Add(ChenHaiButtonReset)
-    Events.UnitPromoted.Add(ChenHaiButtonReset)
-    Events.UnitOperationsCleared.Add(ChenHaiButtonReset)
-    Events.UnitOperationAdded.Add(ChenHaiButtonReset)
-    Events.UnitOperationDeactivated.Add(ChenHaiButtonReset)
-    Events.UnitMovementPointsChanged.Add(ChenHaiButtonReset)
-    Events.UnitMovementPointsCleared.Add(ChenHaiButtonReset)
-    Events.UnitMovementPointsRestored.Add(ChenHaiButtonReset)
-    Events.UnitAbilityLost.Add(ChenHaiButtonReset)
-    Events.PhaseBegin.Add(ChenHaiButtonReset)
+    Events.UnitOperationSegmentComplete.Add(ChenHaiResetButton)
+    Events.UnitCommandStarted.Add(ChenHaiResetButton)
+    Events.UnitDamageChanged.Add(ChenHaiResetButton)
+    Events.UnitMoveComplete.Add(ChenHaiResetButton)
+    Events.UnitChargesChanged.Add(ChenHaiResetButton)
+    Events.UnitPromoted.Add(ChenHaiResetButton)
+    Events.UnitOperationsCleared.Add(ChenHaiResetButton)
+    Events.UnitOperationAdded.Add(ChenHaiResetButton)
+    Events.UnitOperationDeactivated.Add(ChenHaiResetButton)
+    Events.UnitMovementPointsChanged.Add(ChenHaiResetButton)
+    Events.UnitMovementPointsCleared.Add(ChenHaiResetButton)
+    Events.UnitMovementPointsRestored.Add(ChenHaiResetButton)
+    Events.UnitAbilityLost.Add(ChenHaiResetButton)
+    Events.PhaseBegin.Add(ChenHaiResetButton)
     ---------------ExposedMembers---------------
     -- ExposedMembers.ChenHai.IsMinor = ChenHaiIsMinor
     -- ExposedMembers.ChenHai.CanGiveTokensToPlayer = ChenHaiCanGiveTokenTo

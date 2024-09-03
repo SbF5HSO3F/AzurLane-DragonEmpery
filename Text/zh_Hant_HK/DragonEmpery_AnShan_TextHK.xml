@@ -3,5 +3,261 @@
 <!-- Author: jjj -->
 <!-- DateCreated: 2024/8/31 10:58:53 -->
 <GameData>
+	<LocalizedText>
+		<!--領袖介紹-->
+		<Replace Tag="LOC_LEADER_AN_SHAN_DD101_NAME" Language="zh_Hant_HK">
+			<Text>鞍山</Text>
+		</Replace>
+		<!--加載-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_AN_SHAN_DD101" Language="zh_Hant_HK">
+			<Text>東煌古國「四大金剛」之首，鞍山級驅逐艦首艦。鞍山，你是世界上行駛裏程最遠的驅逐艦之一，有著最為卓越的勇氣和敢於面對一切強敵的決心。為了祖國，奮勇向前吧！渤海那片灑滿紅霞的海面上，您的妹妹們正等待著你。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_QUOTE" Language="zh_Hant_HK">
+			<Text>整軍再戰，我們決不能就此退縮！</Text>
+		</Replace>
+		<!--The beautiful part about poems is not only their rhymes and coupling, but also the many thoughts hidden between the lines...-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<Text>鞍山將依靠她的工業區來鑄就她的勝利。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<Text>對於鞍山而言，她那強大的工業區可以為她提供源源不斷的 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁，並將它們轉化為城市發展的強大動力。因此，盡快研發煉鐵術並在城市裏普及鞍山鋼鐵成為了鞍山的最佳選擇。屆時，鞍山將從城市建設中獲得大量的 [ICON_Science] 科技值和 [ICON_Culture] 文化值。如果有文明想要嘗試征服鞍山的城市，不必擔心！鞍山的單位可以迅速拉平 [ICON_Strength] 戰鬥力的差距，在戰鬥中也將迅速獲得升級。對任何文明而言鞍山都十分棘手。在鞍山的守護下，東煌古國會成為世界上最偉大的國家。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>1954年10月12日，蘇聯根據《關於海軍交貨和關於在建造軍艦方面給予中國以技術援助的協定》向中國出售的兩艘驅逐艦、兩艘掃雷艦和兩艘小型潛艇駛抵青島。10月26日，中方在青島大港三號碼頭舉行了艦艇交接簽字儀式和授旗命名典禮。根據中央軍委命令，驅逐艦「列什切內依」號命名為海軍「鞍山」艦，舷號為101（不久後改為301），首任艦長蘇軍、政委劉成章。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>1955年11月，鞍山艦協同撫順艦參加遼東半島抗登陸演習，承擔藍方登陸編隊的警戒和火力支援任務，同時擔任指揮艦並接受首長視察。1957年8月4日，參加在青島膠州灣舉行的紀念人民解放軍成立三十周年海軍檢閱式，擔任周恩來總理乘坐的檢閱旗艦。1959年5月，南下參加南京軍區組織的穿山半島登陸演習，演練了對岸火力支援、打擊「敵」海上船隊等科目。1961年9月舷號改為201。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>1962年4月14日至22日間，鞍山艦與長春、太原等艦和掃雷艦兩艘、獵潛艇一艘協同，保持兩艘驅逐艦加一艘掃雷艦（獵潛艇）的編隊形式，持續8天監視在青島外海中國領海線外活動的美國海軍驅逐艦「狄海文」號，並對其侵入中國領海的行為發出了嚴重警告。1963年9月29日至10月5日，又協同撫順艦在山東半島和遼東半島外海監視在中國國慶期間抵近偵察的美海軍「布魯」號驅逐艦。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+			<Text>1973年11月至1974年10月，鞍山艦進入大連造船廠結合小修進行導彈化改裝，1974年11月完成兩發導彈打靶試驗，至此07型驅逐艦改裝「上遊一號」導彈工程全面完成。同年舷號改為101。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_5" Language="zh_Hant_HK">
+			<Text>1977年5月9日，鞍山艦與撫順艦南下參加「7713工程」（打撈日本沈船阿波丸）掩護任務，23日抵達福建省平潭縣牛山島附近作業海域。至7月22日回到青島，歷時75天，其中連續航行和錨泊56天，創下了07型驅逐艦的記錄。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_6" Language="zh_Hant_HK">
+			<Text>1992年2月21日，鞍山艦退役，4月24日在青島古鎮口海軍碼頭舉行退役降旗儀式。當年10月，接替長春艦在青島海軍博物館海上展艦區展出，直至今日。</Text>
+		</Replace>
+		<!--領袖議程-->
 
+		<!--領袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_NAME" Language="zh_Hant_HK">
+			<Text>青龍演武</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>擁有 [ICON_Strength] 戰鬥力的單位獲得「青龍演武」單位命令。</Text>
+		</Replace>
+		<!--領袖區域-->
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="zh_Hant_HK">
+			<Text>鞍山鋼鐵</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>鞍山特殊區域，取代工業區。解鎖更早，造價更低。[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_Science] 科技值。獎勵2點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。為相鄰的鞍山鋼鐵+50%相鄰加成，額外獎勵1點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。[NEWLINE][NEWLINE]從相鄰的區域獲得+1 [ICON_PRODUCTION] 生產力，從相鄰的戰略資源獲得+2 [ICON_PRODUCTION] 生產力。為相鄰的礦山提供+2 [ICON_Science] 科技值。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hant_HK">
+			<Text>鞍山特殊區域，取代工業區。解鎖更早，造價更低。[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_Science] 科技值。每回合提供4點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁，戰略資源儲備+10（標準速度下）。為相鄰的鞍山鋼鐵+50%相鄰加成，每回合額外提供2點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。[NEWLINE][NEWLINE]允許城市消耗 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁為當前生產提供 [ICON_PRODUCTION] 生產力。[NEWLINE]從相鄰的區域獲得+1 [ICON_PRODUCTION] 生產力，從相鄰的戰略資源獲得+2 [ICON_PRODUCTION] 生產力。為相鄰的礦山提供+2 [ICON_Science] 科技值。</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_ANSTEEL_DISTRICTS" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的每個區域</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_STRATEGIC" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的戰略資源</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_SCIENCE" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的鞍山鋼鐵</Text>
+		</Replace>
+		<!--領袖項目-->
+
+		<!--領袖單位-->
+
+		<!--特殊晉升-->
+
+		<!--特殊能力-->
+		<Replace Tag="LOC_PREVIEW_AN_SHAN_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>+{Property}來自青龍演武提升</Text>
+		</Replace>
+		<!--特殊命令-->
+
+		<!--特殊晉升-->
+
+		<!--Lua浮動文字顯示-->
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_NAME" Language="zh_Hant_HK">
+			<Text>青龍演武</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_DESC" Language="zh_Hant_HK">
+			<Text>每回合限一次，該單位在本回合內獲得 [ICON_Strength] 戰鬥力提升，為相鄰單位中的最高基礎戰鬥力與自身基礎戰鬥力之差。</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_DETAIL" Language="zh_Hant_HK">
+			<Text>將獲得{1_num}點 [ICON_Strength] 戰鬥力提升</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_IRON_DESC" Language="zh_Hant_HK">
+			<Text>消耗 [ICON_RESOURCE_IRON] 鐵為城市當前生產提供 [ICON_PRODUCTION] 生產力。每點 [ICON_RESOURCE_IRON] 鐵可提供{1_num} [ICON_PRODUCTION] 生產力，為建築、區域提供 [ICON_PRODUCTION] 生產力時所提供的 [ICON_PRODUCTION] 生產力翻倍。</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_IRON_DETAIL" Language="zh_Hant_HK">
+			<Text>消耗{1_num}點 [ICON_RESOURCE_IRON] 鐵提供{2_num}點 [ICON_PRODUCTION] 生產力，完成{3_Name}的生產</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DESC" Language="zh_Hant_HK">
+			<Text>消耗 [ICON_RESOURCE_ALUMINUM] 鋁為城市當前生產提供 [ICON_PRODUCTION] 生產力。每點 [ICON_RESOURCE_ALUMINUM] 鋁可提供{1_num} [ICON_PRODUCTION] 生產力，為單位、項目提供 [ICON_PRODUCTION] 生產力時所提供的 [ICON_PRODUCTION] 生產力翻倍。</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DETAIL" Language="zh_Hant_HK">
+			<Text>消耗{1_num}點 [ICON_RESOURCE_ALUMINUM] 鋁提供{2_num}點 [ICON_PRODUCTION] 生產力，完成{3_Name}的生產</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]單位不存在[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCHARGE_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]本回合已發動[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCOMBAT_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]無法獲得 [ICON_Strength] 戰鬥力提升[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCITY_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]城市不存在[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOANSTEEL_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]鞍山鋼鐵已遭到掠奪[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOBUILDINGQUEUE_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]該城市當前未進行任何生產[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOIRON_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]沒有足夠數量的 [ICON_RESOURCE_IRON] 鐵[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOALUMINUM_WARNING" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]沒有足夠數量的 [ICON_RESOURCE_ALUMINUM] 鋁[ENDCOLOR]</Text>
+		</Replace>
+		<!--外交對話-->
+		<![CDATA[<!--同意宣布友誼-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>嗯嗯，讓我們一起努力吧！</Text>
+		</Replace>
+		<!--拒絕宣布友誼-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>我要學習了，能不要打擾我嗎？</Text>
+		</Replace>
+		<!--請求宣布友誼-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>通往頂點的道路往往艱辛而又漫長，再堅強的人也難免孤獨。所以，我想與你結為朋友呢……</Text>
+		</Replace>
+		<!--宣布友誼被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>好，讓我們共同學習，一起向頂點前進吧！</Text>
+		</Replace>
+		<!--宣布友誼被拒絕-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>看樣子剛才有許多值得檢討的地方呢……</Text>
+		</Replace>
+		<!--被宣戰-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>戰爭？嗯，Z23，到了檢驗努力成果的時候了！</Text>
+		</Replace>
+		<!--宣戰-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>你為人處世的態度實在是太過敷衍，人生絕不能這麼荒廢。有必要好好督促你了！</Text>
+		</Replace>
+		<!--接受代表團-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>您的代表團已經安全抵達。放心，招待他們的宴席上沒有過多的辣椒。</Text>
+		</Replace>
+		<!--拒絕代表團-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>很遺憾，我今天還有好多事情要做。</Text>
+		</Replace>
+		<!--派出代表團-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>請接受我的代表團！他們帶著上好的馬鈴薯和香腸，還有我的好意。</Text>
+		</Replace>
+		<!--被譴責-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>在通往頂峰的道路上，這種詆毀無法避免。</Text>
+		</Replace>
+		<!--譴責-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>世界上怎麼會有對自己如此不認真的人？（譴責你）</Text>
+		</Replace>
+		<!--初次見面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>我是1936A型驅逐艦的首艦，Z23，從我開始的妹妹們都只有代號，不像姐姐們有繼承前人的名字。雖然有些不近人情不過確實比較方便，所以請不要客氣直接叫我Z23就好。</Text>
+		</Replace>
+		<!--初次見面，邀請參觀附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>希望造訪我們附近的城市麼？我會帶你欣賞屬於鐵血的獨特文化，同時也會帶你品嘗各種製法的馬鈴薯。</Text>
+		</Replace>
+		<!--初次見面，感謝玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>謝謝，這會促進我們之間的交流。</Text>
+		</Replace>
+		<!--初次見面，請求交換城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>我很想了解你的國家，我也會為你講述我的國家。讓我們先從首都開始吧！</Text>
+		</Replace>
+		<!--歡迎語？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>今天還有好多事情要做呢。</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>您努力的背影和取得的成就讓我憧憬。我希望能跟你一起進步。</Text>
+		</Replace>
+		<!--敵視-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>比起其他的事，你不如多看看書。</Text>
+		</Replace>
+		<!--請求結盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>讓我們結盟，共同登上高峰吧！</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>和平是一個好選擇。讓我們休戰吧！</Text>
+		</Replace>
+		<!--拒絕和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>不，這場考驗還沒有結束！</Text>
+		</Replace>
+		<!--請求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>這場戰爭已經背離了它的初衷。我們握手言和吧。</Text>
+		</Replace>
+		<!--接受開放邊界請求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>我很高興能為你開放邊境。鐵血公國不應是一個封閉的國家。</Text>
+		</Replace>
+		<!--拒絕開放邊界請求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>對不起，今天的鐵血公國有要事處理。</Text>
+		</Replace>
+		<!--請求開放邊界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>願意為我們開放你的邊境嗎？</Text>
+		</Replace>
+		<!--要求移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>你的軍隊在鐵血公國周邊鬼鬼祟祟的想幹什麼？我可不是那種隨隨便便就可以蒙混過去的女孩子哦，請盡快撤軍。</Text>
+		</Replace>
+		<!--拒絕移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>很抱歉讓你產生了擔憂，但你無法命令我。</Text>
+		</Replace>
+		<!--同意移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>我會盡快地移走你領土周邊的部隊，不必擔心。</Text>
+		</Replace>
+		<!--經受不住時間考驗-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text>唉，看來準備還不夠充分……你贏了。</Text>
+		</Replace>
+		<!--拒絕交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text></Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">
+			<Text></Text>
+		</Replace>]]>
+	</LocalizedText>
 </GameData>

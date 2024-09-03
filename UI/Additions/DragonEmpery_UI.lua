@@ -373,18 +373,17 @@ function AcademyOnGreatPersonActived(unitOwner, unitID, greatPersonClassID)
         --get the city building
         local cityBuildings = pCity:GetBuildings()
         if cityBuildings and cityBuildings:HasBuilding(ApricotAcademy) and not cityBuildings:IsPillaged(ApricotAcademy) then
-            --set the param
-            local param = {}
-            param.cityID = pCity:GetID()
-            param.classID = greatPersonClassID
-            param.OnStart = 'AcademyGreatPersonActivated'
             --request operations
-            UI.RequestPlayerOperation(Game.GetLocalPlayer(), PlayerOperations.EXECUTE_SCRIPT, param)
+            UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+                PlayerOperations.EXECUTE_SCRIPT, {
+                    cityID = pCity:GetID(),
+                    classID = greatPersonClassID,
+                    OnStart = 'AcademyGreatPersonActivated'
+                }
+            )
         end
     end
 end
-
-
 
 --||=================GameEvents functions=================||--
 
@@ -399,11 +398,11 @@ function Initialize()
     Events.UnitGreatPersonActivated.Add(AcademyOnGreatPersonActived)
     Events.LocalPlayerChanged.Add(ResetPanelAll)
     ---------------ExposedMembers---------------
-    ExposedMembers.DragonEmpery.GetAgeType = DragonEmperyGetPlayerAgeType
+    ExposedMembers.DragonEmpery.GetAgeType         = DragonEmperyGetPlayerAgeType
     ExposedMembers.DragonEmpery.GreatWorkTypeMatch = DragonEmperyGreatWorkTypeMatch
-    ExposedMembers.DragonEmpery.ResetTech = ResetPanelTech
-    ExposedMembers.DragonEmpery.ResetCivic = ResetPanelCivic
-    ExposedMembers.DragonEmpery.ResetEra = ResetEraAll
+    ExposedMembers.DragonEmpery.ResetTech          = ResetPanelTech
+    ExposedMembers.DragonEmpery.ResetCivic         = ResetPanelCivic
+    ExposedMembers.DragonEmpery.ResetEra           = ResetEraAll
     --------------------------------------------
     print('Initial success!')
 end

@@ -10,27 +10,26 @@
 		</Replace>
 		<!--加载-->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_AN_SHAN_DD101" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>东煌古国“四大金刚”之首，鞍山级驱逐舰首舰。鞍山，你是世界上行驶里程最远的驱逐舰之一，有着最为卓越的勇气和敢于面对一切强敌的决心。为了祖国，奋勇向前吧！渤海那片洒满红霞的海面上，您的妹妹们正等待着你。</Text>
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_QUOTE" Language="zh_Hans_CN">
 			<Text>整军再战，我们决不能就此退缩！</Text>
 		</Replace>
-		<!--The beautiful part about poems is not only their rhymes and coupling, but also the many thoughts hidden between the lines...-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>鞍山将依靠她的工业区来铸就她的胜利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>对于鞍山而言，她那强大的工业区可以为她提供源源不断的 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，并将它们转化为城市发展的强大动力。因此，尽快研发炼铁术并在城市里普及鞍山钢铁成为了鞍山的最佳选择。届时，鞍山将从城市建设中获得大量的 [ICON_Science] 科技值和 [ICON_Culture] 文化值。如果有文明想要尝试征服鞍山的城市，不必担心！鞍山的单位可以迅速拉平 [ICON_Strength] 战斗力的差距，在战斗中也将迅速获得升级。对任何文明而言鞍山都十分棘手。在鞍山的守护下，东煌古国会成为世界上最伟大的国家。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
-			<Text>1954年10月12日，苏联根据《关于海军交货和关于在建造军舰方面给予中国以技术援助的协定》向我国出售的两艘驱逐舰、两艘扫雷舰和两艘小型潜艇驶抵青岛。10月26日，中方在青岛大港三号码头举行了舰艇交接签字仪式和授旗命名典礼。根据中央军委命令，驱逐舰“列什切内依”号命名为海军“鞍山”舰，舷号为101（不久后改为301），首任舰长苏军、政委刘成章。</Text>
+			<Text>1954年10月12日，苏联根据《关于海军交货和关于在建造军舰方面给予中国以技术援助的协定》向中国出售的两艘驱逐舰、两艘扫雷舰和两艘小型潜艇驶抵青岛。10月26日，中方在青岛大港三号码头举行了舰艇交接签字仪式和授旗命名典礼。根据中央军委命令，驱逐舰“列什切内依”号命名为海军“鞍山”舰，舷号为101（不久后改为301），首任舰长苏军、政委刘成章。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
 			<Text>1955年11月，鞍山舰协同抚顺舰参加辽东半岛抗登陆演习，承担蓝方登陆编队的警戒和火力支援任务，同时担任指挥舰并接受首长视察。1957年8月4日，参加在青岛胶州湾举行的纪念人民解放军成立三十周年海军检阅式，担任周恩来总理乘坐的检阅旗舰。1959年5月，南下参加南京军区组织的穿山半岛登陆演习，演练了对岸火力支援、打击“敌”海上船队等科目。1961年9月舷号改为201。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
-			<Text>1962年4月14日至22日间，鞍山舰与长春、太原等舰和扫雷舰两艘、猎潜艇一艘协同，保持两艘驱逐舰加一艘扫雷舰（猎潜艇）的编队形式，持续8天监视在青岛外海我国领海线外活动的美国海军驱逐舰“狄海文”号，并对其侵入我国领海的行为发出了严重警告。1963年9月29日至10月5日，又协同抚顺舰在山东半岛和辽东半岛外海监视在我国国庆期间抵近侦察的美海军“布鲁”号驱逐舰。</Text>
+			<Text>1962年4月14日至22日间，鞍山舰与长春、太原等舰和扫雷舰两艘、猎潜艇一艘协同，保持两艘驱逐舰加一艘扫雷舰（猎潜艇）的编队形式，持续8天监视在青岛外海中国领海线外活动的美国海军驱逐舰“狄海文”号，并对其侵入中国领海的行为发出了严重警告。1963年9月29日至10月5日，又协同抚顺舰在山东半岛和辽东半岛外海监视在中国国庆期间抵近侦察的美海军“布鲁”号驱逐舰。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
 			<Text>1973年11月至1974年10月，鞍山舰进入大连造船厂结合小修进行导弹化改装，1974年11月完成两发导弹打靶试验，至此07型驱逐舰改装“上游一号”导弹工程全面完成。同年舷号改为101。</Text>
@@ -44,21 +43,21 @@
 		<!--领袖议程-->
 
 		<!--领袖能力-->
-		<Replace Tag="LOC_TRAIT_LEADER_AZURE_DRAGON_S_DANCE_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_NAME" Language="zh_Hans_CN">
 			<Text>青龙演武</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_AZURE_DRAGON_S_DANCE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>拥有 [ICON_Strength] 战斗力的单位获得“青龙演武”单位命令。单位每拥有15点经验，便+1 [ICON_Strength] 战斗力。</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>单位在击杀敌方单位后将获得1级强化升级。建成建筑时，获得等同于建筑花费20%的 [ICON_Science] 科技值和 [ICON_Culture] 文化值。拥有 [ICON_Strength] 战斗力的单位获得“青龙演武”单位命令。</Text>
 		</Replace>
 		<!--领袖区域-->
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="zh_Hans_CN">
 			<Text>鞍山钢铁</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+100%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+50%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+100%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝为当前生产提供 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+50%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝为当前生产提供 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_ANSTEEL_DISTRICTS" Language="zh_Hans_CN">

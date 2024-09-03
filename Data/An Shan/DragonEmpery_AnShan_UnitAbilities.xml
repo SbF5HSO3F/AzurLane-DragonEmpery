@@ -5,34 +5,56 @@
 <GameData>
 	<Types>
 		<Row Type="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"		Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_AN_SHAN_UNIT_GRANT_EXP"			Kind="KIND_ABILITY"/>
 	</Types>
 	<TypeTags>
 		<Row Type="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"		Tag="CLASS_ALL_COMBAT_UNITS"/>
 		<Row Type="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"		Tag="CLASS_NAVAL_CARRIER"/>
+		<Row Type="ABILITY_AN_SHAN_UNIT_GRANT_EXP"			Tag="CLASS_ALL_UNITS"/>
 	</TypeTags>
 	<UnitAbilities>
 		<Row UnitAbilityType="ABILITY_AN_SHAN_COMBAT_UNITS_BUFF"	Inactive="true"/>
+		<Row UnitAbilityType="ABILITY_AN_SHAN_UNIT_GRANT_EXP"		Inactive="true"/>
 	</UnitAbilities>
 	<ModifierStrings>
 		<Row ModifierId="AN_SHAN_COMBAT_UNITS_BUFF"		Context="Preview" Text="LOC_PREVIEW_AN_SHAN_COMBAT_UNITS_BUFF_DESCRIPTION"/>
 	</ModifierStrings>
 	<UnitAbilityModifiers>
+		<!--鞍山战斗力-->
 		<Row>
 			<UnitAbilityType>ABILITY_AN_SHAN_COMBAT_UNITS_BUFF</UnitAbilityType>
 			<ModifierId>AN_SHAN_COMBAT_UNITS_BUFF</ModifierId>
 		</Row>
+		<!--强化升级-->
+		<Row>
+			<UnitAbilityType>ABILITY_AN_SHAN_UNIT_GRANT_EXP</UnitAbilityType>
+			<ModifierId>AN_SHAN_UNIT_GRANT_EXP</ModifierId>
+		</Row>
 	</UnitAbilityModifiers>
 	<Modifiers>
+		<!--鞍山战斗力-->
 		<Row>
 			<ModifierId>AN_SHAN_COMBAT_UNITS_BUFF</ModifierId>
 			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
 		</Row>
+		<!--强化升级-->
+		<Row>
+			<ModifierId>AN_SHAN_UNIT_GRANT_EXP</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_GRANT_EXPERIENCE</ModifierType>
+		</Row>
 	</Modifiers>
 	<ModifierArguments>
+		<!--鞍山战斗力-->
 		<Row>
 			<ModifierId>AN_SHAN_COMBAT_UNITS_BUFF</ModifierId>
 			<Name>Key</Name>
 			<Value>AnShanCombatAdd</Value>
+		</Row>
+		<!--强化升级-->
+		<Row>
+			<ModifierId>AN_SHAN_UNIT_GRANT_EXP</ModifierId>
+			<Name>Amount</Name>
+			<Value>-1</Value>
 		</Row>
 	</ModifierArguments>
 </GameData>

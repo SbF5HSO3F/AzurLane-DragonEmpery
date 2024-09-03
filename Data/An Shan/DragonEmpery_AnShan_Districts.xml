@@ -178,7 +178,7 @@
 		<Row>
 			<ModifierId>ANSTEEL_ADJUST_ANSTEEL_YIELD</ModifierId>
 			<Name>Amount</Name>
-			<Value>100</Value>
+			<Value>50</Value>
 		</Row>
 		<Row>
 			<ModifierId>ANSTEEL_ADJUST_ANSTEEL_YIELD</ModifierId>

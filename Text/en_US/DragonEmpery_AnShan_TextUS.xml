@@ -3,5 +3,260 @@
 <!-- Author: jjj -->
 <!-- DateCreated: 2024/8/31 10:59:05 -->
 <GameData>
+    <LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_AN_SHAN_DD101_NAME" Language="en_US">
+			<Text>An Shan</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_AN_SHAN_DD101" Language="en_US">
+			<Text>The first of the ‘Four Greats’ of Dragon Empery, the first ship of the An Shan-class destroyers. An Shan, one of the world's longest-distance destroyers, has the most outstanding courage and determination to face all enemies. For the sake of the motherland, go forward! Your sisters are waiting for you on the Bohai Sea with its reddish haze.</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_QUOTE" Language="en_US">
+			<Text>Everyone, regroup. We can't retreat like this!</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_CAPSULE_BODY" Language="en_US">
+			<Text>An Shan will rely on the AnSteel to forge her victories.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_DETAILED_BODY" Language="en_US">
+			<Text>For An Shan, her strong industrial zone can provide her with a constant supply of [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium, which can be turned into a powerful driving force for the city's development. Therefore, it became the best choice for An Shan to develop Iron Working as soon as possible and popularise Ansteel in the city. An Shan will then gain a lot of [ICON_Science] Science and [ICON_Culture] Culture from the construction of the city. If any civilisation wants to try and conquer An Shan's cities, don't worry! An Shan's units will quickly even out the [ICON_Strength] Combat Strength gap and will quickly gain upgrades in battle. An Shan is very tricky for any civilisation. Under An Shan's guardianship, Dragon Empery will become the greatest nation in the world.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>On 12 October 1954, two destroyers, two minesweepers and two mini-submarines sold by the USSR to China under the Agreement on Naval Delivery and Technical Assistance to China in the Construction of Warships arrived in Qingdao, and on 26 October, the Chinese side held a signing ceremony for the handover of the ships and a flag-naming ceremony at the No. 3 dock of Qingdao Dagang. According to the order of the Central Military Commission, the destroyer Leshchiney was named Naval Ship An Shan, with the port number 101 (soon to be changed to 301), and its first captain, Su Jun, and political commissar, Liu Chengzhang, were appointed.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>In November 1955, An Shan participated in the anti-landing exercise on Liaodong Peninsula with Fu Shun, assumed the task of guarding and fire support for the blue landing formation, and at the same time acted as the commanding ship and accepted the chief's inspection. 4 August 1957, participated in the naval parade held in Jiaozhou Bay, Qingdao, to commemorate the 30th anniversary of the founding of the People's Liberation Army, and acted as the flagship of the parade in which Premier Zhou Enlai rode. 1959, in May, the ship moved to the south to participate in the landing exercise on the Peninsula organized by the Nanjing Military Region. In May 1959, she went south to take part in the landing manoeuvres on the Peninsula organised by the Nanjing Military Region, where she rehearsed such subjects as fire support to the shore and combating the ‘enemy’ maritime convoys, etc. In September 1961, her port number was changed to 201.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>Between 14 and 22 April 1962, An Shan, together with Chang Chun, Tai Yuan and two minesweepers and one submarine, maintained a formation of two destroyers and one minesweeper (submarine) for eight days to monitor the U.S.S. Di Haiwen, which operated outside China's territorial waters off Qingdao and issued a serious warning against its intrusion into China's territorial waters. From 29 September to 5 October 1963, in conjunction with the Fu Shun, the U.S. Navy destroyer Brewer was under surveillance off the Shandong and Liaodong Peninsulas to monitor the U.S. Navy destroyer Brewer, which had come close to China for reconnaissance during China's National Day.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>From November 1973 to October 1974, An Shan entered Dalian Shipyard for missile modification in combination with minor repairs, and in November 1974, two missile target tests were completed, thus the modification of the Type 07 destroyer to the ‘Upstream No. 1’ missile project was fully completed. In the same year, the port number was changed to 101.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_5" Language="en_US">
+			<Text>On 9 May 1977, An Shan and Fu Shun went south to take part in ‘Project 7713’ (salvage of Japanese shipwreck Awa Maru) to cover the mission, and arrived at the operation area near Niushan Island, Pingtan County, Fujian Province on the 23rd. They returned to Qingdao on 22 July, lasting 75 days, including 56 days of continuous sailing and anchoring, which set a record for Type 07 destroyers.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_6" Language="en_US">
+			<Text>On 21 February 1992, An Shan was decommissioned, and on 24 April a flag-lowering ceremony was held at the Qingdao Guzhenkou Navy Pier. In October of that year, it succeeded Chang Chun in the maritime exhibition area of the Qingdao Naval Museum, where it is on display until today.</Text>
+		</Replace>
+		<!--领袖议程-->
 
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_NAME" Language="en_US">
+			<Text>Loong's Dance</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_DESCRIPTION" Language="en_US">
+			<Text>Units will gain a promotion level after killing an enemy unit. Gain [ICON_Science] Science and [ICON_Culture] Culture equal to 20% of the construction cost when finishing Buildings. Units with [ICON_Strength] Combat Strength gain the "Loong's Dance" Unit Command.</Text>
+		</Replace>
+		<!--领袖区域-->
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="en_US">
+			<Text>Ansteel</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="en_US">
+			<Text>An Shan unique district, replacing Industrial Zone district, unlock earlier, cost less. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_Science] Science. Awards 2 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium. +50% adjacency bonus for adjacent Ansteel, with additional 1 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production from each adjacent districts, +2 [ICON_PRODUCTION] Production from adjacent Strategic resources. Provides +2 [ICON_Science] Science for adjacent Mines.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="en_US">
+			<Text>An Shan unique district, replacing Industrial Zone district, unlock earlier, cost less. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_Science] Science. Provides 4 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium per turn, Strategic Resource Stockpiles increased +10 (on Standard Speed). +50% adjacency bonus for adjacent Ansteel, with additional 1 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium per turn.[NEWLINE][NEWLINE]Allows cities to consume [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium to provide [ICON_PRODUCTION] Production for current production.[NEWLINE]+1 [ICON_PRODUCTION] Production from each adjacent districts, +2 [ICON_PRODUCTION] Production from adjacent Strategic resources. Provides +2 [ICON_Science] Science for adjacent Mines.</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_ANSTEEL_DISTRICTS" Language="en_US">
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent {1_Num : plural 1?district; other?districts;}.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_STRATEGIC" Language="en_US">
+			<Text>+{1_num} [ICON_PRODUCTION] Production from the adjacent Strategic {1_Num : plural 2?resource; other?resources;}.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_SCIENCE" Language="en_US">
+			<Text>+{1_num} [ICON_Science] Science from each adjacent Ansteel {1_Num : plural 2?district; other?districts;}.</Text>
+		</Replace>
+		<!--领袖项目-->
+
+		<!--领袖单位-->
+
+		<!--特殊晋升-->
+
+		<!--特殊能力-->
+		<Replace Tag="LOC_PREVIEW_AN_SHAN_COMBAT_UNITS_BUFF_DESCRIPTION" Language="en_US">
+			<Text>+{Property} from Loong's Dance</Text>
+		</Replace>
+		<!--特殊命令-->
+
+		<!--特殊晋升-->
+
+		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_NAME" Language="en_US">
+			<Text>Loong's Dance</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_DESC" Language="en_US">
+			<Text>Limited to once per turn, this unit gains [ICON_Strength] Combat Strength bonus for the turn, as the difference between the highest Base Combat Strength of an adjacent unit and its own Base Combat Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_UNIT_COMBAT_DETAIL" Language="en_US">
+			<Text>Will gain {1_num} [ICON_Strength] Combat Strength bonus</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_IRON_DESC" Language="en_US">
+			<Text>Consuming [ICON_RESOURCE_IRON] Iron provides [ICON_PRODUCTION] Production to the city's current production. Each point of [ICON_RESOURCE_IRON] Iron provides {1_num} [ICON_PRODUCTION] Production, and doubles the [ICON_PRODUCTION] Production provided when providing [ICON_PRODUCTION] Production to a Buildings or Districts.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_IRON_DETAIL" Language="en_US">
+			<Text>Consume {1_num} {1_num : plural 1?point; other?points;} [ICON_RESOURCE_IRON] Iron to provide {2_num} [ICON_PRODUCTION] Production to complete {3_Name}.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DESC" Language="en_US">
+			<Text>Consuming [ICON_RESOURCE_ALUMINUM] Aluminium provides [ICON_PRODUCTION] Production for the city's current production. Each point of [ICON_RESOURCE_ALUMINUM] Aluminium provides {1_num} [ICON_PRODUCTION] Production, doubling the [ICON_PRODUCTION] Production provided when providing [ICON_PRODUCTION] Production to a Units or Projects.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DETAIL" Language="en_US">
+			<Text>Consume {1_num} {1_num : plural 1?point; other?points;} [ICON_RESOURCE_ALUMINUM] Aluminium provides {2_num} [ICON_PRODUCTION] Production to complete {3_Name}。</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="en_US">
+			<Text>[COLOR_RED]Unit does not exist[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCHARGE_WARNING" Language="en_US">
+			<Text>[COLOR_RED]This command has already been used by the unit this turn[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCOMBAT_WARNING" Language="en_US">
+			<Text>[COLOR_RED]Unable to get [ICON_Strength] Combat Strength bonus[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOCITY_WARNING" Language="en_US">
+			<Text>[COLOR_RED]The city does not exist.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOANSTEEL_WARNING" Language="en_US">
+			<Text>[COLOR_RED]Ansteel has been pillaged.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOBUILDINGQUEUE_WARNING" Language="en_US">
+			<Text>[COLOR_RED]This city is not currently producing anything.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOIRON_WARNING" Language="en_US">
+			<Text>[COLOR_RED]There are not enough [ICON_RESOURCE_IRON] Iron.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_NOALUMINUM_WARNING" Language="en_US">
+			<Text>[COLOR_RED]There are not enough [ICON_RESOURCE_ALUMINUM] Aluminium.[ENDCOLOR]</Text>
+		</Replace>
+		<!--外交对话-->
+		<![CDATA[<!--同意宣布友谊-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>嗯嗯，让我们一起努力吧！</Text>
+		</Replace>
+		<!--拒绝宣布友谊-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>我要学习了，能不要打扰我吗？</Text>
+		</Replace>
+		<!--请求宣布友谊-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>通往顶点的道路往往艰辛而又漫长，再坚强的人也难免孤独。所以，我想与你结为朋友呢……</Text>
+		</Replace>
+		<!--宣布友谊被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>好，让我们共同学习，一起向顶点前进吧！</Text>
+		</Replace>
+		<!--宣布友谊被拒绝-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>看样子刚才有许多值得检讨的地方呢……</Text>
+		</Replace>
+		<!--被宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>战争？嗯，Z23，到了检验努力成果的时候了！</Text>
+		</Replace>
+		<!--宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>你为人处世的态度实在是太过敷衍，人生绝不能这么荒废。有必要好好督促你了！</Text>
+		</Replace>
+		<!--接受代表团-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>您的代表团已经安全抵达。放心，招待他们的宴席上没有过多的辣椒。</Text>
+		</Replace>
+		<!--拒绝代表团-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>很遗憾，我今天还有好多事情要做。</Text>
+		</Replace>
+		<!--派出代表团-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>请接受我的代表团！他们带着上好的马铃薯和香肠，还有我的好意。</Text>
+		</Replace>
+		<!--被谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>在通往顶峰的道路上，这种诋毁无法避免。</Text>
+		</Replace>
+		<!--谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>世界上怎么会有对自己如此不认真的人？（谴责你）</Text>
+		</Replace>
+		<!--初次见面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>我是1936A型驱逐舰的首舰，Z23，从我开始的妹妹们都只有代号，不像姐姐们有继承前人的名字。虽然有些不近人情不过确实比较方便，所以请不要客气直接叫我Z23就好。</Text>
+		</Replace>
+		<!--初次见面，邀请参观附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>希望造访我们附近的城市么？我会带你欣赏属于铁血的独特文化，同时也会带你品尝各种制法的马铃薯。</Text>
+		</Replace>
+		<!--初次见面，感谢玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>谢谢，这会促进我们之间的交流。</Text>
+		</Replace>
+		<!--初次见面，请求交换城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>我很想了解你的国家，我也会为你讲述我的国家。让我们先从首都开始吧！</Text>
+		</Replace>
+		<!--欢迎语？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>今天还有好多事情要做呢。</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>您努力的背影和取得的成就让我憧憬。我希望能跟你一起进步。</Text>
+		</Replace>
+		<!--敌视-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>比起其他的事，你不如多看看书。</Text>
+		</Replace>
+		<!--请求结盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>让我们结盟，共同登上高峰吧！</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>和平是一个好选择。让我们休战吧！</Text>
+		</Replace>
+		<!--拒绝和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>不，这场考验还没有结束！</Text>
+		</Replace>
+		<!--请求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>这场战争已经背离了它的初衷。我们握手言和吧。</Text>
+		</Replace>
+		<!--接受开放边界请求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>我很高兴能为你开放边境。铁血公国不应是一个封闭的国家。</Text>
+		</Replace>
+		<!--拒绝开放边界请求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>对不起，今天的铁血公国有要事处理。</Text>
+		</Replace>
+		<!--请求开放边界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>愿意为我们开放你的边境吗？</Text>
+		</Replace>
+		<!--要求移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>你的军队在铁血公国周边鬼鬼祟祟的想干什么？我可不是那种随随便便就可以蒙混过去的女孩子哦，请尽快撤军。</Text>
+		</Replace>
+		<!--拒绝移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>很抱歉让你产生了担忧，但你无法命令我。</Text>
+		</Replace>
+		<!--同意移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>我会尽快地移走你领土周边的部队，不必担心。</Text>
+		</Replace>
+		<!--经受不住时间考验-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text>唉，看来准备还不够充分……你赢了。</Text>
+		</Replace>
+		<!--拒绝交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text></Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
+			<Text></Text>
+		</Replace>]]>
+	</LocalizedText>
 </GameData>

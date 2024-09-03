@@ -5,7 +5,7 @@
 <GameData>
 	<Types>
 		<Row Type="LEADER_AN_SHAN_DD101" Kind="KIND_LEADER"/>
-		<Row Type="TRAIT_LEADER_AZURE_DRAGON_S_DANCE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_AZURE_LOONG_S_DANCE" Kind="KIND_TRAIT"/>
 		<Row Type="TRAIT_LEADER_DISTRICT_ANSTEEL" Kind="KIND_TRAIT"/>
 	</Types>
 	<Leaders>
@@ -15,11 +15,11 @@
 		<Row LeaderType="LEADER_AN_SHAN_DD101" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_QUOTE"/>
 	</LeaderQuotes>
 	<Traits>
-		<Row TraitType="TRAIT_LEADER_AZURE_DRAGON_S_DANCE"		Name="LOC_TRAIT_LEADER_AZURE_DRAGON_S_DANCE_NAME"	Description="LOC_TRAIT_LEADER_AZURE_DRAGON_S_DANCE_DESCRIPTION"/>
-		<Row TraitType="TRAIT_LEADER_DISTRICT_ANSTEEL"		Name="LOC_DISTRICT_ANSTEEL_NAME"				Description="LOC_DISTRICT_ANSTEEL_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_AZURE_LOONG_S_DANCE"	Name="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_NAME"	Description="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_DISTRICT_ANSTEEL"		Name="LOC_DISTRICT_ANSTEEL_NAME"					Description="LOC_DISTRICT_ANSTEEL_DESCRIPTION"/>
 	</Traits>
 	<LeaderTraits>
-		<Row LeaderType="LEADER_AN_SHAN_DD101" TraitType="TRAIT_LEADER_AZURE_DRAGON_S_DANCE"/>
+		<Row LeaderType="LEADER_AN_SHAN_DD101" TraitType="TRAIT_LEADER_AZURE_LOONG_S_DANCE"/>
 		<Row LeaderType="LEADER_AN_SHAN_DD101" TraitType="TRAIT_LEADER_DISTRICT_ANSTEEL"/>
 	</LeaderTraits>
 	<LoadingInfo>
@@ -31,12 +31,68 @@
 	<TraitModifiers>
 		<!--KANSEN-->
 		<Row>
-			<TraitType>TRAIT_LEADER_AZURE_DRAGON_S_DANCE</TraitType>
+			<TraitType>TRAIT_LEADER_AZURE_LOONG_S_DANCE</TraitType>
 			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_LEADER_AZURE_DRAGON_S_DANCE</TraitType>
+			<TraitType>TRAIT_LEADER_AZURE_LOONG_S_DANCE</TraitType>
 			<ModifierId>DRAGON_EMPERY_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
+		<!--建筑给科技-->
+		<Row>
+			<TraitType>TRAIT_LEADER_AZURE_LOONG_S_DANCE</TraitType>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_SCIENCE</ModifierId>
+		</Row>
+		<!--建筑给文化-->
+		<Row>
+			<TraitType>TRAIT_LEADER_AZURE_LOONG_S_DANCE</TraitType>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_CULTURE</ModifierId>
+		</Row>
 	</TraitModifiers>
+	<Modifiers>
+		<!--建筑给科技-->
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_PLAYER_CITIES_GRANT_YIELD_PER_BUILDING_COST</ModifierType>
+		</Row>
+		<!--建筑给文化-->
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_DRAGON_EMPERY_PLAYER_CITIES_GRANT_YIELD_PER_BUILDING_COST</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--建筑给科技-->
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_SCIENCE</ModifierId>
+			<Name>BuildingProductionPercent</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_SCIENCE</ModifierId>
+			<Name>IncludeWonder</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<!--建筑给文化-->
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_CULTURE</ModifierId>
+			<Name>BuildingProductionPercent</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_CULTURE</ModifierId>
+			<Name>IncludeWonder</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>ANSHAN_COMPLETE_BUILING_GRANT_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+	</ModifierArguments>
 </GameData>

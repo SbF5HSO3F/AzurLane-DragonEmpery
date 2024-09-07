@@ -97,22 +97,25 @@
 			<Text>Consuming [ICON_RESOURCE_IRON] Iron provides [ICON_PRODUCTION] Production to the city's current production. Each point of [ICON_RESOURCE_IRON] Iron provides {1_num} [ICON_PRODUCTION] Production, and doubles the [ICON_PRODUCTION] Production provided when providing [ICON_PRODUCTION] Production to a Buildings or Districts.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_IRON_DETAIL" Language="en_US">
-			<Text>Consume {1_num} {1_num : plural 1?point; other?points;} [ICON_RESOURCE_IRON] Iron to provide {2_num} [ICON_PRODUCTION] Production to complete {3_Name}.</Text>
+			<Text>Consume {1_num} {1_num : plural 1?point; other?points;} [ICON_RESOURCE_IRON] Iron to provide {2_num} [ICON_PRODUCTION] Production to {3_Name}.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DESC" Language="en_US">
 			<Text>Consuming [ICON_RESOURCE_ALUMINUM] Aluminium provides [ICON_PRODUCTION] Production for the city's current production. Each point of [ICON_RESOURCE_ALUMINUM] Aluminium provides {1_num} [ICON_PRODUCTION] Production, doubling the [ICON_PRODUCTION] Production provided when providing [ICON_PRODUCTION] Production to a Units or Projects.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DETAIL" Language="en_US">
-			<Text>Consume {1_num} {1_num : plural 1?point; other?points;} [ICON_RESOURCE_ALUMINUM] Aluminium provides {2_num} [ICON_PRODUCTION] Production to complete {3_Name}。</Text>
+			<Text>Consume {1_num} {1_num : plural 1?point; other?points;} [ICON_RESOURCE_ALUMINUM] Aluminium provides {2_num} [ICON_PRODUCTION] Production to {3_Name}.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_COMPLETE" Language="en_US">
+			<Text>[ICON_BULLET]{1_Name} will be completed.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="en_US">
-			<Text>[COLOR_RED]Unit does not exist[ENDCOLOR]</Text>
+			<Text>[COLOR_RED]Unit does not exist.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOCHARGE_WARNING" Language="en_US">
-			<Text>[COLOR_RED]This command has already been used by the unit this turn[ENDCOLOR]</Text>
+			<Text>[COLOR_RED]This command has already been used by the unit this turn.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOCOMBAT_WARNING" Language="en_US">
-			<Text>[COLOR_RED]Unable to get [ICON_Strength] Combat Strength bonus[ENDCOLOR]</Text>
+			<Text>[COLOR_RED]Unable to get [ICON_Strength] Combat Strength bonus.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOCITY_WARNING" Language="en_US">
 			<Text>[COLOR_RED]The city does not exist.[ENDCOLOR]</Text>

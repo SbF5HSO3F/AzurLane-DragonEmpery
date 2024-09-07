@@ -98,13 +98,16 @@
 			<Text>消耗 [ICON_RESOURCE_IRON] 鐵為城市當前生產提供 [ICON_PRODUCTION] 生產力。每點 [ICON_RESOURCE_IRON] 鐵可提供{1_num} [ICON_PRODUCTION] 生產力，為建築、區域提供 [ICON_PRODUCTION] 生產力時所提供的 [ICON_PRODUCTION] 生產力翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_IRON_DETAIL" Language="zh_Hant_HK">
-			<Text>消耗{1_num}點 [ICON_RESOURCE_IRON] 鐵提供{2_num}點 [ICON_PRODUCTION] 生產力，完成{3_Name}的生產</Text>
+			<Text>消耗{1_num}點 [ICON_RESOURCE_IRON] 鐵為{3_Name}提供{2_num}點 [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DESC" Language="zh_Hant_HK">
 			<Text>消耗 [ICON_RESOURCE_ALUMINUM] 鋁為城市當前生產提供 [ICON_PRODUCTION] 生產力。每點 [ICON_RESOURCE_ALUMINUM] 鋁可提供{1_num} [ICON_PRODUCTION] 生產力，為單位、項目提供 [ICON_PRODUCTION] 生產力時所提供的 [ICON_PRODUCTION] 生產力翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DETAIL" Language="zh_Hant_HK">
-			<Text>消耗{1_num}點 [ICON_RESOURCE_ALUMINUM] 鋁提供{2_num}點 [ICON_PRODUCTION] 生產力，完成{3_Name}的生產</Text>
+			<Text>消耗{1_num}點 [ICON_RESOURCE_ALUMINUM] 鋁為{3_Name}提供{2_num}點 [ICON_PRODUCTION] 生產力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANSTEEL_COST_COMPLETE" Language="zh_Hant_HK">
+			<Text>[ICON_BULLET]{1_Name}的生產將會完成</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="zh_Hant_HK">
 			<Text>[COLOR_RED]單位不存在[ENDCOLOR]</Text>

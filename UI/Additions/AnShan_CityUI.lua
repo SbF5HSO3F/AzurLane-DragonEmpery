@@ -15,12 +15,6 @@ local aluminumIndex = GameInfo.Resources['RESOURCE_ALUMINUM'].Index
 
 --||====================base functions====================||--
 
---judge the city cost resource
-function AnShanJudgeCityResource(pCity)
-    local cityResource = pCity:GetProperty('AnShanCityResource')
-    return cityResource == 'Aluminum' and 'Aluminum' or 'Iron'
-end
-
 --disable?
 function AnShanGetCityButtonDetail(pCity)
     --the detail that needs return
@@ -29,9 +23,11 @@ function AnShanGetCityButtonDetail(pCity)
         Production            = baseResProduction,
         IronDisable           = false,
         IronCost              = 0,
+        IronEnough            = true,
         IronProduction        = 0,
         AluminumDisable       = false,
         AluminumCost          = 0,
+        AluminumEnough        = true,
         AluminumProduction    = 0,
         currentProduction     = 'NONE',
         currentProductionName = 'NONE',
@@ -40,7 +36,7 @@ function AnShanGetCityButtonDetail(pCity)
     --the production can afford
     local progress = DragonEmperyPlayerGameProgress(pCity:GetOwner())
     local base = DragonEmperySpeedModifier((1 + (multFactor - 1) * (progress / 100)) * baseResProduction)
-    detail.Production = base; local effect = base * 2
+    detail.Production = base
     --if resource is nil, that is Iron
     if pCity then
         --the city has the AnSteel?
@@ -57,6 +53,10 @@ function AnShanGetCityButtonDetail(pCity)
                 local productionNeed = 0
                 --get the currently building name
                 local currentProduction = 'NONE'
+                --get the iron effect
+                local ironOffer = base
+                --get the aluminum effect
+                local aluminumOffer = base
 
 
                 --building district unit project
@@ -69,12 +69,8 @@ function AnShanGetCityButtonDetail(pCity)
                     local index = pBuildingDef.Index
                     --get the building prduction need
                     productionNeed = cityBuildQueue:GetBuildingCost(index) - cityBuildQueue:GetBuildingProgress(index)
-                    --get the iron cost
-                    detail.IronCost = math.ceil(productionNeed / effect)
-                    detail.IronProduction = effect * detail.IronCost
-                    --get the aluminum cost
-                    detail.AluminumCost = math.ceil(productionNeed / base)
-                    detail.AluminumProduction = base * detail.AluminumCost
+                    --set the effect
+                    ironOffer = ironOffer * 2
                     --the currently building name
                     currentProduction = Locale.Lookup(pBuildingDef.Name)
                     detail.currentProduction = pBuildingDef.BuildingType
@@ -82,12 +78,8 @@ function AnShanGetCityButtonDetail(pCity)
                     local index = pDistrictDef.Index
                     --get the district porduction need
                     productionNeed = cityBuildQueue:GetDistrictCost(index) - cityBuildQueue:GetDistrictProgress(index)
-                    --get the iron cost
-                    detail.IronCost = math.ceil(productionNeed / effect)
-                    detail.IronProduction = effect * detail.IronCost
-                    --get the aluminum cost
-                    detail.AluminumCost = math.ceil(productionNeed / base)
-                    detail.AluminumProduction = base * detail.AluminumCost
+                    --set the effect
+                    ironOffer = ironOffer * 2
                     --the currently building name
                     currentProduction = Locale.Lookup(pDistrictDef.Name)
                     detail.currentProduction = pDistrictDef.DistrictType
@@ -120,33 +112,44 @@ function AnShanGetCityButtonDetail(pCity)
                             currentProduction = currentProduction .. " " .. Locale.Lookup("LOC_UNITFLAG_ARMY_SUFFIX");
                         end
                     end
-                    --get the iron cost
-                    detail.IronCost = math.ceil(productionNeed / base)
-                    detail.IronProduction = base * detail.IronCost
-                    --get the aluminum cost
-                    detail.AluminumCost = math.ceil(productionNeed / effect)
-                    detail.AluminumProduction = effect * detail.AluminumCost
+                    --set the effect
+                    aluminumOffer = aluminumOffer * 2
                 elseif pProjectDef ~= nil then
                     local index = pProjectDef.Index
                     --get the projecet production need
                     productionNeed = cityBuildQueue:GetProjectCost(index) - cityBuildQueue:GetProjectProgress(index)
-                    --get the iron cost
-                    detail.IronCost = math.ceil(productionNeed / base)
-                    detail.IronProduction = base * detail.IronCost
-                    --get the aluminum cost
-                    detail.AluminumCost = math.ceil(productionNeed / effect)
-                    detail.AluminumProduction = effect * detail.AluminumCost
+                    --set the effect
+                    aluminumOffer = aluminumOffer * 2
                     --the currently building name
                     currentProduction = Locale.Lookup(pProjectDef.Name)
                     detail.currentProduction = pProjectDef.ProjectType
                 end
+                --get the iron cost
+                detail.IronCost = math.ceil(productionNeed / ironOffer)
+                --get the aluminum cost
+                detail.AluminumCost = math.ceil(productionNeed / aluminumOffer)
                 --get player resources
                 local playerResources = Players[pCity:GetOwner()]:GetResources()
                 local IronAmount = playerResources:GetResourceAmount(ironIndex)
                 local AluminumAmount = playerResources:GetResourceAmount(aluminumIndex)
                 --player has enough resources?
-                detail.IronDisable = IronAmount < detail.IronCost
-                detail.AluminumDisable = AluminumAmount < detail.AluminumCost
+                if IronAmount == 0 then
+                    detail.IronDisable = true
+                    detail.IronEnough = false
+                elseif IronAmount < detail.IronCost then
+                    detail.IronCost = IronAmount
+                    detail.IronEnough = false
+                end
+                if AluminumAmount == 0 then
+                    detail.AluminumDisable = true
+                    detail.AluminumEnough = false
+                elseif AluminumAmount < detail.AluminumCost then
+                    detail.AluminumCost = AluminumAmount
+                    detail.AluminumEnough = false
+                end
+                -- get the offer produciton
+                detail.IronProduction = ironOffer * detail.IronCost
+                detail.AluminumProduction = aluminumOffer * detail.AluminumCost
                 -- set the parameters
                 detail.currentProductionName = currentProduction
             else
@@ -200,6 +203,10 @@ function AnShanResetCityButton()
                 tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' ..
                     Locale.Lookup('LOC_ANSTEEL_COST_IRON_DETAIL', detail.IronCost,
                         detail.IronProduction, detail.currentProductionName)
+                if detail.IronEnough then
+                    tooltip1 = tooltip1 .. '[NEWLINE]' ..
+                        Locale.Lookup('LOC_ANSTEEL_COST_COMPLETE', detail.currentProductionName)
+                end
                 if ironDisable then
                     tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' ..
                         Locale.Lookup('LOC_ANSTEEL_NOIRON_WARNING')
@@ -212,6 +219,10 @@ function AnShanResetCityButton()
                 tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' ..
                     Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_DETAIL', detail.AluminumCost,
                         detail.AluminumProduction, detail.currentProductionName)
+                if detail.AluminumEnough then
+                    tooltip2 = tooltip2 .. '[NEWLINE]' ..
+                        Locale.Lookup('LOC_ANSTEEL_COST_COMPLETE', detail.currentProductionName)
+                end
                 if aluminumDisable then
                     tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' ..
                         Locale.Lookup('LOC_ANSTEEL_NOALUMINUM_WARNING')

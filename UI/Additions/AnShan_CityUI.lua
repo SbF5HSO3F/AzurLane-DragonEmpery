@@ -23,10 +23,12 @@ function AnShanGetCityButtonDetail(pCity)
         Production            = baseResProduction,
         IronDisable           = false,
         IronCost              = 0,
+        IronNeed              = 0,
         IronEnough            = true,
         IronProduction        = 0,
         AluminumDisable       = false,
         AluminumCost          = 0,
+        AluminumNeed          = 0,
         AluminumEnough        = true,
         AluminumProduction    = 0,
         currentProduction     = 'NONE',
@@ -126,8 +128,10 @@ function AnShanGetCityButtonDetail(pCity)
                 end
                 --get the iron cost
                 detail.IronCost = math.ceil(productionNeed / ironOffer)
+                detail.IronNeed = detail.IronCost
                 --get the aluminum cost
                 detail.AluminumCost = math.ceil(productionNeed / aluminumOffer)
+                detail.AluminumNeed = detail.AluminumCost
                 --get player resources
                 local playerResources = Players[pCity:GetOwner()]:GetResources()
                 local IronAmount = playerResources:GetResourceAmount(ironIndex)
@@ -201,15 +205,16 @@ function AnShanResetCityButton()
                 Controls.AnShanCity_IronButton:SetDisabled(ironDisable)
                 Controls.AnShanCity_IronButton:SetAlpha((ironDisable and 0.4) or 1)
                 tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' ..
-                    Locale.Lookup('LOC_ANSTEEL_COST_IRON_DETAIL', detail.IronCost,
-                        detail.IronProduction, detail.currentProductionName)
-                if detail.IronEnough then
-                    tooltip1 = tooltip1 .. '[NEWLINE]' ..
-                        Locale.Lookup('LOC_ANSTEEL_COST_COMPLETE', detail.currentProductionName)
-                end
+                    Locale.Lookup('LOC_ANSTEEL_COST_IRON_NEED', detail.currentProductionName, detail.IronNeed)
                 if ironDisable then
+                    tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOIRON_WARNING')
+                else
                     tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' ..
-                        Locale.Lookup('LOC_ANSTEEL_NOIRON_WARNING')
+                        Locale.Lookup('LOC_ANSTEEL_COST_IRON_DETAIL', detail.IronCost, detail.IronProduction)
+                    if detail.IronEnough then
+                        tooltip1 = tooltip1 ..
+                        '[NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_COST_COMPLETE', detail.currentProductionName)
+                    end
                 end
 
                 --the Aluminum
@@ -217,15 +222,16 @@ function AnShanResetCityButton()
                 Controls.AnShanCity_AluminumButton:SetDisabled(aluminumDisable)
                 Controls.AnShanCity_AluminumButton:SetAlpha((aluminumDisable and 0.4) or 1)
                 tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' ..
-                    Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_DETAIL', detail.AluminumCost,
-                        detail.AluminumProduction, detail.currentProductionName)
-                if detail.AluminumEnough then
-                    tooltip2 = tooltip2 .. '[NEWLINE]' ..
-                        Locale.Lookup('LOC_ANSTEEL_COST_COMPLETE', detail.currentProductionName)
-                end
+                    Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_NEED', detail.currentProductionName, detail.AluminumNeed)
                 if aluminumDisable then
+                    tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOALUMINUM_WARNING')
+                else
                     tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' ..
-                        Locale.Lookup('LOC_ANSTEEL_NOALUMINUM_WARNING')
+                        Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_DETAIL', detail.AluminumCost, detail.AluminumProduction)
+                    if detail.AluminumEnough then
+                        tooltip2 = tooltip2 ..
+                        '[NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_COST_COMPLETE', detail.currentProductionName)
+                    end
                 end
             end
             --set the tooltip

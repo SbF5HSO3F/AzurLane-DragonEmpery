@@ -313,6 +313,150 @@
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_42" Language="zh_Hant_HK">
 			<Text>海參崴</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_43" Language="zh_Hant_HK">
+			<Text>海口</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_44" Language="zh_Hant_HK">
+			<Text>漢中</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_45" Language="zh_Hant_HK">
+			<Text>吐魯番</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_46" Language="zh_Hant_HK">
+			<Text>呼倫貝爾</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_47" Language="zh_Hant_HK">
+			<Text>大慶</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_48" Language="zh_Hant_HK">
+			<Text>大連</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_49" Language="zh_Hant_HK">
+			<Text>鄭州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_50" Language="zh_Hant_HK">
+			<Text>威海</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_51" Language="zh_Hant_HK">
+			<Text>貴陽</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_52" Language="zh_Hant_HK">
+			<Text>臺北</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_53" Language="zh_Hant_HK">
+			<Text>伯力</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_54" Language="zh_Hant_HK">
+			<Text>合肥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_55" Language="zh_Hant_HK">
+			<Text>拉薩</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_56" Language="zh_Hant_HK">
+			<Text>烏魯木齊</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_57" Language="zh_Hant_HK">
+			<Text>廈門</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_58" Language="zh_Hant_HK">
+			<Text>延安</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_59" Language="zh_Hant_HK">
+			<Text>攀枝花</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_60" Language="zh_Hant_HK">
+			<Text>荊州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_61" Language="zh_Hant_HK">
+			<Text>遵義</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_62" Language="zh_Hant_HK">
+			<Text>昆明</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_63" Language="zh_Hant_HK">
+			<Text>桂林</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_64" Language="zh_Hant_HK">
+			<Text>南昌</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_65" Language="zh_Hant_HK">
+			<Text>哈爾濱</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_66" Language="zh_Hant_HK">
+			<Text>撫順</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_67" Language="zh_Hant_HK">
+			<Text>臺南</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_68" Language="zh_Hant_HK">
+			<Text>三沙</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_69" Language="zh_Hant_HK">
+			<Text>唐山</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_70" Language="zh_Hant_HK">
+			<Text>大同</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_71" Language="zh_Hant_HK">
+			<Text>洛陽</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_72" Language="zh_Hant_HK">
+			<Text>宣城</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_73" Language="zh_Hant_HK">
+			<Text>衡陽</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_74" Language="zh_Hant_HK">
+			<Text>海蘭泡</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_75" Language="zh_Hant_HK">
+			<Text>臺中</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_76" Language="zh_Hant_HK">
+			<Text>景德鎮</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_77" Language="zh_Hant_HK">
+			<Text>南寧</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_78" Language="zh_Hant_HK">
+			<Text>西寧</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_79" Language="zh_Hant_HK">
+			<Text>天水</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_80" Language="zh_Hant_HK">
+			<Text>襄陽</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_81" Language="zh_Hant_HK">
+			<Text>銀川</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_82" Language="zh_Hant_HK">
+			<Text>蘭州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_83" Language="zh_Hant_HK">
+			<Text>三亞</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_84" Language="zh_Hant_HK">
+			<Text>福州</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_85" Language="zh_Hant_HK">
+			<Text>大理</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_86" Language="zh_Hant_HK">
+			<Text>酒泉</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_87" Language="zh_Hant_HK">
+			<Text>張掖</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_88" Language="zh_Hant_HK">
+			<Text>齊齊哈爾</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_89" Language="zh_Hant_HK">
+			<Text>百色</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_90" Language="zh_Hant_HK">
+			<Text>綿陽</Text>
+		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_1" Language="zh_Hant_HK">
 			<Text>逸仙</Text>

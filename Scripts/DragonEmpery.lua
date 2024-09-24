@@ -204,6 +204,20 @@ function DragonEmperyOnEraChanged()
     end
 end
 
+--Truns Begin
+function DragonEmperyTurnActivated(playerID, first)
+    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') and first then
+        local pPlayer = Players[playerID]
+        --Get Culture
+        pPlayer:GetCulture():ChangeCurrentCulturalProgress(DragonEmperyCalculateCost(playerID, ePercent, true))
+        --Get Science
+        pPlayer:GetTechs():ChangeCurrentResearchProgress(DragonEmperyCalculateCost(playerID, ePercent, false))
+        --Reset the civic and tech panel
+        ExposedMembers.DragonEmpery.ResetCivic()
+        ExposedMembers.DragonEmpery.ResetTech()
+    end
+end
+
 --||=================GameEvents functions=================||--
 
 --Truns Begin TerrainBuilder.SetFeatureType
@@ -223,7 +237,7 @@ function DragonEmperyOnPlayerTurnStarted(playerID)
 end
 
 --garden complete
-function DragonEmperyOnDistrictComplete(playerID, districtID, cityID, iX, iY, districtType, era, civilization, percentComplete)
+function DragonEmperyOnDistrictComplete(playerID, districtID, cityID, iX, iY, districtType, era, civ, percentComplete)
     --get the player
     local pPlayer = Players[playerID]
     --get the district
@@ -269,8 +283,9 @@ function Initialize()
     -------------------Events-------------------
     Events.GameEraChanged.Add(DragonEmperyOnEraChanged)
     Events.DistrictBuildProgressChanged.Add(DragonEmperyOnDistrictComplete)
+    Events.PlayerTurnActivated.Add(DragonEmperyTurnActivated)
     -----------------GameEvents-----------------
-    GameEvents.PlayerTurnStartComplete.Add(DragonEmperyOnPlayerTurnStarted)
+    --GameEvents.PlayerTurnStartComplete.Add(DragonEmperyOnPlayerTurnStarted)
     GameEvents.AcademyGreatPersonActivated.Add(DragonEmperyAcademyGrantGreatPersonPoints)
     ---------------ExposedMembers---------------
     ExposedMembers.DragonEmpery.CalculateCost = DragonEmperyCalculateCost

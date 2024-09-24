@@ -121,14 +121,18 @@ function DragonEmperyPlayerGameProgress(playerID)
 end
 
 --Manhattan algorithm (GamePlay, UI)
-function DragonEmperyManhattan(pPlot_1, pPlot_2)
+function DragonEmperyManhattan(object_1, object_2)
     local result = 0
-    if pPlot_1 and pPlot_2 then
-        local y1, y2 = pPlot_1:GetY(), pPlot_2:GetY()
-        local x1 = pPlot_1:GetX() - math.floor(y1 / 2)
-        local x2 = pPlot_2:GetX() - math.floor(y2 / 2)
-        local z1, z2 = -x1 - y1, -x2 - y2
-        result = math.max(math.abs(x1 - x2), math.abs(y1 - y2), math.abs(z1 - z2))
+    if object_1 and object_2 then
+        -- local y1, y2 = pPlot_1:GetY(), pPlot_2:GetY()
+        -- local x1 = pPlot_1:GetX() - math.floor(y1 / 2)
+        -- local x2 = pPlot_2:GetX() - math.floor(y2 / 2)
+        -- local z1, z2 = -x1 - y1, -x2 - y2
+        -- result = math.max(math.abs(x1 - x2), math.abs(y1 - y2), math.abs(z1 - z2))
+        result = Map.GetPlotDistance(
+            object_1:GetX(), object_1:GetY(),
+            object_2:GetX(), object_2:GetY()
+        )
     end; return result
 end
 

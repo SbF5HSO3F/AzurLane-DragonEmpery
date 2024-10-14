@@ -20,7 +20,7 @@
 			<Text>鞍山将依靠她的工业区来铸就她的胜利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
-			<Text>对于鞍山而言，她那强大的工业区可以为她提供源源不断的 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，并将它们转化为城市发展的强大动力。因此，尽快研发炼铁术并在城市里普及鞍山钢铁成为了鞍山的最佳选择。届时，鞍山将从城市建设中获得大量的 [ICON_Science] 科技值和 [ICON_Culture] 文化值。如果有文明想要尝试征服鞍山的城市，不必担心！鞍山的单位可以迅速拉平 [ICON_Strength] 战斗力的差距，在战斗中也将迅速获得升级。对任何文明而言鞍山都十分棘手。在鞍山的守护下，东煌古国会成为世界上最伟大的国家。</Text>
+			<Text>对于鞍山而言，她那强大的工业区可以为她提供源源不断的 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，并将它们转化为城市发展的强大动力。因此，尽快研发炼铁术并在城市里普及鞍山钢铁成为了鞍山的最佳选择。届时，鞍山将从城市建设中获得大量的 [ICON_SCIENCE] 科技值和 [ICON_Culture] 文化值。如果有文明想要尝试征服鞍山的城市，不必担心！鞍山的单位可以迅速拉平 [ICON_Strength] 战斗力的差距，在战斗中也将迅速获得升级。对任何文明而言鞍山都十分棘手。在鞍山的守护下，东煌古国会成为世界上最伟大的国家。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>1954年10月12日，苏联根据《关于海军交货和关于在建造军舰方面给予中国以技术援助的协定》向中国出售的两艘驱逐舰、两艘扫雷舰和两艘小型潜艇驶抵青岛。10月26日，中方在青岛大港三号码头举行了舰艇交接签字仪式和授旗命名典礼。根据中央军委命令，驱逐舰“列什切内依”号命名为海军“鞍山”舰，舷号为101（不久后改为301），首任舰长苏军、政委刘成章。</Text>
@@ -47,17 +47,17 @@
 			<Text>青龙演武</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>单位在击杀敌方单位后将获得1级强化升级。建成建筑时，获得等同于建筑花费20%的 [ICON_Science] 科技值和 [ICON_Culture] 文化值。拥有 [ICON_Strength] 战斗力的单位获得“青龙演武”单位命令。</Text>
+			<Text>单位在击杀敌方单位后将获得1级强化升级。建成建筑时，获得等同于建筑花费20%的 [ICON_SCIENCE] 科技值和 [ICON_Culture] 文化值。拥有 [ICON_Strength] 战斗力的单位获得“青龙演武”单位命令。</Text>
 		</Replace>
 		<!--领袖区域-->
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="zh_Hans_CN">
 			<Text>鞍山钢铁</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+50%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值。奖励2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。为相邻的鞍山钢铁+50%相邻加成，额外奖励1点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+50%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝为当前生产提供 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_Science] 科技值。</Text>
+			<Text>鞍山特殊区域，取代工业区。解锁更早，造价更低。[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值。每回合提供4点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝，战略资源储备+10（标准速度下）。为相邻的鞍山钢铁+50%相邻加成，每回合额外提供2点 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝。[NEWLINE][NEWLINE]允许城市消耗 [ICON_RESOURCE_IRON] 铁和 [ICON_RESOURCE_ALUMINUM] 铝为当前生产提供 [ICON_PRODUCTION] 生产力。[NEWLINE]从相邻的区域获得+1 [ICON_PRODUCTION] 生产力，从相邻的战略资源获得+2 [ICON_PRODUCTION] 生产力。为相邻的矿山提供+2 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
 		
 		<!--特殊加成-->
@@ -68,7 +68,7 @@
 			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的战略资源</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_SCIENCE" Language="zh_Hans_CN">
-			<Text>+{1_num} [ICON_Science] 科技值来自相邻的鞍山钢铁</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自相邻的鞍山钢铁</Text>
 		</Replace>
 		<!--领袖项目-->
 

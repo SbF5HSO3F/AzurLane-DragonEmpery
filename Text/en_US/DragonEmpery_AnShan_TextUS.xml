@@ -20,7 +20,7 @@
 			<Text>An Shan will rely on the AnSteel to forge her victories.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_DETAILED_BODY" Language="en_US">
-			<Text>For An Shan, her strong industrial zone can provide her with a constant supply of [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium, which can be turned into a powerful driving force for the city's development. Therefore, it became the best choice for An Shan to develop Iron Working as soon as possible and popularise Ansteel in the city. An Shan will then gain a lot of [ICON_Science] Science and [ICON_Culture] Culture from the construction of the city. If any civilisation wants to try and conquer An Shan's cities, don't worry! An Shan's units will quickly even out the [ICON_Strength] Combat Strength gap and will quickly gain upgrades in battle. An Shan is very tricky for any civilisation. Under An Shan's guardianship, Dragon Empery will become the greatest nation in the world.</Text>
+			<Text>For An Shan, her strong industrial zone can provide her with a constant supply of [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium, which can be turned into a powerful driving force for the city's development. Therefore, it became the best choice for An Shan to develop Iron Working as soon as possible and popularise Ansteel in the city. An Shan will then gain a lot of [ICON_SCIENCE] Science and [ICON_Culture] Culture from the construction of the city. If any civilisation wants to try and conquer An Shan's cities, don't worry! An Shan's units will quickly even out the [ICON_Strength] Combat Strength gap and will quickly gain upgrades in battle. An Shan is very tricky for any civilisation. Under An Shan's guardianship, Dragon Empery will become the greatest nation in the world.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_1" Language="en_US">
 			<Text>On 12 October 1954, two destroyers, two minesweepers and two mini-submarines sold by the USSR to China under the Agreement on Naval Delivery and Technical Assistance to China in the Construction of Warships arrived in Qingdao, and on 26 October, the Chinese side held a signing ceremony for the handover of the ships and a flag-naming ceremony at the No. 3 dock of Qingdao Dagang. According to the order of the Central Military Commission, the destroyer Leshchiney was named Naval Ship An Shan, with the port number 101 (soon to be changed to 301), and its first captain, Su Jun, and political commissar, Liu Chengzhang, were appointed.</Text>
@@ -47,17 +47,17 @@
 			<Text>Loong's Dance</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_DESCRIPTION" Language="en_US">
-			<Text>Units will gain a promotion level after killing an enemy unit. Gain [ICON_Science] Science and [ICON_Culture] Culture equal to 20% of the construction cost when finishing Buildings. Units with [ICON_Strength] Combat Strength gain the "Loong's Dance" Unit Command.</Text>
+			<Text>Units will gain a promotion level after killing an enemy unit. Gain [ICON_SCIENCE] Science and [ICON_Culture] Culture equal to 20% of the construction cost when finishing Buildings. Units with [ICON_Strength] Combat Strength gain the "Loong's Dance" Unit Command.</Text>
 		</Replace>
 		<!--领袖区域-->
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_NAME" Language="en_US">
 			<Text>Ansteel</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="en_US">
-			<Text>An Shan unique district, replacing Industrial Zone district, unlock earlier, cost less. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_Science] Science. Awards 2 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium. +50% adjacency bonus for adjacent Ansteel, with additional 1 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production from each adjacent districts, +2 [ICON_PRODUCTION] Production from adjacent Strategic resources. Provides +2 [ICON_Science] Science for adjacent Mines.</Text>
+			<Text>An Shan unique district, replacing Industrial Zone district, unlock earlier, cost less. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_SCIENCE] Science. Awards 2 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium. +50% adjacency bonus for adjacent Ansteel, with additional 1 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production from each adjacent districts, +2 [ICON_PRODUCTION] Production from adjacent Strategic resources. Provides +2 [ICON_SCIENCE] Science for adjacent Mines.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="en_US">
-			<Text>An Shan unique district, replacing Industrial Zone district, unlock earlier, cost less. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_Science] Science. Provides 4 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium per turn, Strategic Resource Stockpiles increased +10 (on Standard Speed). +50% adjacency bonus for adjacent Ansteel, with additional 1 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium per turn.[NEWLINE][NEWLINE]Allows cities to consume [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium to provide [ICON_PRODUCTION] Production for current production.[NEWLINE]+1 [ICON_PRODUCTION] Production from each adjacent districts, +2 [ICON_PRODUCTION] Production from adjacent Strategic resources. Provides +2 [ICON_Science] Science for adjacent Mines.</Text>
+			<Text>An Shan unique district, replacing Industrial Zone district, unlock earlier, cost less. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_SCIENCE] Science. Provides 4 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium per turn, Strategic Resource Stockpiles increased +10 (on Standard Speed). +50% adjacency bonus for adjacent Ansteel, with additional 1 [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium per turn.[NEWLINE][NEWLINE]Allows cities to consume [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_ALUMINUM] Aluminium to provide [ICON_PRODUCTION] Production for current production.[NEWLINE]+1 [ICON_PRODUCTION] Production from each adjacent districts, +2 [ICON_PRODUCTION] Production from adjacent Strategic resources. Provides +2 [ICON_SCIENCE] Science for adjacent Mines.</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_ANSTEEL_DISTRICTS" Language="en_US">
@@ -67,7 +67,7 @@
 			<Text>+{1_num} [ICON_PRODUCTION] Production from the adjacent Strategic {1_Num : plural 2?resource; other?resources;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_SCIENCE" Language="en_US">
-			<Text>+{1_num} [ICON_Science] Science from each adjacent Ansteel {1_Num : plural 2?district; other?districts;}.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Ansteel {1_Num : plural 2?district; other?districts;}.</Text>
 		</Replace>
 		<!--领袖项目-->
 

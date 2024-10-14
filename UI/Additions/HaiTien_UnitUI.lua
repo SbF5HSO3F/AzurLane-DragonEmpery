@@ -85,7 +85,6 @@ function HaiTienOnLoadGameViewStateDone()
     local pContext = ContextPtr:LookUpControl("/InGame/UnitPanel/StandardActionsStack")
     if pContext ~= nil then
         Controls.HaiTienGrid:ChangeParent(pContext)
-        Controls.HaiTienWriterButton:RegisterCallback(Mouse.eMouseEnter, DragonEmperyEnter)
     end
 
     HaiTienResetButton()

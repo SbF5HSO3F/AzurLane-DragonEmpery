@@ -33,16 +33,16 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_DragonEmpery_Garden_District_Sinence" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的區域</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的區域</Text>
 		</Replace>
 		<Replace Tag="LOC_DragonEmpery_Garden_Wonder_Sinence" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的奇觀</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的奇觀</Text>
 		</Replace>
 		<Replace Tag="LOC_DragonEmpery_Garden_Forest_Sinence" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的森林單元格</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的森林單元格</Text>
 		</Replace>
 		<Replace Tag="LOC_DragonEmpery_Garden_NaturalWonder_Sinence" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的自然奇觀單元格</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的自然奇觀單元格</Text>
 		</Replace>
 		<!--特殊能力-->
 		<Replace Tag="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hant_HK">
@@ -66,10 +66,10 @@
 			<Text>神州長城</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>解鎖建造者建造東煌古國特色改良設施神州長城的能力。[NEWLINE][NEWLINE]+2 [ICON_GOLD] 金幣、+1 [icon_PRODUCTION] 生產力和+1 [ICON_Culture] 文化值。與神州長城、資源和區域相鄰時將會獲得額外產出，且產出將隨著更多科技和市政的解鎖獲得提升。研究「飛行」科技後可通過 [ICON_Culture] 文化值獲得 [ICON_Tourism] 旅遊業績。[NEWLINE]占領單位+4 [ICON_Strength] 防禦力，並自動獲得兩回合防禦工事。</Text>
+			<Text>解鎖建造者建造東煌古國特色改良設施神州長城的能力。[NEWLINE][NEWLINE]+2 [ICON_GOLD] 金幣、+1 [ICON_PRODUCTION] 生產力和+1 [ICON_Culture] 文化值。與神州長城、資源和區域相鄰時將會獲得額外產出，且產出將隨著更多科技和市政的解鎖獲得提升。研究「飛行」科技後可通過 [ICON_Culture] 文化值獲得 [ICON_Tourism] 旅遊業績。[NEWLINE]占領單位+4 [ICON_Strength] 防禦力，並自動獲得兩回合防禦工事。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION_XP2" Language="zh_Hant_HK">
-			<Text>解鎖建造者建造東煌古國特色改良設施神州長城的能力。[NEWLINE][NEWLINE]+2 [ICON_GOLD] 金幣、+1 [icon_PRODUCTION] 生產力和+1 [ICON_Culture] 文化值。與神州長城、資源和區域相鄰時將會獲得額外產出，且產出將隨著更多科技和市政的解鎖獲得提升。研究「飛行」科技後可通過 [ICON_Culture] 文化值獲得 [ICON_Tourism] 旅遊業績。[NEWLINE]占領單位+4 [ICON_Strength] 防禦力，並自動獲得兩回合防禦工事。無法被自然災害摧毀。</Text>
+			<Text>解鎖建造者建造東煌古國特色改良設施神州長城的能力。[NEWLINE][NEWLINE]+2 [ICON_GOLD] 金幣、+1 [ICON_PRODUCTION] 生產力和+1 [ICON_Culture] 文化值。與神州長城、資源和區域相鄰時將會獲得額外產出，且產出將隨著更多科技和市政的解鎖獲得提升。研究「飛行」科技後可通過 [ICON_Culture] 文化值獲得 [ICON_Tourism] 旅遊業績。[NEWLINE]占領單位+4 [ICON_Strength] 防禦力，並自動獲得兩回合防禦工事。無法被自然災害摧毀。</Text>
 		</Replace>
 		<!--特殊單位-->
 
@@ -94,7 +94,7 @@
 			<Text>額外文化值：{1_num}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="zh_Hant_HK">
-			<Text>根據您已完成的{1_num}個科技，您下回合開始時將獲得{2_num}點 [ICON_Science] 科技值。</Text>
+			<Text>根據您已完成的{1_num}個科技，您下回合開始時將獲得{2_num}點 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="zh_Hant_HK">
 			<Text>根據您已完成的{1_num}個市政，您下回合開始時將獲得{2_num}點 [ICON_Culture] 文化值。</Text>
@@ -106,7 +106,7 @@
 			<Text>您已累計經歷{1_num}次 [ICON_GLORY_DARK_AGE] 黑暗時代</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]所有軍事單位+{1_num} [ICON_Strength] 戰鬥力[NEWLINE][ICON_Bullet]生產軍事單位時+{2_num}% [icon_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]所有城市+{3_num}忠誠度</Text>
+			<Text>[ICON_Bullet]所有軍事單位+{1_num} [ICON_Strength] 戰鬥力[NEWLINE][ICON_Bullet]生產軍事單位時+{2_num}% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]所有城市+{3_num}忠誠度</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN" Language="zh_Hant_HK">
 			<Text>[COLOR:COLOR_FLOAT_GOLD]{1_num}[ENDCOLOR]</Text>
@@ -115,7 +115,7 @@
 			<Text>您已累計經歷{1_num}次 [ICON_GLORY_GOLDEN_AGE] 黃金時代</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+{1_num}% [icon_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{2_num} [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+{3_num} [ICON_Amenities] 宜居度</Text>
+			<Text>[ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{2_num} [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+{3_num} [ICON_Amenities] 宜居度</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC" Language="zh_Hant_HK">
 			<Text>[COLOR:ResGoldLabelCS]{1_num}[ENDCOLOR]</Text>
@@ -124,7 +124,7 @@
 			<Text>您已累計經歷{1_num}次 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄時代</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+{1_num}% [icon_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+{2_num}% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{3_num} [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+{4_num} [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+{5_num}% [ICON_GreatPerson] 偉人點數</Text>
+			<Text>[ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+{2_num}% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{3_num} [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+{4_num} [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+{5_num}% [ICON_GreatPerson] 偉人點數</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER" Language="zh_Hant_HK">
 			<Text>[COLOR:ButtonCS]{1_num}[ENDCOLOR]</Text>
@@ -163,19 +163,19 @@
 			<Text>您的文明現在正處於 [ICON_GLORY_DARK_AGE] 黑暗時代！</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]立即在 [ICON_Capital] 首都獲得1位 [ICON_GreatGeneral] 大將軍[NEWLINE][ICON_Bullet]所有軍事單位+5 [ICON_Strength] 戰鬥力[NEWLINE][ICON_Bullet]生產軍事單位時+20% [icon_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]所有單位+1 [ICON_MOVEMENT] 移動力</Text>
+			<Text>[ICON_Bullet]立即在 [ICON_Capital] 首都獲得1位 [ICON_GreatGeneral] 大將軍[NEWLINE][ICON_Bullet]所有軍事單位+5 [ICON_Strength] 戰鬥力[NEWLINE][ICON_Bullet]生產軍事單位時+20% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]所有單位+1 [ICON_MOVEMENT] 移動力</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW" Language="zh_Hant_HK">
 			<Text>您的文明現在正處於 [ICON_GLORY_GOLDEN_AGE] 黃金時代！</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+20% [icon_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+25% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+2 [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+1 [ICON_Amenities] 宜居度</Text>
+			<Text>[ICON_Bullet]城市+20% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+25% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+2 [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+1 [ICON_Amenities] 宜居度</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW" Language="zh_Hant_HK">
 			<Text>您的文明現在正處於 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄時代！</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+50% [icon_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+50% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+4 [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+3 [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+25% [ICON_GreatPerson] 偉人點數</Text>
+			<Text>[ICON_Bullet]城市+50% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+50% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+4 [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+3 [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+25% [ICON_GreatPerson] 偉人點數</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW" Language="zh_Hant_HK">
 			<Text>您的文明現在正處於 [ICON_GLORY_NORMAL_AGE] 普通時代！</Text>
@@ -184,7 +184,7 @@
 			<Text>進入的 [ICON_GLORY_NORMAL_AGE] 普通時代提供以下加成：</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市可額外建造{1_num}個區域[NEWLINE][ICON_Bullet]建造區域時+{2_num}% [icon_PRODUCTION] 生產力</Text>
+			<Text>[ICON_Bullet]城市可額外建造{1_num}個區域[NEWLINE][ICON_Bullet]建造區域時+{2_num}% [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_1" Language="zh_Hant_HK">
@@ -386,7 +386,7 @@
 			<Text>撫順</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_67" Language="zh_Hant_HK">
-			<Text>臺南</Text>
+			<Text>打狗</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_68" Language="zh_Hant_HK">
 			<Text>三沙</Text>
@@ -410,7 +410,7 @@
 			<Text>海蘭泡</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_75" Language="zh_Hant_HK">
-			<Text>臺中</Text>
+			<Text>通遼</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_76" Language="zh_Hant_HK">
 			<Text>景德鎮</Text>

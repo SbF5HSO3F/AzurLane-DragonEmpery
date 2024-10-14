@@ -21,7 +21,7 @@
 			<Text>鞍山將依靠她的工業區來鑄就她的勝利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
-			<Text>對於鞍山而言，她那強大的工業區可以為她提供源源不斷的 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁，並將它們轉化為城市發展的強大動力。因此，盡快研發煉鐵術並在城市裏普及鞍山鋼鐵成為了鞍山的最佳選擇。屆時，鞍山將從城市建設中獲得大量的 [ICON_Science] 科技值和 [ICON_Culture] 文化值。如果有文明想要嘗試征服鞍山的城市，不必擔心！鞍山的單位可以迅速拉平 [ICON_Strength] 戰鬥力的差距，在戰鬥中也將迅速獲得升級。對任何文明而言鞍山都十分棘手。在鞍山的守護下，東煌古國會成為世界上最偉大的國家。</Text>
+			<Text>對於鞍山而言，她那強大的工業區可以為她提供源源不斷的 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁，並將它們轉化為城市發展的強大動力。因此，盡快研發煉鐵術並在城市裏普及鞍山鋼鐵成為了鞍山的最佳選擇。屆時，鞍山將從城市建設中獲得大量的 [ICON_SCIENCE] 科技值和 [ICON_Culture] 文化值。如果有文明想要嘗試征服鞍山的城市，不必擔心！鞍山的單位可以迅速拉平 [ICON_Strength] 戰鬥力的差距，在戰鬥中也將迅速獲得升級。對任何文明而言鞍山都十分棘手。在鞍山的守護下，東煌古國會成為世界上最偉大的國家。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_AN_SHAN_DD101_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
 			<Text>1954年10月12日，蘇聯根據《關於海軍交貨和關於在建造軍艦方面給予中國以技術援助的協定》向中國出售的兩艘驅逐艦、兩艘掃雷艦和兩艘小型潛艇駛抵青島。10月26日，中方在青島大港三號碼頭舉行了艦艇交接簽字儀式和授旗命名典禮。根據中央軍委命令，驅逐艦「列什切內依」號命名為海軍「鞍山」艦，舷號為101（不久後改為301），首任艦長蘇軍、政委劉成章。</Text>
@@ -55,10 +55,10 @@
 			<Text>鞍山鋼鐵</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>鞍山特殊區域，取代工業區。解鎖更早，造價更低。[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_Science] 科技值。獎勵2點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。為相鄰的鞍山鋼鐵+50%相鄰加成，額外獎勵1點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。[NEWLINE][NEWLINE]從相鄰的區域獲得+1 [ICON_PRODUCTION] 生產力，從相鄰的戰略資源獲得+2 [ICON_PRODUCTION] 生產力。為相鄰的礦山提供+2 [ICON_Science] 科技值。</Text>
+			<Text>鞍山特殊區域，取代工業區。解鎖更早，造價更低。[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_SCIENCE] 科技值。獎勵2點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。為相鄰的鞍山鋼鐵+50%相鄰加成，額外獎勵1點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。[NEWLINE][NEWLINE]從相鄰的區域獲得+1 [ICON_PRODUCTION] 生產力，從相鄰的戰略資源獲得+2 [ICON_PRODUCTION] 生產力。為相鄰的礦山提供+2 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ANSTEEL_DESCRIPTION_XP2" Language="zh_Hant_HK">
-			<Text>鞍山特殊區域，取代工業區。解鎖更早，造價更低。[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_Science] 科技值。每回合提供4點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁，戰略資源儲備+10（標準速度下）。為相鄰的鞍山鋼鐵+50%相鄰加成，每回合額外提供2點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。[NEWLINE][NEWLINE]允許城市消耗 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁為當前生產提供 [ICON_PRODUCTION] 生產力。[NEWLINE]從相鄰的區域獲得+1 [ICON_PRODUCTION] 生產力，從相鄰的戰略資源獲得+2 [ICON_PRODUCTION] 生產力。為相鄰的礦山提供+2 [ICON_Science] 科技值。</Text>
+			<Text>鞍山特殊區域，取代工業區。解鎖更早，造價更低。[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_SCIENCE] 科技值。每回合提供4點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁，戰略資源儲備+10（標準速度下）。為相鄰的鞍山鋼鐵+50%相鄰加成，每回合額外提供2點 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁。[NEWLINE][NEWLINE]允許城市消耗 [ICON_RESOURCE_IRON] 鐵和 [ICON_RESOURCE_ALUMINUM] 鋁為當前生產提供 [ICON_PRODUCTION] 生產力。[NEWLINE]從相鄰的區域獲得+1 [ICON_PRODUCTION] 生產力，從相鄰的戰略資源獲得+2 [ICON_PRODUCTION] 生產力。為相鄰的礦山提供+2 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_ANSTEEL_DISTRICTS" Language="zh_Hant_HK">
@@ -68,7 +68,7 @@
 			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的戰略資源</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_SCIENCE" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的鞍山鋼鐵</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的鞍山鋼鐵</Text>
 		</Replace>
 		<!--領袖項目-->
 

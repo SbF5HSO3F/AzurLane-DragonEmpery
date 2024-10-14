@@ -33,16 +33,16 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_DragonEmpery_Garden_District_Sinence" Language="en_US">
-			<Text>+{1_num} [ICON_Science] Science from each adjacent Districts tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Districts tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_DragonEmpery_Garden_Wonder_Sinence" Language="en_US">
-			<Text>+{1_num} [ICON_Science] Science from each adjacent Wonders tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Wonders tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_DragonEmpery_Garden_Forest_Sinence" Language="en_US">
-			<Text>+{1_num} [ICON_Science] Science from each adjacent Woods tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Woods tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_DragonEmpery_Garden_NaturalWonder_Sinence" Language="en_US">
-			<Text>+{1_num} [ICON_Science] Science from each adjacent Natural Wonders tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Natural Wonders tile.</Text>
 		</Replace>
 		<!--特殊能力-->
 		<Replace Tag="LOC_PREVIEW_DRAGON_EMPERY_COMBAT_UNITS_BUFF_DESCRIPTION" Language="en_US">
@@ -66,10 +66,10 @@
 			<Text>Shenzhou Wall</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct the Shenzhou Wall, unique to Dragon Empery.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [icon_PRODUCTION] Production and +1 [ICON_Culture] Culture. Additional output will be gained when adjacent to the Shenzhou Walls, Resources and Districts, and output will be boosted as more Technologies and Civics are unlocked. [ICON_Tourism] Tourism from [ICON_Culture] Culture once Flight is researched.[NEWLINE]Occupying unit receives +4 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.</Text>
+			<Text>Unlocks the Builder ability to construct the Shenzhou Wall, unique to Dragon Empery.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production and +1 [ICON_Culture] Culture. Additional output will be gained when adjacent to the Shenzhou Walls, Resources and Districts, and output will be boosted as more Technologies and Civics are unlocked. [ICON_Tourism] Tourism from [ICON_Culture] Culture once Flight is researched.[NEWLINE]Occupying unit receives +4 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_DRAGON_EMPERY_WALL_DESCRIPTION_XP2" Language="en_US">
-			<Text>Unlocks the Builder ability to construct the Shenzhou Wall, unique to Dragon Empery.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [icon_PRODUCTION] Production and +1 [ICON_Culture] Culture. Additional output will be gained when adjacent to the Shenzhou Walls, Resources and Districts, and output will be boosted as more Technologies and Civics are unlocked. [ICON_Tourism] Tourism from [ICON_Culture] Culture once Flight is researched.[NEWLINE]Occupying unit receives +4 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification. Never destroyed by natural disasters.</Text>
+			<Text>Unlocks the Builder ability to construct the Shenzhou Wall, unique to Dragon Empery.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production and +1 [ICON_Culture] Culture. Additional output will be gained when adjacent to the Shenzhou Walls, Resources and Districts, and output will be boosted as more Technologies and Civics are unlocked. [ICON_Tourism] Tourism from [ICON_Culture] Culture once Flight is researched.[NEWLINE]Occupying unit receives +4 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification. Never destroyed by natural disasters.</Text>
 		</Replace>
 		<!--特殊单位-->
 
@@ -94,7 +94,7 @@
 			<Text>Extra Culture: {1_num}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="en_US">
-			<Text>Based on the {1_num} Technologies you have completed, you gain {2_num} [ICON_Science] Science at the start of your next turn.</Text>
+			<Text>Based on the {1_num} Technologies you have completed, you gain {2_num} [ICON_SCIENCE] Science at the start of your next turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="en_US">
 			<Text>Based on the {1_num} Civics you have completed, you gain {2_num} [ICON_Culture] Culture at the start of your next turn.</Text>
@@ -106,7 +106,7 @@
 			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_DARK_AGE] Dark {1_num : plural 1?Age; other?Ages;}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]All military units +{1_num} [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+{2_num}% [icon_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All cities +{3_num} loyalty</Text>
+			<Text>[ICON_Bullet]All military units +{1_num} [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+{2_num}% [ICON_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All cities +{3_num} loyalty</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN" Language="en_US">
 			<Text>[COLOR:COLOR_FLOAT_GOLD]{1_num}[ENDCOLOR]</Text>
@@ -115,7 +115,7 @@
 			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_GOLDEN_AGE] Golden {1_num : plural 1?Age; other?Ages;}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +{1_num}% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{3_num} [ICON_Amenities] {1_num : plural 1?Amenity; other?Amenities;}</Text>
+			<Text>[ICON_Bullet]Cities +{1_num}% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{3_num} [ICON_Amenities] {1_num : plural 1?Amenity; other?Amenities;}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC" Language="en_US">
 			<Text>[COLOR:ResGoldLabelCS]{1_num}[ENDCOLOR]</Text>
@@ -124,7 +124,7 @@
 			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_SUPER_GOLDEN_AGE] Heroic {1_num : plural 1?Age; other?Ages;}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +{1_num}% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num}% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+{3_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{4_num} [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+{5_num}% Bonus [ICON_GreatPerson] Great People points</Text>
+			<Text>[ICON_Bullet]Cities +{1_num}% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num}% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+{3_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{4_num} [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+{5_num}% Bonus [ICON_GreatPerson] Great People points</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER" Language="en_US">
 			<Text>[COLOR:ButtonCS]{1_num}[ENDCOLOR]</Text>
@@ -163,19 +163,19 @@
 			<Text>Your civilization is now in the [ICON_GLORY_DARK_AGE] Dark Age!</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Immediately gain a [ICON_GreatGeneral] Great General in the [ICON_Capital] capital city[NEWLINE][ICON_Bullet]All military units +5 [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+20% [icon_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All units +1 [ICON_MOVEMENT] Movement</Text>
+			<Text>[ICON_Bullet]Immediately gain a [ICON_GreatGeneral] Great General in the [ICON_Capital] capital city[NEWLINE][ICON_Bullet]All military units +5 [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+20% [ICON_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All units +1 [ICON_MOVEMENT] Movement</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW" Language="en_US">
 			<Text>Your civilization is now in the [ICON_GLORY_GOLDEN_AGE] Golden Age!</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +20% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+25% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+2 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +1 [ICON_Amenities] Amenity</Text>
+			<Text>[ICON_Bullet]Cities +20% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+25% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+2 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +1 [ICON_Amenities] Amenity</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW" Language="en_US">
 			<Text>Your civilization is now in the [ICON_GLORY_SUPER_GOLDEN_AGE] Heroic Age!</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +50% [icon_PRODUCTION] Production[NEWLINE][ICON_Bullet]+50% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+4 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +3 [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+25% Bonus [ICON_GreatPerson] Great People points</Text>
+			<Text>[ICON_Bullet]Cities +50% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+50% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+4 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +3 [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+25% Bonus [ICON_GreatPerson] Great People points</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW" Language="en_US">
 			<Text>Your civilization is now in the [ICON_GLORY_NORMAL_AGE] Normal Age!</Text>
@@ -184,7 +184,7 @@
 			<Text>The entered [ICON_GLORY_NORMAL_AGE] Normal Ages provides the following bonuses:</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities can build {1_num} additional {1_num : plural 1?district; other?districts;}[NEWLINE][ICON_Bullet]+{2_num}% [icon_PRODUCTION] Production when building districts</Text>
+			<Text>[ICON_Bullet]Cities can build {1_num} additional {1_num : plural 1?district; other?districts;}[NEWLINE][ICON_Bullet]+{2_num}% [ICON_PRODUCTION] Production when building districts</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_1" Language="en_US">
@@ -386,7 +386,7 @@
 			<Text>Fushun</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_67" Language="en_US">
-			<Text>Tainan</Text>
+			<Text>Ta-kau</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_68" Language="en_US">
 			<Text>San Sha</Text>
@@ -410,7 +410,7 @@
 			<Text>Haiilan boo</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_75" Language="en_US">
-			<Text>Taichung</Text>
+			<Text>Tongliao</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_76" Language="en_US">
 			<Text>Jingdezhen</Text>

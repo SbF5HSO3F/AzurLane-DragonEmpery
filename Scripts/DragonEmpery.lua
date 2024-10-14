@@ -88,7 +88,7 @@ function DragonEmperyCalculateCost(playerID, percent, isCivic)
         end
     end
     --process rounding
-    num = DragonEmperyNumRound(num * percent)
+    num = DragonCore.Round(num * percent)
     --return the number
     --print('The ' .. (isCivic and 'Culture' or 'Science') .. ' is ' .. num)
     return num
@@ -100,7 +100,7 @@ function DragonEmperyOnEraChanged()
     --get the player
     local playerTable = {}
     for _, player in ipairs(Game.GetPlayers()) do
-        if DragonEmperyCivTypeMatched(player:GetID(), 'CIVILIZATION_DRAGON_EMPERY') then
+        if DragonCore.CheckCivMatched(player:GetID(), 'CIVILIZATION_DRAGON_EMPERY') then
             table.insert(playerTable, player)
         end
     end
@@ -206,7 +206,7 @@ end
 
 --Truns Begin
 function DragonEmperyTurnActivated(playerID, first)
-    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') and first then
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') and first then
         local pPlayer = Players[playerID]
         --Get Culture
         pPlayer:GetCulture():ChangeCurrentCulturalProgress(DragonEmperyCalculateCost(playerID, ePercent, true))
@@ -223,7 +223,7 @@ end
 --Truns Begin TerrainBuilder.SetFeatureType
 function DragonEmperyOnPlayerTurnStarted(playerID)
     --Is it Dragon Empery Civilization?
-    if not DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if not DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
         return
     end
 
@@ -258,7 +258,7 @@ function DragonEmperyAcademyGrantGreatPersonPoints(playerID, param)
     --get the city
     local pCity = CityManager.GetCity(playerID, param.cityID)
     --get the great person points
-    local points = DragonEmperySpeedModifier(greatPersonPoints * pCity:GetPopulation())
+    local points = DragonCore:ModifyBySpeed(greatPersonPoints * pCity:GetPopulation())
     --change the great person points
     local pPlayer = Players[playerID]
     pPlayer:GetGreatPeoplePoints():ChangePointsTotal(param.classID, points)

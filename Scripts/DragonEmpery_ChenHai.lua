@@ -15,11 +15,11 @@ local settlerIndex = GameInfo.Units['UNIT_SETTLER'].Index
 --On tech completed
 function ChenHaiResearchCompleted(playerID, iTech)
     --check the Leader is Chen Hai?
-    if DragonEmperyLeaderTypeMatched(playerID, 'LEADER_CHEN_HAI') then
+    if DragonCore.CheckLeaderMatched(playerID, 'LEADER_CHEN_HAI') then
         --get the player
         local pPlayer = Players[playerID]
         --get the boost
-        DragonEmperyRandomTechBoost(pPlayer, 2)
+        DragonCore:GetRandomTechBoosts(pPlayer, 2)
         --get the player tech
         local playerTechs = pPlayer:GetTechs()
         --get the gold
@@ -32,11 +32,11 @@ end
 --On civic completed
 function ChenHaiCivicCompleted(playerID, iCivic)
     --check the Leader is Chen Hai?
-    if DragonEmperyLeaderTypeMatched(playerID, 'LEADER_CHEN_HAI') then
+    if DragonCore.CheckLeaderMatched(playerID, 'LEADER_CHEN_HAI') then
         --get the player
         local pPlayer = Players[playerID]
         --get the boost
-        DragonEmperyRandomCivicBoost(pPlayer, 2)
+        DragonCore:GetRandomCivicBoosts(pPlayer, 2)
         --get the player tech
         local playerCulture = pPlayer:GetCulture()
         --get the gold
@@ -52,7 +52,7 @@ end
 function ChenHaiMoreToken(majorID, minorID, iAmount)
     if iAmount <= 0 then return end
     --check the Leader is Chen Hai
-    if DragonEmperyLeaderTypeMatched(majorID, 'LEADER_CHEN_HAI') then
+    if DragonCore.CheckLeaderMatched(majorID, 'LEADER_CHEN_HAI') then
         --remove this function, to prevent dead cycle
         GameEvents.OnPlayerGaveInfluenceToken.Remove(ChenHaiMoreToken)
         --get the player Influence
@@ -78,7 +78,7 @@ function ChenHaiMoreToken(majorID, minorID, iAmount)
                 local minor = Players[eMinor]
                 --get the capital or settler
                 local aCapital = minor:GetCities():GetCapitalCity()
-                if aCapital and DragonEmperyManhattan(
+                if aCapital and DragonCore.GetDistance(
                         plot_1, Map.GetPlot(aCapital:GetX(), aCapital:GetY())
                     ) <= range_1 then
                     for i = 1, iAmount, 1 do
@@ -87,7 +87,7 @@ function ChenHaiMoreToken(majorID, minorID, iAmount)
                 else
                     for _, unit in minor:GetUnits():Members() do
                         if unit:GetType() == settlerIndex and
-                            DragonEmperyManhattan(
+                            DragonCore.GetDistance(
                                 plot_1, Map.GetPlot(unit:GetX(), unit:GetY())
                             ) <= range_1 then
                             for i = 1, iAmount, 1 do

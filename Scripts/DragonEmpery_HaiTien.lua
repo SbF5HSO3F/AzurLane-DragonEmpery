@@ -17,7 +17,7 @@ local greatWriterID = GameInfo.GreatPersonClasses['GREAT_PERSON_CLASS_WRITER'].I
 --GreatWork Buff
 function HaiTienOnGreatWorkCreated(playerID, unitID, iCityPlotX, iCityPlotY, buildingID, greatWorkIndex)
     --is Hei Tien?
-    if not DragonEmperyLeaderTypeMatched(playerID, 'LEADER_HAI_TIEN') then
+    if not DragonCore.CheckLeaderMatched(playerID, 'LEADER_HAI_TIEN') then
         return
     end
 
@@ -36,13 +36,13 @@ end
 --On tech completed
 function HaiTienOnResearchCompleted(iPlayer, iTech)
     --is hei tien?
-    if DragonEmperyLeaderTypeMatched(iPlayer, 'LEADER_HAI_TIEN') then
+    if DragonCore.CheckLeaderMatched(iPlayer, 'LEADER_HAI_TIEN') then
         --get the player
         local pPlayer = Players[iPlayer]
         --get the player tech
         local playerTechs = pPlayer:GetTechs()
         --get the point
-        local point = DragonEmperyNumRound(playerTechs:GetResearchCost(iTech) * percent_1)
+        local point = DragonCore.Round(playerTechs:GetResearchCost(iTech) * percent_1)
         --grant the point
         pPlayer:GetGreatPeoplePoints():ChangePointsTotal(greatWriterID, point)
     end

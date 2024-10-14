@@ -36,8 +36,8 @@ function AnShanGetCityButtonDetail(pCity)
         reason                = 'NONE',
     }
     --the production can afford
-    local progress = DragonEmperyPlayerGameProgress(pCity:GetOwner())
-    local base = DragonEmperySpeedModifier((1 + (multFactor - 1) * (progress / 100)) * baseResProduction)
+    local progress = DragonCore:GetPlayerProgress(pCity:GetOwner())
+    local base = DragonCore:ModifyBySpeed((1 + (multFactor - 1) * (progress / 100)) * baseResProduction)
     detail.Production = base
     --if resource is nil, that is Iron
     if pCity then

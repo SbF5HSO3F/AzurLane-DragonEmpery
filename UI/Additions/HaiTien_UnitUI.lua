@@ -31,8 +31,8 @@ function HaiTienGetDetail(greatPersonIndividualID)
     --get the era ChronologyIndex
     local index = defEra.ChronologyIndex
     --set the value
-    detail.Culture = DragonEmperySpeedModifier(cultureAmount + cultureExtra * (index - 1))
-    detail.Production = DragonEmperySpeedModifier(productionAmount + productionExtra * (index - 1))
+    detail.Culture = DragonCore:ModifyBySpeed(cultureAmount + cultureExtra * (index - 1))
+    detail.Production = DragonCore:ModifyBySpeed(productionAmount + productionExtra * (index - 1))
     --get the era name
     detail.EraName = Locale.Lookup(defEra.Name)
 
@@ -44,7 +44,7 @@ function HaiTienResetButton()
     --get the unit
     local pUnit = UI.GetHeadSelectedUnit()
     --if Loacl player is Hai Tien
-    if DragonEmperyLeaderTypeMatched(
+    if DragonCore.CheckLeaderMatched(
             Game.GetLocalPlayer(), 'LEADER_HAI_TIEN'
         ) and pUnit then
         --get the unit geart person
@@ -97,7 +97,7 @@ function HaiTienOnGreatPersonActived(unitOwner, unitID, greatPersonClassID, grea
     --check the loacl player
     if unitOwner ~= Game.GetLocalPlayer() then return end
     --judge the player
-    if DragonEmperyLeaderTypeMatched(unitOwner, 'LEADER_HAI_TIEN') then
+    if DragonCore.CheckLeaderMatched(unitOwner, 'LEADER_HAI_TIEN') then
         --get the unit
         local pUnit = UnitManager.GetUnit(unitOwner, unitID)
         local x, y = pUnit:GetX(), pUnit:GetY()

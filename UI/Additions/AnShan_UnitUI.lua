@@ -64,7 +64,7 @@ end
 function AnShanResetUnitButton()
     --get the selected unit
     local pUnit = UI.GetHeadSelectedUnit()
-    if pUnit and DragonEmperyLeaderTypeMatched(
+    if pUnit and DragonCore.CheckLeaderMatched(
             pUnit:GetOwner(), 'LEADER_AN_SHAN_DD101'
         ) and pUnit:GetCombat() > 0 then
         Controls.AnShanGrid:SetHide(false)

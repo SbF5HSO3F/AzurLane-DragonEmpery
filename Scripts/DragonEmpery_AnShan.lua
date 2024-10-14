@@ -15,7 +15,7 @@ local ability_2 = 'ABILITY_AN_SHAN_UNIT_GRANT_EXP'
 --when AnShan's Unit kill unit
 function AnShanKillUnit(killedPlayerID, killedUnitID, playerID, unitID)
     -- the leader is AnShan?
-    if DragonEmperyLeaderTypeMatched(playerID, 'LEADER_AN_SHAN_DD101') then
+    if DragonCore.CheckLeaderMatched(playerID, 'LEADER_AN_SHAN_DD101') then
         local pUnit = UnitManager.GetUnit(playerID, unitID)
         --get the unit ability
         local unitAbility = pUnit:GetAbility()

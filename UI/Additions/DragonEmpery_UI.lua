@@ -61,7 +61,7 @@ function DragonResetGridHide()
     --get the loacl player
     local playerID = Game.GetLocalPlayer()
     --check the civ type
-    local hide = not DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY')
+    local hide = not DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY')
     --set the hide
     Controls.AncientCountryPanelGrid:SetHide(hide)
 end
@@ -72,7 +72,7 @@ function ResetPanelTech()
     DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
         --Yield num
         local cost = ExposedMembers.DragonEmpery.CalculateCost(playerID, ePercent, false)
         local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE', cost)
@@ -93,7 +93,7 @@ function ResetPanelCivic()
     DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
         local cost = ExposedMembers.DragonEmpery.CalculateCost(playerID, ePercent, true)
         local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_CULTURE', cost)
         Controls.AncientCultureText:SetText(string)
@@ -113,7 +113,7 @@ function ResetPanelDark(gameplay, counter)
     DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
         --get the player
         local pPlayer, num, eras = Players[playerID], 0, Game.GetEras()
         if gameplay == true and counter then
@@ -154,7 +154,7 @@ function ResetPanelGolden(gameplay, counter)
     DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
         --get the player
         local pPlayer, num, eras = Players[playerID], 0, Game.GetEras()
         if gameplay == true and counter then
@@ -195,7 +195,7 @@ function ResetPanelHeroic(gameplay, counter)
     DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
         --get the player
         local pPlayer, num, eras = Players[playerID], 0, Game.GetEras()
         if gameplay == true and counter then
@@ -236,7 +236,7 @@ function ResetPanelCounter(gameplay, param)
     DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonEmperyCivTypeMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
         --get the player
         local pPlayer = Players[playerID]
         local num, dark, golden, heroic, normal = 0, 0, 0, 0, 0

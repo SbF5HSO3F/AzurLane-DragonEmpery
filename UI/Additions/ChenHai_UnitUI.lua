@@ -61,7 +61,7 @@ end
 function ChenHaiResetButton()
     --get the unit
     local pUnit = UI.GetHeadSelectedUnit()
-    if pUnit and DragonEmperyLeaderTypeMatched(
+    if pUnit and DragonCore.CheckLeaderMatched(
             pUnit:GetOwner(), 'LEADER_CHEN_HAI'
         ) then
         Controls.ChenHaiGrid:SetHide(false)

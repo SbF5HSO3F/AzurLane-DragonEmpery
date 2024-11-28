@@ -78,17 +78,17 @@ AnShanCityPanel = {
                     if cityProduction.IsBuilding or cityProduction.IsDistrict then
                         --the Iron
                         detail.IronCost = math.ceil(amount / 2)
-                        detail.IronOffer = math.floor(amount * base * 2)
+                        detail.IronOffer = math.floor(detail.IronCost * base * 2)
                         --the Aluminum
                         detail.AluminumCost = math.ceil(amount)
-                        detail.AluminumOffer = math.floor(amount * base)
+                        detail.AluminumOffer = math.floor(detail.AluminumCost * base)
                     elseif cityProduction.IsUnit or cityProduction.IsProject then
                         --the Iron
                         detail.IronCost = math.ceil(amount)
-                        detail.IronOffer = math.floor(amount * base)
+                        detail.IronOffer = math.floor(detail.IronCost * base)
                         --the Aluminum
                         detail.AluminumCost = math.ceil(amount / 2)
-                        detail.AluminumOffer = math.floor(amount * base * 2)
+                        detail.AluminumOffer = math.floor(detail.AluminumCost * base * 2)
                     end
                     --get player resources
                     local playerResources = Players[pCity:GetOwner()]:GetResources()
@@ -96,7 +96,7 @@ AnShanCityPanel = {
                     local AluminumAmount = playerResources:GetResourceAmount(aluminumIndex)
                     --check the resource enough
                     detail.IronDisable = IronAmount < detail.IronCost
-                    detail.AluminumAmount = AluminumAmount < detail.AluminumCost
+                    detail.AluminumDisable = AluminumAmount < detail.AluminumCost
                 else
                     detail.Reason = Locale.Lookup('LOC_ANSTEEL_NOBUILDINGQUEUE_WARNING')
                 end
@@ -116,24 +116,31 @@ AnShanCityPanel = {
             local cityDistricts = pCity:GetDistricts()
             --the city has AnSteel?
             if cityDistricts:HasDistrict(AnSteelIndex, true) then
+                Controls.AnShanCityStack:SetHide(false)
                 --get the city detail
                 local detail = self.GetDetail(pCity)
                 local reason = detail.Reason
                 --the tooltip
                 local tooltip1 = Locale.Lookup('LOC_DISTRICT_ANSTEEL_NAME') ..
-                    '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_COST_IRON_DESC', detail.Production)
+                    '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_COST_IRON_DESC', detail.ResProduction)
                 local tooltip2 = Locale.Lookup('LOC_DISTRICT_ANSTEEL_NAME') ..
-                    '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_DESC', detail.Production)
+                    '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_DESC', detail.ResProduction)
                 --set the tooltip
                 if detail.IronDisable and detail.AluminumDisable then
                     --the iron
                     Controls.IronButton:SetDisabled(true)
                     Controls.IronButton:SetAlpha(0.7)
-                    tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. reason
                     --the Aluminum
                     Controls.AluminumButton:SetDisabled(true)
                     Controls.AluminumButton:SetAlpha(0.7)
-                    tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. reason
+                    --zhe disable reason
+                    if detail.ItemType == 'NONE' then
+                        tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. reason
+                        tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. reason
+                    else
+                        tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOIRON_WARNING')
+                        tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOALUMINUM_WARNING')
+                    end
                 else
                     --set the iron button
                     local ironDisable = detail.IronDisable
@@ -142,7 +149,7 @@ AnShanCityPanel = {
                     Controls.IronButton:SetAlpha((ironDisable and 0.7) or 1)
                     --the button tooltip
                     tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' ..
-                        Locale.Lookup('LOC_ANSTEEL_COST_IRON_NEED', detail.ItemName, detail.IronNeed, detail.IronOffer)
+                        Locale.Lookup('LOC_ANSTEEL_COST_IRON_NEED', detail.ItemName, detail.IronCost, detail.IronOffer)
                     if ironDisable then
                         tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOIRON_WARNING')
                     end
@@ -153,7 +160,7 @@ AnShanCityPanel = {
                     Controls.AluminumButton:SetAlpha((aluminumDisable and 0.7) or 1)
                     --the button tooltip
                     tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' ..
-                        Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_NEED', detail.ItemName, detail.AluminumNeed,
+                        Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_NEED', detail.ItemName, detail.AluminumCost,
                             detail.AluminumOffer)
                     if aluminumDisable then
                         tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOALUMINUM_WARNING')

@@ -98,22 +98,13 @@
 			<Text>消耗 [ICON_RESOURCE_IRON] 铁为城市当前生产提供 [ICON_PRODUCTION] 生产力。每点 [ICON_RESOURCE_IRON] 铁可提供{1_num} [ICON_PRODUCTION] 生产力，为建筑、区域提供 [ICON_PRODUCTION] 生产力时所提供的 [ICON_PRODUCTION] 生产力翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_IRON_NEED" Language="zh_Hans_CN">
-			<Text>完成{1_Name}的生产需要{2_num}点 [ICON_RESOURCE_IRON] 铁</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_COST_IRON_DETAIL" Language="zh_Hans_CN">
-			<Text>消耗{1_num}点 [ICON_RESOURCE_IRON] 铁提供{2_num}点 [ICON_PRODUCTION] 生产力</Text>
+			<Text>完成{1_Name}的生产需要{2_num}点 [ICON_RESOURCE_IRON] 铁提供{3_num}点 [ICON_PRODUCTION] 生产力</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DESC" Language="zh_Hans_CN">
 			<Text>消耗 [ICON_RESOURCE_ALUMINUM] 铝为城市当前生产提供 [ICON_PRODUCTION] 生产力。每点 [ICON_RESOURCE_ALUMINUM] 铝可提供{1_num} [ICON_PRODUCTION] 生产力，为单位、项目提供 [ICON_PRODUCTION] 生产力时所提供的 [ICON_PRODUCTION] 生产力翻倍。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_NEED" Language="zh_Hans_CN">
-			<Text>完成{1_Name}的生产需要{2_num}点 [ICON_RESOURCE_ALUMINUM] 铝</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_DETAIL" Language="zh_Hans_CN">
-			<Text>消耗{1_num}点 [ICON_RESOURCE_ALUMINUM] 铝提供{2_num}点 [ICON_PRODUCTION] 生产力</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_COST_COMPLETE" Language="zh_Hans_CN">
-			<Text>[ICON_BULLET]{1_Name}的生产将会完成</Text>
+			<Text>完成{1_Name}的生产需要{2_num}点 [ICON_RESOURCE_ALUMINUM] 铝提供{3_num}点 [ICON_PRODUCTION] 生产力</Text>
 		</Replace>
 		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]单位不存在[ENDCOLOR]</Text>

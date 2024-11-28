@@ -73,7 +73,7 @@ function AnShanResetUnitButton()
         --get the disabled
         local disabled = detail.disable
         Controls.AnShanCombatButton:SetDisabled(disabled)
-        Controls.AnShanCombatButton:SetAlpha((disabled and 0.4) or 1)
+        Controls.AnShanCombatButton:SetAlpha((disabled and 0.7) or 1)
         --the tooltip
         local tooltip = Locale.Lookup('LOC_ANSTEEL_UNIT_COMBAT_NAME') ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_UNIT_COMBAT_DESC') ..

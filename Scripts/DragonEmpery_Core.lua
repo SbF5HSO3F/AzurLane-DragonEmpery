@@ -171,6 +171,101 @@ end
 
 --||=========================UI=========================||--
 
+--get the city production detail (UI)
+function DragonCore.GetProductionDetail(city)
+    local details = { --the production detail
+        --city production
+        Producting = false,
+        IsBuilding = false,
+        IsWonder   = false,
+        IsDistrict = false,
+        IsUnit     = false,
+        IsProject  = false,
+        --production detail
+        ItemType   = 'NONE',
+        ItemName   = 'NONE',
+        ItemIndex  = -1,
+        --about the progress detail
+        Progress   = 0,
+        TotalCost  = 0,
+    }; if not city then return details end
+    --the city has the production?
+    local cityBuildQueue = city:GetBuildQueue()
+    local productionHash = cityBuildQueue:GetCurrentProductionTypeHash()
+    if productionHash ~= 0 then
+        details.Producting = true
+        --building district unit project
+        local pBuildingDef = GameInfo.Buildings[productionHash]
+        local pDistrictDef = GameInfo.Districts[productionHash]
+        local pUnitDef     = GameInfo.Units[productionHash]
+        local pProjectDef  = GameInfo.Projects[productionHash]
+        --judge the currently building
+        if pBuildingDef ~= nil then
+            --get the index to get production detail
+            local index = pBuildingDef.Index
+            --set the production detail
+            details.IsBuilding = true
+            details.IsWonder = pBuildingDef.IsWonder
+            details.ItemType = pBuildingDef.BuildingType
+            details.ItemName = Locale.Lookup(pBuildingDef.Name)
+            details.ItemIndex = index
+            details.Progress = cityBuildQueue:GetBuildingProgress(index)
+            details.TotalCost = cityBuildQueue:GetBuildingCost(index)
+        elseif pDistrictDef ~= nil then
+            --get the index to get production detail
+            local index = pDistrictDef.Index
+            --set the production detail
+            details.IsDistrict = true
+            details.ItemType = pDistrictDef.DistrictType
+            details.ItemName = Locale.Lookup(pDistrictDef.Name)
+            details.ItemIndex = index
+            details.Progress = cityBuildQueue:GetDistrictProgress(index)
+            details.TotalCost = cityBuildQueue:GetDistrictCost(index)
+        elseif pUnitDef ~= nil then
+            --get the index to get production detail
+            local index = pUnitDef.Index
+            --set the production detail
+            details.IsUnit = true
+            details.ItemType = pUnitDef.UnitType
+            details.ItemName = Locale.Lookup(pUnitDef.Name)
+            details.ItemIndex = index
+            details.Progress = cityBuildQueue:GetUnitProgress(index)
+            --get the miliitary formation type
+            local formation = cityBuildQueue:GetCurrentProductionTypeModifier()
+            if formation == MilitaryFormationTypes.STANDARD_FORMATION then
+                details.TotalCost = cityBuildQueue:GetUnitCost(index)
+            elseif formation == MilitaryFormationTypes.CORPS_FORMATION then
+                details.TotalCost = cityBuildQueue:GetUnitCorpsCost(index)
+                if pUnitDef.Domain == 'DOMAIN_SEA' then
+                    -- Concatenanting two fragments is not loc friendly.  This needs to change.
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_FLEET_SUFFIX")
+                else
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_CORPS_SUFFIX")
+                end
+            elseif formation == MilitaryFormationTypes.ARMY_FORMATION then
+                details.TotalCost = cityBuildQueue:GetUnitArmyCost(index)
+                if pUnitDef.Domain == 'DOMAIN_SEA' then
+                    -- Concatenanting two fragments is not loc friendly.  This needs to change.
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_ARMADA_SUFFIX")
+                else
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_ARMY_SUFFIX")
+                end
+            end
+        elseif pProjectDef ~= nil then
+            --get the index to get production detail
+            local index = pProjectDef.Index
+            --set the production detail
+            details.IsProject = true
+            details.ItemType = pProjectDef.ProjectType
+            details.ItemName = Locale.Lookup(pProjectDef.Name)
+            details.ItemIndex = index
+            details.Progress = cityBuildQueue:GetProjectProgress(index)
+            details.TotalCost = cityBuildQueue:GetProjectCost(index)
+        end
+    end
+    return details
+end
+
 --mouse enter the button
 function DragonEmperyEnter()
     UI.PlaySound("Main_Menu_Mouse_Over")

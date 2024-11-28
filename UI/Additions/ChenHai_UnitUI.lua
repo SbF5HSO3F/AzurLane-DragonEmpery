@@ -71,7 +71,7 @@ function ChenHaiResetButton()
         local disable = detail.disable
         --reset the button
         Controls.ChenHaiTokenButton:SetDisabled(disable)
-        Controls.ChenHaiTokenButton:SetAlpha((disable and 0.4) or 1)
+        Controls.ChenHaiTokenButton:SetAlpha((disable and 0.7) or 1)
         --set the tooltip
         local tooltip = Locale.Lookup('LOC_CHENHAI_GIVETOKEN_NAME')
         if disable then

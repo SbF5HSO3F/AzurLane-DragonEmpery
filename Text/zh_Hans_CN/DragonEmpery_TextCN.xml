@@ -17,6 +17,18 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_DRAGON_EMPERY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>位于东方大陆「神州」历史悠久的古国，作为碧蓝航线阵营的成员，参与对塞壬和赤色中轴的作战行动。</Text>
 		</Replace>
+		<Replace Tag="LOC_CIVINFO_AZURLANE_CORRESPOND" Language="zh_Hans_CN">
+      		<Text>参考原型</Text>
+    	</Replace>
+		<Replace Tag="LOC_CIVINFO_CORRESPOND_DRAGON_EMPERY" Language="zh_Hans_CN">
+      		<Text>中国</Text>
+    	</Replace>
+    	<Replace Tag="LOC_CIVINFO_AZURLANE_ROLE" Language="zh_Hans_CN">
+      		<Text>实装角色数</Text>
+    	</Replace>
+    	<Replace Tag="LOC_CIVINFO_ROLE_DRAGON_EMPERY" Language="zh_Hans_CN">
+      		<Text>20位</Text>
+    	</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_NAME" Language="zh_Hans_CN">
 			<Text>泱泱古国</Text>
@@ -187,326 +199,326 @@
 			<Text>[ICON_Bullet]城市可额外建造{1_num}个区域[NEWLINE][ICON_Bullet]建造区域时+{2_num}% [ICON_PRODUCTION] 生产力</Text>
 		</Replace>
 		<!--城市名-->
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_1" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_BEIJING" Language="zh_Hans_CN">
 			<Text>北京</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_2" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SHANGHAI" Language="zh_Hans_CN">
 			<Text>上海</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_3" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_GUANGZHOU" Language="zh_Hans_CN">
 			<Text>广州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_4" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TAIYUAN" Language="zh_Hans_CN">
 			<Text>太原</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_5" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HANGZHOU" Language="zh_Hans_CN">
 			<Text>杭州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_6" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_CHENGDU" Language="zh_Hans_CN">
 			<Text>成都</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_7" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SUZHOU" Language="zh_Hans_CN">
 			<Text>苏州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_8" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_NANJING" Language="zh_Hans_CN">
 			<Text>南京</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_9" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_CHONGQING" Language="zh_Hans_CN">
 			<Text>重庆</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_10" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_WUHAN" Language="zh_Hans_CN">
 			<Text>武汉</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_11" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_XIAN" Language="zh_Hans_CN">
 			<Text>西安</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_12" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_CHANGSHA" Language="zh_Hans_CN">
 			<Text>长沙</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_13" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_LONGXI" Language="zh_Hans_CN">
 			<Text>陇西</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_14" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HANDAN" Language="zh_Hans_CN">
 			<Text>邯郸</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_15" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_YIYANG" Language="zh_Hans_CN">
 			<Text>益阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_16" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_KASHGAR" Language="zh_Hans_CN">
 			<Text>喀什</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_17" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_LIJIANG" Language="zh_Hans_CN">
 			<Text>丽江</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_18" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_LLI" Language="zh_Hans_CN">
 			<Text>伊犁</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_19" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HUIZHOU" Language="zh_Hans_CN">
 			<Text>徽州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_20" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_KWEISUI" Language="zh_Hans_CN">
 			<Text>归绥</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_21" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SHIGATSE" Language="zh_Hans_CN">
 			<Text>日喀则</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_22" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SHAOXING" Language="zh_Hans_CN">
 			<Text>绍兴</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_23" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_QUFU" Language="zh_Hans_CN">
 			<Text>曲阜</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_24" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SHANGRI_LA" Language="zh_Hans_CN">
 			<Text>香格里拉</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_25" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_KAIFENG" Language="zh_Hans_CN">
 			<Text>开封</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_26" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TSINGTAO" Language="zh_Hans_CN">
 			<Text>青岛</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_27" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_YANGZHOU" Language="zh_Hans_CN">
 			<Text>扬州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_28" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_JINAN" Language="zh_Hans_CN">
 			<Text>济南</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_29" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_CHENGDE" Language="zh_Hans_CN">
 			<Text>承德</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_30" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_BAODING" Language="zh_Hans_CN">
 			<Text>保定</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_31" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_XUZHOU" Language="zh_Hans_CN">
 			<Text>徐州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_32" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_GAOYOU" Language="zh_Hans_CN">
 			<Text>高邮</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_33" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_QUZHOU" Language="zh_Hans_CN">
 			<Text>衢州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_34" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_FENGYANG" Language="zh_Hans_CN">
 			<Text>汾阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_35" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_JILIN" Language="zh_Hans_CN">
 			<Text>吉林</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_36" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_LIAOYANG" Language="zh_Hans_CN">
 			<Text>辽阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_37" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SHENYANG" Language="zh_Hans_CN">
 			<Text>沈阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_38" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_CHANGCHUN" Language="zh_Hans_CN">
 			<Text>长春</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_39" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_ZHENJIANG" Language="zh_Hans_CN">
 			<Text>镇江</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_40" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_RUIJIN" Language="zh_Hans_CN">
 			<Text>瑞金</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_41" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_ANSHAN" Language="zh_Hans_CN">
 			<Text>鞍山</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_42" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HAISHENWAI" Language="zh_Hans_CN">
 			<Text>海参崴</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_43" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HAIKOU" Language="zh_Hans_CN">
 			<Text>海口</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_44" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HANZHONG" Language="zh_Hans_CN">
 			<Text>汉中</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_45" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TURPAN" Language="zh_Hans_CN">
 			<Text>吐鲁番</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_46" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HULUN_BUIR" Language="zh_Hans_CN">
 			<Text>呼伦贝尔</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_47" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_DAQING" Language="zh_Hans_CN">
 			<Text>大庆</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_48" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_DALIAN" Language="zh_Hans_CN">
 			<Text>大连</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_49" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_ZHENGZHOU" Language="zh_Hans_CN">
 			<Text>郑州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_50" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_WEIHAI" Language="zh_Hans_CN">
 			<Text>威海</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_51" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_GUIYANG" Language="zh_Hans_CN">
 			<Text>贵阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_52" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TAIPEI" Language="zh_Hans_CN">
 			<Text>台北</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_53" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_BOLI" Language="zh_Hans_CN">
 			<Text>伯力</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_54" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HEFEI" Language="zh_Hans_CN">
 			<Text>合肥</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_55" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_LHASA" Language="zh_Hans_CN">
 			<Text>拉萨</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_56" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_URUMQI" Language="zh_Hans_CN">
 			<Text>乌鲁木齐</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_57" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_XIAMEN" Language="zh_Hans_CN">
 			<Text>厦门</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_58" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_YAN_AN" Language="zh_Hans_CN">
 			<Text>延安</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_59" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_PANZHIHUA" Language="zh_Hans_CN">
 			<Text>攀枝花</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_60" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_JINGZHOU" Language="zh_Hans_CN">
 			<Text>荆州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_61" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_ZUNYI" Language="zh_Hans_CN">
 			<Text>遵义</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_62" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_KUNMING" Language="zh_Hans_CN">
 			<Text>昆明</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_63" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_GUILIN" Language="zh_Hans_CN">
 			<Text>桂林</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_64" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_NANCHANG" Language="zh_Hans_CN">
 			<Text>南昌</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_65" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HARBIN" Language="zh_Hans_CN">
 			<Text>哈尔滨</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_66" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_FUSHUN" Language="zh_Hans_CN">
 			<Text>抚顺</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_67" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TA_KAU" Language="zh_Hans_CN">
 			<Text>打狗</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_68" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SANSHA" Language="zh_Hans_CN">
 			<Text>三沙</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_69" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TANGSHANG" Language="zh_Hans_CN">
 			<Text>唐山</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_70" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_DATONG" Language="zh_Hans_CN">
 			<Text>大同</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_71" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_LUOYANG" Language="zh_Hans_CN">
 			<Text>洛阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_72" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_XUANCHENG" Language="zh_Hans_CN">
 			<Text>宣城</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_73" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HENGYANG" Language="zh_Hans_CN">
 			<Text>衡阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_74" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_HAIILAN_BOO" Language="zh_Hans_CN">
 			<Text>海兰泡</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_75" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TONGLIAO" Language="zh_Hans_CN">
 			<Text>通辽</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_76" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_JINGDEZHEN" Language="zh_Hans_CN">
 			<Text>景德镇</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_77" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_NANNING" Language="zh_Hans_CN">
 			<Text>南宁</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_78" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_XINING" Language="zh_Hans_CN">
 			<Text>西宁</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_79" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_TIANSHUI" Language="zh_Hans_CN">
 			<Text>天水</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_80" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_XIANGYANG" Language="zh_Hans_CN">
 			<Text>襄阳</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_81" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_YINCHUAN" Language="zh_Hans_CN">
 			<Text>银川</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_82" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_LANZHOU" Language="zh_Hans_CN">
 			<Text>兰州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_83" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_SANYA" Language="zh_Hans_CN">
 			<Text>三亚</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_84" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_FUZHOU" Language="zh_Hans_CN">
 			<Text>福州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_85" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_DALI" Language="zh_Hans_CN">
 			<Text>大理</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_86" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_JIUQUAN" Language="zh_Hans_CN">
 			<Text>酒泉</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_87" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_ZHANGYE" Language="zh_Hans_CN">
 			<Text>张掖</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_88" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_QIQIHAR" Language="zh_Hans_CN">
 			<Text>齐齐哈尔</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_89" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_BAISE" Language="zh_Hans_CN">
 			<Text>百色</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_90" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_MIANYANG" Language="zh_Hans_CN">
 			<Text>绵阳</Text>
 		</Replace>
 		<!--公民名-->
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_1" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_YAT_SEN" Language="zh_Hans_CN">
 			<Text>逸仙</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_2" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_CHI_AN" Language="zh_Hans_CN">
 			<Text>济安</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_3" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_CHANG_CHUN" Language="zh_Hans_CN">
 			<Text>长春</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_4" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_TAI_YUAN" Language="zh_Hans_CN">
 			<Text>太原</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_5" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FU_SHUN" Language="zh_Hans_CN">
 			<Text>抚顺</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_6" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HWAH_JAH" Language="zh_Hans_CN">
 			<Text>华甲</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_7" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_CHAO_HO" Language="zh_Hans_CN">
 			<Text>肇和</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_8" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_YING_SWEI" Language="zh_Hans_CN">
 			<Text>应瑞</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_9" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HAI_CHI" Language="zh_Hans_CN">
 			<Text>海圻</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_10" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HUAN_CH_ANG" Language="zh_Hans_CN">
 			<Text>寰昌</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_11" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HARBIN" Language="zh_Hans_CN">
 			<Text>哈尔滨</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_12" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_TING_AN" Language="zh_Hans_CN">
 			<Text>定安</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_13" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_NING_HAI" Language="zh_Hans_CN">
 			<Text>宁海</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_14" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_PING_HAI" Language="zh_Hans_CN">
 			<Text>平海</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_15" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_LUNG_WU" Language="zh_Hans_CN">
 			<Text>龙武</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_16" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HU_PEN" Language="zh_Hans_CN">
 			<Text>虎贲</Text>
 		</Replace>
-		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_17" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FEI_YUAN" Language="zh_Hans_CN">
 			<Text>飞云</Text>
 		</Replace>
 	</LocalizedText>

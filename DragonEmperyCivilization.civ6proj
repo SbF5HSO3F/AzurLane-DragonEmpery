@@ -20,17 +20,17 @@
     <LocalizedTextData><![CDATA[
       <LocalizedText>
         <Text id="LOC_DRAGON_EMPERY_NAME">
-          <en_US>Azur Lane-Dragon Empery Civilization</en_US>
+          <en_US>Azur Lane-Dragon Empery</en_US>
           <zh_Hans_CN>碧蓝航线·东煌古国</zh_Hans_CN>
           <zh_Hans_HK>碧藍航線·東煌古國</zh_Hans_HK>
       </Text>
       <Text id="LOC_DRAGON_EMPERY_TEASER">
-          <en_US>Added a powerful civilization from the game "Azur Lane" - Dragon Empery Civilization.</en_US>
+          <en_US>Added a powerful civilization from the game "Azur Lane" - Dragon Empery.</en_US>
           <zh_Hans_CN>为游戏添加了一个来自游戏作品《碧蓝航线》的强大文明——东煌古国。</zh_Hans_CN>
           <zh_Hans_HK>為遊戲添加了一個來自遊戲作品《碧藍航線》的強大文明——東煌古國。</zh_Hans_HK>
       </Text>
       <Text id="LOC_DRAGON_EMPERY_DESCRIPTION">
-          <en_US>Added a civilization based on the Dragon Empery in the game work "Azur Lane" - the Dragon Empery civilization. This mod has added 3 leaders: Hei Tien, Chen Hai and An Shan.</en_US>
+          <en_US>Added a civilization based on the Dragon Empery in the game work "Azur Lane" - the Dragon Empery. This mod has added 3 leaders: Hei Tien, Chen Hai and An Shan.</en_US>
           <zh_Hans_CN>为游戏添加了一个以游戏作品《碧蓝航线》中的东煌为原型的文明——东煌古国。本模组为其添加了3名领袖：海天、镇海和鞍山。</zh_Hans_CN>
           <zh_Hans_HK>為遊戲添加了一個以遊戲作品《碧藍航線》中的東煌為原型的文明——東煌古國。本模組為其添加了3名領袖：海天、鎮海和鞍山。</zh_Hans_HK>
       </Text>

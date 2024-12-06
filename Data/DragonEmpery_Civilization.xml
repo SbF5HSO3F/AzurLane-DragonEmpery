@@ -38,7 +38,7 @@
 	</CivilizationTraits>
 	<CivilizationLeaders>
 		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_HAI_TIEN"			CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_BEIJING"/>
-		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_CHEN_HAI"			CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_TSINGTAO"/>
+		<!-- <Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_CHEN_HAI"			CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_TSINGTAO"/> -->
 		<Row CivilizationType="CIVILIZATION_DRAGON_EMPERY" LeaderType="LEADER_AN_SHAN_DD101"	CapitalName="LOC_CITY_NAME_DRAGON_EMPERY_ANSHAN"/>
 	</CivilizationLeaders>
 	<CityNames>

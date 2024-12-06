@@ -469,6 +469,9 @@
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_MIANYANG" Language="zh_Hans_CN">
 			<Text>绵阳</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_YANTAI" Language="zh_Hans_CN">
+			<Text>烟台</Text>
+		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_YAT_SEN" Language="zh_Hans_CN">
 			<Text>逸仙</Text>

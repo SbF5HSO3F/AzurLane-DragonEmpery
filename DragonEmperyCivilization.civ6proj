@@ -60,7 +60,25 @@
           <File>Binaries/Win64/c6se/DragonEmperyDLL.dll</File>
         </ImportFiles>
         <UpdateText id="DragonEmpery">
-          <File priority="100">Text/en_US/DragonEmpery_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_TextCN.xml</File><File priority="80">Text/zh_Hant_HK/DragonEmpery_TextHK.xml</File></UpdateText><UpdateText id="HaiTien"><File priority="100">Text/en_US/DragonEmpery_HaiTien_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_HaiTien_TextCN.xml</File><File priority="80">Text/zh_Hant_HK/DragonEmpery_HaiTien_TextHK.xml</File></UpdateText><UpdateText id="ChenHai"><File>Text/zh_Hans_CN/DragonEmpery_ChenHai_TextCN.xml</File></UpdateText><UpdateText id="AnShan"><File priority="100">Text/en_US/DragonEmpery_AnShan_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_AnShan_TextCN.xml</File><File priority="80">Text/zh_Hant_HK/DragonEmpery_AnShan_TextHK.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+          <File priority="100">Text/en_US/DragonEmpery_TextUS.xml</File>
+          <File priority="90">Text/zh_Hans_CN/DragonEmpery_TextCN.xml</File>
+          <File priority="80">Text/zh_Hant_HK/DragonEmpery_TextHK.xml</File>
+        </UpdateText>
+        <UpdateText id="HaiTien">
+          <File priority="100">Text/en_US/DragonEmpery_HaiTien_TextUS.xml</File>
+          <File priority="90">Text/zh_Hans_CN/DragonEmpery_HaiTien_TextCN.xml</File>
+          <File priority="80">Text/zh_Hant_HK/DragonEmpery_HaiTien_TextHK.xml</File>
+        </UpdateText>
+        <UpdateText id="ChenHai">
+          <File>Text/zh_Hans_CN/DragonEmpery_ChenHai_TextCN.xml</File>
+        </UpdateText>
+        <UpdateText id="AnShan">
+          <File priority="100">Text/en_US/DragonEmpery_AnShan_TextUS.xml</File>
+          <File priority="90">Text/zh_Hans_CN/DragonEmpery_AnShan_TextCN.xml</File>
+          <File priority="80">Text/zh_Hant_HK/DragonEmpery_AnShan_TextHK.xml</File>
+        </UpdateText>
+      </FrontEndActions>
+    ]]></FrontEndActionData>
     <InGameActionData><![CDATA[
       <InGameActions>
         <UpdateArt id="Art">
@@ -116,8 +134,8 @@
           <File priority="80">Text/zh_Hant_HK/DragonEmpery_TextHK.xml</File>
         </UpdateText>
         <UpdateDatabase id="HaiTien">
-          <File>Data/Hai Tien/DragonEmpery_HaiTien_Leader.xml</File>
-          <File>Data/Hai Tien/DragonEmpery_HaiTien_UnitAbilities.xml</File>
+          <File priority="100">Data/Hai Tien/DragonEmpery_HaiTien_Leader.xml</File>
+          <File priority="90">Data/Hai Tien/DragonEmpery_HaiTien_UnitAbilities.xml</File>
           <File priority="80">Data/Hai Tien/DragonEmpery_HaiTien_Units.xml</File>
         </UpdateDatabase>
         <UpdateDatabase id="HaiTien_XP2">
@@ -137,7 +155,36 @@
         <DoNothing id="ChenHai_XP2" />
         <UpdateText id="ChenHai_Text">
           <File>Text/zh_Hans_CN/DragonEmpery_ChenHai_TextCN.xml</File>
-        </UpdateText><UpdateDatabase id="AnShan"><File priority="100">Data/An Shan/DragonEmpery_AnShan_Leader.xml</File><File priority="90">Data/An Shan/DragonEmpery_AnShan_Districts.xml</File><File>Data/An Shan/DragonEmpery_AnShan_UnitAbilities.xml</File></UpdateDatabase><UpdateDatabase id="AnShan_XP2"><Properties><RuleSet>RULESET_EXPANSION_2</RuleSet></Properties><File>Data/An Shan/DragonEmpery_AnShan_XP2.sql</File></UpdateDatabase><AddUserInterfaces id="AnShan_UI"><Properties><Context>InGame</Context><RuleSet>RULESET_EXPANSION_2</RuleSet></Properties><File>UI/Additions/AnShan_CityUI.xml</File></AddUserInterfaces><UpdateDatabase id="AnShan_Mode"><Criteria>DRAGONEMPERY_MODE</Criteria><File>Data/An Shan/DragonEmpery_AnShan_SecretSocieties.sql</File></UpdateDatabase><UpdateText id="AnShan_Text"><File priority="100">Text/en_US/DragonEmpery_AnShan_TextUS.xml</File><File priority="90">Text/zh_Hans_CN/DragonEmpery_AnShan_TextCN.xml</File><File priority="80">Text/zh_Hant_HK/DragonEmpery_AnShan_TextHK.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+        </UpdateText>
+        <UpdateDatabase id="AnShan">
+          <File priority="100">Data/An Shan/DragonEmpery_AnShan_Leader.xml</File>
+          <File priority="90">Data/An Shan/DragonEmpery_AnShan_Districts.xml</File>
+          <File priority="80">Data/An Shan/DragonEmpery_AnShan_UnitAbilities.xml</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="AnShan_XP2">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_2</RuleSet>
+          </Properties>
+          <File>Data/An Shan/DragonEmpery_AnShan_XP2.sql</File>
+        </UpdateDatabase>
+        <AddUserInterfaces id="AnShan_UI">
+          <Properties>
+            <Context>InGame</Context>
+            <RuleSet>RULESET_EXPANSION_2</RuleSet>
+          </Properties>
+          <File>UI/Additions/AnShan_CityUI.xml</File>
+        </AddUserInterfaces>
+        <UpdateDatabase id="AnShan_Mode">
+          <Criteria>DRAGONEMPERY_MODE</Criteria>
+          <File>Data/An Shan/DragonEmpery_AnShan_SecretSocieties.sql</File>
+        </UpdateDatabase>
+        <UpdateText id="AnShan_Text">
+          <File priority="100">Text/en_US/DragonEmpery_AnShan_TextUS.xml</File>
+          <File priority="90">Text/zh_Hans_CN/DragonEmpery_AnShan_TextCN.xml</File>
+          <File priority="80">Text/zh_Hant_HK/DragonEmpery_AnShan_TextHK.xml</File>
+        </UpdateText>
+      </InGameActions>
+    ]]></InGameActionData>
     <ActionCriteriaData><![CDATA[
       <ActionCriteria>
         <Criteria id="DRAGONEMPERY_MODE">

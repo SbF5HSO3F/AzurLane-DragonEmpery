@@ -469,6 +469,9 @@
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_MIANYANG" Language="en_US">
 			<Text>Mianyang</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_YANTAI" Language="en_US">
+			<Text>Yantai</Text>
+		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_YAT_SEN" Language="en_US">
 			<Text>Yat Sen</Text>

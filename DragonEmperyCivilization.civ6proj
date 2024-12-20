@@ -9,7 +9,8 @@
     <Teaser>LOC_DRAGON_EMPERY_TEASER</Teaser>
     <Description>LOC_DRAGON_EMPERY_DESCRIPTION</Description>
     <Authors>SbF5HSO3F</Authors>
-    <SpecialThanks>PhantomJ_M</SpecialThanks>
+    <SpecialThanks>
+    </SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
@@ -50,15 +51,6 @@
         <UpdateDatabase id="Config">
           <File>DragonEmpery_Config.xml</File>
         </UpdateDatabase>
-        <UpdateDatabase id="DllConfig">
-          <Properties>
-            <LoadOrder>11</LoadOrder>
-          </Properties>
-          <File>DragonEmpery_DLLConfig.sql</File>
-        </UpdateDatabase>
-        <ImportFiles id="ImportDll">
-          <File>Binaries/Win64/c6se/DragonEmperyDLL.dll</File>
-        </ImportFiles>
         <UpdateText id="DragonEmpery">
           <File priority="100">Text/en_US/DragonEmpery_TextUS.xml</File>
           <File priority="90">Text/zh_Hans_CN/DragonEmpery_TextCN.xml</File>
@@ -91,7 +83,6 @@
           <File>DragonEmpery_Colors.xml</File>
         </UpdateColors>
         <ImportFiles id="Import">
-          <File>Binaries/Win64/c6se/DragonEmperyDLL.dll</File>
           <File>Scripts/DragonEmpery_Core.lua</File>
         </ImportFiles>
         <AddUserInterfaces id="UI">
@@ -204,13 +195,10 @@
     <None Include="DragonEmperyCivilization.Art.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Binaries\Win64" />
-    <Folder Include="Binaries\Win64\c6se" />
     <Folder Include="Data" />
     <Folder Include="Data\Hai Tien" />
     <Folder Include="Data\Chen Hai" />
     <Folder Include="Data\An Shan" />
-    <Folder Include="Binaries" />
     <Folder Include="Scripts" />
     <Folder Include="Text" />
     <Folder Include="Text\en_US" />
@@ -220,15 +208,6 @@
     <Folder Include="UI\Additions" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Binaries\Win64\AddrLib.bin">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Binaries\Win64\c6se\DragonEmperyDLL.dll">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Binaries\Win64\GameCore_XP2_Loader_FinalRelease.dll">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Data\An Shan\DragonEmpery_AnShan_Districts.xml">
       <SubType>Content</SubType>
     </Content>
@@ -290,9 +269,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="DragonEmpery_Config.xml">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="DragonEmpery_DLLConfig.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="DragonEmpery_Icons.xml">

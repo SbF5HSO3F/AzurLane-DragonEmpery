@@ -1,5 +1,5 @@
 -- GameData1
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2024/7/10 12:17:43
 --------------------------------------------------------------
 INSERT INTO District_Adjacencies

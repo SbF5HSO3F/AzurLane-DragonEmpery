@@ -95,7 +95,7 @@
           <File>UI/Additions/AnShan_UnitUI.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Scripts">
-          <File>Scripts/DragonEmpery.lua</File>
+          <File>Scripts/DragonEmpery_Scripts.lua</File>
           <File>Scripts/DragonEmpery_HaiTien.lua</File>
           <File>Scripts/DragonEmpery_ChenHai.lua</File>
           <File>Scripts/DragonEmpery_AnShan.lua</File>
@@ -274,7 +274,7 @@
     <Content Include="DragonEmpery_Icons.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\DragonEmpery.lua">
+    <Content Include="Scripts\DragonEmpery_Scripts.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\DragonEmpery_AnShan.lua">

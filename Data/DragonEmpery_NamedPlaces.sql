@@ -1,5 +1,5 @@
 -- DragonEmpery_NamedPlaces
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2023/12/31 15:13:49
 --------------------------------------------------------------
 INSERT INTO NamedRiverCivilizations

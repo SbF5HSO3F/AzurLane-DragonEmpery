@@ -1,5 +1,5 @@
 -- DragonEmpery_SecretSocieties
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2024/2/25 15:40:04
 --------------------------------------------------------------
 INSERT INTO BuildingPrereqs

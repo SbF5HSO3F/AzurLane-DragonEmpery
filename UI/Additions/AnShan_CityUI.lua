@@ -281,4 +281,6 @@ function Initialize()
     print('Initial success!')
 end
 
+include('AnShan_UnitUI_', true)
+
 Initialize()

@@ -148,4 +148,6 @@ function Initialize()
     print('Initial success!')
 end
 
+include('HaiTien_UnitUI_', true)
+
 Initialize()

@@ -407,4 +407,6 @@ function Initialize()
     print('Initial success!')
 end
 
+include('DragonEmpery_UI_', true)
+
 Initialize()

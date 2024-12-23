@@ -132,7 +132,9 @@ function Initialize()
     GameEvents.OnPlayerGaveInfluenceToken.Add(ChenHaiMoreToken)
     GameEvents.ChenHaiGiveToken.Add(ChenHaiGiveTokenTo)
     ----------------------------------------
-    print('DragonEmpery_ChenHai Initial success!')
+    print('Initial success!')
 end
+
+include('DragonEmpery_ChenHai_', true)
 
 Initialize()

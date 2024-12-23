@@ -100,7 +100,9 @@ function Initialize()
     ---------------GameEvents---------------
     GameEvents.HaiTienGreatWriterActivated.Add(HaiTienActivateGreatWriter)
     ----------------------------------------
-    print('DragonEmpery_HaiTien Initial success!')
+    print('Initial success!')
 end
+
+include('DragonEmpery_HaiTien_', true)
 
 Initialize()

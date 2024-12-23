@@ -322,7 +322,9 @@ function Initialize()
     ---------------ExposedMembers---------------
     ExposedMembers.DragonEmpery.CalculateCost = DragonEmperyCalculateCost
     --------------------------------------------
-    print('DragonEmpery Initial success!')
+    print('Initial success!')
 end
+
+include('DragonEmpery_Scripts_', true)
 
 Initialize()

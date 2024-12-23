@@ -192,4 +192,6 @@ function Initialize()
     print('Initial success!')
 end
 
+include('ChenHai_UnitUI_', true)
+
 Initialize()

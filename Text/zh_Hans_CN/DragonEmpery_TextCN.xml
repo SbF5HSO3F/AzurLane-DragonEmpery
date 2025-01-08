@@ -111,30 +111,72 @@
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="zh_Hans_CN">
 			<Text>根据您已完成的{1_num}个市政，您下回合开始时将获得{2_num}点 [ICON_Culture] 文化值。</Text>
 		</Replace>
+		<!--黑暗时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="zh_Hans_CN">
 			<Text>[COLOR:68,66,50,255]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_TITLE" Language="zh_Hans_CN">
 			<Text>您已累计经历{1_num}次 [ICON_GLORY_DARK_AGE] 黑暗时代</Text>
 		</Replace>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_COMBAT_MODIFIER" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有军事单位+{1_num} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION_MODIFIER" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]生产军事单位时+{1_num}% [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_IDENTITY_BUFF_MODIFIER" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+{1_num}忠诚度</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_BUFF" Language="zh_Hans_CN">
 			<Text>[ICON_Bullet]所有军事单位+{1_num} [ICON_Strength] 战斗力[NEWLINE][ICON_Bullet]生产军事单位时+{2_num}% [ICON_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]所有城市+{3_num}忠诚度</Text>
 		</Replace>
+		<!--黄金时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN" Language="zh_Hans_CN">
 			<Text>[COLOR:COLOR_FLOAT_GOLD]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_TITLE" Language="zh_Hans_CN">
 			<Text>您已累计经历{1_num}次 [ICON_GLORY_GOLDEN_AGE] 黄金时代</Text>
 		</Replace>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_PRODUCITON" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_TRADE_GOLD" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+{1_num} [ICON_Gold] 金币</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_AMENITIES" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+{1_num} [ICON_Amenities] 宜居度</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_BUFF" Language="zh_Hans_CN">
 			<Text>[ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+{2_num} [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+{3_num} [ICON_Amenities] 宜居度</Text>
 		</Replace>
+		<!--英雄时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC" Language="zh_Hans_CN">
 			<Text>[COLOR:ResGoldLabelCS]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_TITLE" Language="zh_Hans_CN">
 			<Text>您已累计经历{1_num}次 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄时代</Text>
 		</Replace>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_PRODUCITON" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_TOURISM" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]帝国全境+{1_num}% [ICON_Tourism] 旅游业绩</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_TRADE_GOLD" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+{1_num} [ICON_Gold] 金币</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_AMENITIES" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+{1_num} [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_GREAT_PERSON" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num}% [ICON_GreatPerson] 伟人点数</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_BUFF" Language="zh_Hans_CN">
 			<Text>[ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]帝国全境+{2_num}% [ICON_Tourism] 旅游业绩[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+{3_num} [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+{4_num} [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+{5_num}% [ICON_GreatPerson] 伟人点数</Text>
 		</Replace>
@@ -171,30 +213,87 @@
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_BONUS" Language="zh_Hans_CN">
 			<Text>已额外获得{1_num}个通配符槽位</Text>
 		</Replace>
+		<!--黑暗时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW" Language="zh_Hans_CN">
 			<Text>您的文明现在正处于 [ICON_GLORY_DARK_AGE] 黑暗时代！</Text>
 		</Replace>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_GRANT_GENERAL_MODIFIER" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]立即在 [ICON_Capital] 首都获得1位 [ICON_GreatGeneral] 大将军</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_COMBAT" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有军事单位+5 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]生产军事单位时+20% [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_UNIT_MOVEMENT" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有单位+1 [ICON_MOVEMENT] 移动力</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF" Language="zh_Hans_CN">
 			<Text>[ICON_Bullet]立即在 [ICON_Capital] 首都获得1位 [ICON_GreatGeneral] 大将军[NEWLINE][ICON_Bullet]所有军事单位+5 [ICON_Strength] 战斗力[NEWLINE][ICON_Bullet]生产军事单位时+20% [ICON_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]所有单位+1 [ICON_MOVEMENT] 移动力</Text>
 		</Replace>
+		<!--黄金时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW" Language="zh_Hans_CN">
 			<Text>您的文明现在正处于 [ICON_GLORY_GOLDEN_AGE] 黄金时代！</Text>
 		</Replace>
+		<!--Buff-->
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_PRODUCTION" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]城市+20% [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_TOURISM" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]帝国全境+25% [ICON_Tourism] 旅游业绩</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_AMENITY" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+2 [ICON_Gold] 金币</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_ATTACH_GOLDEN_TRADE_GOLD" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+1 [ICON_Amenities] 宜居度</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF" Language="zh_Hans_CN">
 			<Text>[ICON_Bullet]城市+20% [ICON_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]帝国全境+25% [ICON_Tourism] 旅游业绩[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+2 [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+1 [ICON_Amenities] 宜居度</Text>
 		</Replace>
+		<!--英雄时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW" Language="zh_Hans_CN">
 			<Text>您的文明现在正处于 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄时代！</Text>
 		</Replace>
+		<!--Buff-->
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_PRODUCTION" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]城市+50% [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_TOURISM" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]帝国全境+50% [ICON_Tourism] 旅游业绩</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_ATTACH_HEROIC_TRADE_GOLD" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+4 [ICON_Gold] 金币</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_AMENITY" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+3 [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_GREAT_PERSON" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]+25% [ICON_GreatPerson] 伟人点数</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF" Language="zh_Hans_CN">
 			<Text>[ICON_Bullet]城市+50% [ICON_PRODUCTION] 生产力[NEWLINE][ICON_Bullet]帝国全境+50% [ICON_Tourism] 旅游业绩[NEWLINE][ICON_Bullet]每座城市为所有 [ICON_TradeRoute] 贸易路线+4 [ICON_Gold] 金币[NEWLINE][ICON_Bullet]所有城市+3 [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+25% [ICON_GreatPerson] 伟人点数</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW" Language="zh_Hans_CN">
 			<Text>您的文明现在正处于 [ICON_GLORY_NORMAL_AGE] 普通时代！</Text>
 		</Replace>
+		<!--普通时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC" Language="zh_Hans_CN">
 			<Text>进入的 [ICON_GLORY_NORMAL_AGE] 普通时代提供以下加成：</Text>
 		</Replace>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NORMAL_EXTRA_DISTRICT" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]城市可额外建造{1_num}个区域</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NORMAL_DISTRICT_PRODUCTION" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]建造区域时+{1_num}% [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF" Language="zh_Hans_CN">
 			<Text>[ICON_Bullet]城市可额外建造{1_num}个区域[NEWLINE][ICON_Bullet]建造区域时+{2_num}% [ICON_PRODUCTION] 生产力</Text>
 		</Replace>

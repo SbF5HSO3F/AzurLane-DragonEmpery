@@ -102,6 +102,7 @@ function AnShanUnitButtonClick()
                 OnStart = 'AnShanAddCombat'
             }
         ); UI.PlaySound("Unit_CondemnHeretic_2D")
+        Network.BroadcastPlayerInfo()
     end
 end
 

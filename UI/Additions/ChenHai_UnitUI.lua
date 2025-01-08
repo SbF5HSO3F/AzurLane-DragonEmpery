@@ -106,6 +106,7 @@ function ChenHaiButtonClick()
                 OnStart = 'ChenHaiGiveToken'
             }
         ); UI.PlaySound("Click_Confirm")
+        Network.BroadcastPlayerInfo()
     end
 end
 

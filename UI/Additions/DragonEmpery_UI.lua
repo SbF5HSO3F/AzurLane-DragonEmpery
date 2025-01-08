@@ -380,7 +380,7 @@ function AcademyOnGreatPersonActived(unitOwner, unitID, greatPersonClassID)
                     classID = greatPersonClassID,
                     OnStart = 'AcademyGreatPersonActivated'
                 }
-            )
+            ); Network.BroadcastPlayerInfo()
         end
     end
 end

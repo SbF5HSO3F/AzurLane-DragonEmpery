@@ -3,7 +3,8 @@
 -- DateCreated: 2023/12/30 17:01:49
 --------------------------------------------------------------
 --||=======================include========================||--
-include('DragonEmpery_Core.lua')
+include('DragonEmpery_Core')
+include('DragonAncient')
 
 --||====================ExposedMembers====================||--
 
@@ -239,11 +240,15 @@ end
 --Truns Begin
 function DragonEmperyTurnActivated(playerID, first)
     if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') and first then
-        local pPlayer = Players[playerID]
+        --get the class player
+        local playerObj = DragonAncient:new(playerID)
+        local science = playerObj:GetExtraScience()
+        local culture = playerObj:GetExtraCulture()
+        local pPlayer = playerObj.Player
         --Get Culture
-        pPlayer:GetCulture():ChangeCurrentCulturalProgress(DragonEmperyCalculateCost(playerID, ePercent, true))
+        pPlayer:GetCulture():ChangeCurrentCulturalProgress(science)
         --Get Science
-        pPlayer:GetTechs():ChangeCurrentResearchProgress(DragonEmperyCalculateCost(playerID, ePercent, false))
+        pPlayer:GetTechs():ChangeCurrentResearchProgress(culture)
         --Reset the civic and tech panel
         ExposedMembers.DragonEmpery.ResetCivic()
         ExposedMembers.DragonEmpery.ResetTech()

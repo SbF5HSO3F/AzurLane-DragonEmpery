@@ -202,6 +202,7 @@ function AnShanIronClick()
                 OnStart    = 'AnShanFinishProduction'
             }
         ); UI.PlaySound("Confirm_Production")
+        Network.BroadcastPlayerInfo()
     end
 end
 
@@ -221,6 +222,7 @@ function AluminumIronClick()
                 OnStart    = 'AnShanFinishProduction'
             }
         ); UI.PlaySound("Confirm_Production")
+        Network.BroadcastPlayerInfo()
     end
 end
 

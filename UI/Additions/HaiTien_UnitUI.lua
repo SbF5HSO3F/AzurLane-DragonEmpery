@@ -114,7 +114,7 @@ function HaiTienOnGreatPersonActived(unitOwner, unitID, greatPersonClassID, grea
                 cityID = pCity and pCity:GetID(),
                 OnStart = 'HaiTienGreatWriterActivated'
             }
-        )
+        ); Network.BroadcastPlayerInfo()
     end
 end
 

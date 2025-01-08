@@ -3,7 +3,7 @@
 -- DateCreated: 2023/12/30 17:01:49
 --------------------------------------------------------------
 --||=======================include========================||--
-include('DragonEmpery_Core')
+include('DragonCore')
 include('DragonAncient')
 
 --||====================ExposedMembers====================||--
@@ -245,10 +245,10 @@ function DragonEmperyTurnActivated(playerID, first)
         local science = playerObj:GetExtraScience()
         local culture = playerObj:GetExtraCulture()
         local pPlayer = playerObj.Player
-        --Get Culture
-        pPlayer:GetCulture():ChangeCurrentCulturalProgress(science)
         --Get Science
-        pPlayer:GetTechs():ChangeCurrentResearchProgress(culture)
+        pPlayer:GetTechs():ChangeCurrentResearchProgress(science)
+        --Get Culture
+        pPlayer:GetCulture():ChangeCurrentCulturalProgress(culture)
         --Reset the civic and tech panel
         ExposedMembers.DragonEmpery.ResetCivic()
         ExposedMembers.DragonEmpery.ResetTech()

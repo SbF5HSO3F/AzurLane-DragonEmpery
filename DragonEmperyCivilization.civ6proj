@@ -83,7 +83,7 @@
           <File>DragonEmpery_Colors.xml</File>
         </UpdateColors>
         <ImportFiles id="Import">
-          <File>Scripts/DragonEmpery_Core.lua</File>
+          <File>Import/DragonCore.lua</File>
           <File>Import/DragonAncient.lua</File>
         </ImportFiles>
         <AddUserInterfaces id="UI">
@@ -279,6 +279,9 @@
     <Content Include="Import\DragonAncient.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Import\DragonCore.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\DragonEmpery_Scripts.lua">
       <SubType>Content</SubType>
     </Content>
@@ -286,9 +289,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\DragonEmpery_ChenHai.lua">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Scripts\DragonEmpery_Core.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\DragonEmpery_HaiTien.lua">

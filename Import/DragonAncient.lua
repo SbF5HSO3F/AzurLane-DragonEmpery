@@ -1,4 +1,4 @@
--- DragonAcient
+-- DragonAncient
 -- Author: jjj
 -- DateCreated: 2025/1/8 10:55:51
 --------------------------------------------------------------
@@ -19,6 +19,7 @@ DragonAncient = {
     --黑暗时代
     Dark = {
         Counter = 'DragonEmperyDarkCounter',
+        Through = 'DragonEmperyThroughDark',
         Out = {
             --永久战斗力
             Combat = {
@@ -166,6 +167,7 @@ DragonAncient = {
     --黄金时代
     Golden = {
         Counter = 'DragonEmperyGoldenCounter',
+        Through = 'DragonEmperyThroughGolden',
         Enter = {
             --城市生产力
             Production = {
@@ -249,6 +251,7 @@ DragonAncient = {
     --英雄时代
     Heroic = {
         Counter = 'DragonEmperyHeroicCounter',
+        Through = 'DragonEmperyThroughHeroic',
         Enter = {
             --全境旅游业绩
             Tourism = {
@@ -412,23 +415,12 @@ function DragonAncient:GetEraCount()
     return player:GetProperty(EraCounter) or 0
 end
 
---获取特定时代的计数
-function DragonAncient:GetAgeCount(age)
+--获取进入特定时代的计数
+function DragonAncient:GetEnterAgeCount(age)
     local player = self.Player
     if not player then return 0 end
     local counter = self[age].Counter
     return player:GetProperty(counter) or 0
-end
-
---获取退出特定时代的tooltip
-function DragonAncient:GetOutTooltip(age)
-    local tooltip, out = '', self[age].Out
-    local count = self:GetAgeCount(age)
-    if not out then return end
-    for _, effect in pairs(out) do
-        tooltip = tooltip .. effect:GetTooltip(count)
-    end
-    return tooltip
 end
 
 --获取进入特定时代的tooltip
@@ -437,6 +429,25 @@ function DragonAncient:GetEnterTooltip(age)
     if not enter then return end
     for _, effect in pairs(enter) do
         tooltip = tooltip .. effect:GetTooltip()
+    end
+    return tooltip
+end
+
+--获取度过特定时代的计数
+function DragonAncient:GetOutAgeCount(age)
+    local player = self.Player
+    if not player then return 0 end
+    local counter = self[age].Through
+    return player:GetProperty(counter) or 0
+end
+
+--获取退出特定时代的tooltip
+function DragonAncient:GetOutTooltip(age)
+    local tooltip, out = '', self[age].Out
+    local count = self:GetOutAgeCount(age)
+    if not out then return end
+    for _, effect in pairs(out) do
+        tooltip = tooltip .. effect:GetTooltip(count)
     end
     return tooltip
 end
@@ -451,11 +462,19 @@ function DragonAncient:SetEraCount(count)
     player:SetProperty(EraCounter, count)
 end
 
---设置特定时代的计数
-function DragonAncient:SetAgeCount(age, count)
+--设置进入时代的计数
+function DragonAncient:SetEnterAgeCount(age, count)
     local player = self.Player
     if not player then return end
     local counter = self[age].Counter
+    player:SetProperty(counter, count)
+end
+
+--设置度过时代的计数
+function DragonAncient:SetOutAgeCount(age, count)
+    local player = self.Player
+    if not player then return end
+    local counter = self[age].Through
     player:SetProperty(counter, count)
 end
 
@@ -464,9 +483,14 @@ function DragonAncient:ChangeEraCount(num)
     self:SetEraCount(self:GetEraCount() + num)
 end
 
---改变特定时代的计数
-function DragonAncient:ChangeAgeCount(age, num)
-    self:SetAgeCount(age, self:GetAgeCount(age) + num)
+--改变进入的时代计数
+function DragonAncient:ChangeEnterAgeCount(age, num)
+    self:SetEnterAgeCount(age, self:GetEnterAgeCount(age) + num)
+end
+
+--改变度过的时代计数
+function DragonAncient:ChangeOutAgeCount(age, num)
+    self:SetOutAgeCount(age, self:GetOutAgeCount(age) + num)
 end
 
 --玩家获取度过特定时代效果

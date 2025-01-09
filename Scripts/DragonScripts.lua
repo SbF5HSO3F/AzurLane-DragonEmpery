@@ -89,44 +89,6 @@ local greatPersonPoints = 5
 
 --||====================base functions====================||--
 
---Calculate the percentage spent on technology that has been developed
-function DragonEmperyCalculateCost(playerID, percent, isCivic)
-    --get player
-    local pPlayer = Players[playerID]
-    --if player is nil
-    if not pPlayer then
-        print('Player not found')
-        return
-    end
-    --set the num
-    local num = 0
-    --begin calculation
-    if isCivic then
-        --get player culture
-        local playerCulture = pPlayer:GetCulture()
-        --begin loop
-        for row in GameInfo.Civics() do
-            if playerCulture:HasCivic(row.Index) then
-                num = num + playerCulture:GetCultureCost(row.Index)
-            end
-        end
-    else
-        --get player tech
-        local playerTechs = pPlayer:GetTechs()
-        --begin loop
-        for row in GameInfo.Technologies() do
-            if playerTechs:HasTech(row.Index) then
-                num = num + playerTechs:GetResearchCost(row.Index)
-            end
-        end
-    end
-    --process rounding
-    num = DragonCore.Round(num * percent)
-    --return the number
-    --print('The ' .. (isCivic and 'Culture' or 'Science') .. ' is ' .. num)
-    return num
-end
-
 --||===================Events functions===================||--
 
 function DragonEmperyOnEraChanged()
@@ -237,6 +199,75 @@ function DragonEmperyOnEraChanged()
     end
 end
 
+--on the era change
+function DragonEmperyOnGameEraChanged()
+    --get the player
+    local playerTable = {}
+    for _, player in ipairs(Game.GetPlayers()) do
+        if DragonCore.CheckCivMatched(player:GetID(), 'CIVILIZATION_DRAGON_EMPERY') then
+            table.insert(playerTable, player)
+        end
+    end
+    if #playerTable > 0 then
+        --begin loop
+        for _, player in ipairs(playerTable) do
+            local playerID = player:GetID()
+            --get the player object
+            local playerObj = DragonAncient:new(playerID)
+            local pPlayer = playerObj.Player
+            --Grant a extra wild Slot
+            pPlayer:AttachModifierByID(modifier_1)
+            --add the total age counter
+            playerObj:ChangeEraCount(1)
+            --get the player left Ages
+            local oldAge = pPlayer:GetProperty(AgeDetail)
+            if oldAge then
+                --Players are out of the Golden Age
+                if oldAge['Heroic'] then
+                    playerObj:AttachOutEffect('Heroic')
+                    print('DragonEmpery is out of the Heroic Age!')
+                    playerObj:ChangeOutAgeCount('Heroic', 1)
+                elseif oldAge['Golden'] then
+                    playerObj:AttachOutEffect('Golden')
+                    print('DragonEmpery is out of the Golden Age!')
+                    playerObj:ChangeOutAgeCount('Golden', 1)
+                elseif oldAge['Dark'] then
+                    playerObj:AttachOutEffect('Dark')
+                    print('DragonEmpery is out of the Dark Age!')
+                    playerObj:ChangeOutAgeCount('Dark', 1)
+                else
+                    print('DragonEmpery is out of the Normal Age!')
+                end
+            end
+            if ExposedMembers.DragonEmpery.GetAgeType then
+                local age = ExposedMembers.DragonEmpery.GetAgeType(playerID)
+                if age['Heroic'] then
+                    playerObj:AttachEnterEffect('Heroic')
+                    print('DragonEmpery enters Heroic Age!')
+                    playerObj:ChangeEnterAgeCount('Heroic', 1)
+                elseif age['Golden'] then
+                    playerObj:AttachEnterEffect('Golden')
+                    print('DragonEmpery enters Golden Age!')
+                    playerObj:ChangeEnterAgeCount('Golden', 1)
+                elseif age['Dark'] then
+                    playerObj:AttachEnterEffect('Dark')
+                    print('DragonEmpery enters Dark Age!')
+                    playerObj:ChangeEnterAgeCount('Dark', 1)
+                else
+                    playerObj:AttachEnterEffect('Normal')
+                    print('DragonEmpery enters Normal Age.')
+                    playerObj:ChangeEnterAgeCount('Normal', 1)
+                end
+                --reset player property
+                pPlayer:SetProperty(AgeDetail, age)
+            end
+        end
+    end
+
+    --Refresh the panel
+    Game:SetProperty('DragonPanelRefresh', true)
+end
+
 --Truns Begin
 function DragonEmperyTurnActivated(playerID, first)
     if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') and first then
@@ -255,24 +286,6 @@ function DragonEmperyTurnActivated(playerID, first)
     end
 end
 
---||=================GameEvents functions=================||--
-
---Truns Begin TerrainBuilder.SetFeatureType
-function DragonEmperyOnPlayerTurnStarted(playerID)
-    --Is it Dragon Empery Civilization?
-    if not DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
-        return
-    end
-
-    local pPlayer = Players[playerID]
-    --Get Culture
-    pPlayer:GetCulture():ChangeCurrentCulturalProgress(DragonEmperyCalculateCost(playerID, ePercent, true))
-    ExposedMembers.DragonEmpery.ResetCivic()
-    --Get Science
-    pPlayer:GetTechs():ChangeCurrentResearchProgress(DragonEmperyCalculateCost(playerID, ePercent, false))
-    ExposedMembers.DragonEmpery.ResetTech()
-end
-
 --garden complete
 function DragonEmperyOnDistrictComplete(playerID, districtID, cityID, iX, iY, districtType, era, civ, percentComplete)
     --get the player
@@ -289,6 +302,9 @@ function DragonEmperyOnDistrictComplete(playerID, districtID, cityID, iX, iY, di
         pDistrict:SetProperty('GardenGenerateforests', true)
     end
 end
+
+--||=================GameEvents functions=================||--
+
 
 --when great person activated
 function DragonEmperyAcademyGrantGreatPersonPoints(playerID, param)
@@ -318,18 +334,17 @@ end
 --Initialize
 function Initialize()
     -------------------Events-------------------
-    Events.GameEraChanged.Add(DragonEmperyOnEraChanged)
+    Events.GameEraChanged.Add(DragonEmperyOnGameEraChanged)
     Events.DistrictBuildProgressChanged.Add(DragonEmperyOnDistrictComplete)
     Events.PlayerTurnActivated.Add(DragonEmperyTurnActivated)
     -----------------GameEvents-----------------
     --GameEvents.PlayerTurnStartComplete.Add(DragonEmperyOnPlayerTurnStarted)
     GameEvents.AcademyGreatPersonActivated.Add(DragonEmperyAcademyGrantGreatPersonPoints)
     ---------------ExposedMembers---------------
-    ExposedMembers.DragonEmpery.CalculateCost = DragonEmperyCalculateCost
     --------------------------------------------
     print('Initial success!')
 end
 
-include('DragonEmpery_Scripts_', true)
+include('DragonScripts_', true)
 
 Initialize()

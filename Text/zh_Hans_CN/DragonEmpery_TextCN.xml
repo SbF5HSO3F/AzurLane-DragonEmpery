@@ -100,10 +100,10 @@
 			<Text>点击以刷新</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE" Language="zh_Hans_CN">
-			<Text>额外科技值：{1_num}</Text>
+			<Text>额外科技值：{1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE" Language="zh_Hans_CN">
-			<Text>额外文化值：{1_num}</Text>
+			<Text>额外文化值：{1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="zh_Hans_CN">
 			<Text>根据您已完成的{1_num}个科技，您下回合开始时将获得{2_num}点 [ICON_SCIENCE] 科技值。</Text>

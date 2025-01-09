@@ -90,13 +90,13 @@
           <Properties>
             <Context>InGame</Context>
           </Properties>
-          <File>UI/Additions/DragonEmpery_UI.xml</File>
+          <File>UI/Additions/DragonExtraUI.xml</File>
           <File>UI/Additions/HaiTien_UnitUI.xml</File>
           <File>UI/Additions/ChenHai_UnitUI.xml</File>
           <File>UI/Additions/AnShan_UnitUI.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Scripts">
-          <File>Scripts/DragonEmpery_Scripts.lua</File>
+          <File>Scripts/DragonScripts.lua</File>
           <File>Scripts/DragonEmpery_HaiTien.lua</File>
           <File>Scripts/DragonEmpery_ChenHai.lua</File>
           <File>Scripts/DragonEmpery_AnShan.lua</File>
@@ -282,7 +282,7 @@
     <Content Include="Import\DragonCore.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\DragonEmpery_Scripts.lua">
+    <Content Include="Scripts\DragonScripts.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\DragonEmpery_AnShan.lua">
@@ -348,10 +348,10 @@
     <Content Include="UI\Additions\ChenHai_UnitUI.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\DragonEmpery_UI.lua">
+    <Content Include="UI\Additions\DragonExtraUI.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\DragonEmpery_UI.xml">
+    <Content Include="UI\Additions\DragonExtraUI.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\HaiTien_UnitUI.lua">

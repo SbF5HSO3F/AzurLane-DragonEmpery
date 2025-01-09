@@ -1,9 +1,10 @@
--- DragonEmpery_UI
+-- DragonExtraUI
 -- Author: HSbF6HSO3F
 -- DateCreated: 2023/12/31 8:36:20
 --------------------------------------------------------------
 --||=======================include========================||--
 include('DragonCore')
+include('DragonAncient')
 
 --||====================ExposedMembers====================||--
 
@@ -73,8 +74,9 @@ function ResetPanelTech()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
     if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+        local playerObj = DragonAncient:new(playerID)
         --Yield num
-        local cost = ExposedMembers.DragonEmpery.CalculateCost(playerID, ePercent, false)
+        local cost = playerObj:GetExtraScience()
         local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE', cost)
         Controls.AncientScienceText:SetText(string)
         --Tool tip
@@ -94,7 +96,9 @@ function ResetPanelCivic()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
     if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
-        local cost = ExposedMembers.DragonEmpery.CalculateCost(playerID, ePercent, true)
+        local playerObj = DragonAncient:new(playerID)
+        --Yield num
+        local cost = playerObj:GetExtraCulture()
         local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_CULTURE', cost)
         Controls.AncientCultureText:SetText(string)
         --Tool tip
@@ -357,6 +361,21 @@ function DragonEmperyAttachPanel()
     end
 end
 
+--when the era change
+function DragonEmperyOnGameEraChanged()
+    --get the loacl player
+    local playerID = Game.GetLocalPlayer()
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+        --request operations
+        UI.RequestPlayerOperation(playerID,
+            PlayerOperations.EXECUTE_SCRIPT, {
+                Age = '',
+                OnStart = 'DragonEmperyOnEraChanged'
+            }
+        ); Network.BroadcastPlayerInfo()
+    end
+end
+
 --when great person actived
 --Acadmy
 function AcademyOnGreatPersonActived(unitOwner, unitID, greatPersonClassID)
@@ -395,8 +414,11 @@ function Initialize()
     Events.LoadGameViewStateDone.Add(DragonEmperyAttachPanel)
     Events.ResearchCompleted.Add(ResetPanelTech)
     Events.CivicCompleted.Add(ResetPanelCivic)
-    Events.UnitGreatPersonActivated.Add(AcademyOnGreatPersonActived)
     Events.LocalPlayerChanged.Add(ResetPanelAll)
+    Events.GamePropertyChanged.Add(ResetPanelAll)
+
+    --Events.GameEraChanged.Add(DragonEmperyOnGameEraChanged)
+    Events.UnitGreatPersonActivated.Add(AcademyOnGreatPersonActived)
     ---------------ExposedMembers---------------
     ExposedMembers.DragonEmpery.GetAgeType         = DragonEmperyGetPlayerAgeType
     ExposedMembers.DragonEmpery.GreatWorkTypeMatch = DragonEmperyGreatWorkTypeMatch
@@ -407,6 +429,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('DragonEmpery_UI_', true)
+include('DragonExtraUI_', true)
 
 Initialize()

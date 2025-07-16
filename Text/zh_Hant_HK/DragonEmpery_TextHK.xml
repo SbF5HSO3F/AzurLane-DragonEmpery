@@ -100,10 +100,10 @@
 			<Text>點擊以刷新</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE" Language="zh_Hant_HK">
-			<Text>額外科技值：{1_num}</Text>
+			<Text>額外科技值：{1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE" Language="zh_Hant_HK">
-			<Text>額外文化值：{1_num}</Text>
+			<Text>額外文化值：{1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="zh_Hant_HK">
 			<Text>根據您已完成的{1_num}個科技，您下回合開始時將獲得{2_num}點 [ICON_SCIENCE] 科技值。</Text>
@@ -111,33 +111,70 @@
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="zh_Hant_HK">
 			<Text>根據您已完成的{1_num}個市政，您下回合開始時將獲得{2_num}點 [ICON_Culture] 文化值。</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO" Language="zh_Hant_HK">
+			<Text>科技和市政轉化比例：{1_ratio : number #.#;-#.#}%</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]{1_ratio : number +#.#;-#.#}% 來自泱泱古國</Text>
+		</Replace>
+		<!--黑暗時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="zh_Hant_HK">
 			<Text>[COLOR:68,66,50,255]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_TITLE" Language="zh_Hant_HK">
 			<Text>您已累計經歷{1_num}次 [ICON_GLORY_DARK_AGE] 黑暗時代</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]所有軍事單位+{1_num} [ICON_Strength] 戰鬥力[NEWLINE][ICON_Bullet]生產軍事單位時+{2_num}% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]所有城市+{3_num}忠誠度</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_COMBAT_MODIFIER" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有軍事單位+{1_num} [ICON_Strength] 戰鬥力</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION_MODIFIER" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]生產軍事單位時+{1_num}% [ICON_PRODUCTION] 生產力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_IDENTITY_BUFF_MODIFIER" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+{1_num}忠誠度</Text>
+		</Replace>
+		<!--黃金時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN" Language="zh_Hant_HK">
 			<Text>[COLOR:COLOR_FLOAT_GOLD]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_TITLE" Language="zh_Hant_HK">
 			<Text>您已累計經歷{1_num}次 [ICON_GLORY_GOLDEN_AGE] 黃金時代</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{2_num} [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+{3_num} [ICON_Amenities] 宜居度</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_PRODUCITON" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_TRADE_GOLD" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{1_num} [ICON_Gold] 金幣</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_AMENITIES" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+{1_num} [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<!--英雄時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC" Language="zh_Hant_HK">
 			<Text>[COLOR:ResGoldLabelCS]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_TITLE" Language="zh_Hant_HK">
 			<Text>您已累計經歷{1_num}次 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄時代</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+{2_num}% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{3_num} [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+{4_num} [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+{5_num}% [ICON_GreatPerson] 偉人點數</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_PRODUCITON" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]城市+{1_num}% [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_TOURISM" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]帝國全境+{1_num}% [ICON_Tourism] 旅遊業績</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_TRADE_GOLD" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+{1_num} [ICON_Gold] 金幣</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_AMENITIES" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+{1_num} [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_GREAT_PERSON" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num}% [ICON_GreatPerson] 偉人點數</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER" Language="zh_Hant_HK">
 			<Text>[COLOR:ButtonCS]{1_num}[ENDCOLOR]</Text>
 		</Replace>
@@ -171,32 +208,73 @@
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_BONUS" Language="zh_Hant_HK">
 			<Text>已額外獲得{1_num}個通配符槽位</Text>
 		</Replace>
+		<!--黑暗時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW" Language="zh_Hant_HK">
 			<Text>您的文明現在正處於 [ICON_GLORY_DARK_AGE] 黑暗時代！</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]立即在 [ICON_Capital] 首都獲得1位 [ICON_GreatGeneral] 大將軍[NEWLINE][ICON_Bullet]所有軍事單位+5 [ICON_Strength] 戰鬥力[NEWLINE][ICON_Bullet]生產軍事單位時+20% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]所有單位+1 [ICON_MOVEMENT] 移動力</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_GRANT_GENERAL_MODIFIER" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]立即在 [ICON_Capital] 首都獲得1位 [ICON_GreatGeneral] 大將軍</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_COMBAT" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有軍事單位+5 [ICON_Strength] 戰鬥力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]生產軍事單位時+20% [ICON_PRODUCTION] 生產力</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_UNIT_MOVEMENT" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有單位+1 [ICON_MOVEMENT] 移動力</Text>
+		</Replace>
+		<!--黃金時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW" Language="zh_Hant_HK">
 			<Text>您的文明現在正處於 [ICON_GLORY_GOLDEN_AGE] 黃金時代！</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+20% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+25% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+2 [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+1 [ICON_Amenities] 宜居度</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_PRODUCTION" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]城市+20% [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_TOURISM" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]帝國全境+25% [ICON_Tourism] 旅遊業績</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_TRADE_GOLD" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+2 [ICON_Gold] 金幣</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_AMENITY" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+1 [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<!--英雄時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW" Language="zh_Hant_HK">
 			<Text>您的文明現在正處於 [ICON_GLORY_SUPER_GOLDEN_AGE] 英雄時代！</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市+50% [ICON_PRODUCTION] 生產力[NEWLINE][ICON_Bullet]帝國全境+50% [ICON_Tourism] 旅遊業績[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+4 [ICON_Gold] 金幣[NEWLINE][ICON_Bullet]所有城市+3 [ICON_Amenities] 宜居度[NEWLINE][ICON_Bullet]+25% [ICON_GreatPerson] 偉人點數</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_PRODUCTION" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]城市+50% [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_TOURISM" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]帝國全境+50% [ICON_Tourism] 旅遊業績</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_ATTACH_HEROIC_TRADE_GOLD" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]每座城市為所有 [ICON_TradeRoute] 貿易路線+4 [ICON_Gold] 金幣</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_AMENITY" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]所有城市+3 [ICON_Amenities] 宜居度</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_GREAT_PERSON" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+25% [ICON_GreatPerson] 偉人點數</Text>
+		</Replace>
+		<!--普通時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW" Language="zh_Hant_HK">
 			<Text>您的文明現在正處於 [ICON_GLORY_NORMAL_AGE] 普通時代！</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC" Language="zh_Hant_HK">
 			<Text>進入的 [ICON_GLORY_NORMAL_AGE] 普通時代提供以下加成：</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF" Language="zh_Hant_HK">
-			<Text>[ICON_Bullet]城市可額外建造{1_num}個區域[NEWLINE][ICON_Bullet]建造區域時+{2_num}% [ICON_PRODUCTION] 生產力</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NORMAL_EXTRA_DISTRICT" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]城市可額外建造{1_num}個區域</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NORMAL_DISTRICT_PRODUCTION" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]建造區域時+{1_num}% [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_BEIJING" Language="zh_Hant_HK">

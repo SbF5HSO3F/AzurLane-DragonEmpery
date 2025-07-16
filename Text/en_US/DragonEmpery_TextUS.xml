@@ -100,10 +100,10 @@
 			<Text>Click to refresh</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE" Language="en_US">
-			<Text>Extra Science: {1_num}</Text>
+			<Text>Extra Science: {1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE" Language="en_US">
-			<Text>Extra Culture: {1_num}</Text>
+			<Text>Extra Culture: {1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="en_US">
 			<Text>Based on the {1_num} Technologies you have completed, you gain {2_num} [ICON_SCIENCE] Science at the start of your next turn.</Text>
@@ -111,38 +111,75 @@
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="en_US">
 			<Text>Based on the {1_num} Civics you have completed, you gain {2_num} [ICON_Culture] Culture at the start of your next turn.</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO" Language="en_US">
+			<Text>Technologies and Civics conversion ratio: {1_ratio : number #.#;-#.#}%</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]{1_ratio : number +#.#;-#.#}% from Ancient Country.</Text>
+		</Replace>
+		<!--黑暗时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="en_US">
 			<Text>[COLOR:68,66,50,255]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_TITLE" Language="en_US">
-			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_DARK_AGE] Dark {1_num : plural 1?Age; other?Ages;}</Text>
+			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_DARK_AGE] Dark {1_num : plural 1?Age; other?Ages;}.</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]All military units +{1_num} [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+{2_num}% [ICON_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All cities +{3_num} loyalty</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_COMBAT_MODIFIER" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]All military units +{1_num} [ICON_Strength] Combat Strength.</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION_MODIFIER" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num}% [ICON_PRODUCTION] Production when producing military units.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_IDENTITY_BUFF_MODIFIER" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]All cities +{1_num} loyalty.</Text>
+		</Replace>
+		<!--黄金时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN" Language="en_US">
 			<Text>[COLOR:COLOR_FLOAT_GOLD]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_TITLE" Language="en_US">
-			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_GOLDEN_AGE] Golden {1_num : plural 1?Age; other?Ages;}</Text>
+			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_GOLDEN_AGE] Golden {1_num : plural 1?Age; other?Ages;}.</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +{1_num}% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{3_num} [ICON_Amenities] {1_num : plural 1?Amenity; other?Amenities;}</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_PRODUCITON" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]Cities +{1_num}% [ICON_PRODUCTION] Production.</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_TRADE_GOLD" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_GOLDEN_OUT_CITIES_AMENITIES" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]All Cities +{1_num} [ICON_Amenities] {1_num : plural 1?Amenity; other?Amenities;}.</Text>
+		</Replace>
+		<!--英雄时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC" Language="en_US">
 			<Text>[COLOR:ResGoldLabelCS]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_TITLE" Language="en_US">
-			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_SUPER_GOLDEN_AGE] Heroic {1_num : plural 1?Age; other?Ages;}</Text>
+			<Text>You have cumulatively experienced {1_num} [ICON_GLORY_SUPER_GOLDEN_AGE] Heroic {1_num : plural 1?Age; other?Ages;}.</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +{1_num}% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+{2_num}% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+{3_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +{4_num} [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+{5_num}% Bonus [ICON_GreatPerson] Great People points</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_PRODUCITON" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]Cities +{1_num}% [ICON_PRODUCTION] Production.</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_TOURISM" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num}% [ICON_Tourism] Tourism across your empire.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_TRADE_GOLD" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num} [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_CITIES_AMENITIES" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]All Cities +{1_num} [ICON_Amenities] Amenities.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_HEROIC_OUT_GREAT_PERSON" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num}% Bonus [ICON_GreatPerson] Great People points.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER" Language="en_US">
 			<Text>[COLOR:ButtonCS]{1_num}[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_NO_BUFF" Language="en_US">
-			<Text>No cumulative bonus effect</Text>
+			<Text>No cumulative bonus effect.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_PERMANENT_BUFF" Language="en_US">
 			<Text>The following cumulative bonuses will be provided:</Text>
@@ -151,52 +188,93 @@
 			<Text>The following bonus effects will be enjoyed:</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_TITLE" Language="en_US">
-			<Text>You have accumulated a total of {1_num} new {1_num : plural 1?Age; other?Ages;}</Text>
+			<Text>You have accumulated a total of {1_num} new {1_num : plural 1?Age; other?Ages;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_EXTRA" Language="en_US">
 			<Text>Among them:</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK" Language="en_US">
-			<Text>[ICON_Bullet][ICON_GLORY_DARK_AGE] Dark Age has a total of {1_num} times</Text>
+			<Text>[ICON_Bullet][ICON_GLORY_DARK_AGE] Dark Age has a total of {1_num} times.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN" Language="en_US">
-			<Text>[ICON_Bullet][ICON_GLORY_GOLDEN_AGE] Golden Age has a total of {1_num} times</Text>
+			<Text>[ICON_Bullet][ICON_GLORY_GOLDEN_AGE] Golden Age has a total of {1_num} times.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC" Language="en_US">
-			<Text>[ICON_Bullet][ICON_GLORY_SUPER_GOLDEN_AGE] Heroic Age has a total of {1_num} times</Text>
+			<Text>[ICON_Bullet][ICON_GLORY_SUPER_GOLDEN_AGE] Heroic Age has a total of {1_num} times.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL" Language="en_US">
-			<Text>[ICON_Bullet][ICON_GLORY_NORMAL_AGE] Normal Age has a total of {1_num} times</Text>
+			<Text>[ICON_Bullet][ICON_GLORY_NORMAL_AGE] Normal Age has a total of {1_num} times.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_BONUS" Language="en_US">
-			<Text>Has gained an additional {1_num} wildcard {1_num : plural 1?slot; other?slots;}</Text>
+			<Text>Has gained an additional {1_num} wildcard {1_num : plural 1?slot; other?slots;}.</Text>
 		</Replace>
+		<!--黑暗时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW" Language="en_US">
 			<Text>Your civilization is now in the [ICON_GLORY_DARK_AGE] Dark Age!</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Immediately gain a [ICON_GreatGeneral] Great General in the [ICON_Capital] capital city[NEWLINE][ICON_Bullet]All military units +5 [ICON_Strength] Combat Strength[NEWLINE][ICON_Bullet]+20% [ICON_PRODUCTION] Production when producing military units[NEWLINE][ICON_Bullet]All units +1 [ICON_MOVEMENT] Movement</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_GRANT_GENERAL_MODIFIER" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]Immediately gain a [ICON_GreatGeneral] Great General in the [ICON_Capital] capital city.</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_COMBAT" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]All military units +5 [ICON_Strength] Combat Strength.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+20% [ICON_PRODUCTION] Production when producing military units.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK_UNIT_MOVEMENT" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]All units +1 [ICON_MOVEMENT] Movement.</Text>
+		</Replace>
+		<!--黄金时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW" Language="en_US">
 			<Text>Your civilization is now in the [ICON_GLORY_GOLDEN_AGE] Golden Age!</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +20% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+25% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+2 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +1 [ICON_Amenities] Amenity</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_PRODUCTION" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]Cities +20% [ICON_PRODUCTION] Production.</Text>
 		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_TOURISM" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+25% [ICON_Tourism] Tourism across your empire,</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_TRADE_GOLD" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+2 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes.</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_GOLDEN_AMENITY" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]All Cities +1 [ICON_Amenities] Amenity.</Text>
+		</Replace>
+		<!--英雄时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW" Language="en_US">
 			<Text>Your civilization is now in the [ICON_GLORY_SUPER_GOLDEN_AGE] Heroic Age!</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities +50% [ICON_PRODUCTION] Production[NEWLINE][ICON_Bullet]+50% [ICON_Tourism] Tourism across your empire[NEWLINE][ICON_Bullet]+4 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes[NEWLINE][ICON_Bullet]All Cities +3 [ICON_Amenities] Amenities[NEWLINE][ICON_Bullet]+25% Bonus [ICON_GreatPerson] Great People points</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_PRODUCTION" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]Cities +50% [ICON_PRODUCTION] Production.</Text>
 		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_TOURISM" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+50% [ICON_Tourism] Tourism across your empire.</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_ATTACH_HEROIC_TRADE_GOLD" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+4 [ICON_Gold] Gold per city for all [ICON_TradeRoute] Trade Routes.</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_AMENITY" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+All Cities +3 [ICON_Amenities] Amenities.</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_EMPERY_HEROIC_GREAT_PERSON" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+25% Bonus [ICON_GreatPerson] Great People points.</Text>
+		</Replace>
+		<!--普通时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW" Language="en_US">
 			<Text>Your civilization is now in the [ICON_GLORY_NORMAL_AGE] Normal Age!</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC" Language="en_US">
 			<Text>The entered [ICON_GLORY_NORMAL_AGE] Normal Ages provides the following bonuses:</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF" Language="en_US">
-			<Text>[ICON_Bullet]Cities can build {1_num} additional {1_num : plural 1?district; other?districts;}[NEWLINE][ICON_Bullet]+{2_num}% [ICON_PRODUCTION] Production when building districts</Text>
+		<!--Buff-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NORMAL_EXTRA_DISTRICT" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]Cities can build {1_num} additional {1_num : plural 1?district; other?districts;}.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_NORMAL_DISTRICT_PRODUCTION" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_num}% [ICON_PRODUCTION] Production when building districts.</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_BEIJING" Language="en_US">

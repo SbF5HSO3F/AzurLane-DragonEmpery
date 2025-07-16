@@ -97,9 +97,9 @@
         </AddUserInterfaces>
         <AddGameplayScripts id="Scripts">
           <File>Scripts/DragonScripts.lua</File>
-          <File>Scripts/DragonEmpery_HaiTien.lua</File>
-          <File>Scripts/DragonEmpery_ChenHai.lua</File>
-          <File>Scripts/DragonEmpery_AnShan.lua</File>
+          <File>Scripts/DragonHaiTien.lua</File>
+          <File>Scripts/DragonChenHai.lua</File>
+          <File>Scripts/DragonAnShan.lua</File>
         </AddGameplayScripts>
         <UpdateDatabase id="DragonEmpery">
           <File priority="100">Data/DragonEmpery_Core.sql</File>
@@ -358,13 +358,13 @@
     <Content Include="Scripts\DragonScripts.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\DragonEmpery_AnShan.lua">
+    <Content Include="Scripts\DragonAnShan.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\DragonEmpery_ChenHai.lua">
+    <Content Include="Scripts\DragonChenHai.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\DragonEmpery_HaiTien.lua">
+    <Content Include="Scripts\DragonHaiTien.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\en_US\DragonEmpery_AnShan_TextUS.xml">

@@ -31,7 +31,7 @@
           <zh_Hans_HK>為遊戲添加了一個來自遊戲作品《碧藍航線》的強大文明——東煌古國。</zh_Hans_HK>
         </Text>
         <Text id="LOC_DRAGON_EMPERY_DESCRIPTION">
-          <en_US>Added a civilization based on the Dragon Empery in the game work "Azur Lane" - the Dragon Empery. This mod has added 3 leaders: Hei Tien, Chen Hai and An Shan.</en_US>
+          <en_US>Added a civilization based on the Dragon Empery in the game work "Azur Lane" - the Dragon Empery. This mod has added 3 leaders: Hai Tien, Chen Hai and An Shan.</en_US>
           <zh_Hans_CN>为游戏添加了一个以游戏作品《碧蓝航线》中的东煌为原型的文明——东煌古国。本模组为其添加了3名领袖：海天、镇海和鞍山。</zh_Hans_CN>
           <zh_Hans_HK>為遊戲添加了一個以遊戲作品《碧藍航線》中的東煌為原型的文明——東煌古國。本模組為其添加了3名領袖：海天、鎮海和鞍山。</zh_Hans_HK>
         </Text>
@@ -125,15 +125,15 @@
           <File priority="80">Text/zh_Hant_HK/DragonEmpery_TextHK.xml</File>
         </UpdateText>
         <UpdateDatabase id="HaiTien">
-          <File priority="100">Data/Hai Tien/DragonEmpery_HaiTien_Leader.xml</File>
-          <File priority="90">Data/Hai Tien/DragonEmpery_HaiTien_UnitAbilities.xml</File>
-          <File priority="80">Data/Hai Tien/DragonEmpery_HaiTien_Units.xml</File>
+          <File priority="100">Data/HaiTien/DragonEmpery_HaiTien_Leader.xml</File>
+          <File priority="90">Data/HaiTien/DragonEmpery_HaiTien_UnitAbilities.xml</File>
+          <File priority="80">Data/HaiTien/DragonEmpery_HaiTien_Units.xml</File>
         </UpdateDatabase>
         <UpdateDatabase id="HaiTien_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
-          <File>Data/Hai Tien/DragonEmpery_HaiTien_XP2.sql</File>
+          <File>Data/HaiTien/DragonEmpery_HaiTien_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="HaiTien_Text">
           <File priority="100">Text/en_US/DragonEmpery_HaiTien_TextUS.xml</File>
@@ -141,22 +141,22 @@
           <File priority="80">Text/zh_Hant_HK/DragonEmpery_HaiTien_TextHK.xml</File>
         </UpdateText>
         <DoNothing id="ChenHai">
-          <File>Data/Chen Hai/DragonEmpery_ChenHai_Leader.xml</File>
+          <File>Data/ChenHai/DragonEmpery_ChenHai_Leader.xml</File>
         </DoNothing>
         <DoNothing id="ChenHai_XP2" />
         <UpdateText id="ChenHai_Text">
           <File>Text/zh_Hans_CN/DragonEmpery_ChenHai_TextCN.xml</File>
         </UpdateText>
         <UpdateDatabase id="AnShan">
-          <File priority="100">Data/An Shan/DragonEmpery_AnShan_Leader.xml</File>
-          <File priority="90">Data/An Shan/DragonEmpery_AnShan_Districts.xml</File>
-          <File priority="80">Data/An Shan/DragonEmpery_AnShan_UnitAbilities.xml</File>
+          <File priority="100">Data/AnShan/DragonEmpery_AnShan_Leader.xml</File>
+          <File priority="90">Data/AnShan/DragonEmpery_AnShan_Districts.xml</File>
+          <File priority="80">Data/AnShan/DragonEmpery_AnShan_UnitAbilities.xml</File>
         </UpdateDatabase>
         <UpdateDatabase id="AnShan_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
-          <File>Data/An Shan/DragonEmpery_AnShan_XP2.sql</File>
+          <File>Data/AnShan/DragonEmpery_AnShan_XP2.sql</File>
         </UpdateDatabase>
         <AddUserInterfaces id="AnShan_UI">
           <Properties>
@@ -166,7 +166,7 @@
           <File>UI/Additions/AnShanCityUI.xml</File>
         </AddUserInterfaces>
         <UpdateDatabase id="AnShan_Mode" criteria="SercetSociety">
-          <File>Data/An Shan/DragonEmpery_AnShan_SecretSocieties.sql</File>
+          <File>Data/AnShan/DragonEmpery_AnShan_SecretSocieties.sql</File>
         </UpdateDatabase>
         <UpdateText id="AnShan_Text">
           <File priority="100">Text/en_US/DragonEmpery_AnShan_TextUS.xml</File>
@@ -243,9 +243,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data" />
-    <Folder Include="Data\Hai Tien" />
-    <Folder Include="Data\Chen Hai" />
-    <Folder Include="Data\An Shan" />
+    <Folder Include="Data\HaiTien" />
+    <Folder Include="Data\ChenHai" />
+    <Folder Include="Data\AnShan" />
     <Folder Include="Import" />
     <Folder Include="ModSupport" />
     <Folder Include="ModSupport\AzurLaneDLLCore" />
@@ -262,22 +262,22 @@
     <Folder Include="UI\Additions" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\An Shan\DragonEmpery_AnShan_Districts.xml">
+    <Content Include="Data\AnShan\DragonEmpery_AnShan_Districts.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\An Shan\DragonEmpery_AnShan_Leader.xml">
+    <Content Include="Data\AnShan\DragonEmpery_AnShan_Leader.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\An Shan\DragonEmpery_AnShan_UnitAbilities.xml">
+    <Content Include="Data\AnShan\DragonEmpery_AnShan_UnitAbilities.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\An Shan\DragonEmpery_AnShan_XP2.sql">
+    <Content Include="Data\AnShan\DragonEmpery_AnShan_XP2.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\An Shan\DragonEmpery_AnShan_SecretSocieties.sql">
+    <Content Include="Data\AnShan\DragonEmpery_AnShan_SecretSocieties.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Chen Hai\DragonEmpery_ChenHai_Leader.xml">
+    <Content Include="Data\ChenHai\DragonEmpery_ChenHai_Leader.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\DragonEmpery_Buildings.xml">
@@ -307,16 +307,16 @@
     <Content Include="Data\DragonEmpery_XP2.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Hai Tien\DragonEmpery_HaiTien_Leader.xml">
+    <Content Include="Data\HaiTien\DragonEmpery_HaiTien_Leader.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Hai Tien\DragonEmpery_HaiTien_UnitAbilities.xml">
+    <Content Include="Data\HaiTien\DragonEmpery_HaiTien_UnitAbilities.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Hai Tien\DragonEmpery_HaiTien_Units.xml">
+    <Content Include="Data\HaiTien\DragonEmpery_HaiTien_Units.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Hai Tien\DragonEmpery_HaiTien_XP2.sql">
+    <Content Include="Data\HaiTien\DragonEmpery_HaiTien_XP2.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="DragonEmpery_Colors.xml">

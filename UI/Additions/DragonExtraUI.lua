@@ -15,17 +15,6 @@ ExposedMembers.DragonEmpery = ExposedMembers.DragonEmpery or {}
 
 --||===================glabol variables===================||--
 
-local ePercent = 0.02
-local EraCounter = 'DragonEmperyEraCounter'
-local DarkCounter = 'DragonEmperyDarkCounter'
-local GoldenCounter = 'DragonEmperyGoldenCounter'
-local HeroicCounter = 'DragonEmperyHeroicCounter'
-local NormalCounter = 'DragonEmperyNormalCounter'
-local ThroughDark = 'DragonEmperyThroughDark'
-local ThroughGolden = 'DragonEmperyThroughGolden'
-local ThroughHeroic = 'DragonEmperyThroughHeroic'
---great writer
-local greatWriter = GameInfo.GreatPersonClasses['GREAT_PERSON_CLASS_WRITER'].Index
 --the Apricot Academy
 local ApricotAcademy = GameInfo.Buildings['BUILDING_APRICOT_ACADEMY'].Index
 

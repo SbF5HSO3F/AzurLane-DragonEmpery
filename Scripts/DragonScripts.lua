@@ -46,41 +46,8 @@ ExposedMembers.ChenHai = ExposedMembers.ChenHai or {}
 
 --||===================glabol variables===================||--
 
-local ePercent = 0.02
 local AgeDetail = 'DragonEmperyAgeDetail'
 local modifier_1 = 'ANCIENT_COUNTRY_EXTRA_WILD_SLOT'
-local EraCounter = 'DragonEmperyEraCounter'
-local DarkCounter = 'DragonEmperyDarkCounter'
-local GoldenCounter = 'DragonEmperyGoldenCounter'
-local HeroicCounter = 'DragonEmperyHeroicCounter'
-local NormalCounter = 'DragonEmperyNormalCounter'
-local ThroughDark = 'DragonEmperyThroughDark'
-local ThroughGolden = 'DragonEmperyThroughGolden'
-local ThroughHeroic = 'DragonEmperyThroughHeroic'
---enter normal age
-local modifier_enternormal1 = 'ANCIENT_COUNTRY_NORMAL_EXTRA_DISTRICT'
-local modifier_enternormal2 = 'ANCIENT_COUNTRY_NORMAL_DISTRICT_PRODUCTION'
---out of dark age
-local modifier_outofdark1 = 'ANCIENT_COUNTRY_DARK_COMBAT_BUFF'
-local modifier_outofdark2 = 'ANCIENT_COUNTRY_DARK_COMBAT_ATTACH'
-local modifier_outofdark3 = 'ANCIENT_COUNTRY_DARK_MILITARY_PRODUCTION'
-local modifier_outofdark4 = 'ANCIENT_COUNTRY_DARK_IDENTITY_BUFF'
---enter dark age
-local modifier_enterdark1 = 'ANCIENT_COUNTRY_DARK_GRANT_GENERAL'
---out of golden age
-
---enter golden age
-local modifier_entergolden1 = 'DRAGON_EMPERY_GOLDEN_PRODUCTION'
-local modifier_entergolden2 = 'DRAGON_EMPERY_GOLDEN_AMENITY'
-local modifier_entergolden3 = 'DRAGON_EMPERY_ATTACH_GOLDEN_TRADE_GOLD'
---out of heroic age
-
---enter heroic age
-local modifier_enterheroic1 = 'DRAGON_EMPERY_HOERIC_TOURISM'
-local modifier_enterheroic2 = 'DRAGON_EMPERY_HOERIC_PRODUCTION'
-local modifier_enterheroic3 = 'DRAGON_EMPERY_HOERIC_AMENITY'
-local modifier_enterheroic4 = 'DRAGON_EMPERY_ATTACH_HOERIC_TRADE_GOLD'
-local modifier_enterheroic5 = 'DRAGON_EMPERY_HOERIC_GREAT_PERSON'
 --the unique district
 local gardenID = GameInfo.Districts['DISTRICT_DRAGON_EMPERY_GARDEN'].Index
 local forestType = GameInfo.Features['FEATURE_FOREST'].Index

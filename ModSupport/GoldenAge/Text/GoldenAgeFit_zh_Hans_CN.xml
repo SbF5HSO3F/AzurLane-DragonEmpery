@@ -23,5 +23,14 @@
         <Replace Tag="LOC_GA_ANSTEEL_PRODUCTION_MEGA" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自每个相邻鞍山钢铁（城市化）</Text>
 		</Replace>
+        <!--国家奇观-->
+
+        <!--人文与地域-->
+        <Replace Tag="LOC_GOLDEN_CIVILIZATION_DRAGON_EMPERY_CUSTOM_FEATURES_NAME" Language="zh_Hans_CN">
+			<Text>{LOC_GOLDEN_CUSTOM_FEATURES_NAME}</Text>
+		</Replace>
+		<Replace Tag="LOC_GOLDEN_CIVILIZATION_DRAGON_EMPERY_CUSTOM_FEATURES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_REGIONAL_TRAIT_EAST_ASIA_DESC}[NEWLINE][ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_CULTURAL_FARMING_DESC}</Text>
+		</Replace>
     </LocalizedText>
 </GameData>

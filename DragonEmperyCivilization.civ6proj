@@ -182,6 +182,9 @@
         <UpdateDatabase id="DragonEmpery_NationalWonder" criteria="GoldenAgeNationalWonder">
           <File>ModSupport/GoldenAge/Data/Mode_NationalWonder.sql</File>
         </UpdateDatabase>
+        <UpdateDatabase id="DragonEmpery_CustomTraits" criteria="GoldenAgeCustomTraits">
+          <File>ModSupport/GoldenAge/Data/Mode_CustomTraits.sql</File>
+        </UpdateDatabase>
         <UpdateText id="DragonEmperyGoldenAgeText" criteria="GoldenAge">
           <File priority="9">ModSupport/GoldenAge/Text/GoldenAgeFit_en_US.xml</File>
           <File priority="8">ModSupport/GoldenAge/Text/GoldenAgeFit_zh_Hans_CN.xml</File>
@@ -332,6 +335,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModSupport\AzurLaneDLLCore\Import\DragonScripts_AzurDLL.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\GoldenAge\Data\Mode_CustomTraits.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModSupport\GoldenAge\Data\Mode_Megalopolis.sql">

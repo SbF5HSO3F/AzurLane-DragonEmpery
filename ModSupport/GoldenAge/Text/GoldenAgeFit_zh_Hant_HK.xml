@@ -3,5 +3,34 @@
 <!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2025/7/16 11:10:29 -->
 <GameData>
+    <LocalizedText>
+        <!--都市圈-->
+        <Replace Tag="LOC_GA_DRAGON_EMPERY_GARDEN_SCIENCE_STANDARD" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自每個相鄰東煌園林</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_DRAGON_EMPERY_GARDEN_SCIENCE" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自每個相鄰東煌園林（行政部門）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_DRAGON_EMPERY_GARDEN_SCIENCE_MEGA" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自每個相鄰東煌園林（城市化）</Text>
+		</Replace>
+		<Replace Tag="LOC_GA_ANSTEEL_PRODUCTION_STANDARD" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自每個相鄰鞍山鋼鐵</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_ANSTEEL_PRODUCTION" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自每個相鄰鞍山鋼鐵（行政部門）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_ANSTEEL_PRODUCTION_MEGA" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自每個相鄰鞍山鋼鐵（城市化）</Text>
+		</Replace>
+        <!--国家奇观-->
 
+        <!--人文与地域-->
+        <Replace Tag="LOC_GOLDEN_CIVILIZATION_DRAGON_EMPERY_CUSTOM_FEATURES_NAME" Language="zh_Hant_HK">
+			<Text>{LOC_GOLDEN_CUSTOM_FEATURES_NAME}</Text>
+		</Replace>
+		<Replace Tag="LOC_GOLDEN_CIVILIZATION_DRAGON_EMPERY_CUSTOM_FEATURES_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>[ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_REGIONAL_TRAIT_EAST_ASIA_DESC}[NEWLINE][ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_CULTURAL_FARMING_DESC}</Text>
+		</Replace>
+    </LocalizedText>
 </GameData>

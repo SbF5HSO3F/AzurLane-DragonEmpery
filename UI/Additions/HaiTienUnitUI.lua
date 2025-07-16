@@ -1,4 +1,4 @@
--- HaiTien_UnitUI
+-- HaiTienUnitUI
 -- Author: HSbF6HSO3F
 -- DateCreated: 2024/8/18 14:12:11
 --------------------------------------------------------------
@@ -148,6 +148,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('HaiTien_UnitUI_', true)
+include('HaiTienUnitUI_', true)
 
 Initialize()

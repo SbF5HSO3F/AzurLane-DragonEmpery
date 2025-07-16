@@ -91,9 +91,9 @@
             <Context>InGame</Context>
           </Properties>
           <File>UI/Additions/DragonExtraUI.xml</File>
-          <File>UI/Additions/HaiTien_UnitUI.xml</File>
-          <File>UI/Additions/ChenHai_UnitUI.xml</File>
-          <File>UI/Additions/AnShan_UnitUI.xml</File>
+          <File>UI/Additions/HaiTienUnitUI.xml</File>
+          <File>UI/Additions/ChenHaiUnitUI.xml</File>
+          <File>UI/Additions/AnShanUnitUI.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Scripts">
           <File>Scripts/DragonScripts.lua</File>
@@ -163,7 +163,7 @@
             <Context>InGame</Context>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
-          <File>UI/Additions/AnShan_CityUI.xml</File>
+          <File>UI/Additions/AnShanCityUI.xml</File>
         </AddUserInterfaces>
         <UpdateDatabase id="AnShan_Mode" criteria="SercetSociety">
           <File>Data/An Shan/DragonEmpery_AnShan_SecretSocieties.sql</File>
@@ -403,22 +403,22 @@
     <Content Include="Text\zh_Hant_HK\DragonEmpery_TextHK.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShan_CityUI.lua">
+    <Content Include="UI\Additions\AnShanCityUI.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShan_CityUI.xml">
+    <Content Include="UI\Additions\AnShanCityUI.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShan_UnitUI.lua">
+    <Content Include="UI\Additions\AnShanUnitUI.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShan_UnitUI.xml">
+    <Content Include="UI\Additions\AnShanUnitUI.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\ChenHai_UnitUI.lua">
+    <Content Include="UI\Additions\ChenHaiUnitUI.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\ChenHai_UnitUI.xml">
+    <Content Include="UI\Additions\ChenHaiUnitUI.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\DragonExtraUI.lua">
@@ -427,10 +427,10 @@
     <Content Include="UI\Additions\DragonExtraUI.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\HaiTien_UnitUI.lua">
+    <Content Include="UI\Additions\HaiTienUnitUI.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\HaiTien_UnitUI.xml">
+    <Content Include="UI\Additions\HaiTienUnitUI.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

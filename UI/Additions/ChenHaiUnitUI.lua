@@ -1,4 +1,4 @@
--- ChenHai_UnitUI
+-- ChenHaiUnitUI
 -- Author: HSbF6HSO3F
 -- DateCreated: 2024/7/24 15:16:30
 --------------------------------------------------------------
@@ -193,6 +193,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('ChenHai_UnitUI_', true)
+include('ChenHaiUnitUI_', true)
 
 Initialize()

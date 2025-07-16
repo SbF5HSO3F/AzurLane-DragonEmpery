@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GoldenAgeFit_zh_Hans_CN -->
+<!-- Author: HSbF6HSO3F -->
+<!-- DateCreated: 2025/7/16 11:10:20 -->
+<GameData>
+    <LocalizedText>
+        <!--都市圈-->
+        <Replace Tag="LOC_GA_DRAGON_EMPERY_GARDEN_SCIENCE_STANDARD" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻东煌园林</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_DRAGON_EMPERY_GARDEN_SCIENCE" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻东煌园林（行政部门）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_DRAGON_EMPERY_GARDEN_SCIENCE_MEGA" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻东煌园林（城市化）</Text>
+		</Replace>
+		<Replace Tag="LOC_GA_ANSTEEL_PRODUCTION_STANDARD" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自每个相邻鞍山钢铁</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_ANSTEEL_PRODUCTION" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自每个相邻鞍山钢铁（行政部门）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_ANSTEEL_PRODUCTION_MEGA" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自每个相邻鞍山钢铁（城市化）</Text>
+		</Replace>
+    </LocalizedText>
+</GameData>

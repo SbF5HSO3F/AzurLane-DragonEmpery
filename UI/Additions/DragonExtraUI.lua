@@ -72,6 +72,7 @@ function ResetPanelTech()
         local num = pPlayer:GetStats():GetNumTechsResearched()
         local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') .. '[NEWLINE][NEWLINE]' ..
             Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP', num, cost) ..
+            '[NEWLINE][NEWLINE]' .. playerObj:GetExtraTooltip() ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
         Controls.AncientScienceButton:SetToolTipString(tooltip)
     end
@@ -92,6 +93,7 @@ function ResetPanelCivic()
         local num = pPlayer:GetStats():GetNumCivicsCompleted()
         local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') .. '[NEWLINE][NEWLINE]' ..
             Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP', num, cost) ..
+            '[NEWLINE][NEWLINE]' .. playerObj:GetExtraTooltip() ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
         Controls.AncientCultureButton:SetToolTipString(tooltip)
     end

@@ -370,8 +370,13 @@ DragonAncient = {
     },
     Anceint = {
         Deafult = {
+            Tooltip = 'LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT',
             GetPrecent = function(self)
                 return DeafultPercent
+            end,
+            GetTooltip = function(self)
+                local ratio = self:GetPrecent()
+                return ratio ~= 0 and Locale.Lookup(self.Tooltip, ratio) or ''
             end
         }
     }
@@ -395,6 +400,16 @@ function DragonAncient:GetPrecent()
         total = total + percent:GetPrecent()
     end
     return total
+end
+
+--玩家科技市政转化比例tooltip
+function DragonAncient:GetExtraTooltip()
+    local tooltip, ratio = '', self:GetPrecent()
+    tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_RATIO', ratio)
+    for _, percent in pairs(self.Anceint) do
+        tooltip = tooltip .. percent:GetTooltip()
+    end
+    return tooltip
 end
 
 --玩家每回合应获得的额外科技值

@@ -111,6 +111,12 @@
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="zh_Hans_CN">
 			<Text>根据您已完成的{1_num}个市政，您下回合开始时将获得{2_num}点 [ICON_Culture] 文化值。</Text>
 		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO" Language="zh_Hans_CN">
+			<Text>科技和市政转化比例：{1_ratio : number #.#;-#.#}%</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_ratio : number +#.#;-#.#}% 来自泱泱古国</Text>
+		</Replace>
 		<!--黑暗时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="zh_Hans_CN">
 			<Text>[COLOR:68,66,50,255]{1_num}[ENDCOLOR]</Text>

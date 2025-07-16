@@ -58,22 +58,21 @@ function DragonEmperyGreatWorkTypeMatch(greatWorkIndex, greatWorkType)
 end
 
 --Set the Grid Hide
-function DragonResetGridHide()
-    --get the loacl player
-    local playerID = Game.GetLocalPlayer()
-    --check the civ type
-    local hide = not DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY')
-    --set the hide
-    Controls.AncientCountryPanelGrid:SetHide(hide)
+function DragonResetGridHide(playerID)
+    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+        Controls.AncientCountryPanelGrid:SetHide(false)
+        return true
+    else
+        Controls.AncientCountryPanelGrid:SetHide(true)
+        return false
+    end
 end
 
 --set the tech
 function ResetPanelTech()
-    --set the panel Hide
-    DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonResetGridHide(playerID) then
         local playerObj = DragonAncient:new(playerID)
         --Yield num
         local cost = playerObj:GetExtraScience()
@@ -91,11 +90,9 @@ end
 
 --set the civic
 function ResetPanelCivic()
-    --set the panel Hide
-    DragonResetGridHide()
     --get the playerID
     local playerID = Game.GetLocalPlayer()
-    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
+    if DragonResetGridHide(playerID) then
         local playerObj = DragonAncient:new(playerID)
         --Yield num
         local cost = playerObj:GetExtraCulture()
@@ -112,181 +109,142 @@ function ResetPanelCivic()
 end
 
 --set the dark
-function ResetPanelDark(gameplay, counter)
-    --set the panel Hide
-    DragonResetGridHide()
-    --get the playerID
-    local playerID = Game.GetLocalPlayer()
-    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
-        --get the player
-        local pPlayer, num, eras = Players[playerID], 0, Game.GetEras()
-        if gameplay == true and counter then
-            num = counter
-        else
-            num = pPlayer:GetProperty(ThroughDark) or 0
-        end
-        --set the num
-        local text = Locale.Lookup('LOC_ANCIENT_COUNTRY_DARK', num)
-        --set the text
-        Controls.AcientDrakCount:SetText(text)
-        --Tool tip
-        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_DARK_TITLE', num)
-        if num == 0 then
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
-        else
-            local num1, num2, num3 = num * 4, num * 10, num * 2
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_PERMANENT_BUFF') ..
-                '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_DARK_BUFF', num1, num2, num3)
-        end
-        --is in dark age?
-        if eras:HasDarkAge(playerID) then
-            tooltip = tooltip ..
-                '[NEWLINE][NEWLINE]' ..
-                Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW') ..
-                Locale.Lookup('LOC_ANCIENT_COUNTRY_BUFF') ..
-                '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_DARK_TEMP_BUFF')
-        end
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
-        --set the tooltip
-        Controls.AncientDrakButton:SetToolTipString(tooltip)
+function ResetPanelDark(ancient)
+    --get the num
+    local num = ancient:GetOutAgeCount('Dark')
+    --set the num
+    local text = Locale.Lookup('LOC_ANCIENT_COUNTRY_DARK', num)
+    --set the text
+    Controls.AcientDrakCount:SetText(text)
+    --Tool tip
+    local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_DARK_TITLE', num)
+    if num == 0 then
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
+    else
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. ancient:GetOutTooltip('Dark')
     end
+    --is in dark age?
+    local eras, playerID = Game.GetEras(), ancient.PlayerID
+    if eras:HasDarkAge(playerID) then
+        tooltip = tooltip ..
+            '[NEWLINE][NEWLINE]' ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW') ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_BUFF') ..
+            '[NEWLINE]' .. ancient:GetEnterTooltip('Dark')
+    end
+    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
+    --set the tooltip
+    Controls.AncientDrakButton:SetToolTipString(tooltip)
 end
 
 --set the golden
-function ResetPanelGolden(gameplay, counter)
-    --set the panel Hide
-    DragonResetGridHide()
-    --get the playerID
-    local playerID = Game.GetLocalPlayer()
-    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
-        --get the player
-        local pPlayer, num, eras = Players[playerID], 0, Game.GetEras()
-        if gameplay == true and counter then
-            num = counter
-        else
-            num = pPlayer:GetProperty(ThroughGolden) or 0
-        end
-        --set the num
-        local text = Locale.Lookup('LOC_ANCIENT_COUNTRY_GOLDEN', num)
-        --set the text
-        Controls.AcientGoldenCount:SetText(text)
-        --Tool tip
-        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_GOLDEN_TITLE', num)
-        if num == 0 then
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
-        else
-            local num1, num2, num3 = num * 20, num * 2, num
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_PERMANENT_BUFF') ..
-                '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_GOLDEN_BUFF', num1, num2, num3)
-        end
-        --is in golden age?
-        if eras:HasGoldenAge(playerID) and not eras:HasHeroicGoldenAge(playerID) then
-            tooltip = tooltip ..
-                '[NEWLINE][NEWLINE]' ..
-                Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW') ..
-                Locale.Lookup('LOC_ANCIENT_COUNTRY_BUFF') ..
-                '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_TEMP_BUFF')
-        end
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
-        --set the tooltip
-        Controls.AncientGoldenButton:SetToolTipString(tooltip)
+function ResetPanelGolden(ancient)
+    --get the num
+    local num = ancient:GetOutAgeCount('Golden')
+    --set the num
+    local text = Locale.Lookup('LOC_ANCIENT_COUNTRY_GOLDEN', num)
+    --set the text
+    Controls.AcientGoldenCount:SetText(text)
+    --Tool tip
+    local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_GOLDEN_TITLE', num)
+    if num == 0 then
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
+    else
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. ancient:GetOutTooltip('Golden')
     end
+    --is in golden age?
+    local eras, playerID = Game.GetEras(), ancient.PlayerID
+    if eras:HasGoldenAge(playerID) and not eras:HasHeroicGoldenAge(playerID) then
+        tooltip = tooltip ..
+            '[NEWLINE][NEWLINE]' ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW') ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_BUFF') ..
+            '[NEWLINE]' .. ancient:GetEnterTooltip('Golden')
+    end
+    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
+    --set the tooltip
+    Controls.AncientGoldenButton:SetToolTipString(tooltip)
 end
 
 --set the heroic
-function ResetPanelHeroic(gameplay, counter)
-    --set the panel Hide
-    DragonResetGridHide()
-    --get the playerID
-    local playerID = Game.GetLocalPlayer()
-    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
-        --get the player
-        local pPlayer, num, eras = Players[playerID], 0, Game.GetEras()
-        if gameplay == true and counter then
-            num = counter
-        else
-            num = pPlayer:GetProperty(ThroughHeroic) or 0
-        end
-        --set the num
-        local text = Locale.Lookup('LOC_ANCIENT_COUNTRY_HEROIC', num)
-        --set the text
-        Controls.AcientHeroicCount:SetText(text)
-        --Tool tip
-        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_HEROIC_TITLE', num)
-        if num == 0 then
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
-        else
-            local num1, num2, num3, num4, num5 = num * 50, num * 25, num * 4, num * 3, num * 25
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_PERMANENT_BUFF') ..
-                '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_HEROIC_BUFF', num1, num2, num3, num4, num5)
-        end
-        --is in heroic age?
-        if eras:HasHeroicGoldenAge(playerID) then
-            tooltip = tooltip ..
-                '[NEWLINE][NEWLINE]' ..
-                Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW') ..
-                Locale.Lookup('LOC_ANCIENT_COUNTRY_BUFF') ..
-                '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_TEMP_BUFF')
-        end
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
-        --set the tooltip
-        Controls.AncientHeroicButton:SetToolTipString(tooltip)
+function ResetPanelHeroic(ancient)
+    --get the num
+    local num = ancient:GetOutAgeCount('Heroic')
+    --set the num
+    local text = Locale.Lookup('LOC_ANCIENT_COUNTRY_HEROIC', num)
+    --set the text
+    Controls.AcientHeroicCount:SetText(text)
+    --Tool tip
+    local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_HEROIC_TITLE', num)
+    if num == 0 then
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
+    else
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. ancient:GetOutTooltip('Heroic')
     end
+    --is in heroic age?
+    local eras, playerID = Game.GetEras(), ancient.PlayerID
+    if eras:HasHeroicGoldenAge(playerID) then
+        tooltip = tooltip ..
+            '[NEWLINE][NEWLINE]' ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW') ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_BUFF') ..
+            '[NEWLINE]' .. ancient:GetEnterTooltip('Heroic')
+    end
+    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
+    --set the tooltip
+    Controls.AncientHeroicButton:SetToolTipString(tooltip)
 end
 
 --set the counter
-function ResetPanelCounter(gameplay, param)
-    --set the panel Hide
-    DragonResetGridHide()
-    --get the playerID
+function ResetPanelCounter(ancient)
+    --get the num
+    local num    = ancient:GetEraCount()
+    local dark   = ancient:GetEnterAgeCount('Dark')
+    local golden = ancient:GetEnterAgeCount('Golden')
+    local heroic = ancient:GetEnterAgeCount('Heroic')
+    local normal = ancient:GetEnterAgeCount('Normal')
+    --set the num
+    local text   = Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER', num)
+    --set the text
+    Controls.AcientAgeCount:SetText(text)
+    --Tool tip
+    local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_TITLE', num) ..
+        '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_EXTRA') ..
+        '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_DARK', dark) ..
+        '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN', golden) ..
+        '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_HEROIC', heroic) ..
+        '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL', normal) ..
+        '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_BONUS', num)
+    if normal > 0 then
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC')
+            .. '[NEWLINE]' .. ancient:GetOutTooltip('Normal')
+    end
+    local eras, playerID = Game.GetEras(), ancient.PlayerID
+    if eras:HasHeroicGoldenAge(playerID) then
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW')
+    elseif eras:HasGoldenAge(playerID) then
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW')
+    elseif eras:HasDarkAge(playerID) then
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW')
+    else
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW')
+    end
+    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
+    --set the tooltip
+    Controls.AncientAgeButton:SetToolTipString(tooltip)
+end
+
+--Reset the era all
+function ResetEraAll()
     local playerID = Game.GetLocalPlayer()
-    if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') then
-        --get the player
-        local pPlayer = Players[playerID]
-        local num, dark, golden, heroic, normal = 0, 0, 0, 0, 0
-        --set the parameter
-        if gameplay == true and param then
-            num = param.counter
-            dark = param.dark
-            golden = param.golden
-            heroic = param.heroic
-            normal = param.normal
-        else
-            num = pPlayer:GetProperty(EraCounter) or 0
-            dark = pPlayer:GetProperty(DarkCounter) or 0
-            golden = pPlayer:GetProperty(GoldenCounter) or 0
-            heroic = pPlayer:GetProperty(HeroicCounter) or 0
-            normal = pPlayer:GetProperty(NormalCounter) or 0
-        end
-        --set the num
-        local text = Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER', num)
-        --set the text
-        Controls.AcientAgeCount:SetText(text)
-        --Tool tip
-        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_TITLE', num) ..
-            '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_EXTRA') ..
-            '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_DARK', dark) ..
-            '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN', golden) ..
-            '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_HEROIC', heroic) ..
-            '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL', normal) ..
-            '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_BONUS', num)
-        if normal > 0 then
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC')
-                .. '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_BUFF', normal, normal * 10)
-        end
-        local eras = Game.GetEras()
-        if eras:HasHeroicGoldenAge(playerID) then
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_HEROIC_NOW')
-        elseif eras:HasGoldenAge(playerID) then
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_GOLDEN_NOW')
-        elseif eras:HasDarkAge(playerID) then
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_DARK_NOW')
-        else
-            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_NOW')
-        end
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
-        --set the tooltip
-        Controls.AncientAgeButton:SetToolTipString(tooltip)
+    if DragonResetGridHide(playerID) then
+        -- get the ancient
+        local ancient = DragonAncient:new(playerID)
+        -- reset
+        ResetPanelDark(ancient)
+        ResetPanelGolden(ancient)
+        ResetPanelHeroic(ancient)
+        ResetPanelCounter(ancient)
     end
 end
 
@@ -294,18 +252,7 @@ end
 function ResetPanelAll()
     ResetPanelTech()
     ResetPanelCivic()
-    ResetPanelDark()
-    ResetPanelGolden()
-    ResetPanelHeroic()
-    ResetPanelCounter()
-end
-
---Reset the era all
-function ResetEraAll(table1, table2, table3, table4)
-    ResetPanelDark(table1[1], table1[2])
-    ResetPanelGolden(table2[1], table2[2])
-    ResetPanelHeroic(table3[1], table3[2])
-    ResetPanelCounter(table4[1], table4[2])
+    ResetEraAll()
 end
 
 --on click
@@ -320,10 +267,7 @@ function AncientCultureClicked()
 end
 
 function AncientEraClicked()
-    ResetPanelDark()
-    ResetPanelGolden()
-    ResetPanelHeroic()
-    ResetPanelCounter()
+    ResetEraAll()
     UI.PlaySound('UI_Screen_Open')
 end
 
@@ -422,9 +366,6 @@ function Initialize()
     ---------------ExposedMembers---------------
     ExposedMembers.DragonEmpery.GetAgeType         = DragonEmperyGetPlayerAgeType
     ExposedMembers.DragonEmpery.GreatWorkTypeMatch = DragonEmperyGreatWorkTypeMatch
-    ExposedMembers.DragonEmpery.ResetTech          = ResetPanelTech
-    ExposedMembers.DragonEmpery.ResetCivic         = ResetPanelCivic
-    ExposedMembers.DragonEmpery.ResetEra           = ResetEraAll
     --------------------------------------------
     print('Initial success!')
 end

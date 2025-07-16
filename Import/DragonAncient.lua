@@ -115,6 +115,7 @@ DragonAncient = {
     --普通时代
     Normal = {
         Counter = 'DragonEmperyNormalCounter',
+        Through = 'DragonEmperyNormalCounter',
         Enter = {
             --额外区域位置
             ExtraDistirct = {
@@ -204,7 +205,7 @@ DragonAncient = {
             },
             --贸易路线金币
             TradeGold = {
-                Tooltip = 'LOC_DRAGON_EMPERY_GOLDEN_AMENITY',
+                Tooltip = 'LOC_DRAGON_EMPERY_GOLDEN_TRADE_GOLD',
                 Modifier = 'DRAGON_EMPERY_ATTACH_GOLDEN_TRADE_GOLD',
                 AttachEffect = function(self, player)
                     if not player then return end
@@ -380,6 +381,7 @@ function DragonAncient:new(playerID)
     local object = {}
     setmetatable(object, self)
     self.__index = self
+    object.PlayerID = playerID
     object.Player = Players[playerID]
     return object
 end
@@ -406,7 +408,7 @@ function DragonAncient:GetExtraScience()
             sciences = sciences + techs:GetResearchCost(row.Index)
         end
     end
-    return DragonCore.ModifyByPercent(sciences, self:GetPrecent(), true)
+    return DragonCore:ModifyByPercent(sciences, self:GetPrecent(), true)
 end
 
 --玩家每回合应获得的额外文化值
@@ -420,7 +422,7 @@ function DragonAncient:GetExtraCulture()
             cultures = cultures + civics:GetCultureCost(row.Index)
         end
     end
-    return DragonCore.ModifyByPercent(cultures, self:GetPrecent(), true)
+    return DragonCore:ModifyByPercent(cultures, self:GetPrecent(), true)
 end
 
 --获取时代计数

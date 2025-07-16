@@ -34,7 +34,7 @@ end
 
 --Percent Modifier. (GamePlay, UI)
 function DragonCore:ModifyByPercent(num, percent, effect)
-    return self.Round(num * (effect and percent or 100 + percent) / 100)
+    return self.Round(num * (effect and percent or (100 + percent)) / 100)
 end
 
 --Random number generator [1,num+1] (GamePlay, UI)

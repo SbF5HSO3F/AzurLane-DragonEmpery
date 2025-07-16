@@ -9,15 +9,15 @@ DragonCore = {}
 --||====================GamePlay, UI======================||--
 
 --Leader type judgment. if macth, return true (GamePlay, UI)
-function DragonCore.CheckLeaderMatched(playerID, LeaderTpye)
+function DragonCore.CheckLeaderMatched(playerID, Leadertype)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
-    return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == LeaderTpye
+    return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == Leadertype
 end
 
 --Civilization type judgment. if macth, return true (GamePlay, UI)
-function DragonCore.CheckCivMatched(playerID, CivTpye)
+function DragonCore.CheckCivMatched(playerID, Civtype)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
-    return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == CivTpye
+    return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == Civtype
 end
 
 --process rounding (GamePlay, UI)

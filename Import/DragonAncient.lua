@@ -7,7 +7,7 @@ include('DragonCore')
 
 --||=======================Constants======================||--
 
-TechCivicPercent = 0.02
+DeafultPercent = 2
 
 --||====================loacl variables===================||--55
 
@@ -366,6 +366,13 @@ DragonAncient = {
                 end
             }
         }
+    },
+    Anceint = {
+        Deafult = {
+            GetPrecent = function(self)
+                return DeafultPercent
+            end
+        }
     }
 }
 
@@ -379,6 +386,15 @@ end
 
 --||====================GamePlay, UI======================||--
 
+--玩家每回合应获得科技值文化值的百分比
+function DragonAncient:GetPrecent()
+    local total = 0
+    for _, percent in pairs(self.Anceint) do
+        total = total + percent:GetPrecent()
+    end
+    return total
+end
+
 --玩家每回合应获得的额外科技值
 function DragonAncient:GetExtraScience()
     local player = self.Player
@@ -390,7 +406,7 @@ function DragonAncient:GetExtraScience()
             sciences = sciences + techs:GetResearchCost(row.Index)
         end
     end
-    return DragonCore.Round(sciences * TechCivicPercent)
+    return DragonCore.ModifyByPercent(sciences, self:GetPrecent(), true)
 end
 
 --玩家每回合应获得的额外文化值
@@ -404,7 +420,7 @@ function DragonAncient:GetExtraCulture()
             cultures = cultures + civics:GetCultureCost(row.Index)
         end
     end
-    return DragonCore.Round(cultures * TechCivicPercent)
+    return DragonCore.ModifyByPercent(cultures, self:GetPrecent(), true)
 end
 
 --获取时代计数

@@ -32,6 +32,11 @@ function DragonCore:ModifyBySpeed(num)
     return num
 end
 
+--Percent Modifier. (GamePlay, UI)
+function DragonCore:ModifyByPercent(num, percent, effect)
+    return self.Round(num * (effect and percent or 100 + percent) / 100)
+end
+
 --Random number generator [1,num+1] (GamePlay, UI)
 function DragonCore.tableRandom(num)
     return Game.GetRandNum and (Game.GetRandNum(num) + 1) or 1
@@ -269,19 +274,6 @@ end
 --mouse enter the button
 function DragonEmperyEnter()
     UI.PlaySound("Main_Menu_Mouse_Over")
-end
-
---Reset UnitBaseContainer (UI)
-function DragonEmperyResetUnitBaseContainer()
-    local ActionsStack = ContextPtr:LookUpControl("/InGame/UnitPanel/ActionsStack")
-    local UnitPanelBaseContainer = ContextPtr:LookUpControl("/InGame/UnitPanel/UnitPanelBaseContainer")
-    if ActionsStack and UnitPanelBaseContainer then
-        ActionsStack:CalculateSize()
-        local SizeX = ActionsStack:GetSizeX()
-        if SizeX > UnitPanelBaseContainer:GetSizeX() then
-            UnitPanelBaseContainer:SetSizeX(SizeX + 18);
-        end
-    end
 end
 
 --||========================Test========================||--

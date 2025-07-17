@@ -6,19 +6,19 @@
 	<Colors>
 		<!--海天-->
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY</Type>
+			<Type>HAI_TIEN_SKY_BLUE</Type>
 			<Color>113,176,230,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY</Type>
+			<Type>HAI_TIEN_MIKE</Type>
 			<Color>246,250,255,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY_ALT1</Type>
+			<Type>HAI_TIEN_WHITE</Type>
 			<Color>225,225,231,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY_ALT1</Type>
+			<Type>HAI_TIEN_GOLDEN</Type>
 			<Color>241,211,164,255</Color>
 		</Row>
 		<!--镇海-->
@@ -40,12 +40,16 @@
 		</Row>
 		<!--鞍山-->
 		<Row>
-			<Type>AN_SHAN_DD101_PRIMARY</Type>
+			<Type>AN_SHAN_DD101_GREEN</Type>
 			<Color>189,205,156,255</Color>
 		</Row>
 		<Row>
-			<Type>AN_SHAN_DD101_SECONDARY</Type>
+			<Type>AN_SHAN_DD101_WHITE</Type>
 			<Color>255,255,255,255</Color>
+		</Row>
+		<Row>
+			<Type>AN_SHAN_DD101_DARK_BULE</Type>
+			<Color>47,72,113,255</Color>
 		</Row>
 	</Colors>
 	<PlayerColors>
@@ -53,10 +57,10 @@
 		<Row>
 			<Type>LEADER_HAI_TIEN</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY</PrimaryColor>
-			<SecondaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY</SecondaryColor>
-			<Alt1PrimaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_PRIMARY_ALT1</Alt1PrimaryColor>
-			<Alt1SecondaryColor>COLOR_PLAYER_LEADER_HAI_TIEN_SECONDARY_ALT1</Alt1SecondaryColor>
+			<PrimaryColor>HAI_TIEN_SKY_BLUE</PrimaryColor>
+			<SecondaryColor>HAI_TIEN_MIKE</SecondaryColor>
+			<Alt1PrimaryColor>HAI_TIEN_WHITE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>HAI_TIEN_GOLDEN</Alt1SecondaryColor>
 		</Row>
 		<!--镇海-->
 		<Row>
@@ -71,8 +75,10 @@
 		<Row>
 			<Type>LEADER_AN_SHAN_DD101</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>AN_SHAN_DD101_PRIMARY</PrimaryColor>
-			<SecondaryColor>AN_SHAN_DD101_SECONDARY</SecondaryColor>
+			<PrimaryColor>AN_SHAN_DD101_GREEN</PrimaryColor>
+			<SecondaryColor>AN_SHAN_DD101_WHITE</SecondaryColor>
+			<Alt1PrimaryColor>AN_SHAN_DD101_WHITE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>AN_SHAN_DD101_DARK_BULE</Alt1SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>

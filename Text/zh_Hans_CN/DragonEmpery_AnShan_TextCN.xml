@@ -41,7 +41,12 @@
 			<Text>1992年2月21日，鞍山舰退役，4月24日在青岛古镇口海军码头举行退役降旗仪式。当年10月，接替长春舰在青岛海军博物馆海上展舰区展出，直至今日。</Text>
 		</Replace>
 		<!--领袖议程-->
-
+		<Replace Tag="LOC_AGENDA_PEACE_HORN_NAME" Language="zh_Hans_CN">
+			<Text>和平号角</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_PEACE_HORN_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>喜欢处于和平的文明，厌恶发动突袭战争的文明。</Text>
+		</Replace>
 		<!--领袖能力-->
 		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_NAME" Language="zh_Hans_CN">
 			<Text>青龙演武</Text>

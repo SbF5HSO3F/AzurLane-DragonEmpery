@@ -79,14 +79,14 @@
         <UpdateIcons id="Icons">
           <File>DragonEmpery_Icons.xml</File>
         </UpdateIcons>
-        <UpdateColors id="Colors">
+        <UpdateColors id="Colors" criteria="Expansion1or2">
           <File>DragonEmpery_Colors.xml</File>
         </UpdateColors>
         <ImportFiles id="Import">
           <File>Import/DragonCore.lua</File>
           <File>Import/DragonAncient.lua</File>
         </ImportFiles>
-        <AddUserInterfaces id="UI">
+        <AddUserInterfaces id="UI" criteria="Expansion1or2">
           <Properties>
             <Context>InGame</Context>
           </Properties>
@@ -95,13 +95,13 @@
           <File>UI/Additions/ChenHaiUnitUI.xml</File>
           <File>UI/Additions/AnShanUnitUI.xml</File>
         </AddUserInterfaces>
-        <AddGameplayScripts id="Scripts">
+        <AddGameplayScripts id="Scripts" criteria="Expansion1or2">
           <File>Scripts/DragonScripts.lua</File>
           <File>Scripts/DragonHaiTien.lua</File>
           <File>Scripts/DragonChenHai.lua</File>
           <File>Scripts/DragonAnShan.lua</File>
         </AddGameplayScripts>
-        <UpdateDatabase id="DragonEmpery">
+        <UpdateDatabase id="DragonEmpery" criteria="Expansion1or2">
           <File priority="100">Data/DragonEmpery_Core.sql</File>
           <File priority="90">Data/DragonEmpery_Civilization.xml</File>
           <File priority="80">Data/DragonEmpery_UnitAbilities.xml</File>
@@ -109,22 +109,22 @@
           <File priority="60">Data/DragonEmpery_Districts.xml</File>
           <File priority="50">Data/DragonEmpery_Buildings.xml</File>
         </UpdateDatabase>
-        <UpdateDatabase id="DragonEmpery_XP2">
+        <UpdateDatabase id="DragonEmpery_Expansion2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
           <File>Data/DragonEmpery_NamedPlaces.sql</File>
-          <File>Data/DragonEmpery_XP2.sql</File>
+          <File>Data/DragonEmpery_Expansion2.sql</File>
         </UpdateDatabase>
         <UpdateDatabase id="DragonEmpery_Mode" criteria="SercetSociety">
           <File>Data/DragonEmpery_SecretSocieties.sql</File>
         </UpdateDatabase>
-        <UpdateText id="DragonEmpery_Text">
+        <UpdateText id="DragonEmpery_Text" criteria="Expansion1or2">
           <File priority="100">Text/en_US/DragonEmpery_TextUS.xml</File>
           <File priority="90">Text/zh_Hans_CN/DragonEmpery_TextCN.xml</File>
           <File priority="80">Text/zh_Hant_HK/DragonEmpery_TextHK.xml</File>
         </UpdateText>
-        <UpdateDatabase id="HaiTien">
+        <UpdateDatabase id="HaiTien" criteria="Expansion1or2">
           <File priority="100">Data/HaiTien/DragonEmpery_HaiTien_Leader.xml</File>
           <File priority="90">Data/HaiTien/DragonEmpery_HaiTien_UnitAbilities.xml</File>
           <File priority="80">Data/HaiTien/DragonEmpery_HaiTien_Units.xml</File>
@@ -133,32 +133,33 @@
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
-          <File>Data/HaiTien/DragonEmpery_HaiTien_XP2.sql</File>
+          <File>Data/HaiTien/DragonEmpery_HaiTien_Expansion2.sql</File>
         </UpdateDatabase>
-        <UpdateText id="HaiTien_Text">
+        <UpdateText id="HaiTien_Text" criteria="Expansion1or2">
           <File priority="100">Text/en_US/DragonEmpery_HaiTien_TextUS.xml</File>
           <File priority="90">Text/zh_Hans_CN/DragonEmpery_HaiTien_TextCN.xml</File>
           <File priority="80">Text/zh_Hant_HK/DragonEmpery_HaiTien_TextHK.xml</File>
         </UpdateText>
-        <DoNothing id="ChenHai">
+        <DoNothing id="ChenHai" criteria="Expansion1or2">
           <File>Data/ChenHai/DragonEmpery_ChenHai_Leader.xml</File>
         </DoNothing>
         <DoNothing id="ChenHai_XP2" />
         <UpdateText id="ChenHai_Text">
           <File>Text/zh_Hans_CN/DragonEmpery_ChenHai_TextCN.xml</File>
         </UpdateText>
-        <UpdateDatabase id="AnShan">
+        <UpdateDatabase id="AnShan" criteria="Expansion1or2">
           <File priority="100">Data/AnShan/DragonEmpery_AnShan_Leader.xml</File>
           <File priority="90">Data/AnShan/DragonEmpery_AnShan_Districts.xml</File>
           <File priority="80">Data/AnShan/DragonEmpery_AnShan_UnitAbilities.xml</File>
+          <File priority="70">Data/AnShan/DragonEmpery_AnShan_Agenda.xml</File>
         </UpdateDatabase>
         <UpdateDatabase id="AnShan_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
-          <File>Data/AnShan/DragonEmpery_AnShan_XP2.sql</File>
+          <File>Data/AnShan/DragonEmpery_AnShan_Expansion2.sql</File>
         </UpdateDatabase>
-        <AddUserInterfaces id="AnShan_UI">
+        <AddUserInterfaces id="AnShan_UI" criteria="Expansion1or2">
           <Properties>
             <Context>InGame</Context>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
@@ -168,7 +169,7 @@
         <UpdateDatabase id="AnShan_Mode" criteria="SercetSociety">
           <File>Data/AnShan/DragonEmpery_AnShan_SecretSocieties.sql</File>
         </UpdateDatabase>
-        <UpdateText id="AnShan_Text">
+        <UpdateText id="AnShan_Text" criteria="Expansion1or2">
           <File priority="100">Text/en_US/DragonEmpery_AnShan_TextUS.xml</File>
           <File priority="90">Text/zh_Hans_CN/DragonEmpery_AnShan_TextCN.xml</File>
           <File priority="80">Text/zh_Hant_HK/DragonEmpery_AnShan_TextHK.xml</File>
@@ -194,7 +195,11 @@
     ]]></InGameActionData>
     <ActionCriteriaData><![CDATA[
       <ActionCriteria>
+        <Criteria id="Expansion1or2" any="1">
+			    <RuleSetInUse>RULESET_EXPANSION_1,RULESET_EXPANSION_2</RuleSetInUse>
+        </Criteria>
         <Criteria id="SercetSociety">
+          <RuleSetInUse>RULESET_EXPANSION_1,RULESET_EXPANSION_2</RuleSetInUse>
           <ConfigurationValueMatches>
             <ConfigurationId>GAMEMODE_SECRETSOCIETIES</ConfigurationId>
             <Group>Game</Group>
@@ -202,6 +207,7 @@
           </ConfigurationValueMatches>
         </Criteria>
         <Criteria id="AzurLaneDLLCore">
+          <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
           <ModInUse>3dd83d47-17c2-409e-8681-659a5a81923f</ModInUse>
         </Criteria>
         <Criteria id="GoldenAge" any="1">
@@ -262,6 +268,9 @@
     <Folder Include="UI\Additions" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\AnShan\DragonEmpery_AnShan_Agenda.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Data\AnShan\DragonEmpery_AnShan_Districts.xml">
       <SubType>Content</SubType>
     </Content>
@@ -271,7 +280,7 @@
     <Content Include="Data\AnShan\DragonEmpery_AnShan_UnitAbilities.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\AnShan\DragonEmpery_AnShan_XP2.sql">
+    <Content Include="Data\AnShan\DragonEmpery_AnShan_Expansion2.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\AnShan\DragonEmpery_AnShan_SecretSocieties.sql">
@@ -304,7 +313,7 @@
     <Content Include="Data\DragonEmpery_UnitAbilities.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\DragonEmpery_XP2.sql">
+    <Content Include="Data\DragonEmpery_Expansion2.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\HaiTien\DragonEmpery_HaiTien_Leader.xml">
@@ -316,7 +325,7 @@
     <Content Include="Data\HaiTien\DragonEmpery_HaiTien_Units.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\HaiTien\DragonEmpery_HaiTien_XP2.sql">
+    <Content Include="Data\HaiTien\DragonEmpery_HaiTien_Expansion2.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="DragonEmpery_Colors.xml">

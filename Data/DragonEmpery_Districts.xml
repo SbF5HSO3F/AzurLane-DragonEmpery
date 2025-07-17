@@ -42,15 +42,6 @@
 		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldType="YIELD_CULTURE"		YieldChange="2"/>
 		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" YieldType="YIELD_PRODUCTION"	YieldChange="2"/>
 	</District_CitizenYieldChanges>
-	<!--<Adjacent_AppealYieldChanges>
-		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="-100"	MaximumValue="2"	YieldChange="1"		YieldType="YIELD_PRODUCTION"	Unimproved="false" Description="LOC_TOOLTIP_APPEAL_AVERAGE"/>
-		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="-100"	MaximumValue="2"	YieldChange="1"		YieldType="YIELD_FOOD"			Unimproved="false" Description="LOC_TOOLTIP_APPEAL_AVERAGE"/>
-		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="2"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_PRODUCTION"	Unimproved="false" Description="LOC_TOOLTIP_APPEAL_CHARMING"/>
-		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="2"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_FOOD"			Unimproved="false" Description="LOC_TOOLTIP_APPEAL_CHARMING"/>
-		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="2"		MaximumValue="3"	YieldChange="1"		YieldType="YIELD_CULTURE"		Unimproved="false" Description="LOC_TOOLTIP_APPEAL_CHARMING"/>
-		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="4"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_CULTURE"		Unimproved="false" Description="LOC_TOOLTIP_APPEAL_BREATHTAKING"/>
-		<Row DistrictType="DISTRICT_DRAGON_EMPERY_GARDEN" MinimumValue="4"		MaximumValue="100"	YieldChange="2"		YieldType="YIELD_SCIENCE"		Unimproved="false" Description="LOC_TOOLTIP_APPEAL_BREATHTAKING"	BuildingType="BUILDING_APRICOT_ACADEMY"/>
-	</Adjacent_AppealYieldChanges>-->
 	<DistrictModifiers>
 		<!--职业道德-->
 		<Row>

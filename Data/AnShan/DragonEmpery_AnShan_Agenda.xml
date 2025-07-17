@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DragonEmpery_AnShan_Agenda -->
+<!-- Author: HSbF6HSO3F -->
+<!-- DateCreated: 2025/7/17 9:45:42 -->
+<GameData>
+    <Types>
+		<Row Type="TRAIT_AGENDA_PEACE_HORN" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="PeaceHornDistricts"/>
+		<Row ListType="PeaceHornTechs"/>
+		<Row ListType="PeaceHornBuildings"/>
+		<!--和平号角-->
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="PeaceHornDistricts"	AgendaType="TRAIT_AGENDA_PEACE_HORN"	System="Districts"/>
+		<Row ListType="PeaceHornTechs"		LeaderType="LEADER_AN_SHAN_DD101"		System="Technologies"/>
+		<Row ListType="PeaceHornBuildings"	LeaderType="LEADER_AN_SHAN_DD101"		System="Buildings"/>
+		<!--和平号角-->
+
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="PeaceHornDistricts"	Item="DISTRICT_DRAGON_EMPERY_GARDEN"	Favored="true"/>
+		<Row ListType="PeaceHornTechs"		Item="TECH_WRITING"						Favored="true"/>
+		<Row ListType="PeaceHornTechs"		Item="TECH_FLIGHT"						Favored="true"/>
+		<Row ListType="PeaceHornBuildings"	Item="BUILDING_APRICOT_ACADEMY"			Favored="true"/>
+		<!--和平号角-->
+		<Row ListType="PeaceHornDistricts"	Item="DISTRICT_ANSTEEL"					Favored="true"/>
+		<Row ListType="PeaceHornTechs"		Item="TECH_IRON_WORKING"				Favored="true"/>
+
+	</AiFavoredItems>
+	<Traits>
+		<!--和平号角-->
+		<Row TraitType="TRAIT_AGENDA_PEACE_HORN"/>
+	</Traits>
+	<AgendaTraits>
+		<!--和平号角-->
+		<Row AgendaType="AGENDA_PEACE_HORN" TraitType="TRAIT_AGENDA_PEACE_HORN"/>
+	</AgendaTraits>
+</GameData>

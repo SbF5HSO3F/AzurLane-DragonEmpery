@@ -1,4 +1,4 @@
--- DragonEmpery_XP2
+-- DragonEmpery_Expansion2
 -- Author: HSbF6HSO3F
 -- DateCreated: 2023/12/31 22:09:37
 --------------------------------------------------------------
@@ -12,12 +12,14 @@
 		--('IMPROVEMENT_DRAGON_EMPERY_WALL',	'TERRAIN_TUNDRA_MOUNTAIN');
 
 INSERT INTO Improvement_ValidFeatures
-		(ImprovementType,					FeatureType)
-VALUES	('IMPROVEMENT_DRAGON_EMPERY_WALL',	'FEATURE_VOLCANIC_SOIL');
+	(ImprovementType,					FeatureType)
+VALUES
+	('IMPROVEMENT_DRAGON_EMPERY_WALL',	'FEATURE_VOLCANIC_SOIL');
 
 INSERT INTO Improvements_XP2
-		(ImprovementType,					DisasterResistant)
-VALUES	('IMPROVEMENT_DRAGON_EMPERY_WALL',	1);
+	(ImprovementType,					DisasterResistant)
+VALUES
+	('IMPROVEMENT_DRAGON_EMPERY_WALL',	1);
 
 --Update
 UPDATE Improvements

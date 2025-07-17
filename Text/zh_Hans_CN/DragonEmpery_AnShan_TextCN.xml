@@ -131,133 +131,133 @@
 			<Text>[COLOR_RED]没有足够数量的 [ICON_RESOURCE_ALUMINUM] 铝[ENDCOLOR]</Text>
 		</Replace>
 		<!--外交对话-->
-		<![CDATA[<!--同意宣布友谊-->
+		<!--同意宣布友谊-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>嗯嗯，让我们一起努力吧！</Text>
+			<Text>东煌古国将贵国列入友好名单，愿我们的合作如渤海般平稳。</Text>
 		</Replace>
 		<!--拒绝宣布友谊-->
 		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>我要学习了，能不要打扰我吗？</Text>
+			<Text>抱歉，我在渤海湾的山楂树花已开。我们之后再议吧……</Text>
 		</Replace>
 		<!--请求宣布友谊-->
 		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>通往顶点的道路往往艰辛而又漫长，再坚强的人也难免孤独。所以，我想与你结为朋友呢……</Text>
+			<Text>作为航行过十万海里的舰船，我深知盟友的价值。可愿与东煌缔结友好协定？</Text>
 		</Replace>
 		<!--宣布友谊被接受-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>好，让我们共同学习，一起向顶点前进吧！</Text>
+			<Text>太好了，太原她们会很高兴听到这个消息。</Text>
 		</Replace>
 		<!--宣布友谊被拒绝-->
 		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>看样子刚才有许多值得检讨的地方呢……</Text>
+			<Text>明白了……这没关系的……</Text>
 		</Replace>
 		<!--被宣战-->
 		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>战争？嗯，Z23，到了检验努力成果的时候了！</Text>
+			<Text>四大金刚从不畏惧对峙，东煌古国绝不会再受凌辱！</Text>
 		</Replace>
 		<!--宣战-->
 		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>你为人处世的态度实在是太过敷衍，人生绝不能这么荒废。有必要好好督促你了！</Text>
+			<Text>我必须保护妹妹们……和她们珍视的这一切。东煌古国，向您宣战！</Text>
 		</Replace>
 		<!--接受代表团-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>您的代表团已经安全抵达。放心，招待他们的宴席上没有过多的辣椒。</Text>
+			<Text>东煌古国已准备好接待事宜，届时他们将游览平静祥和的渤海湾。那片海面被晚霞染红后，真是非常美丽呢……</Text>
 		</Replace>
 		<!--拒绝代表团-->
 		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>很遗憾，我今天还有好多事情要做。</Text>
+			<Text>非常抱歉，近期正进行舰队联合演习。或许下个季度……</Text>
 		</Replace>
 		<!--派出代表团-->
 		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>请接受我的代表团！他们带着上好的马铃薯和香肠，还有我的好意。</Text>
+			<Text>东煌古国的代表团将携鞍山特产的南果梨启程。请您……啊，这个不是我啦，那是一座位于千山脚下的美丽城市……</Text>
 		</Replace>
 		<!--被谴责-->
 		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>在通往顶峰的道路上，这种诋毁无法避免。</Text>
+			<Text>你这样的指责，又是为了什么呢？哎，只可惜妹妹们会为此伤心……</Text>
 		</Replace>
 		<!--谴责-->
 		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>世界上怎么会有对自己如此不认真的人？（谴责你）</Text>
+			<Text>你的所作所为连抚顺也会摇头！（谴责你）</Text>
 		</Replace>
 		<!--初次见面-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>我是1936A型驱逐舰的首舰，Z23，从我开始的妹妹们都只有代号，不像姐姐们有继承前人的名字。虽然有些不近人情不过确实比较方便，所以请不要客气直接叫我Z23就好。</Text>
+			<Text>我是东煌鞍山级驱逐舰首舰“鞍山”号，东煌第一代“四大金刚”之首。虽无实战经验，但参加过诸多演习、监视和对峙，并都取得了足以自豪的成绩。期待我们之间的交流能如黄海般波澜壮阔。</Text>
 		</Replace>
 		<!--初次见面，邀请参观附近城市-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>希望造访我们附近的城市么？我会带你欣赏属于铁血的独特文化，同时也会带你品尝各种制法的马铃薯。</Text>
+			<Text>我的城市就在这附近，她的历史如东煌一般悠久。想要来参观这座城市吗？我会带你登上仙人台，欣赏波澜壮阔的千山景色。</Text>
 		</Replace>
 		<!--初次见面，感谢玩家提供最近城市位置-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>谢谢，这会促进我们之间的交流。</Text>
+			<Text>谢谢，抚顺肯定想听到这个！</Text>
 		</Replace>
 		<!--初次见面，请求交换城市位置-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>我很想了解你的国家，我也会为你讲述我的国家。让我们先从首都开始吧！</Text>
+			<Text>我们之间的合作，先从相互交换首都的位置开始吧！</Text>
 		</Replace>
 		<!--欢迎语？-->
 		<Replace Tag="LOC_DIPLO_GREETING_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>今天还有好多事情要做呢。</Text>
+			<Text>你想知道些什么呢？</Text>
 		</Replace>
-		<!--示好-->
+		<![CDATA[<!--示好-->
 		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
 			<Text>您努力的背影和取得的成就让我憧憬。我希望能跟你一起进步。</Text>
 		</Replace>
 		<!--敌视-->
 		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
 			<Text>比起其他的事，你不如多看看书。</Text>
-		</Replace>
+		</Replace>]]>
 		<!--请求结盟-->
 		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>让我们结盟，共同登上高峰吧！</Text>
+			<Text>我们之间的合作，将会成为我们未来的美好愿景。愿您可与东煌古国缔结盟友协定。</Text>
 		</Replace>
 		<!--同意和平-->
 		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>和平是一个好选择。让我们休战吧！</Text>
+			<Text>我的妹妹们会很乐意看到这些。</Text>
 		</Replace>
 		<!--拒绝和平-->
 		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>不，这场考验还没有结束！</Text>
+			<Text>我们不会就此退缩！</Text>
 		</Replace>
 		<!--请求和平-->
 		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>这场战争已经背离了它的初衷。我们握手言和吧。</Text>
+			<Text>这场战争早已毫无意义。让我们放下武器，一同吹响和平的号角。</Text>
 		</Replace>
 		<!--接受开放边界请求-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>我很高兴能为你开放边境。铁血公国不应是一个封闭的国家。</Text>
+			<Text>东煌古国为您开放边境，希望她壮丽的山河能够振奋您的精神。</Text>
 		</Replace>
 		<!--拒绝开放边界请求-->
 		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>对不起，今天的铁血公国有要事处理。</Text>
+			<Text>东煌古国不会允许任何不怀好意的人越过她的边境！</Text>
 		</Replace>
 		<!--请求开放边界-->
 		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>愿意为我们开放你的边境吗？</Text>
+			<Text>为了守护和平，我们需要跨越您的边境。可以接受么？</Text>
 		</Replace>
 		<!--要求移开边境部队-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>你的军队在铁血公国周边鬼鬼祟祟的想干什么？我可不是那种随随便便就可以蒙混过去的女孩子哦，请尽快撤军。</Text>
+			<Text>这样的场面我早在1962年就见识过了。为了避免不愉快的事情发生，请尽快撤军！</Text>
 		</Replace>
 		<!--拒绝移开边境部队-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>很抱歉让你产生了担忧，但你无法命令我。</Text>
+			<Text>东煌古国的例行巡航不会受到任何打扰。</Text>
 		</Replace>
 		<!--同意移开边境部队-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>我会尽快地移走你领土周边的部队，不必担心。</Text>
+			<Text>很抱歉让你产生了困扰，东煌古国的军队很快就会离开。</Text>
 		</Replace>
 		<!--经受不住时间考验-->
 		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>唉，看来准备还不够充分……你赢了。</Text>
+			<Text>至少……确保妹妹们……安全撤离……</Text>
 		</Replace>
 		<!--拒绝交易-->
 		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>这可不行。</Text>
 		</Replace>
 		<!--同意交易-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text></Text>
-		</Replace>]]>
+			<Text>偶尔这样也不错。</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

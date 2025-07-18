@@ -47,6 +47,18 @@
 		<Replace Tag="LOC_AGENDA_PEACE_HORN_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>喜欢处于和平的文明，厌恶发动突袭战争的文明。</Text>
 		</Replace>
+		<Replace Tag="LOC_AGENDA_PEACE_HORN_LIKE_PEACE_PEACE" Language="zh_Hans_CN">
+			<Text>鞍山很高兴看到你处于和平</Text>
+		</Replace>
+		<Replace Tag="_DIPLO_KUDO_LEADER_AN_SHAN_DD101_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您处于和平）</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_PEACE_HORN_SURPERISE_WAR" Language="zh_Hans_CN">
+			<Text>鞍山厌恶宣布突袭战争的人</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_AN_SHAN_DD101_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您宣布了突袭战争）</Text>
+		</Replace>
 		<!--领袖能力-->
 		<Replace Tag="LOC_TRAIT_LEADER_AZURE_LOONG_S_DANCE_NAME" Language="zh_Hans_CN">
 			<Text>青龙演武</Text>

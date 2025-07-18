@@ -47,9 +47,11 @@
 		<Row ListType="PeaceHornTechs"			Item="TECH_IRON_WORKING"				Favored="true"/>
 		<Row ListType="PeaceHornYields"			Item="YIELD_PRODUCTION"									Value="20"/>
 		<Row ListType="PeaceHornYields"			Item="YIELD_SCIENCE"									Value="20"/>
+		<Row ListType="PeaceHornYields"			Item="YIELD_FAITH"										Value="-50"/>
 		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_SPACE_RACE"							Value="100"/>
 		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_TECHNOLOGY"							Value="20"/>
 		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_GPP_SCIENTIST"						Value="20"/>
+		<Row ListType="PeaceHornPseudoYields" 	Item="PSEUDOYIELD_GPP_PROPHET" 							Value="-75"/>
 		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_EARTH_SATELLITE" 	Favored="true"/>
 		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MOON_LANDING" 		Favored="true"/>
 		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MARS_REACTOR" 		Favored="true"/>
@@ -64,4 +66,95 @@
 		<!--和平号角-->
 		<Row AgendaType="AGENDA_PEACE_HORN" TraitType="TRAIT_AGENDA_PEACE_HORN"/>
 	</AgendaTraits>
+	<TraitModifiers>
+		<!--和平号角-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_PEACE_HORN</TraitType>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--和平号角-->
+		<!--处于和平-->
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>AGENDA_PEACE_HORN_IN_PEACE</SubjectRequirementSetId>
+		</Row>
+		<!--发动突袭-->
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_SURPERISE_WAR</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_DECLARES_SURPRISE_WAR</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--和平号角-->
+		<!--处于和平-->
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<Name>IncrementTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<Name>IncrementValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<Name>MaxValue</Name>
+			<Value>12</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_AGENDA_PEACE_HORN_LIKE_PEACE_PEACE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>_DIPLO_KUDO_LEADER_AN_SHAN_DD101_REASON_ANY</Value>
+		</Row>
+		<!--发动突袭-->
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_SURPERISE_WAR</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-12</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_SURPERISE_WAR</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_SURPERISE_WAR</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_SURPERISE_WAR</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_AGENDA_PEACE_HORN_SURPERISE_WAR</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PEACE_HORN_SURPERISE_WAR</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_AN_SHAN_DD101_REASON_ANY</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="AGENDA_PEACE_HORN_LIKE_PEACE"		Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_PEACE_HORN_SURPERISE_WAR"	Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
 </GameData>

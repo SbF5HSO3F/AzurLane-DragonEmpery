@@ -130,133 +130,133 @@
 			<Text>[COLOR_RED]There are not enough [ICON_RESOURCE_ALUMINUM] Aluminium.[ENDCOLOR]</Text>
 		</Replace>
 		<!--外交对话-->
-		<![CDATA[<!--同意宣布友谊-->
+		<!--同意宣布友谊-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>嗯嗯，让我们一起努力吧！</Text>
+			<Text>The Dragon Empery has added your nation to our friendly list. May our cooperation be as steady as the Bohai Sea.</Text>
 		</Replace>
 		<!--拒绝宣布友谊-->
 		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>我要学习了，能不要打扰我吗？</Text>
+			<Text>Apologies, the hawthorn trees in Bohai Bay are in bloom. Let's discuss this another time...</Text>
 		</Replace>
 		<!--请求宣布友谊-->
 		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>通往顶点的道路往往艰辛而又漫长，再坚强的人也难免孤独。所以，我想与你结为朋友呢……</Text>
+			<Text>As a ship that has sailed over 100,000 nautical miles, I understand the value of allies. Would you consider establishing friendly relations with the Dragon Empery?</Text>
 		</Replace>
 		<!--宣布友谊被接受-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>好，让我们共同学习，一起向顶点前进吧！</Text>
+			<Text>Excellent, Tai Yuan and the others will be delighted to hear this news.</Text>
 		</Replace>
 		<!--宣布友谊被拒绝-->
 		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>看样子刚才有许多值得检讨的地方呢……</Text>
+			<Text>Understood... That's quite alright...</Text>
 		</Replace>
 		<!--被宣战-->
 		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>战争？嗯，Z23，到了检验努力成果的时候了！</Text>
+			<Text>The Four Unbreakables have never feared confrontation! The Dragon Empery will not be humiliated again!</Text>
 		</Replace>
 		<!--宣战-->
 		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>你为人处世的态度实在是太过敷衍，人生绝不能这么荒废。有必要好好督促你了！</Text>
+			<Text>I must protect my sisters... and everything they cherish. The Dragon Empery declares war on you!</Text>
 		</Replace>
 		<!--接受代表团-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>您的代表团已经安全抵达。放心，招待他们的宴席上没有过多的辣椒。</Text>
+			<Text>The Dragon Empery has prepared for the reception. They will visit the peaceful Bohai Bay. When the sea turns red under the sunset, it's truly magnificent...</Text>
 		</Replace>
 		<!--拒绝代表团-->
 		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>很遗憾，我今天还有好多事情要做。</Text>
+			<Text>Our apologies, we're currently conducting joint fleet exercises. Perhaps next season...</Text>
 		</Replace>
 		<!--派出代表团-->
 		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>请接受我的代表团！他们带着上好的马铃薯和香肠，还有我的好意。</Text>
+			<Text>The Dragon Empery's delegation will bring special Anshan pears. Please... oh, that's not me, but a beautiful city at the foot of Qianshan Mountains...</Text>
 		</Replace>
 		<!--被谴责-->
 		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>在通往顶峰的道路上，这种诋毁无法避免。</Text>
+			<Text>What is your purpose in making such accusations? Alas, this will only sadden my sisters...</Text>
 		</Replace>
 		<!--谴责-->
 		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>世界上怎么会有对自己如此不认真的人？（谴责你）</Text>
+			<Text>Even Fu Shun would shake her head at your actions! (Condemn you)</Text>
 		</Replace>
 		<!--初次见面-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>我是1936A型驱逐舰的首舰，Z23，从我开始的妹妹们都只有代号，不像姐姐们有继承前人的名字。虽然有些不近人情不过确实比较方便，所以请不要客气直接叫我Z23就好。</Text>
+			<Text>I am the An Shan, lead ship of the An Shan-class destroyers and first of the Dragon Empery's "Four Unbreakables". Though without combat experience, I've participated in numerous exercises, surveillance missions, and standoffs, achieving commendable results. I hope our exchanges will be as magnificent as the Yellow Sea.</Text>
 		</Replace>
 		<!--初次见面，邀请参观附近城市-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>希望造访我们附近的城市么？我会带你欣赏属于铁血的独特文化，同时也会带你品尝各种制法的马铃薯。</Text>
+			<Text>My city is nearby, with history as ancient as the Dragon Empery itself. Would you like to visit? I'll take you to Xianrentai to admire the magnificent Qianshan scenery.</Text>
 		</Replace>
 		<!--初次见面，感谢玩家提供最近城市位置-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>谢谢，这会促进我们之间的交流。</Text>
+			<Text>Thank you, Fu Shun will definitely want to hear about this!</Text>
 		</Replace>
 		<!--初次见面，请求交换城市位置-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>我很想了解你的国家，我也会为你讲述我的国家。让我们先从首都开始吧！</Text>
+			<Text>Let our cooperation begin with exchanging the locations of our capitals!</Text>
 		</Replace>
 		<!--欢迎语？-->
 		<Replace Tag="LOC_DIPLO_GREETING_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>今天还有好多事情要做呢。</Text>
+			<Text>What would you like to know?</Text>
 		</Replace>
 		<!--示好-->
 		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>您努力的背影和取得的成就让我憧憬。我希望能跟你一起进步。</Text>
+			<Text>It's not easy to sound the horn of peace. You've worked hard.</Text>
 		</Replace>
 		<!--敌视-->
 		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>比起其他的事，你不如多看看书。</Text>
+			<Text>You're nothing more than another "De Haven" - I've seen your kind before.</Text>
 		</Replace>
 		<!--请求结盟-->
 		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>让我们结盟，共同登上高峰吧！</Text>
+			<Text>Our cooperation will shape a bright future. Will you form an alliance with the Dragon Empery?</Text>
 		</Replace>
 		<!--同意和平-->
 		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>和平是一个好选择。让我们休战吧！</Text>
+			<Text>My sisters will be pleased to see this.</Text>
 		</Replace>
 		<!--拒绝和平-->
 		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>不，这场考验还没有结束！</Text>
+			<Text>We will not retreat!</Text>
 		</Replace>
 		<!--请求和平-->
 		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>这场战争已经背离了它的初衷。我们握手言和吧。</Text>
+			<Text>This war has long lost its meaning. Let us lay down our weapons and sound the horn of peace together.</Text>
 		</Replace>
 		<!--接受开放边界请求-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>我很高兴能为你开放边境。铁血公国不应是一个封闭的国家。</Text>
+			<Text>The Dragon Empery opens its borders to you. May our magnificent landscapes uplift your spirits.</Text>
 		</Replace>
 		<!--拒绝开放边界请求-->
 		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>对不起，今天的铁血公国有要事处理。</Text>
+			<Text>The Dragon Empery will not allow anyone with ill intentions to cross our borders!</Text>
 		</Replace>
 		<!--请求开放边界-->
 		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>愿意为我们开放你的边境吗？</Text>
+			<Text>To safeguard peace, we need to cross your borders. Do you accept?</Text>
 		</Replace>
 		<!--要求移开边境部队-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>你的军队在铁血公国周边鬼鬼祟祟的想干什么？我可不是那种随随便便就可以蒙混过去的女孩子哦，请尽快撤军。</Text>
+			<Text>I witnessed similar scenes back in 1962. To avoid unpleasantness, withdraw your troops immediately!</Text>
 		</Replace>
 		<!--拒绝移开边境部队-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>很抱歉让你产生了担忧，但你无法命令我。</Text>
+			<Text>The Dragon Empery's routine patrols will not be disturbed.</Text>
 		</Replace>
 		<!--同意移开边境部队-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>我会尽快地移走你领土周边的部队，不必担心。</Text>
+			<Text>Apologies for the concern. The Dragon Empery's forces will withdraw shortly.</Text>
 		</Replace>
 		<!--经受不住时间考验-->
 		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text>唉，看来准备还不够充分……你赢了。</Text>
+			<Text>At least... ensure my sisters... evacuate safely...</Text>
 		</Replace>
 		<!--拒绝交易-->
 		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text></Text>
+			<Text>This won't do.</Text>
 		</Replace>
 		<!--同意交易-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="en_US">
-			<Text></Text>
-		</Replace>]]>
+			<Text>This might be nice for a change.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

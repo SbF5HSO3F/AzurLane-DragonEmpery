@@ -112,7 +112,7 @@ function ResetPanelDark(ancient)
     if num == 0 then
         tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
     else
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. ancient:GetOutTooltip('Dark')
+        tooltip = tooltip .. ancient:GetOutTooltip('Dark')
     end
     --is in dark age?
     local eras, playerID = Game.GetEras(), ancient.PlayerID
@@ -141,7 +141,7 @@ function ResetPanelGolden(ancient)
     if num == 0 then
         tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
     else
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. ancient:GetOutTooltip('Golden')
+        tooltip = tooltip .. ancient:GetOutTooltip('Golden')
     end
     --is in golden age?
     local eras, playerID = Game.GetEras(), ancient.PlayerID
@@ -170,7 +170,7 @@ function ResetPanelHeroic(ancient)
     if num == 0 then
         tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_NO_BUFF')
     else
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. ancient:GetOutTooltip('Heroic')
+        tooltip = tooltip .. ancient:GetOutTooltip('Heroic')
     end
     --is in heroic age?
     local eras, playerID = Game.GetEras(), ancient.PlayerID
@@ -207,8 +207,9 @@ function ResetPanelCounter(ancient)
         '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL', normal) ..
         '[NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_BONUS', num)
     if normal > 0 then
-        tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC')
-            .. '[NEWLINE]' .. ancient:GetOutTooltip('Normal')
+        tooltip = tooltip .. '[NEWLINE][NEWLINE]' ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_COUNTER_NORMAL_DESC') ..
+            ancient:GetOutTooltip('Normal')
     end
     local eras, playerID = Game.GetEras(), ancient.PlayerID
     if eras:HasHeroicGoldenAge(playerID) then

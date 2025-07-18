@@ -216,14 +216,14 @@
 		<Replace Tag="LOC_DIPLO_GREETING_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
 			<Text>你想知道些什么呢？</Text>
 		</Replace>
-		<![CDATA[<!--示好-->
+		<!--示好-->
 		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>您努力的背影和取得的成就让我憧憬。我希望能跟你一起进步。</Text>
+			<Text>能够吹响和平的号角着实不易，辛苦你了。</Text>
 		</Replace>
 		<!--敌视-->
 		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
-			<Text>比起其他的事，你不如多看看书。</Text>
-		</Replace>]]>
+			<Text>你不过“狄海文”之流而已，我见惯了。</Text>
+		</Replace>
 		<!--请求结盟-->
 		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hans_CN">
 			<Text>我们之间的合作，将会成为我们未来的美好愿景。愿您可与东煌古国缔结盟友协定。</Text>

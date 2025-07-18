@@ -15,6 +15,9 @@
 		<Row ListType="PeaceHornYields"/>
 		<Row ListType="PeaceHornPseudoYields"/>
 		<Row ListType="PeaceHornProjects"/>
+		<Row ListType="PeaceHornHateSurpriseWar"/>
+		<Row ListType="PeaceHornHateDeclareWarMinorCiv"/>
+		<Row ListType="PeaceHornLoveFriend"/>
 	</AiListTypes>
 	<Strategy_Priorities>
 		<Row StrategyType="VICTORY_STRATEGY_SCIENCE_VICTORY" ListType="PeaceHornDistricts"/>
@@ -25,38 +28,44 @@
 	</Strategy_Priorities>
 	<AiLists>
 		<!--通用-->
-		<Row ListType="PeaceHornDistricts"		AgendaType="TRAIT_AGENDA_PEACE_HORN"	System="Districts"/>
-		<Row ListType="PeaceHornTechs"			LeaderType="LEADER_AN_SHAN_DD101"		System="Technologies"/>
-		<Row ListType="PeaceHornBuildings"		LeaderType="LEADER_AN_SHAN_DD101"		System="Buildings"/>
+		<Row ListType="PeaceHornDistricts"				AgendaType="TRAIT_AGENDA_PEACE_HORN"	System="Districts"/>
+		<Row ListType="PeaceHornTechs"					LeaderType="LEADER_AN_SHAN_DD101"		System="Technologies"/>
+		<Row ListType="PeaceHornBuildings"				LeaderType="LEADER_AN_SHAN_DD101"		System="Buildings"/>
 		<!--和平号角-->
-		<Row ListType="PeaceHornYields"			AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="Yields"/>
-		<Row ListType="PeaceHornPseudoYields"	AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="PseudoYields"/>
-		<Row ListType="PeaceHornProjects"		AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="Projects"/>
+		<Row ListType="PeaceHornYields"					AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="Yields"/>
+		<Row ListType="PeaceHornPseudoYields"			AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="PseudoYields"/>
+		<Row ListType="PeaceHornProjects"				AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="Projects"/>
+		<Row ListType="PeaceHornHateSurpriseWar"		AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="DiplomaticActions"/>
+		<Row ListType="PeaceHornHateDeclareWarMinorCiv"	AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="DiplomaticActions"/>
+		<Row ListType="PeaceHornLoveFriend"				AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="DiplomaticActions"/>
 	</AiLists>
 	<AiFavoredItems>
 		<!--通用-->
-		<Row ListType="PeaceHornDistricts"		Item="DISTRICT_DRAGON_EMPERY_GARDEN"	Favored="true"/>
-		<Row ListType="PeaceHornTechs"			Item="TECH_WRITING"						Favored="true"/>
-		<Row ListType="PeaceHornTechs"			Item="TECH_FLIGHT"						Favored="true"/>
-		<Row ListType="PeaceHornTechs"			Item="TECH_ROCKETRY"					Favored="true"/>
-		<Row ListType="PeaceHornTechs"			Item="TECH_SATELLITES"					Favored="true"/>
-		<Row ListType="PeaceHornBuildings"		Item="BUILDING_APRICOT_ACADEMY"			Favored="true"/>
+		<Row ListType="PeaceHornDistricts"				Item="DISTRICT_DRAGON_EMPERY_GARDEN"		Favored="true"/>
+		<Row ListType="PeaceHornTechs"					Item="TECH_WRITING"							Favored="true"/>
+		<Row ListType="PeaceHornTechs"					Item="TECH_FLIGHT"							Favored="true"/>
+		<Row ListType="PeaceHornTechs"					Item="TECH_ROCKETRY"						Favored="true"/>
+		<Row ListType="PeaceHornTechs"					Item="TECH_SATELLITES"						Favored="true"/>
+		<Row ListType="PeaceHornBuildings"				Item="BUILDING_APRICOT_ACADEMY"				Favored="true"/>
 		<!--和平号角-->
-		<Row ListType="PeaceHornDistricts"		Item="DISTRICT_ANSTEEL"					Favored="true"/>
-		<Row ListType="PeaceHornDistricts"  	Item="DISTRICT_SPACEPORT" 				Favored="true"/>
-		<Row ListType="PeaceHornTechs"			Item="TECH_IRON_WORKING"				Favored="true"/>
-		<Row ListType="PeaceHornYields"			Item="YIELD_PRODUCTION"									Value="20"/>
-		<Row ListType="PeaceHornYields"			Item="YIELD_SCIENCE"									Value="20"/>
-		<Row ListType="PeaceHornYields"			Item="YIELD_FAITH"										Value="-50"/>
-		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_SPACE_RACE"							Value="100"/>
-		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_TECHNOLOGY"							Value="20"/>
-		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_GPP_SCIENTIST"						Value="20"/>
-		<Row ListType="PeaceHornPseudoYields" 	Item="PSEUDOYIELD_GPP_PROPHET" 							Value="-75"/>
-		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_EARTH_SATELLITE" 	Favored="true"/>
-		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MOON_LANDING" 		Favored="true"/>
-		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MARS_REACTOR" 		Favored="true"/>
-		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MARS_HABITATION" 	Favored="true"/>
-		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MARS_HYDROPONICS" 	Favored="true"/>
+		<Row ListType="PeaceHornDistricts"				Item="DISTRICT_ANSTEEL"						Favored="true"/>
+		<Row ListType="PeaceHornDistricts"  			Item="DISTRICT_SPACEPORT" 					Favored="true"/>
+		<Row ListType="PeaceHornTechs"					Item="TECH_IRON_WORKING"					Favored="true"/>
+		<Row ListType="PeaceHornYields"					Item="YIELD_PRODUCTION"										Value="20"/>
+		<Row ListType="PeaceHornYields"					Item="YIELD_SCIENCE"										Value="20"/>
+		<Row ListType="PeaceHornYields"					Item="YIELD_FAITH"											Value="-50"/>
+		<Row ListType="PeaceHornPseudoYields"			Item="PSEUDOYIELD_SPACE_RACE"								Value="100"/>
+		<Row ListType="PeaceHornPseudoYields"			Item="PSEUDOYIELD_TECHNOLOGY"								Value="20"/>
+		<Row ListType="PeaceHornPseudoYields"			Item="PSEUDOYIELD_GPP_SCIENTIST"							Value="20"/>
+		<Row ListType="PeaceHornPseudoYields" 			Item="PSEUDOYIELD_GPP_PROPHET" 								Value="-75"/>
+		<Row ListType="PeaceHornProjects" 				Item="PROJECT_LAUNCH_EARTH_SATELLITE" 		Favored="true"/>
+		<Row ListType="PeaceHornProjects" 				Item="PROJECT_LAUNCH_MOON_LANDING" 			Favored="true"/>
+		<Row ListType="PeaceHornProjects" 				Item="PROJECT_LAUNCH_MARS_REACTOR" 			Favored="true"/>
+		<Row ListType="PeaceHornProjects" 				Item="PROJECT_LAUNCH_MARS_HABITATION" 		Favored="true"/>
+		<Row ListType="PeaceHornProjects" 				Item="PROJECT_LAUNCH_MARS_HYDROPONICS" 		Favored="true"/>
+		<Row ListType="PeaceHornHateSurpriseWar"		Item="DIPLOACTION_DECLARE_SURPRISE_WAR"		Favored="false"/>
+		<Row ListType="PeaceHornHateDeclareWarMinorCiv" Item="DIPLOACTION_DECLARE_WAR_MINOR_CIV"	Favored="false"/>
+		<Row ListType="PeaceHornLoveFriend"				Item="DIPLOACTION_DECLARE_FRIENDSHIP"		Favored="true"/>
 	</AiFavoredItems>
 	<Traits>
 		<!--和平号角-->
@@ -68,9 +77,15 @@
 	</AgendaTraits>
 	<TraitModifiers>
 		<!--和平号角-->
+		<!--处于和平-->
 		<Row>
 			<TraitType>TRAIT_AGENDA_PEACE_HORN</TraitType>
 			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
+		</Row>
+		<!--发动突袭-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_PEACE_HORN</TraitType>
+			<ModifierId>AGENDA_PEACE_HORN_SURPERISE_WAR</ModifierId>
 		</Row>
 	</TraitModifiers>
 	<Modifiers>
@@ -110,11 +125,6 @@
 			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
 			<Name>MaxValue</Name>
 			<Value>12</Value>
-		</Row>
-		<Row>
-			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>
-			<Name>MessageThrottle</Name>
-			<Value>20</Value>
 		</Row>
 		<Row>
 			<ModifierId>AGENDA_PEACE_HORN_LIKE_PEACE</ModifierId>

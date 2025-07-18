@@ -12,25 +12,49 @@
 		<Row ListType="PeaceHornTechs"/>
 		<Row ListType="PeaceHornBuildings"/>
 		<!--和平号角-->
+		<Row ListType="PeaceHornYields"/>
+		<Row ListType="PeaceHornPseudoYields"/>
+		<Row ListType="PeaceHornProjects"/>
 	</AiListTypes>
+	<Strategy_Priorities>
+		<Row StrategyType="VICTORY_STRATEGY_SCIENCE_VICTORY" ListType="PeaceHornDistricts"/>
+		<Row StrategyType="VICTORY_STRATEGY_SCIENCE_VICTORY" ListType="PeaceHornTechs"/>
+		<Row StrategyType="VICTORY_STRATEGY_SCIENCE_VICTORY" ListType="PeaceHornYields"/>
+		<Row StrategyType="VICTORY_STRATEGY_SCIENCE_VICTORY" ListType="PeaceHornPseudoYields"/>
+		<Row StrategyType="VICTORY_STRATEGY_SCIENCE_VICTORY" ListType="PeaceHornProjects"/>
+	</Strategy_Priorities>
 	<AiLists>
 		<!--通用-->
-		<Row ListType="PeaceHornDistricts"	AgendaType="TRAIT_AGENDA_PEACE_HORN"	System="Districts"/>
-		<Row ListType="PeaceHornTechs"		LeaderType="LEADER_AN_SHAN_DD101"		System="Technologies"/>
-		<Row ListType="PeaceHornBuildings"	LeaderType="LEADER_AN_SHAN_DD101"		System="Buildings"/>
+		<Row ListType="PeaceHornDistricts"		AgendaType="TRAIT_AGENDA_PEACE_HORN"	System="Districts"/>
+		<Row ListType="PeaceHornTechs"			LeaderType="LEADER_AN_SHAN_DD101"		System="Technologies"/>
+		<Row ListType="PeaceHornBuildings"		LeaderType="LEADER_AN_SHAN_DD101"		System="Buildings"/>
 		<!--和平号角-->
-
+		<Row ListType="PeaceHornYields"			AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="Yields"/>
+		<Row ListType="PeaceHornPseudoYields"	AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="PseudoYields"/>
+		<Row ListType="PeaceHornProjects"		AgendaType="TRAIT_AGENDA_PEACE_HORN" 	System="Projects"/>
 	</AiLists>
 	<AiFavoredItems>
 		<!--通用-->
-		<Row ListType="PeaceHornDistricts"	Item="DISTRICT_DRAGON_EMPERY_GARDEN"	Favored="true"/>
-		<Row ListType="PeaceHornTechs"		Item="TECH_WRITING"						Favored="true"/>
-		<Row ListType="PeaceHornTechs"		Item="TECH_FLIGHT"						Favored="true"/>
-		<Row ListType="PeaceHornBuildings"	Item="BUILDING_APRICOT_ACADEMY"			Favored="true"/>
+		<Row ListType="PeaceHornDistricts"		Item="DISTRICT_DRAGON_EMPERY_GARDEN"	Favored="true"/>
+		<Row ListType="PeaceHornTechs"			Item="TECH_WRITING"						Favored="true"/>
+		<Row ListType="PeaceHornTechs"			Item="TECH_FLIGHT"						Favored="true"/>
+		<Row ListType="PeaceHornTechs"			Item="TECH_ROCKETRY"					Favored="true"/>
+		<Row ListType="PeaceHornTechs"			Item="TECH_SATELLITES"					Favored="true"/>
+		<Row ListType="PeaceHornBuildings"		Item="BUILDING_APRICOT_ACADEMY"			Favored="true"/>
 		<!--和平号角-->
-		<Row ListType="PeaceHornDistricts"	Item="DISTRICT_ANSTEEL"					Favored="true"/>
-		<Row ListType="PeaceHornTechs"		Item="TECH_IRON_WORKING"				Favored="true"/>
-
+		<Row ListType="PeaceHornDistricts"		Item="DISTRICT_ANSTEEL"					Favored="true"/>
+		<Row ListType="PeaceHornDistricts"  	Item="DISTRICT_SPACEPORT" 				Favored="true"/>
+		<Row ListType="PeaceHornTechs"			Item="TECH_IRON_WORKING"				Favored="true"/>
+		<Row ListType="PeaceHornYields"			Item="YIELD_PRODUCTION"									Value="20"/>
+		<Row ListType="PeaceHornYields"			Item="YIELD_SCIENCE"									Value="20"/>
+		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_SPACE_RACE"							Value="100"/>
+		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_TECHNOLOGY"							Value="20"/>
+		<Row ListType="PeaceHornPseudoYields"	Item="PSEUDOYIELD_GPP_SCIENTIST"						Value="20"/>
+		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_EARTH_SATELLITE" 	Favored="true"/>
+		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MOON_LANDING" 		Favored="true"/>
+		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MARS_REACTOR" 		Favored="true"/>
+		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MARS_HABITATION" 	Favored="true"/>
+		<Row ListType="PeaceHornProjects" 		Item="PROJECT_LAUNCH_MARS_HYDROPONICS" 	Favored="true"/>
 	</AiFavoredItems>
 	<Traits>
 		<!--和平号角-->

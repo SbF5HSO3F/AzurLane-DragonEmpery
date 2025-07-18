@@ -25,6 +25,9 @@
 	<HistoricalAgendas>
 		<Row LeaderType="LEADER_AN_SHAN_DD101" AgendaType="AGENDA_PEACE_HORN"/>
 	</HistoricalAgendas>
+	<ExclusiveAgendas>
+		<Row AgendaOne="AGENDA_PEACE_HORN" AgendaTwo="AGENDA_INDUSTRIALIST"/>
+	</ExclusiveAgendas>
 	<Agendas>
 		<Row AgendaType="AGENDA_PEACE_HORN"	Name="LOC_AGENDA_PEACE_HORN_NAME" Description="LOC_AGENDA_PEACE_HORN_DESCRIPTION"/>
 	</Agendas>

@@ -50,3 +50,19 @@ INSERT INTO ModifierArguments
 	(ModifierId,								Name,		Value)
 VALUES
 	('ANSTEEL_ADJUST_RESOURCE_STOCKPILE_CAP',	'Amount',	'10');
+
+-- Agenda
+DELETE FROM AiFavoredItems
+WHERE Item IN (
+	'PROJECT_LAUNCH_MARS_REACTOR',
+	'PROJECT_LAUNCH_MARS_HABITATION',
+	'PROJECT_LAUNCH_MARS_HYDROPONICS'
+) AND ListType = 'PeaceHornProjects';
+
+INSERT INTO AiFavoredItems
+	(ListType,				Item,									Favored)
+VALUES
+	('PeaceHornProjects',	'PROJECT_LAUNCH_MARS_BASE',				'true'),
+	('PeaceHornProjects',	'PROJECT_LAUNCH_EXOPLANET_EXPEDITION',	'true'),
+	('PeaceHornProjects',	'PROJECT_ORBITAL_LASER',				'true'),
+	('PeaceHornProjects',	'PROJECT_TERRESTRIAL_LASER',			'true');

@@ -2,67 +2,79 @@
 -- Author: HSbF6HSO3F
 -- DateCreated: 2023/12/30 22:17:09
 --------------------------------------------------------------
---||=====================Meta Table=======================||--
+--||=======================include========================||--
+include('DragonDebug')
+include('DragonMath')
 
+--||======================MetaTable=======================||--
 DragonCore = {}
 
---||====================GamePlay, UI======================||--
+--||===================Check Functions====================||--
 
---Leader type judgment. if macth, return true (GamePlay, UI)
-function DragonCore.CheckLeaderMatched(playerID, Leadertype)
+-- 判断领袖，玩家不为指定领袖类型则返回false (GamePlay, UI)
+---- playerID          玩家ID
+---- leaderType        领袖类型
+function DragonCore.CheckLeaderMatched(playerID, leaderType)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
-    return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == Leadertype
+    return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == leaderType
 end
 
---Civilization type judgment. if macth, return true (GamePlay, UI)
-function DragonCore.CheckCivMatched(playerID, Civtype)
+-- 判断文明，玩家文明不为指定文明类型则返回false (GamePlay, UI)
+---- playerID          玩家ID
+---- civilizationType  文明类型
+function DragonCore.CheckCivMatched(playerID, civilizationType)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
-    return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == Civtype
+    return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == civilizationType
 end
 
---process rounding (GamePlay, UI)
-function DragonCore.Round(num)
-    return math.floor((num + 0.05) * 10) / 10
-end
+--||====================Is Functions======================||--
 
---Game Speed Modifier. (GamePlay, UI)
-function DragonCore:ModifyBySpeed(num)
-    local gameSpeed = GameInfo.GameSpeeds[GameConfiguration.GetGameSpeedType()]
-    if gameSpeed then num = self.Round(num * gameSpeed.CostMultiplier / 100) end
-    return num
-end
-
---Percent Modifier. (GamePlay, UI)
-function DragonCore:ModifyByPercent(num, percent, effect)
-    return self.Round(num * (effect and percent or (100 + percent)) / 100)
-end
-
---Random number generator [1,num+1] (GamePlay, UI)
-function DragonCore.tableRandom(num)
-    return Game.GetRandNum and (Game.GetRandNum(num) + 1) or 1
-end
-
---like Array.include() (GamePlay, UI)
-function DragonCore.include(table, element)
+-- 检查table中是否有指定元素 (GamePlay, UI)
+---- table             要检查的table
+---- element           要查找的元素
+function DragonCore.IsInclude(table, element)
     for _, value in pairs(table) do
-        if value == element then
-            return true
-        end
+        if value == element then return true end
     end
     return false
 end
 
---Check the tech or civic has boost (GamePlay, UI)
+-- 检查单位是否是军事单位 (GamePlay, UI)
+---- unit              单位对象
+function DragonCore.IsMilitary(unit)
+    if unit == nil then return false end
+    local unitInfo = GameInfo.Units[unit:GetType()]
+    if unitInfo == nil then return false end
+    local unitFormation = unitInfo.FormationClass
+    return unitFormation == 'FORMATION_CLASS_LAND_COMBAT'
+        or unitFormation == 'FORMATION_CLASS_NAVAL'
+        or unitFormation == 'FORMATION_CLASS_AIR'
+end
+
+--||====================Has Functions=====================||--
+
+-- 检查科技或者市政是否拥有提升 (GamePlay, UI)
+---- techOrCivic       科技或者市政类型
 function DragonCore.HasBoost(techOrCivic)
     for boost in GameInfo.Boosts() do
-        if techOrCivic == boost.TechnologyType or techOrCivic == boost.CivicType then
+        if techOrCivic == boost.TechnologyType
+            or techOrCivic == boost.CivicType then
             return true
         end
     end
     return false
 end
 
---get the player game progress (GamePlay, UI)
+-- 检查单位是否拥有战斗力 (GamePlay, UI)
+---- unit              单位对象
+function DragonCore.HasStrength(unit)
+    return unit and (unit:GetCombat() > 0 or unit:GetRangedCombat() > 0 or unit:GetBombardCombat() > 0)
+end
+
+--||====================Get Functions=====================||--
+
+-- 获得玩家游戏进度。返回为百分比，需除以100 (GamePlay, UI)
+---- playerID          玩家ID
 function DragonCore:GetPlayerProgress(playerID)
     local pPlayer = Players[playerID]
     if pPlayer == nil then return 0 end
@@ -84,10 +96,12 @@ function DragonCore:GetPlayerProgress(playerID)
     end
     local civicProgress = civicNum ~= 0 and civicedNum / civicNum or 0
     local techProgress = techNum ~= 0 and techedNum / techNum or 0
-    return self.Round(100 * math.max(techProgress, civicProgress))
+    return DragonMath.Round(100 * math.max(techProgress, civicProgress))
 end
 
---Manhattan algorithm (GamePlay, UI)
+-- 获取两个对象之间的距离 (GamePlay, UI)
+---- object_1          对象1
+---- object_2          对象2
 function DragonCore.GetDistance(object_1, object_2)
     local result = 0
     if object_1 and object_2 then
@@ -98,9 +112,39 @@ function DragonCore.GetDistance(object_1, object_2)
     end; return result
 end
 
---||=====================GamePlay=======================||--
+-- 获取玩家宗教，已创建宗教则返回创建的宗教，没有则返回玩家的主流宗教，否则返回-1 (GamePlay, UI)
+---- playerID          玩家ID
+function DragonCore.GetPlayerReligion(playerID)
+    local pPlayer = Players[playerID]
+    if pPlayer == nil then return -1 end
+    local pPlayerReligion = Players[playerID]:GetReligion()
+    if pPlayerReligion == nil then return -1 end
+    if pPlayerReligion:GetReligionTypeCreated() ~= -1 then
+        return pPlayerReligion:GetReligionTypeCreated()
+    else
+        return pPlayerReligion:GetReligionInMajorityOfCities()
+    end
+end
 
---Random get Technology Boost (GamePlay)
+-- 获取玩家的区域数量 (GamePlay, UI)
+---- playerID          玩家ID
+---- index             区域索引
+function DragonCore.GetPlayerDistrictCount(playerID, index)
+    local pPlayer, count = Players[playerID], 0
+    if not pPlayer then return count end
+    local districts = pPlayer:GetDistricts()
+    for _, district in districts:Members() do
+        if district:GetType() == index and district:IsComplete() and (not district:IsPillaged()) then
+            count = count + 1
+        end
+    end
+    return count
+end
+
+-- 玩家获得随机数量的尤里卡 (GamePlay)
+---- playerID          玩家ID
+---- iSource           尤里卡来源
+---- num               数量
 function DragonCore:GetRandomTechBoosts(playerID, iSource, num)
     local pPlayer = Players[playerID]
     local EraIndex = 1
@@ -125,7 +169,7 @@ function DragonCore:GetRandomTechBoosts(playerID, iSource, num)
                 end
             end
             if #techlist > 0 then
-                local iTech = techlist[self.tableRandom(#techlist)]
+                local iTech = techlist[DragonMath.GetRandNum(#techlist)]
                 playerTech:TriggerBoost(iTech, iSource)
                 limit = limit - 1
             else
@@ -137,7 +181,10 @@ function DragonCore:GetRandomTechBoosts(playerID, iSource, num)
     end
 end
 
---Random get Civic Boost (GamePlay)
+--玩家获得随机数量的鼓舞 (GamePlay)
+---- playerID          玩家ID
+---- iSource           尤里卡来源
+---- num               数量
 function DragonCore:GetRandomCivicBoosts(playerID, iSource, num)
     local pPlayer = Players[playerID]
     local EraIndex = 1
@@ -162,7 +209,7 @@ function DragonCore:GetRandomCivicBoosts(playerID, iSource, num)
                 end
             end
             if #civiclist > 0 then
-                local iCivic = civiclist[self.tableRandom(#civiclist)]
+                local iCivic = civiclist[DragonMath.GetRandNum(#civiclist)]
                 playerCulture:TriggerBoost(iCivic, iSource)
                 limit = limit - 1
             else
@@ -174,121 +221,252 @@ function DragonCore:GetRandomCivicBoosts(playerID, iSource, num)
     end
 end
 
---||=========================UI=========================||--
-
---get the city production detail (UI)
+--获取城市生产详细信息 (UI)
+---- city              城市对象
 function DragonCore.GetProductionDetail(city)
-    local details = { --the production detail
-        --city production
+    local details = { --城市生产详细信息
+        --项目哈希值
+        Hash       = 0,
+        --城市是否进行生产
         Producting = false,
+        --是否是建筑
         IsBuilding = false,
+        --是否是奇观
         IsWonder   = false,
+        --是否是区域
         IsDistrict = false,
+        --是否是单位
         IsUnit     = false,
+        --是否是项目
         IsProject  = false,
-        --production detail
+        --生产项目类型
         ItemType   = 'NONE',
+        --生产项目名字
         ItemName   = 'NONE',
+        --生产项目索引
         ItemIndex  = -1,
-        --about the progress detail
+        --生产进度
         Progress   = 0,
+        --生产成本
         TotalCost  = 0,
+        --生产所需回合
+        TurnsLeft  = 0
     }; if not city then return details end
-    --the city has the production?
+    --获取城市生产队列，判断是否在生产
     local cityBuildQueue = city:GetBuildQueue()
     local productionHash = cityBuildQueue:GetCurrentProductionTypeHash()
     if productionHash ~= 0 then
+        details.Hash       = productionHash
         details.Producting = true
-        --building district unit project
+        --建筑、区域、单位、项目
         local pBuildingDef = GameInfo.Buildings[productionHash]
         local pDistrictDef = GameInfo.Districts[productionHash]
         local pUnitDef     = GameInfo.Units[productionHash]
         local pProjectDef  = GameInfo.Projects[productionHash]
-        --judge the currently building
+        --判断城市当前进行的生产
         if pBuildingDef ~= nil then
-            --get the index to get production detail
+            --获取索引，方便后续获取进度和总成本
             local index = pBuildingDef.Index
-            --set the production detail
+            --城市正在生产建筑
             details.IsBuilding = true
+            --城市生产的建筑是奇观还是普通建筑
             details.IsWonder = pBuildingDef.IsWonder
+            --城市生产的建筑类型
             details.ItemType = pBuildingDef.BuildingType
+            --城市生产的建筑名称
             details.ItemName = Locale.Lookup(pBuildingDef.Name)
+            --城市生产的建筑索引
             details.ItemIndex = index
+            --生产进度和总成本
             details.Progress = cityBuildQueue:GetBuildingProgress(index)
             details.TotalCost = cityBuildQueue:GetBuildingCost(index)
         elseif pDistrictDef ~= nil then
-            --get the index to get production detail
+            --获取索引，方便后续获取进度和总成本
             local index = pDistrictDef.Index
-            --set the production detail
+            --城市正在生产区域
             details.IsDistrict = true
+            --城市生产的区域类型
             details.ItemType = pDistrictDef.DistrictType
+            --城市生产的区域名称
             details.ItemName = Locale.Lookup(pDistrictDef.Name)
+            --城市生产的区域索引
             details.ItemIndex = index
+            --生产进度和总成本
             details.Progress = cityBuildQueue:GetDistrictProgress(index)
             details.TotalCost = cityBuildQueue:GetDistrictCost(index)
         elseif pUnitDef ~= nil then
-            --get the index to get production detail
+            --获取索引，方便后续获取进度和总成本
             local index = pUnitDef.Index
-            --set the production detail
+            --城市正在生产单位
             details.IsUnit = true
+            --城市生产的单位类型
             details.ItemType = pUnitDef.UnitType
+            --城市生产的单位名称
             details.ItemName = Locale.Lookup(pUnitDef.Name)
+            --城市生产的单位索引
             details.ItemIndex = index
+            --生产进度
             details.Progress = cityBuildQueue:GetUnitProgress(index)
-            --get the miliitary formation type
+            --获取当前单位的军事形式，计算总成本
             local formation = cityBuildQueue:GetCurrentProductionTypeModifier()
+            --是标准
             if formation == MilitaryFormationTypes.STANDARD_FORMATION then
                 details.TotalCost = cityBuildQueue:GetUnitCost(index)
+                --是军团
             elseif formation == MilitaryFormationTypes.CORPS_FORMATION then
                 details.TotalCost = cityBuildQueue:GetUnitCorpsCost(index)
+                --更新单位名称
                 if pUnitDef.Domain == 'DOMAIN_SEA' then
-                    -- Concatenanting two fragments is not loc friendly.  This needs to change.
                     details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_FLEET_SUFFIX")
                 else
                     details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_CORPS_SUFFIX")
                 end
+                --是军队
             elseif formation == MilitaryFormationTypes.ARMY_FORMATION then
                 details.TotalCost = cityBuildQueue:GetUnitArmyCost(index)
+                --更新单位名称
                 if pUnitDef.Domain == 'DOMAIN_SEA' then
-                    -- Concatenanting two fragments is not loc friendly.  This needs to change.
                     details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_ARMADA_SUFFIX")
                 else
                     details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_ARMY_SUFFIX")
                 end
             end
         elseif pProjectDef ~= nil then
-            --get the index to get production detail
+            --获取索引，方便后续获取进度和总成本
             local index = pProjectDef.Index
-            --set the production detail
+            --城市正在生产项目
             details.IsProject = true
+            --城市生产的项目类型
             details.ItemType = pProjectDef.ProjectType
+            --城市生产的项目名称
             details.ItemName = Locale.Lookup(pProjectDef.Name)
+            --城市生产的项目索引
             details.ItemIndex = index
+            --生产进度和总成本
             details.Progress = cityBuildQueue:GetProjectProgress(index)
             details.TotalCost = cityBuildQueue:GetProjectCost(index)
         end
+        --生产所需回合
+        details.TurnsLeft = cityBuildQueue:GetTurnsLeft()
     end
     return details
 end
 
---mouse enter the button
+--获取玩家拥有的资源数量，计算了玩家宗主的城邦所提供的资源 (GamePlay)
+---- player            玩家对象
+---- resourceType      资源类型
+function DragonCore.GetPlayerResource(player, resourceType)
+    local playerID = player:GetID()
+    local resourceData = player:GetResources()
+    if resourceData == nil then return 0 end
+    local num = resourceData:GetResourceAmount(resourceType)
+    for _, minor in ipairs(PlayerManager.GetAliveMinors()) do
+        local influence = minor:GetInfluence()
+        if influence ~= nil and influence:GetSuzerain() == playerID then
+            num = num + minor:GetResources():GetResourceAmount(resourceType)
+        end
+    end; return num
+end
+
+--||======================Utilities=======================||--
+
+--比较单位，如果单位2强度高于单位1则返回true (GamePlay, UI)
+---- unit1             单位1Def
+---- unit2             单位2Def
+function DragonCore.CompareUnitDef(unit1Def, unit2Def)
+    if unit1Def == nil then return true end
+    if unit2Def == nil then return false end
+
+    if unit1Def.Combat ~= unit2Def.Combat then
+        return unit1Def.Combat < unit2Def.Combat
+    end
+
+    if unit1Def.RangedCombat ~= unit2Def.RangedCombat then
+        return unit1Def.RangedCombat < unit2Def.RangedCombat
+    end
+
+    if unit1Def.Bombard ~= unit2Def.Bombard then
+        return unit1Def.Bombard < unit2Def.Bombard
+    end
+
+    if unit1Def.Range ~= unit2Def.Range then
+        return unit1Def.Range < unit2Def.Range
+    end
+
+    return unit1Def.BaseMoves < unit2Def.BaseMoves
+end
+
+--判断单元格是否可以放置指定单位 (GamePlay, UI)
+---- plot              单元格
+---- unitdef           单位Def
+function DragonCore.CanHaveUnit(plot, unitdef)
+    if plot == nil then return false end
+    local canHave = true
+    for _, unit in ipairs(Units.GetUnitsInPlot(plot)) do
+        if unit then
+            local unitInfo = GameInfo.Units[unit:GetType()]
+            if unitInfo then
+                if unitInfo.IgnoreMoves == false then
+                    if unitInfo.Domain == unitdef.Domain and unitInfo.FormationClass == unitdef.FormationClass then
+                        canHave = false
+                    end
+                end
+            end
+        end
+    end
+    return canHave
+end
+
+--规范每回合价值显示 (GamePlay, UI)
+---- value             价值
+function DragonCore.FormatValue(value)
+    if value == 0 then
+        return Locale.ToNumber(value)
+    else
+        return Locale.Lookup("{1: number +#,###.#;-#,###.#}", value)
+    end
+end
+
+--对单位造成伤害，超出生命值则死亡 (GamePlay)
+---- unit              单位对象
+---- damage            伤害值
+function DragonCore.DamageUnit(unit, damage)
+    local maxDamage = unit:GetMaxDamage()
+    if (unit:GetDamage() + damage) >= maxDamage then
+        unit:SetDamage(maxDamage)
+        UnitManager.Kill(unit, false)
+        return true
+    else
+        unit:ChangeDamage(damage)
+        return false
+    end
+end
+
+--传播宗教，以x,y为中心，向range范围内的城市施加pressure点宗教压力 (GamePlay)
+---- playerID          玩家ID
+---- x                 坐标x
+---- y                 坐标y
+---- range             范围
+---- pressure          压力大小
+function DragonCore:SpreadReligion(playerID, x, y, range, pressure)
+    local religion = self.GetPlayerReligion(playerID)
+    if religion == -1 then return end
+    for _, player in ipairs(Game.GetPlayers()) do
+        local cities = player:GetCities()
+        for _, city in cities:Members() do
+            if city ~= nil and Map.GetPlotDistance(
+                    x, y, city:GetX(), city:GetY()
+                ) <= range then
+                city:GetReligion():AddReligiousPressure(8, religion, pressure, playerID)
+            end
+        end
+    end
+end
+
+--mouse enter the button (UI)
 function DragonEmperyEnter()
     UI.PlaySound("Main_Menu_Mouse_Over")
 end
 
---||========================Test========================||--
-
---test function
-function DragonEmperyPrintTable(t, indent)
-    indent = indent or 0
-
-    for k, v in pairs(t) do
-        if type(v) == "table" then
-            print(string.rep(" ", indent) .. k .. ": {")
-            DragonEmperyPrintTable(v, indent + 4)
-            print(string.rep(" ", indent) .. "}")
-        else
-            print(string.rep(" ", indent) .. k .. ": " .. tostring(v))
-        end
-    end
-end
+--||=======================include========================||--
+include('DragonCore_', true)

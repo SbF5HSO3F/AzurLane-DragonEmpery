@@ -169,7 +169,7 @@ function DragonEmperyAcademyGrantGreatPersonPoints(playerID, param)
     --get the city
     local pCity = CityManager.GetCity(playerID, param.cityID)
     --get the great person points
-    local points = DragonCore:ModifyBySpeed(greatPersonPoints * pCity:GetPopulation())
+    local points = DragonMath:ModifyBySpeed(greatPersonPoints * pCity:GetPopulation())
     --change the great person points
     local pPlayer = Players[playerID]
     pPlayer:GetGreatPeoplePoints():ChangePointsTotal(param.classID, points)

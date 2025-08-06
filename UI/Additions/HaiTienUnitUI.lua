@@ -31,8 +31,8 @@ function HaiTienGetDetail(greatPersonIndividualID)
     --get the era ChronologyIndex
     local index = defEra.ChronologyIndex
     --set the value
-    detail.Culture = DragonCore:ModifyBySpeed(cultureAmount + cultureExtra * (index - 1))
-    detail.Production = DragonCore:ModifyBySpeed(productionAmount + productionExtra * (index - 1))
+    detail.Culture = DragonMath:ModifyBySpeed(cultureAmount + cultureExtra * (index - 1))
+    detail.Production = DragonMath:ModifyBySpeed(productionAmount + productionExtra * (index - 1))
     --get the era name
     detail.EraName = Locale.Lookup(defEra.Name)
 

@@ -34,7 +34,7 @@ AnShanCityPanel = {
         }
         --the production can afford
         local progress = DragonCore:GetPlayerProgress(pCity:GetOwner())
-        local base = DragonCore:ModifyBySpeed((1 + (multFactor - 1) * (progress / 100)) * baseResProduction)
+        local base = DragonMath:ModifyBySpeed((1 + (multFactor - 1) * (progress / 100)) * baseResProduction)
         detail.ResProduction = base
         --the city is not nil?
         if pCity then

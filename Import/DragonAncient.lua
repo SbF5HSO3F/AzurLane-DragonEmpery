@@ -423,7 +423,7 @@ function DragonAncient:GetExtraScience()
             sciences = sciences + techs:GetResearchCost(row.Index)
         end
     end
-    return DragonMath:ModifyBySpeed(sciences, self:GetPrecent(), true)
+    return DragonMath:ModifyByPercent(sciences, self:GetPrecent(), true)
 end
 
 --玩家每回合应获得的额外文化值
@@ -437,7 +437,7 @@ function DragonAncient:GetExtraCulture()
             cultures = cultures + civics:GetCultureCost(row.Index)
         end
     end
-    return DragonMath:ModifyBySpeed(cultures, self:GetPrecent(), true)
+    return DragonMath:ModifyByPercent(cultures, self:GetPrecent(), true)
 end
 
 --获取时代计数

@@ -62,7 +62,7 @@ WHERE Item IN (
 INSERT INTO AiFavoredItems
 	(ListType,				Item,									Favored)
 VALUES
-	('PeaceHornProjects',	'PROJECT_LAUNCH_MARS_BASE',				'true'),
-	('PeaceHornProjects',	'PROJECT_LAUNCH_EXOPLANET_EXPEDITION',	'true'),
-	('PeaceHornProjects',	'PROJECT_ORBITAL_LASER',				'true'),
-	('PeaceHornProjects',	'PROJECT_TERRESTRIAL_LASER',			'true');
+	('PeaceHornProjects',	'PROJECT_LAUNCH_MARS_BASE',				1),
+	('PeaceHornProjects',	'PROJECT_LAUNCH_EXOPLANET_EXPEDITION',	1),
+	('PeaceHornProjects',	'PROJECT_ORBITAL_LASER',				1),
+	('PeaceHornProjects',	'PROJECT_TERRESTRIAL_LASER',			1);

@@ -79,6 +79,8 @@
 			<SecondaryColor>AN_SHAN_DD101_WHITE</SecondaryColor>
 			<Alt1PrimaryColor>AN_SHAN_DD101_WHITE</Alt1PrimaryColor>
 			<Alt1SecondaryColor>AN_SHAN_DD101_DARK_BULE</Alt1SecondaryColor>
+			<Alt2PrimaryColor>AN_SHAN_DD101_DARK_BULE</Alt2PrimaryColor>
+			<Alt2SecondaryColor>AN_SHAN_DD101_WHITE</Alt2SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>

@@ -82,8 +82,12 @@
         <UpdateColors id="Colors" criteria="Expansion1or2">
           <File>DragonEmpery_Colors.xml</File>
         </UpdateColors>
+        <ImportFiles id="Modules">
+          <File>Import/Modules/DragonDebug.lua</File>
+          <File>Import/Modules/DragonMath.lua</File>
+          <File>Import/Modules/DragonCore.lua</File>
+        </ImportFiles>
         <ImportFiles id="Import">
-          <File>Import/DragonCore.lua</File>
           <File>Import/DragonAncient.lua</File>
         </ImportFiles>
         <AddUserInterfaces id="UI" criteria="Expansion1or2">
@@ -253,6 +257,7 @@
     <Folder Include="Data\ChenHai" />
     <Folder Include="Data\AnShan" />
     <Folder Include="Import" />
+    <Folder Include="Import\Modules" />
     <Folder Include="ModSupport" />
     <Folder Include="ModSupport\AzurLaneDLLCore" />
     <Folder Include="ModSupport\AzurLaneDLLCore\Import" />
@@ -340,7 +345,13 @@
     <Content Include="Import\DragonAncient.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Import\DragonCore.lua">
+    <Content Include="Import\Modules\DragonCore.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\DragonDebug.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\DragonMath.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModSupport\AzurLaneDLLCore\Import\DragonScripts_AzurDLL.lua">

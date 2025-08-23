@@ -144,9 +144,9 @@
           <File priority="90">Text/zh_Hans_CN/DragonEmpery_HaiTien_TextCN.xml</File>
           <File priority="80">Text/zh_Hant_HK/DragonEmpery_HaiTien_TextHK.xml</File>
         </UpdateText>
-        <DoNothing id="ChenHai" criteria="Expansion1or2">
+        <UpdateDatabase id="ChenHai" criteria="Expansion1or2">
           <File>Data/ChenHai/DragonEmpery_ChenHai_Leader.xml</File>
-        </DoNothing>
+        </UpdateDatabase>
         <DoNothing id="ChenHai_XP2" />
         <UpdateText id="ChenHai_Text">
           <File>Text/zh_Hans_CN/DragonEmpery_ChenHai_TextCN.xml</File>

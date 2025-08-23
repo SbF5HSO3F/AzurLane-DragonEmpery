@@ -350,8 +350,12 @@ function Initialize()
     Events.LoadGameViewStateDone.Add(DragonEmperyAttachPanel)
     Events.ResearchCompleted.Add(ResetPanelTech)
     Events.CivicCompleted.Add(ResetPanelCivic)
+
     Events.LocalPlayerChanged.Add(ResetPanelAll)
     Events.GamePropertyChanged.Add(ResetPanelAll)
+
+    Events.DiplomacyMeet.Add(ResetPanelTech)
+    Events.DiplomacyMeet.Add(ResetPanelCivic)
 
     --Events.GameEraChanged.Add(DragonEmperyOnGameEraChanged)
     Events.UnitGreatPersonActivated.Add(AcademyOnGreatPersonActived)

@@ -42,7 +42,7 @@ function HaiTienOnResearchCompleted(iPlayer, iTech)
         --get the player tech
         local playerTechs = pPlayer:GetTechs()
         --get the point
-        local point = DragonCore.Round(playerTechs:GetResearchCost(iTech) * percent_1)
+        local point = DragonMath.Round(playerTechs:GetResearchCost(iTech) * percent_1)
         --grant the point
         pPlayer:GetGreatPeoplePoints():ChangePointsTotal(greatWriterID, point)
     end

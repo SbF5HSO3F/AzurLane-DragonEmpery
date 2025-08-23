@@ -376,7 +376,7 @@
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_QUZHOU" Language="en_US">
 			<Text>Quzhou</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_FENGYANG" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_FENYANG" Language="en_US">
 			<Text>Fenyang</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_JILIN" Language="en_US">

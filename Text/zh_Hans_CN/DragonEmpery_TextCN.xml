@@ -376,7 +376,7 @@
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_QUZHOU" Language="zh_Hans_CN">
 			<Text>衢州</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_FENGYANG" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_FENYANG" Language="zh_Hans_CN">
 			<Text>汾阳</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_DRAGON_EMPERY_JILIN" Language="zh_Hans_CN">

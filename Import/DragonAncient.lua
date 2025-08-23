@@ -9,7 +9,7 @@ include('DragonCore')
 
 DeafultPercent = 2
 
---||====================loacl variables===================||--55
+--||====================loacl variables===================||--
 
 
 --||======================MetaTable=======================||--
@@ -379,6 +379,52 @@ DragonAncient = {
                 return ratio ~= 0 and Locale.Lookup(self.Tooltip, ratio) or ''
             end
         }
+    },
+    ExtraScience = {
+        UnfetteredFreedom = {
+            Tooltip = {
+                'LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_UNFETTERED_FREEDOM',
+                'LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_MET_LEADER'
+            },
+            GetYield = function(self, player)
+                -- 是否是镇海
+                if DragonCore.CheckLeaderMatched(
+                        player:GetID(), 'LEADER_CHEN_HAI'
+                    ) then
+                    -- 获取玩家外交
+                    local diplomacy = player:GetDiplomacy()
+                    -- 获取在场玩家
+                    local players = Game.GetPlayers(true, true)
+                    -- 计算科技值
+                    local total = 0
+                    for _, p in pairs(players) do
+                        -- 如果相遇
+                        if diplomacy:HasMet(p:GetID()) then
+                            total = total + p:GetTechs():GetScienceYield()
+                        end
+                    end
+                    return DragonMath.Floor(total)
+                end
+            end,
+            GetTooltip = function(self, player)
+                local tooltip, yield = '', self:GetYield(player)
+                if yield ~= 0 then
+                    tooltip = Locale.Lookup(self.Tooltip[1], yield)
+                    -- 获取玩家外交
+                    local diplomacy = player:GetDiplomacy()
+                    -- 获取在场玩家
+                    local players = Game.GetPlayers(true, true)
+                    for _, p in pairs(players) do
+                        -- 如果相遇
+                        if diplomacy:HasMet(p:GetID()) then
+                            local science = p:GetTechs():GetScienceYield()
+                            tooltip = tooltip .. Locale.Lookup(self.Tooltip[2], science, p:GetName())
+                        end
+                    end
+                end
+                return tooltip
+            end
+        }
     }
 }
 
@@ -395,9 +441,9 @@ end
 
 --玩家每回合应获得科技值文化值的百分比
 function DragonAncient:GetPrecent()
-    local total = 0
+    local total, player = 0, self.Player
     for _, percent in pairs(self.Anceint) do
-        total = total + percent:GetPrecent()
+        total = total + percent:GetPrecent(player)
     end
     return total
 end
@@ -423,7 +469,12 @@ function DragonAncient:GetExtraScience()
             sciences = sciences + techs:GetResearchCost(row.Index)
         end
     end
-    return DragonMath:ModifyByPercent(sciences, self:GetPrecent(), true)
+    sciences = DragonMath:ModifyByPercent(sciences, self:GetPrecent(), true)
+    -- 额外的科技值
+    for _, s in pairs(self.ExtraScience) do
+        sciences = sciences + s:GetYield(player)
+    end
+    return sciences
 end
 
 --玩家每回合应获得的额外文化值

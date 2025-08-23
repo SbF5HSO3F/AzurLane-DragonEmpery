@@ -86,6 +86,7 @@
           <File>Import/Modules/DragonDebug.lua</File>
           <File>Import/Modules/DragonMath.lua</File>
           <File>Import/Modules/DragonCore.lua</File>
+          <File>Import/Modules/DragonConditions.lua</File>
         </ImportFiles>
         <ImportFiles id="Import">
           <File>Import/DragonAncient.lua</File>
@@ -343,6 +344,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Import\DragonAncient.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\DragonConditions.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Import\Modules\DragonCore.lua">

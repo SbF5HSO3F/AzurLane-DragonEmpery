@@ -141,6 +141,10 @@
 			<m_EntryID text="City_AnSteel_Production"/>
 			<m_ObjectName text="City_AnSteel_Production"/>
 		</Element>
+		<Element>
+			<m_EntryID text="DragonTabs"/>
+			<m_ObjectName text="DragonTabs"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

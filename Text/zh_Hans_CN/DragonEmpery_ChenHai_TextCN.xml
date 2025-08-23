@@ -46,10 +46,10 @@
 		</Replace>
 		<!--Lua文本-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_UNFETTERED_FREEDOM" Language="zh_Hans_CN">
-			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自纵横方圆</Text>
+			<Text>{1_point : number +#.#;-#.#} 来自纵横方圆</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_MET_LEADER" Language="zh_Hans_CN">
-			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} 来自{2_leader}</Text>
+			<Text>{1_point : number +#.#;-#.#} 来自{2_leader}</Text>
 		</Replace>
 
 		<Replace Tag="LOC_CHENHAI_GIVETOKEN_NAME" Language="zh_Hans_CN">

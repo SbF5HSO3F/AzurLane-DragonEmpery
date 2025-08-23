@@ -29,6 +29,19 @@
     	<Replace Tag="LOC_CIVINFO_ROLE_DRAGON_EMPERY" Language="zh_Hans_CN">
       		<Text>20位</Text>
     	</Replace>
+		<!--核心代码：条件-->
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ALL" Language="zh_Hans_CN">
+			<Text>以下条件全部满足：</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ANY" Language="zh_Hans_CN">
+			<Text>满足以下条件之一：</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ALL_NOT" Language="zh_Hans_CN">
+			<Text>以下条件全部不满足：</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ANY_NOT" Language="zh_Hans_CN">
+			<Text>不满足以下条件之一：</Text>
+		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_NAME" Language="zh_Hans_CN">
 			<Text>泱泱古国</Text>

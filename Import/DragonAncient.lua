@@ -4,6 +4,7 @@
 --------------------------------------------------------------
 --||=======================include========================||--
 include('DragonCore')
+include('DragonConditions')
 
 --||=======================Constants======================||--
 
@@ -427,6 +428,30 @@ DragonAncient = {
                     end
                 end
                 return tooltip
+            end,
+            GetSets = function(self, player)
+                local sets, yield = {}, self:GetYield(player)
+                -- 如果产出不等于0
+                if yield ~= 0 then
+                    sets.Title      = Locale.Lookup(self.Tooltip[1], yield)
+                    sets.Sets       = {}
+                    -- 获取玩家外交
+                    local diplomacy = player:GetDiplomacy()
+                    -- 获取在场玩家
+                    local players   = Game.GetPlayers { Alive = true, Major = true }
+                    for _, p in pairs(players) do
+                        -- 如果相遇
+                        if diplomacy:HasMet(p:GetID()) then
+                            local science = p:GetTechs():GetScienceYield()
+                            if science ~= 0 then
+                                local playerConfig = PlayerConfigurations[p:GetID()]
+                                local leaderName = Locale.Lookup(playerConfig:GetLeaderName())
+                                table.insert(sets.Sets, Locale.Lookup(self.Tooltip[2], science, leaderName))
+                            end
+                        end
+                    end
+                end
+                return sets
             end
         }
     }
@@ -497,15 +522,18 @@ end
 
 --玩家每回合应获得的额外科技值tooltip
 function DragonAncient:GetExtraScienceTooltip()
-    local tooltip, sciences = '', self:GetExtraScience()
+    local sets, sciences = {}, self:GetExtraScience()
     if sciences ~= 0 then
         local player = self.Player
-        tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP', sciences)
+        sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP', sciences)
+        sets.Sets = {}
         for _, s in pairs(self.ExtraScience) do
-            tooltip = tooltip .. s:GetTooltip(player)
+            --tooltip = tooltip .. s:GetTooltip(player)
+            table.insert(sets.Sets, s:GetSets(player))
         end
     end
-    return tooltip
+    return DragonConditions:CreateTooltip(sets)
+    -- return tooltip
 end
 
 --玩家每回合应获得的额外文化值

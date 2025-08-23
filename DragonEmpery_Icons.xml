@@ -27,6 +27,8 @@
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="64" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_64"/>
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="80" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_80"/>
 		<Row Name="ATLAS_DRAGON_EMPERY_LEADERS" IconSize="256" IconsPerRow="5" Filename="DRAGON_EMPERY_LEADERS_256"/>
+		<!--制表图标-->
+		<Row Name="ATLAS_DRAGON_TABS_BASELINE_2" Baseline="2" IconSize="15" IconsPerRow="4" Filename="DragonTabs"/>
 		<!--鞍山钢铁图标-->
 		<Row Name="ATLAS_ANSTEEL_PRODUCTION" IconSize="32" IconsPerRow="2"  Filename="City_AnSteel_Production"/>
 	</IconTextureAtlases>
@@ -39,6 +41,11 @@
 		<Row Name="ICON_LEADER_CHEN_HAI"							Atlas="ATLAS_DRAGON_EMPERY_LEADERS"					Index="1"/>
 		<!--鞍山-->
 		<Row Name="ICON_LEADER_AN_SHAN_DD101"						Atlas="ATLAS_DRAGON_EMPERY_LEADERS"					Index="2"/>
+		<!--制表图标-->
+		<Row Name="DragonTab0"										Atlas="ATLAS_DRAGON_TABS_BASELINE_2"				Index="0"/>
+		<Row Name="DragonTab1"										Atlas="ATLAS_DRAGON_TABS_BASELINE_2"				Index="1"/>
+		<Row Name="DragonTab2"										Atlas="ATLAS_DRAGON_TABS_BASELINE_2"				Index="2"/>
+		<Row Name="DragonTab3"										Atlas="ATLAS_DRAGON_TABS_BASELINE_2"				Index="3"/>
 		<!--园林-->
 		<Row Name="ICON_DISTRICT_DRAGON_EMPERY_GARDEN"				Atlas="ICON_ATLAS_DISTRICTS"						Index="2"/>
 		<Row Name="ICON_DISTRICT_DRAGON_EMPERY_GARDEN_FOW"			Atlas="ICON_ATLAS_DISTRICTS_FOW"					Index="2"/>

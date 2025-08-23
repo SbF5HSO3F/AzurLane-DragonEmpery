@@ -133,7 +133,10 @@
 		</Replace>
 		<!--来源-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_ANCIENT" Language="zh_Hans_CN">
-			<Text>{1_num : number +#.#;-#.#} 来自泱泱古国</Text>
+			<Text>{1_num : number +#.#;-#.#} 来自已解锁科技</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_FROM_ANCIENT" Language="zh_Hans_CN">
+			<Text>{1_num : number +#.#;-#.#} 来自已解锁市政</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO" Language="zh_Hans_CN">
 			<Text>转化比例：{1_ratio : number #.#;-#.#}%</Text>

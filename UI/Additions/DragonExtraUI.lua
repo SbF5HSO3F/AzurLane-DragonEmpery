@@ -69,7 +69,7 @@ function ResetPanelTech()
         Controls.AncientScienceText:SetText(string)
         --Tool tip
         local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') ..
-            '[NEWLINE][NEWLINE]' .. playerObj:GetExtraScienceTooltip() ..
+            '[NEWLINE]' .. playerObj:GetExtraScienceTooltip() ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
         Controls.AncientScienceButton:SetToolTipString(tooltip)
     end
@@ -82,15 +82,12 @@ function ResetPanelCivic()
     if DragonResetGridHide(playerID) then
         local playerObj = DragonAncient:new(playerID)
         --Yield num
-        local cost = playerObj:GetExtraCulture()
-        local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_CULTURE', cost)
+        local total = playerObj:GetExtraCulture()
+        local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_CULTURE', total)
         Controls.AncientCultureText:SetText(string)
         --Tool tip
-        local pPlayer = Players[playerID]
-        local num = pPlayer:GetStats():GetNumCivicsCompleted()
-        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') .. '[NEWLINE][NEWLINE]' ..
-            Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP', num, cost) ..
-            '[NEWLINE][NEWLINE]' .. playerObj:GetRatioTooltip() ..
+        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') ..
+            '[NEWLINE]' .. playerObj:GetExtraCultureTooltip() ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
         Controls.AncientCultureButton:SetToolTipString(tooltip)
     end

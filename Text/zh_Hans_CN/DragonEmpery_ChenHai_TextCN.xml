@@ -45,10 +45,10 @@
 			<Text>完成科技或市政后，获得所需花费2倍的 [ICON_Gold] 金币并为随机一项科技或市政启动 [ICON_TECHBOOSTED] 尤里卡时刻或 [ICON_CIVICBOOSTED] 鼓舞时刻。向城邦派遣 [ICON_ENVOY] 使者时，将向该城邦10个单元格范围内的城邦派遣等量的 [ICON_ENVOY] 使者。开放所有城邦的边境，可消耗单位向城邦派遣 [ICON_ENVOY] 使者。</Text>
 		</Replace>
 		<!--Lua文本-->
-		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_UNFETTERED_FREEDOM" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_FROM_UNFETTERED_FREEDOM" Language="zh_Hans_CN">
 			<Text>{1_point : number +#.#;-#.#} 来自纵横方圆</Text>
 		</Replace>
-		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_MET_LEADER" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_FROM_MET_LEADER" Language="zh_Hans_CN">
 			<Text>{1_point : number +#.#;-#.#} 来自{2_leader}</Text>
 		</Replace>
 

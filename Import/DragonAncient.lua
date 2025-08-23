@@ -442,8 +442,8 @@ DragonAncient = {
         },
         UnfetteredFreedom = {
             Tooltip = {
-                'LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_UNFETTERED_FREEDOM',
-                'LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_MET_LEADER'
+                'LOC_ANCIENT_COUNTRY_EXTRA_FROM_UNFETTERED_FREEDOM',
+                'LOC_ANCIENT_COUNTRY_EXTRA_FROM_MET_LEADER'
             },
             GetYield = function(self, player)
                 -- 是否是镇海
@@ -489,6 +489,115 @@ DragonAncient = {
                 return sets
             end
         }
+    },
+    ExtraCulture = {
+        Anceint = {
+            -- 转化比例
+            Percent = {
+                Deafult = {
+                    Tooltip = 'LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT',
+                    GetPrecent = function(self, player)
+                        return DeafultPercent
+                    end,
+                    GetTooltip = function(self, player)
+                        local ratio = self:GetPrecent(player)
+                        return ratio ~= 0 and Locale.Lookup(self.Tooltip, ratio) or ''
+                    end
+                },
+            },
+            Tooltip = 'LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_FROM_ANCIENT',
+            -- 获取转化比例
+            GetPrecent = function(self, player)
+                local total = 0
+                for _, percent in pairs(self.Percent) do
+                    total = total + percent:GetPrecent(player)
+                end
+                return total
+            end,
+            -- 获取产出
+            GetYield = function(self, player)
+                if not player then return 0 end
+                local civics = player:GetCulture()
+                local cultures = 0
+                for row in GameInfo.Civics() do
+                    if civics:HasCivic(row.Index) then
+                        cultures = cultures + civics:GetCultureCost(row.Index)
+                    end
+                end
+                return DragonMath:ModifyByPercent(cultures, self:GetPrecent(), true)
+            end,
+            -- 获取转化比例子条件
+            GetRatioSets = function(self, player)
+                local sets, ratio = { Title = '', Sets = {} }, self:GetPrecent()
+                if ratio ~= 0 then
+                    sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_RATIO', ratio)
+                    for _, percent in pairs(self.Percent) do
+                        table.insert(sets.Sets, percent:GetTooltip(player))
+                    end
+                end
+                return sets
+            end,
+            -- 获取子条件
+            GetSets = function(self, player)
+                local sets, ratio = {}, self:GetPrecent(player)
+                if ratio ~= 0 then
+                    local yield = self:GetYield(player)
+                    sets.Title = Locale.Lookup(self.Tooltip, yield)
+                    sets.Sets = {}
+                    table.insert(sets.Sets, self:GetRatioSets(player))
+                end
+                return sets
+            end
+        },
+        UnfetteredFreedom = {
+            Tooltip = {
+                'LOC_ANCIENT_COUNTRY_EXTRA_FROM_UNFETTERED_FREEDOM',
+                'LOC_ANCIENT_COUNTRY_EXTRA_FROM_MET_LEADER'
+            },
+            GetYield = function(self, player)
+                -- 是否是镇海
+                if DragonCore.CheckLeaderMatched(
+                        player:GetID(), 'LEADER_CHEN_HAI'
+                    ) then
+                    -- 获取玩家外交
+                    local diplomacy = player:GetDiplomacy()
+                    -- 获取在场玩家
+                    local players = Game.GetPlayers { Alive = true, Major = true }
+                    -- 计算科技值
+                    local total = 0
+                    for _, p in pairs(players) do
+                        -- 如果相遇
+                        if diplomacy:HasMet(p:GetID()) then
+                            total = total + p:GetCulture():GetCultureYield()
+                        end
+                    end
+                    return DragonMath.Floor(total)
+                end
+            end,
+            GetSets = function(self, player)
+                local sets, yield = { Title = '', Sets = {} }, self:GetYield(player)
+                -- 如果产出不等于0
+                if yield ~= 0 then
+                    sets.Title = Locale.Lookup(self.Tooltip[1], yield)
+                    -- 获取玩家外交
+                    local diplomacy = player:GetDiplomacy()
+                    -- 获取在场玩家
+                    local players = Game.GetPlayers { Alive = true, Major = true }
+                    for _, p in pairs(players) do
+                        -- 如果相遇
+                        if diplomacy:HasMet(p:GetID()) then
+                            local science = p:GetCulture():GetCultureYield()
+                            if science ~= 0 then
+                                local playerConfig = PlayerConfigurations[p:GetID()]
+                                local leaderName = Locale.Lookup(playerConfig:GetLeaderName())
+                                table.insert(sets.Sets, Locale.Lookup(self.Tooltip[2], science, leaderName))
+                            end
+                        end
+                    end
+                end
+                return sets
+            end
+        }
     }
 }
 
@@ -502,25 +611,6 @@ function DragonAncient:new(playerID)
 end
 
 --||====================GamePlay, UI======================||--
-
---玩家每回合应获得科技值文化值的百分比
-function DragonAncient:GetPrecent()
-    local total, player = 0, self.Player
-    for _, percent in pairs(self.Anceint) do
-        total = total + percent:GetPrecent(player)
-    end
-    return total
-end
-
---玩家科技市政转化比例tooltip
-function DragonAncient:GetRatioTooltip()
-    local tooltip, ratio = '', self:GetPrecent()
-    tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_RATIO', ratio)
-    for _, percent in pairs(self.Anceint) do
-        tooltip = tooltip .. percent:GetTooltip()
-    end
-    return tooltip
-end
 
 --玩家每回合应获得的额外科技值
 function DragonAncient:GetExtraScience()
@@ -536,32 +626,44 @@ end
 
 --玩家每回合应获得的额外科技值tooltip
 function DragonAncient:GetExtraScienceTooltip()
-    local sets, sciences = { Title = '', Sets = {} }, self:GetExtraScience()
+    local sets = { Title = '', Sets = {} }
+    local sciences = self:GetExtraScience()
     if sciences ~= 0 then
         local player = self.Player
         sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP', sciences)
         sets.Sets = {}
         for _, s in pairs(self.ExtraScience) do
-            --tooltip = tooltip .. s:GetTooltip(player)
             table.insert(sets.Sets, s:GetSets(player))
         end
     end
     return DragonConditions:CreateTooltip(sets)
-    -- return tooltip
 end
 
 --玩家每回合应获得的额外文化值
 function DragonAncient:GetExtraCulture()
     local player = self.Player
     if not player then return 0 end
-    local civics = player:GetCulture()
     local cultures = 0
-    for row in GameInfo.Civics() do
-        if civics:HasCivic(row.Index) then
-            cultures = cultures + civics:GetCultureCost(row.Index)
+    -- 额外的文化值
+    for _, c in pairs(self.ExtraCulture) do
+        cultures = cultures + c:GetYield(player)
+    end
+    return cultures
+end
+
+--玩家每回合应获得的额外文化值tooltip
+function DragonAncient:GetExtraCultureTooltip()
+    local sets = { Title = '', Sets = {} }
+    local cultures = self:GetExtraCulture()
+    if cultures ~= 0 then
+        local player = self.Player
+        sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_CULTURE_EXTRA_TOOLTIP', cultures)
+        sets.Sets = {}
+        for _, c in pairs(self.ExtraCulture) do
+            table.insert(sets.Sets, c:GetSets(player))
         end
     end
-    return DragonMath:ModifyByPercent(cultures, self:GetPrecent(), true)
+    return DragonConditions:CreateTooltip(sets)
 end
 
 --获取时代计数

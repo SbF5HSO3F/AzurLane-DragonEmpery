@@ -148,6 +148,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('HaiTienUnitUI_', true)
+include('HaiTienUnitPanel_', true)
 
 Initialize()

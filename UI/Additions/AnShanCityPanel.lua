@@ -283,6 +283,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('AnShanCityUI_', true)
+include('AnShanCityPanel_', true)
 
 Initialize()

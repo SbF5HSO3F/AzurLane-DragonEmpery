@@ -193,6 +193,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('ChenHaiUnitUI_', true)
+include('ChenHaiUnitPanel_', true)
 
 Initialize()

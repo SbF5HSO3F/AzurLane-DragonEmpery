@@ -167,6 +167,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('AnShanUnitUI_', true)
+include('AnShanUnitPanel_', true)
 
 Initialize()

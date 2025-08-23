@@ -365,6 +365,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('DragonExtraUI_', true)
+include('DragonExtraPanel_', true)
 
 Initialize()

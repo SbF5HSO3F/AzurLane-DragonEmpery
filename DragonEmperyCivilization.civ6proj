@@ -95,10 +95,10 @@
           <Properties>
             <Context>InGame</Context>
           </Properties>
-          <File>UI/Additions/DragonExtraUI.xml</File>
-          <File>UI/Additions/HaiTienUnitUI.xml</File>
-          <File>UI/Additions/ChenHaiUnitUI.xml</File>
-          <File>UI/Additions/AnShanUnitUI.xml</File>
+          <File>UI/Additions/DragonExtraPanel.xml</File>
+          <File>UI/Additions/HaiTienUnitPanel.xml</File>
+          <File>UI/Additions/ChenHaiUnitPanel.xml</File>
+          <File>UI/Additions/AnShanUnitPanel.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Scripts" criteria="Expansion1or2">
           <File>Scripts/DragonScripts.lua</File>
@@ -427,34 +427,34 @@
     <Content Include="Text\zh_Hant_HK\DragonEmpery_TextHK.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShanCityUI.lua">
+    <Content Include="UI\Additions\AnShanCityPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShanCityUI.xml">
+    <Content Include="UI\Additions\AnShanCityPanel.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShanUnitUI.lua">
+    <Content Include="UI\Additions\AnShanUnitPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\AnShanUnitUI.xml">
+    <Content Include="UI\Additions\AnShanUnitPanel.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\ChenHaiUnitUI.lua">
+    <Content Include="UI\Additions\ChenHaiUnitPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\ChenHaiUnitUI.xml">
+    <Content Include="UI\Additions\ChenHaiUnitPanel.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\DragonExtraUI.lua">
+    <Content Include="UI\Additions\DragonExtraPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\DragonExtraUI.xml">
+    <Content Include="UI\Additions\DragonExtraPanel.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\HaiTienUnitUI.lua">
+    <Content Include="UI\Additions\HaiTienUnitPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\HaiTienUnitUI.xml">
+    <Content Include="UI\Additions\HaiTienUnitPanel.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

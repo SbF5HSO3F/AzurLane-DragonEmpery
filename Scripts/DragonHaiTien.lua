@@ -103,6 +103,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('DragonEmpery_HaiTien_', true)
+include('DragonHaiTien_', true)
 
 Initialize()

@@ -344,8 +344,11 @@ end
 function Initialize()
     -------------------Events-------------------
     Events.LoadGameViewStateDone.Add(DragonEmperyAttachPanel)
+
+    Events.ResearchYieldChanged.Add(ResetPanelTech)
     Events.ResearchCompleted.Add(ResetPanelTech)
     Events.CivicCompleted.Add(ResetPanelCivic)
+    Events.CultureYieldChanged.Add(ResetPanelCivic)
 
     Events.LocalPlayerChanged.Add(ResetPanelAll)
     Events.GamePropertyChanged.Add(ResetPanelAll)

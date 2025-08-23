@@ -19,7 +19,7 @@ function ChenHaiResearchCompleted(playerID, iTech)
         --get the player
         local pPlayer = Players[playerID]
         --get the boost
-        DragonCore:GetRandomTechBoosts(pPlayer, 2)
+        DragonCore:GetRandomTechBoosts(playerID, 2)
         --get the player tech
         local playerTechs = pPlayer:GetTechs()
         --get the gold
@@ -36,7 +36,7 @@ function ChenHaiCivicCompleted(playerID, iCivic)
         --get the player
         local pPlayer = Players[playerID]
         --get the boost
-        DragonCore:GetRandomCivicBoosts(pPlayer, 2)
+        DragonCore:GetRandomCivicBoosts(playerID, 2)
         --get the player tech
         local playerCulture = pPlayer:GetCulture()
         --get the gold
@@ -135,6 +135,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('DragonEmpery_ChenHai_', true)
+include('DragonChenHai_', true)
 
 Initialize()

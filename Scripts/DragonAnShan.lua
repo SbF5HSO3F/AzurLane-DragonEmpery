@@ -105,6 +105,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('DragonEmpery_AnShan_', true)
+include('DragonAnShan_', true)
 
 Initialize()

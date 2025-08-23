@@ -64,16 +64,11 @@ function ResetPanelTech()
     if DragonResetGridHide(playerID) then
         local playerObj = DragonAncient:new(playerID)
         --Yield num
-        local total = playerObj:GetTotalScience()
+        local total = playerObj:GetExtraScience()
         local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE', total)
         Controls.AncientScienceText:SetText(string)
         --Tool tip
-        local pPlayer = Players[playerID]
-        local num = pPlayer:GetStats():GetNumTechsResearched()
-        local ratio = playerObj:GetExtraScienceFromPercent()
-        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') .. '[NEWLINE][NEWLINE]' ..
-            Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP', num, ratio) ..
-            '[NEWLINE][NEWLINE]' .. playerObj:GetRatioTooltip() ..
+        local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') ..
             '[NEWLINE][NEWLINE]' .. playerObj:GetExtraScienceTooltip() ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
         Controls.AncientScienceButton:SetToolTipString(tooltip)

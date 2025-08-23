@@ -382,6 +382,64 @@ DragonAncient = {
         }
     },
     ExtraScience = {
+        Anceint = {
+            -- 转化比例
+            Percent = {
+                Deafult = {
+                    Tooltip = 'LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT',
+                    GetPrecent = function(self, player)
+                        return DeafultPercent
+                    end,
+                    GetTooltip = function(self, player)
+                        local ratio = self:GetPrecent(player)
+                        return ratio ~= 0 and Locale.Lookup(self.Tooltip, ratio) or ''
+                    end
+                },
+            },
+            Tooltip = 'LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_ANCIENT',
+            -- 获取转化比例
+            GetPrecent = function(self, player)
+                local total = 0
+                for _, percent in pairs(self.Percent) do
+                    total = total + percent:GetPrecent(player)
+                end
+                return total
+            end,
+            -- 获取产出
+            GetYield = function(self, player)
+                if not player then return 0 end
+                local techs = player:GetTechs()
+                local sciences = 0
+                for row in GameInfo.Technologies() do
+                    if techs:HasTech(row.Index) then
+                        sciences = sciences + techs:GetResearchCost(row.Index)
+                    end
+                end
+                return DragonMath:ModifyByPercent(sciences, self:GetPrecent(), true)
+            end,
+            -- 获取转化比例子条件
+            GetRatioSets = function(self, player)
+                local sets, ratio = { Title = '', Sets = {} }, self:GetPrecent()
+                if ratio ~= 0 then
+                    sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_RATIO', ratio)
+                    for _, percent in pairs(self.Percent) do
+                        table.insert(sets.Sets, percent:GetTooltip(player))
+                    end
+                end
+                return sets
+            end,
+            -- 获取子条件
+            GetSets = function(self, player)
+                local sets, ratio = {}, self:GetPrecent(player)
+                if ratio ~= 0 then
+                    local yield = self:GetYield(player)
+                    sets.Title = Locale.Lookup(self.Tooltip, yield)
+                    sets.Sets = {}
+                    table.insert(sets.Sets, self:GetRatioSets(player))
+                end
+                return sets
+            end
+        },
         UnfetteredFreedom = {
             Tooltip = {
                 'LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_UNFETTERED_FREEDOM',
@@ -407,38 +465,15 @@ DragonAncient = {
                     return DragonMath.Floor(total)
                 end
             end,
-            GetTooltip = function(self, player)
-                local tooltip, yield = '', self:GetYield(player)
+            GetSets = function(self, player)
+                local sets, yield = { Title = '', Sets = {} }, self:GetYield(player)
+                -- 如果产出不等于0
                 if yield ~= 0 then
-                    tooltip = Locale.Lookup(self.Tooltip[1], yield)
+                    sets.Title = Locale.Lookup(self.Tooltip[1], yield)
                     -- 获取玩家外交
                     local diplomacy = player:GetDiplomacy()
                     -- 获取在场玩家
                     local players = Game.GetPlayers { Alive = true, Major = true }
-                    for _, p in pairs(players) do
-                        -- 如果相遇
-                        if diplomacy:HasMet(p:GetID()) then
-                            local science = p:GetTechs():GetScienceYield()
-                            if science ~= 0 then
-                                local playerConfig = PlayerConfigurations[p:GetID()]
-                                local leaderName = Locale.Lookup(playerConfig:GetLeaderName())
-                                tooltip = tooltip .. Locale.Lookup(self.Tooltip[2], science, leaderName)
-                            end
-                        end
-                    end
-                end
-                return tooltip
-            end,
-            GetSets = function(self, player)
-                local sets, yield = {}, self:GetYield(player)
-                -- 如果产出不等于0
-                if yield ~= 0 then
-                    sets.Title      = Locale.Lookup(self.Tooltip[1], yield)
-                    sets.Sets       = {}
-                    -- 获取玩家外交
-                    local diplomacy = player:GetDiplomacy()
-                    -- 获取在场玩家
-                    local players   = Game.GetPlayers { Alive = true, Major = true }
                     for _, p in pairs(players) do
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
@@ -487,20 +522,6 @@ function DragonAncient:GetRatioTooltip()
     return tooltip
 end
 
---玩家每回合应获得的转化科技值
-function DragonAncient:GetExtraScienceFromPercent()
-    local player = self.Player
-    if not player then return 0 end
-    local techs = player:GetTechs()
-    local sciences = 0
-    for row in GameInfo.Technologies() do
-        if techs:HasTech(row.Index) then
-            sciences = sciences + techs:GetResearchCost(row.Index)
-        end
-    end
-    return DragonMath:ModifyByPercent(sciences, self:GetPrecent(), true)
-end
-
 --玩家每回合应获得的额外科技值
 function DragonAncient:GetExtraScience()
     local player = self.Player
@@ -513,16 +534,9 @@ function DragonAncient:GetExtraScience()
     return sciences
 end
 
---玩家每回合应获得总科技值
-function DragonAncient:GetTotalScience()
-    local player = self.Player
-    if not player then return 0 end
-    return self:GetExtraScienceFromPercent() + self:GetExtraScience()
-end
-
 --玩家每回合应获得的额外科技值tooltip
 function DragonAncient:GetExtraScienceTooltip()
-    local sets, sciences = {}, self:GetExtraScience()
+    local sets, sciences = { Title = '', Sets = {} }, self:GetExtraScience()
     if sciences ~= 0 then
         local player = self.Player
         sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP', sciences)

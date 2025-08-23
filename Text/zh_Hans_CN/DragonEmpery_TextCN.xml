@@ -119,17 +119,17 @@
 			<Text>额外文化值：{1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="zh_Hans_CN">
-			<Text>根据您已完成的{1_num}个科技，您下回合开始时将获得{2_num}点 [ICON_SCIENCE] 科技值。</Text>
+			<Text>下回合开始时将获得{1_num}点 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="zh_Hans_CN">
-			<Text>根据您已完成的{1_num}个市政，您下回合开始时将获得{2_num}点 [ICON_Culture] 文化值。</Text>
+			<Text>下回合开始时将获得{1_num}点 [ICON_Culture] 文化值。</Text>
 		</Replace>
 		<!--额外科技值-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP" Language="zh_Hans_CN">
-			<Text>下回合开始时将获得{1_num : number #.#;-#.#}点 [ICON_SCIENCE] 科技值</Text>
+			<Text>{1_num : number +#.#;-#.#}额外 [ICON_SCIENCE] 科技值</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_CULTURE_EXTRA_TOOLTIP" Language="zh_Hans_CN">
-			<Text>下回合开始时将获得{1_num : number +#.#;-#.#}点 [ICON_Culture] 文化值</Text>
+			<Text>{1_num : number +#.#;-#.#}额外 [ICON_Culture] 文化值</Text>
 		</Replace>
 		<!--来源-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_ANCIENT" Language="zh_Hans_CN">

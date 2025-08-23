@@ -369,18 +369,6 @@ DragonAncient = {
             }
         }
     },
-    Anceint = {
-        Deafult = {
-            Tooltip = 'LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT',
-            GetPrecent = function(self)
-                return DeafultPercent
-            end,
-            GetTooltip = function(self)
-                local ratio = self:GetPrecent()
-                return ratio ~= 0 and Locale.Lookup(self.Tooltip, ratio) or ''
-            end
-        }
-    },
     ExtraScience = {
         Anceint = {
             -- 转化比例
@@ -446,6 +434,8 @@ DragonAncient = {
                 'LOC_ANCIENT_COUNTRY_EXTRA_FROM_MET_LEADER'
             },
             GetYield = function(self, player)
+                -- 计算科技值
+                local total = 0
                 -- 是否是镇海
                 if DragonCore.CheckLeaderMatched(
                         player:GetID(), 'LEADER_CHEN_HAI'
@@ -454,16 +444,15 @@ DragonAncient = {
                     local diplomacy = player:GetDiplomacy()
                     -- 获取在场玩家
                     local players = Game.GetPlayers { Alive = true, Major = true }
-                    -- 计算科技值
-                    local total = 0
+
                     for _, p in pairs(players) do
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
                             total = total + p:GetTechs():GetScienceYield()
                         end
                     end
-                    return DragonMath.Floor(total)
                 end
+                return DragonMath.Floor(total)
             end,
             GetSets = function(self, player)
                 local sets, yield = { Title = '', Sets = {} }, self:GetYield(player)
@@ -485,8 +474,8 @@ DragonAncient = {
                             end
                         end
                     end
+                    return sets
                 end
-                return sets
             end
         }
     },
@@ -555,6 +544,8 @@ DragonAncient = {
                 'LOC_ANCIENT_COUNTRY_EXTRA_FROM_MET_LEADER'
             },
             GetYield = function(self, player)
+                -- 计算文化值
+                local total = 0
                 -- 是否是镇海
                 if DragonCore.CheckLeaderMatched(
                         player:GetID(), 'LEADER_CHEN_HAI'
@@ -563,16 +554,15 @@ DragonAncient = {
                     local diplomacy = player:GetDiplomacy()
                     -- 获取在场玩家
                     local players = Game.GetPlayers { Alive = true, Major = true }
-                    -- 计算科技值
-                    local total = 0
+
                     for _, p in pairs(players) do
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
                             total = total + p:GetCulture():GetCultureYield()
                         end
                     end
-                    return DragonMath.Floor(total)
                 end
+                return DragonMath.Floor(total)
             end,
             GetSets = function(self, player)
                 local sets, yield = { Title = '', Sets = {} }, self:GetYield(player)
@@ -594,8 +584,8 @@ DragonAncient = {
                             end
                         end
                     end
+                    return sets
                 end
-                return sets
             end
         }
     }
@@ -610,6 +600,46 @@ function DragonAncient:new(playerID)
     return object
 end
 
+function DragonAncient:AddExtraScience(key, getyield, getsets, object)
+    if type(self.ExtraScience[key]) == 'table' then
+        return DragonDebug:printe(key .. ' already exists')
+    end
+    if type(object) == 'table' then
+        self.ExtraScience[key] = object
+    end
+    if type(getyield) == 'function' and type(getsets) == 'function' then
+        self.ExtraScience[key].GetYield = getyield
+        self.ExtraScience[key].GetSets  = getsets
+    else
+        if type(getyield) ~= 'function' then
+            DragonDebug:printe(tostring(getyield) .. 'is not function')
+        end
+        if type(getsets) ~= 'function' then
+            DragonDebug:printe(tostring(getsets) .. 'is not function')
+        end
+    end
+end
+
+function DragonAncient:AddExtraCulture(key, getyield, getsets, object)
+    if type(self.ExtraCulture[key]) == 'table' then
+        return DragonDebug:printe(key .. ' already exists')
+    end
+    if type(object) == 'table' then
+        self.ExtraCulture[key] = object
+    end
+    if type(getyield) == 'function' and type(getsets) == 'function' then
+        self.ExtraCulture[key].GetYield = getyield
+        self.ExtraCulture[key].GetSets  = getsets
+    else
+        if type(getyield) ~= 'function' then
+            DragonDebug:printe(tostring(getyield) .. 'is not function')
+        end
+        if type(getsets) ~= 'function' then
+            DragonDebug:printe(tostring(getsets) .. 'is not function')
+        end
+    end
+end
+
 --||====================GamePlay, UI======================||--
 
 --玩家每回合应获得的额外科技值
@@ -618,8 +648,17 @@ function DragonAncient:GetExtraScience()
     if not player then return 0 end
     local sciences = 0
     -- 额外的科技值
-    for _, s in pairs(self.ExtraScience) do
-        sciences = sciences + s:GetYield(player)
+    for k, s in pairs(self.ExtraScience) do
+        local status, result = pcall(s.GetYield, s, player)
+        if status then
+            if type(result) == 'number' then
+                sciences = sciences + result
+            else
+                DragonDebug:printe(k .. ': ' .. tostring(result) .. 'is not number')
+            end
+        else
+            DragonDebug:printe(k .. ':\n' .. result)
+        end
     end
     return sciences
 end
@@ -628,12 +667,20 @@ end
 function DragonAncient:GetExtraScienceTooltip()
     local sets = { Title = '', Sets = {} }
     local sciences = self:GetExtraScience()
-    if sciences ~= 0 then
-        local player = self.Player
-        sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP', sciences)
-        sets.Sets = {}
-        for _, s in pairs(self.ExtraScience) do
-            table.insert(sets.Sets, s:GetSets(player))
+    local player = self.Player
+    sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP', sciences)
+    for k, s in pairs(self.ExtraScience) do
+        local status, result = pcall(s.GetSets, s, player)
+        if status then
+            if result ~= nil then
+                if type(result) == 'table' then
+                    table.insert(sets.Sets, result)
+                else
+                    DragonDebug:printe(k .. ': ' .. tostring(result) .. 'is not table')
+                end
+            end
+        else
+            DragonDebug:printe(k .. ':\n' .. result)
         end
     end
     return DragonConditions:CreateTooltip(sets)
@@ -645,8 +692,17 @@ function DragonAncient:GetExtraCulture()
     if not player then return 0 end
     local cultures = 0
     -- 额外的文化值
-    for _, c in pairs(self.ExtraCulture) do
-        cultures = cultures + c:GetYield(player)
+    for k, c in pairs(self.ExtraCulture) do
+        local status, result = pcall(c.GetYield, c, player)
+        if status then
+            if type(result) == 'number' then
+                cultures = cultures + result
+            else
+                DragonDebug:printe(k .. ': ' .. tostring(result) .. 'is not number')
+            end
+        else
+            DragonDebug:printe(k .. ':\n' .. result)
+        end
     end
     return cultures
 end
@@ -655,12 +711,20 @@ end
 function DragonAncient:GetExtraCultureTooltip()
     local sets = { Title = '', Sets = {} }
     local cultures = self:GetExtraCulture()
-    if cultures ~= 0 then
-        local player = self.Player
-        sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_CULTURE_EXTRA_TOOLTIP', cultures)
-        sets.Sets = {}
-        for _, c in pairs(self.ExtraCulture) do
-            table.insert(sets.Sets, c:GetSets(player))
+    local player = self.Player
+    sets.Title = Locale.Lookup('LOC_ANCIENT_COUNTRY_CULTURE_EXTRA_TOOLTIP', cultures)
+    for k, c in pairs(self.ExtraCulture) do
+        local status, result = pcall(c.GetSets, c, player)
+        if status then
+            if result ~= nil then
+                if type(result) == 'table' then
+                    table.insert(sets.Sets, result)
+                else
+                    DragonDebug:printe(k .. ': ' .. tostring(result) .. 'is not table')
+                end
+            end
+        else
+            DragonDebug:printe(k .. ':\n' .. result)
         end
     end
     return DragonConditions:CreateTooltip(sets)
@@ -686,8 +750,17 @@ end
 function DragonAncient:GetEnterTooltip(age)
     local tooltip, enter = '', self[age].Enter
     if not enter then return end
-    for _, effect in pairs(enter) do
-        tooltip = tooltip .. effect:GetTooltip()
+    for k, e in pairs(enter) do
+        local status, result = pcall(e.GetTooltip, e)
+        if status then
+            if type(result) == 'string' then
+                tooltip = tooltip .. result
+            else
+                DragonDebug:printe(k .. ': ' .. tostring(result) .. 'is not string')
+            end
+        else
+            DragonDebug:printe(k .. ':\n' .. result)
+        end
     end
     return tooltip
 end
@@ -705,8 +778,17 @@ function DragonAncient:GetOutTooltip(age)
     local tooltip, out = '', self[age].Out
     local count = self:GetOutAgeCount(age)
     if not out then return end
-    for _, effect in pairs(out) do
-        tooltip = tooltip .. effect:GetTooltip(count)
+    for k, e in pairs(out) do
+        local status, result = pcall(e.GetTooltip, e, count)
+        if status then
+            if type(result) == 'string' then
+                tooltip = tooltip .. result
+            else
+                DragonDebug:printe(k .. ': ' .. tostring(result) .. 'is not string')
+            end
+        else
+            DragonDebug:printe(k .. ':\n' .. result)
+        end
     end
     return tooltip
 end
@@ -758,8 +840,11 @@ function DragonAncient:AttachOutEffect(age)
     if not out then return end
     local player = self.Player
     if not player then return end
-    for _, effect in pairs(out) do
-        effect:AttachEffect(player)
+    for k, e in pairs(out) do
+        local status, result = pcall(e.AttachEffect, e, player)
+        if not status then
+            DragonDebug:printe(k .. ':\n' .. result)
+        end
     end
 end
 
@@ -770,8 +855,11 @@ function DragonAncient:AttachEnterEffect(age)
     local player = self.Player
     if not player then return end
     if not enter or not player then return end
-    for _, effect in pairs(enter) do
-        effect:AttachEffect(player)
+    for k, e in pairs(enter) do
+        local status, result = pcall(e.AttachEffect, e, player)
+        if not status then
+            DragonDebug:printe(k .. ':\n' .. result)
+        end
     end
 end
 

@@ -51,3 +51,7 @@ function DragonDebug:printd(t, tab, title)
         print((tab or '') .. (title and (title .. ': ') or '') .. tostring(t))
     end
 end
+
+function DragonDebug:printe(str)
+    print('Error:\n' .. str)
+end

@@ -42,7 +42,7 @@
 			<Text>纵横方圆</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_UNFETTERED_FREEDOM_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>完成科技或市政后，获得所需花费2倍的 [ICON_Gold] 金币并为随机一项科技或市政启动 [ICON_TECHBOOSTED] 尤里卡时刻或 [ICON_CIVICBOOSTED] 鼓舞时刻。向城邦派遣 [ICON_ENVOY] 使者时，将向该城邦10个单元格范围内的城邦派遣等量的 [ICON_ENVOY] 使者。开放所有城邦的边境，可消耗单位向城邦派遣 [ICON_ENVOY] 使者。</Text>
+			<Text>完成科技或市政后，所有城市获得所需花费15%的 [ICON_Production] 生产力并为随机一项科技或市政启动 [ICON_TECHBOOSTED] 尤里卡时刻或 [ICON_CIVICBOOSTED] 鼓舞时刻。每回合额外获得相遇主流文明每回合 [ICON_Science] 科技值和 [ICON_Culture] 文化值5%的 [ICON_Science] 科技值和 [ICON_Culture] 文化值。开放所有城邦的边境，可消耗单位向城邦派遣 [ICON_ENVOY] 使者。</Text>
 		</Replace>
 		<!--Lua文本-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_FROM_UNFETTERED_FREEDOM" Language="zh_Hans_CN">

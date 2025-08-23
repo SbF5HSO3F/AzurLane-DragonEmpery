@@ -9,8 +9,17 @@ include('DragonCore')
 
 local range_1 = 10
 local settlerIndex = GameInfo.Units['UNIT_SETTLER'].Index
+local percent = 15
 
 --||===================Events functions===================||--
+
+--all city add the progress
+function ChenHaiCityAddProgress(player, progress)
+    local cities = player:GetCities()
+    for _, city in cities:Members() do
+        city:GetBuildQueue():AddProgress(progress)
+    end
+end
 
 --On tech completed
 function ChenHaiResearchCompleted(playerID, iTech)
@@ -22,10 +31,12 @@ function ChenHaiResearchCompleted(playerID, iTech)
         DragonCore:GetRandomTechBoosts(playerID, 2)
         --get the player tech
         local playerTechs = pPlayer:GetTechs()
-        --get the gold
-        local gold = playerTechs:GetResearchCost(iTech) * 2
+        --get the progress
+        local progress = playerTechs:GetResearchCost(iTech)
+        progress = DragonMath:ModifyByPercent(progress, percent, true)
+        progress = DragonMath.Round(progress, true)
         --grant the gold
-        pPlayer:GetTreasury():ChangeGoldBalance(gold)
+        ChenHaiCityAddProgress(pPlayer, progress)
     end
 end
 
@@ -39,10 +50,12 @@ function ChenHaiCivicCompleted(playerID, iCivic)
         DragonCore:GetRandomCivicBoosts(playerID, 2)
         --get the player tech
         local playerCulture = pPlayer:GetCulture()
-        --get the gold
-        local gold = playerCulture:GetCultureCost(iCivic) * 2
+        --get the progress
+        local progress = playerCulture:GetCultureCost(iCivic)
+        progress = DragonMath:ModifyByPercent(progress, percent, true)
+        progress = DragonMath.Round(progress, true)
         --grant the gold
-        pPlayer:GetTreasury():ChangeGoldBalance(gold)
+        ChenHaiCityAddProgress(pPlayer, progress)
     end
 end
 
@@ -127,9 +140,9 @@ function Initialize()
     -----------------Events-----------------
     Events.ResearchCompleted.Add(ChenHaiResearchCompleted)
     Events.CivicCompleted.Add(ChenHaiCivicCompleted)
-    --Events.UnitKilledInCombat.Add(ChenHaiKillUnit)
+    -- Events.UnitKilledInCombat.Add(ChenHaiKillUnit)
     ---------------GameEvents---------------
-    GameEvents.OnPlayerGaveInfluenceToken.Add(ChenHaiMoreToken)
+    -- GameEvents.OnPlayerGaveInfluenceToken.Add(ChenHaiMoreToken)
     GameEvents.ChenHaiGiveToken.Add(ChenHaiGiveTokenTo)
     ----------------------------------------
     print('Initial success!')

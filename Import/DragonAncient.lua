@@ -9,6 +9,7 @@ include('DragonConditions')
 --||=======================Constants======================||--
 
 DeafultPercent = 2
+ChenHaiPercent = 5
 
 --||====================loacl variables===================||--
 
@@ -448,7 +449,8 @@ DragonAncient = {
                     for _, p in pairs(players) do
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
-                            total = total + p:GetTechs():GetScienceYield()
+                            local science = p:GetTechs():GetScienceYield()
+                            total = total + DragonMath:ModifyByPercent(science, ChenHaiPercent, true)
                         end
                     end
                 end
@@ -467,6 +469,7 @@ DragonAncient = {
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
                             local science = p:GetTechs():GetScienceYield()
+                            science = DragonMath:ModifyByPercent(science, ChenHaiPercent, true)
                             if science ~= 0 then
                                 local playerConfig = PlayerConfigurations[p:GetID()]
                                 local leaderName = Locale.Lookup(playerConfig:GetLeaderName())
@@ -558,7 +561,8 @@ DragonAncient = {
                     for _, p in pairs(players) do
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
-                            total = total + p:GetCulture():GetCultureYield()
+                            local culture = p:GetCulture():GetCultureYield()
+                            total = total + DragonMath:ModifyByPercent(culture, ChenHaiPercent, true)
                         end
                     end
                 end
@@ -576,11 +580,12 @@ DragonAncient = {
                     for _, p in pairs(players) do
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
-                            local science = p:GetCulture():GetCultureYield()
-                            if science ~= 0 then
+                            local culture = p:GetCulture():GetCultureYield()
+                            culture = DragonMath:ModifyByPercent(culture, ChenHaiPercent, true)
+                            if culture ~= 0 then
                                 local playerConfig = PlayerConfigurations[p:GetID()]
                                 local leaderName = Locale.Lookup(playerConfig:GetLeaderName())
-                                table.insert(sets.Sets, Locale.Lookup(self.Tooltip[2], science, leaderName))
+                                table.insert(sets.Sets, Locale.Lookup(self.Tooltip[2], culture, leaderName))
                             end
                         end
                     end

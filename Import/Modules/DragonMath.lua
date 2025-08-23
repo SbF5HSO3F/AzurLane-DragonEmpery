@@ -10,18 +10,39 @@ DragonMath = {}
 --||====================Based functions===================||--
 
 --数字不小于其1位小数处理 (GamePlay, UI)
-function DragonMath.Ceil(num)
-    return math.ceil(num * 10) / 10
+function DragonMath.Ceil(num, dot)
+    if dot == true then
+        return math.ceil(num)
+    else
+        if type(dot) ~= 'number' then dot = 1 end
+        dot = math.pow(10, dot)
+        dot = math.max(dot, 1)
+        return math.ceil(num * dot) / dot
+    end
 end
 
 --数字不大于其1位小数处理 (GamePlay, UI)
-function DragonMath.Floor(num)
-    return math.floor(num * 10) / 10
+function DragonMath.Floor(num, dot)
+    if dot == true then
+        return math.floor(num)
+    else
+        if type(dot) ~= 'number' then dot = 1 end
+        dot = math.pow(10, dot)
+        dot = math.max(dot, 1)
+        return math.floor(num * dot) / dot
+    end
 end
 
 -- 数字四舍五入 (GamePlay, UI)
-function DragonMath.Round(num)
-    return math.floor((num + 0.05) * 10) / 10
+function DragonMath.Round(num, dot)
+    if dot == true then
+        return math.floor(num + 0.5)
+    else
+        if type(dot) ~= 'number' then dot = 1 end
+        dot = math.pow(10, dot)
+        dot = math.max(dot, 1)
+        return math.floor((num * dot + 0.5)) / dot
+    end
 end
 
 --||====================Modify functions==================||--

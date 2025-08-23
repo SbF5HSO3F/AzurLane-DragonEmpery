@@ -64,15 +64,17 @@ function ResetPanelTech()
     if DragonResetGridHide(playerID) then
         local playerObj = DragonAncient:new(playerID)
         --Yield num
-        local cost = playerObj:GetExtraScience()
-        local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE', cost)
+        local total = playerObj:GetTotalScience()
+        local string = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE', total)
         Controls.AncientScienceText:SetText(string)
         --Tool tip
         local pPlayer = Players[playerID]
         local num = pPlayer:GetStats():GetNumTechsResearched()
+        local ratio = playerObj:GetExtraScienceFromPercent()
         local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') .. '[NEWLINE][NEWLINE]' ..
-            Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP', num, cost) ..
-            '[NEWLINE][NEWLINE]' .. playerObj:GetExtraTooltip() ..
+            Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP', num, ratio) ..
+            '[NEWLINE][NEWLINE]' .. playerObj:GetRatioTooltip() ..
+            '[NEWLINE][NEWLINE]' .. playerObj:GetExtraScienceTooltip() ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
         Controls.AncientScienceButton:SetToolTipString(tooltip)
     end
@@ -93,7 +95,7 @@ function ResetPanelCivic()
         local num = pPlayer:GetStats():GetNumCivicsCompleted()
         local tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_TITLE') .. '[NEWLINE][NEWLINE]' ..
             Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP', num, cost) ..
-            '[NEWLINE][NEWLINE]' .. playerObj:GetExtraTooltip() ..
+            '[NEWLINE][NEWLINE]' .. playerObj:GetRatioTooltip() ..
             '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANCIENT_COUNTRY_RESET')
         Controls.AncientCultureButton:SetToolTipString(tooltip)
     end

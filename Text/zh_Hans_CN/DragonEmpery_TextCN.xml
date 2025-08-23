@@ -117,6 +117,13 @@
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT" Language="zh_Hans_CN">
 			<Text>[NEWLINE][ICON_Bullet]{1_ratio : number +#.#;-#.#}% 来自泱泱古国</Text>
 		</Replace>
+
+		<Replace Tag="LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP" Language="zh_Hans_CN">
+			<Text>{1_num : number +#.#;-#.#}额外科技值</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_CULTURE_EXTRA_TOOLTIP" Language="zh_Hans_CN">
+			<Text>{1_num : number +#.#;-#.#}额外文化值</Text>
+		</Replace>
 		<!--黑暗时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="zh_Hans_CN">
 			<Text>[COLOR:68,66,50,255]{1_num}[ENDCOLOR]</Text>

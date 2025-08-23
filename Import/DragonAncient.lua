@@ -394,7 +394,7 @@ DragonAncient = {
                     -- 获取玩家外交
                     local diplomacy = player:GetDiplomacy()
                     -- 获取在场玩家
-                    local players = Game.GetPlayers(true, true)
+                    local players = Game.GetPlayers { Alive = true, Major = true }
                     -- 计算科技值
                     local total = 0
                     for _, p in pairs(players) do
@@ -413,12 +413,16 @@ DragonAncient = {
                     -- 获取玩家外交
                     local diplomacy = player:GetDiplomacy()
                     -- 获取在场玩家
-                    local players = Game.GetPlayers(true, true)
+                    local players = Game.GetPlayers { Alive = true, Major = true }
                     for _, p in pairs(players) do
                         -- 如果相遇
                         if diplomacy:HasMet(p:GetID()) then
                             local science = p:GetTechs():GetScienceYield()
-                            tooltip = tooltip .. Locale.Lookup(self.Tooltip[2], science, p:GetName())
+                            if science ~= 0 then
+                                local playerConfig = PlayerConfigurations[p:GetID()]
+                                local leaderName = Locale.Lookup(playerConfig:GetLeaderName())
+                                tooltip = tooltip .. Locale.Lookup(self.Tooltip[2], science, leaderName)
+                            end
                         end
                     end
                 end
@@ -449,7 +453,7 @@ function DragonAncient:GetPrecent()
 end
 
 --玩家科技市政转化比例tooltip
-function DragonAncient:GetExtraTooltip()
+function DragonAncient:GetRatioTooltip()
     local tooltip, ratio = '', self:GetPrecent()
     tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_EXTRA_RATIO', ratio)
     for _, percent in pairs(self.Anceint) do
@@ -458,8 +462,8 @@ function DragonAncient:GetExtraTooltip()
     return tooltip
 end
 
---玩家每回合应获得的额外科技值
-function DragonAncient:GetExtraScience()
+--玩家每回合应获得的转化科技值
+function DragonAncient:GetExtraScienceFromPercent()
     local player = self.Player
     if not player then return 0 end
     local techs = player:GetTechs()
@@ -469,12 +473,39 @@ function DragonAncient:GetExtraScience()
             sciences = sciences + techs:GetResearchCost(row.Index)
         end
     end
-    sciences = DragonMath:ModifyByPercent(sciences, self:GetPrecent(), true)
+    return DragonMath:ModifyByPercent(sciences, self:GetPrecent(), true)
+end
+
+--玩家每回合应获得的额外科技值
+function DragonAncient:GetExtraScience()
+    local player = self.Player
+    if not player then return 0 end
+    local sciences = 0
     -- 额外的科技值
     for _, s in pairs(self.ExtraScience) do
         sciences = sciences + s:GetYield(player)
     end
     return sciences
+end
+
+--玩家每回合应获得总科技值
+function DragonAncient:GetTotalScience()
+    local player = self.Player
+    if not player then return 0 end
+    return self:GetExtraScienceFromPercent() + self:GetExtraScience()
+end
+
+--玩家每回合应获得的额外科技值tooltip
+function DragonAncient:GetExtraScienceTooltip()
+    local tooltip, sciences = '', self:GetExtraScience()
+    if sciences ~= 0 then
+        local player = self.Player
+        tooltip = Locale.Lookup('LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP', sciences)
+        for _, s in pairs(self.ExtraScience) do
+            tooltip = tooltip .. s:GetTooltip(player)
+        end
+    end
+    return tooltip
 end
 
 --玩家每回合应获得的额外文化值

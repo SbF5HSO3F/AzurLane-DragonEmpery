@@ -132,7 +132,7 @@ function DragonEmperyTurnActivated(playerID, first)
     if DragonCore.CheckCivMatched(playerID, 'CIVILIZATION_DRAGON_EMPERY') and first then
         --get the class player
         local playerObj = DragonAncient:new(playerID)
-        local science = playerObj:GetExtraScience()
+        local science = playerObj:GetTotalScience()
         local culture = playerObj:GetExtraCulture()
         local pPlayer = playerObj.Player
         --Get Science

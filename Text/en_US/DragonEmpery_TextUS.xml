@@ -27,8 +27,21 @@
       		<Text>Number of Characters installed</Text>
     	</Replace>
     	<Replace Tag="LOC_CIVINFO_ROLE_DRAGON_EMPERY" Language="en_US">
-      		<Text>20</Text>
+      		<Text>24</Text>
     	</Replace>
+		<!--核心代码：条件-->
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ALL" Language="en_US">
+			<Text>All conditions must be met:</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ANY" Language="en_US">
+			<Text>Any of the following conditions must be met:</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ALL_NOT" Language="en_US">
+			<Text>None of the following conditions must be met:</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ANY_NOT" Language="en_US">
+			<Text>Any one of the following conditions must not be met:</Text>
+		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_NAME" Language="en_US">
 			<Text>Ancient Country</Text>
@@ -106,16 +119,30 @@
 			<Text>Extra Culture: {1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="en_US">
-			<Text>Based on the {1_num} Technologies you have completed, you gain {2_num} [ICON_SCIENCE] Science at the start of your next turn.</Text>
+			<Text>You gain {1_num} [ICON_SCIENCE] Science at the start of your next turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="en_US">
-			<Text>Based on the {1_num} Civics you have completed, you gain {2_num} [ICON_Culture] Culture at the start of your next turn.</Text>
+			<Text>You gain {1_num} [ICON_Culture] Culture at the start of your next turn.</Text>
+		</Replace>
+		<!--额外科技值-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP" Language="en_US">
+			<Text>{1_num : number +#.#;-#.#} Extra [ICON_SCIENCE] Science.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_CULTURE_EXTRA_TOOLTIP" Language="en_US">
+			<Text>{1_num : number +#.#;-#.#} Extra [ICON_Culture] Culture.</Text>
+		</Replace>
+		<!--来源-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_ANCIENT" Language="en_US">
+			<Text>{1_num : number +#.#;-#.#} from completed Technologies.</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_FROM_ANCIENT" Language="en_US">
+			<Text>{1_num : number +#.#;-#.#} from completed Civics.</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO" Language="en_US">
-			<Text>Technologies and Civics conversion ratio: {1_ratio : number #.#;-#.#}%</Text>
+			<Text>Conversion ratio: {1_ratio : number #.#;-#.#}%</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT" Language="en_US">
-			<Text>[NEWLINE][ICON_Bullet]{1_ratio : number +#.#;-#.#}% from Ancient Country.</Text>
+			<Text>{1_ratio : number +#.#;-#.#}% from Accient country.</Text>
 		</Replace>
 		<!--黑暗时代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="en_US">
@@ -601,6 +628,15 @@
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FEI_YUAN" Language="en_US">
 			<Text>Fei Yuen</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HAI_YUNG" Language="en_US">
+			<Text>Hai yung</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_CHANG_FENG" Language="en_US">
+			<Text>Ch'ang feng</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FU_PO" Language="en_US">
+			<Text>Fu po</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

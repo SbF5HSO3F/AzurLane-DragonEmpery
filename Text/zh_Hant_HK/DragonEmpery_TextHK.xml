@@ -27,8 +27,21 @@
       		<Text>實裝角色數</Text>
     	</Replace>
     	<Replace Tag="LOC_CIVINFO_ROLE_DRAGON_EMPERY" Language="zh_Hant_HK">
-      		<Text>20位</Text>
+      		<Text>24位</Text>
     	</Replace>
+		<!--核心代码：条件-->
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ALL" Language="zh_Hant_HK">
+			<Text>以下條件全部滿足：</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ANY" Language="zh_Hant_HK">
+			<Text>滿足以下條件之一：</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ALL_NOT" Language="zh_Hant_HK">
+			<Text>以下條件全部不滿足：</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_CONDITIONS_ANY_NOT" Language="zh_Hant_HK">
+			<Text>不滿足以下條件之一：</Text>
+		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ANCIENT_COUNTRY_NAME" Language="zh_Hant_HK">
 			<Text>泱泱古國</Text>
@@ -106,16 +119,30 @@
 			<Text>額外文化值：{1_num : number +#.#;-#.#}</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_TOOLTIP" Language="zh_Hant_HK">
-			<Text>根據您已完成的{1_num}個科技，您下回合開始時將獲得{2_num}點 [ICON_SCIENCE] 科技值。</Text>
+			<Text>下回合開始時將獲得{1_num}點 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_TOOLTIP" Language="zh_Hant_HK">
-			<Text>根據您已完成的{1_num}個市政，您下回合開始時將獲得{2_num}點 [ICON_Culture] 文化值。</Text>
+			<Text>下回合開始時將獲得{1_num}點 [ICON_Culture] 文化值。</Text>
+		</Replace>
+		<!--額外科技值-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_SCIENCE_EXTRA_TOOLTIP" Language="zh_Hant_HK">
+			<Text>{1_num : number +#.#;-#.#}額外 [ICON_SCIENCE] 科技值</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_CULTURE_EXTRA_TOOLTIP" Language="zh_Hant_HK">
+			<Text>{1_num : number +#.#;-#.#}額外 [ICON_Culture] 文化值</Text>
+		</Replace>
+		<!--來源-->
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_SCIENCE_FROM_ANCIENT" Language="zh_Hant_HK">
+			<Text>{1_num : number +#.#;-#.#} 來自已解鎖科技</Text>
+		</Replace>
+		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_CULTURE_FROM_ANCIENT" Language="zh_Hant_HK">
+			<Text>{1_num : number +#.#;-#.#} 來自已解鎖市政</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO" Language="zh_Hant_HK">
-			<Text>科技和市政轉化比例：{1_ratio : number #.#;-#.#}%</Text>
+			<Text>轉化比例：{1_ratio : number #.#;-#.#}%</Text>
 		</Replace>
 		<Replace Tag="LOC_ANCIENT_COUNTRY_EXTRA_RATIO_FROM_ANCIENT" Language="zh_Hant_HK">
-			<Text>[NEWLINE][ICON_Bullet]{1_ratio : number +#.#;-#.#}% 來自泱泱古國</Text>
+			<Text>{1_ratio : number +#.#;-#.#}% 來自泱泱古國</Text>
 		</Replace>
 		<!--黑暗時代-->
 		<Replace Tag="LOC_ANCIENT_COUNTRY_DARK" Language="zh_Hant_HK">
@@ -601,6 +628,15 @@
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FEI_YUAN" Language="zh_Hant_HK">
 			<Text>飛雲</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HAI_YUNG" Language="zh_Hant_HK">
+			<Text>海容</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_CHANG_FENG" Language="zh_Hant_HK">
+			<Text>長風</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FU_PO" Language="zh_Hant_HK">
+			<Text>伏波</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

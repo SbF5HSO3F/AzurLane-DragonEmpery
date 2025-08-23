@@ -27,7 +27,7 @@
       		<Text>实装角色数</Text>
     	</Replace>
     	<Replace Tag="LOC_CIVINFO_ROLE_DRAGON_EMPERY" Language="zh_Hans_CN">
-      		<Text>20位</Text>
+      		<Text>24位</Text>
     	</Replace>
 		<!--核心代码：条件-->
 		<Replace Tag="LOC_AZURLANE_CONDITIONS_ALL" Language="zh_Hans_CN">
@@ -628,6 +628,15 @@
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FEI_YUAN" Language="zh_Hans_CN">
 			<Text>飞云</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_HAI_YUNG" Language="zh_Hans_CN">
+			<Text>海容</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_CHANG_FENG" Language="zh_Hans_CN">
+			<Text>长风</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_DRAGON_EMPERY_FU_PO" Language="zh_Hans_CN">
+			<Text>伏波</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

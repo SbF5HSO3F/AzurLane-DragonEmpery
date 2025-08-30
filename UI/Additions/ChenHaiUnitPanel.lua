@@ -45,13 +45,13 @@ function ChenHaiGetButtonDetail(pUnit)
                 local playerConfig = PlayerConfigurations[minorId]
                 detail.Name = Locale.Lookup(GameInfo.Civilizations[playerConfig:GetCivilizationTypeID()].Name)
             else
-                detail.reason = Locale.Lookup('LOC_CHENHAI_GIVETOKEN_CANTGIVETOKEN')
+                detail.reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_TOKEN_INVAILD')
             end
         else
-            detail.reason = Locale.Lookup('LOC_CHENHAI_GIVETOKEN_NONEXTSTATE')
+            detail.reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_NO_NEXT_STATE')
         end
     else
-        detail.reason = Locale.Lookup('LOC_CHENHAI_GIVETOKEN_NOUNIT')
+        detail.reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_UNIT_IS_NIL')
     end
     --return the detail table
     return detail
@@ -76,8 +76,8 @@ function ChenHaiResetButton()
         local tooltip = Locale.Lookup('LOC_CHENHAI_GIVETOKEN_NAME')
         if disable then
             tooltip = tooltip .. '[NEWLINE][NEWLINE]'
-                .. Locale.Lookup('LOC_CHENHAI_GIVETOKEN_DESCRIPTION') .. '[NEWLINE][NEWLINE]'
-                .. Locale.Lookup('LOC_CHENHAI_GIVETOKEN_DISABLED') .. '[NEWLINE]' .. detail.reason
+                .. Locale.Lookup('LOC_CHENHAI_GIVETOKEN_DESCRIPTION')
+                .. '[NEWLINE][NEWLINE]' .. detail.reason
         else
             tooltip = tooltip .. '[NEWLINE][NEWLINE]'
                 .. Locale.Lookup('LOC_CHENHAI_GIVETOKEN_DETAIL', detail.Name)

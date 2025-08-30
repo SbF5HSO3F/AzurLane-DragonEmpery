@@ -106,30 +106,6 @@
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_NEED" Language="zh_Hant_HK">
 			<Text>完成{1_Name}的生產需要{2_num}點 [ICON_RESOURCE_ALUMINUM] 鋁提供{3_num}點 [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]單位不存在[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOCHARGE_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]本回合已發動[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOCOMBAT_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]無法獲得 [ICON_Strength] 戰鬥力提升[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOCITY_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]城市不存在[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOANSTEEL_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]鞍山鋼鐵已遭到掠奪[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOBUILDINGQUEUE_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]該城市當前未進行任何生產[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOIRON_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]沒有足夠數量的 [ICON_RESOURCE_IRON] 鐵[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOALUMINUM_WARNING" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]沒有足夠數量的 [ICON_RESOURCE_ALUMINUM] 鋁[ENDCOLOR]</Text>
-		</Replace>
 		<!--外交對話-->
 		<!--同意宣布友誼-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="zh_Hant_HK">

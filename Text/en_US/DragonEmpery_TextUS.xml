@@ -102,6 +102,37 @@
 
 		<!--特殊项目-->
 
+		<!--Warning-->
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_UNIT_IS_NIL" Language="en_US">
+			<Text>[COLOR_RED]Unit does not exist.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_NO_NEXT_STATE" Language="en_US">
+			<Text>[COLOR_RED]需要相邻或位于城邦的市中心[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_TOKEN_INVAILD" Language="en_US">
+			<Text>[COLOR_RED]您无法向该城邦派遣 [ICON_ENVOY] 使者[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_HAS_USED" Language="en_US">
+			<Text>[COLOR_RED]This command has already been used by the unit this turn.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_NO_COMBAT" Language="en_US">
+			<Text>[COLOR_RED]Unable to get [ICON_Strength] Combat Strength bonus.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_CITY_IS_NIL" Language="en_US">
+			<Text>[COLOR_RED]The city does not exist.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_ANSTEEL_IS_PILLAGED" Language="en_US">
+			<Text>[COLOR_RED]Ansteel has been pillaged.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_EMPTY_BUILDQUEUE" Language="en_US">
+			<Text>[COLOR_RED]This city is not currently producing anything.[ENDCOLOR]</Text>
+		</Replace>
+        <Replace Tag="LOC_DRAGON_ACTION_REASON_LACK_IRON" Language="en_US">
+			<Text>[COLOR_RED]There are not enough [ICON_RESOURCE_IRON] Iron.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_LACK_ALUMINUM" Language="en_US">
+			<Text>[COLOR_RED]There are not enough [ICON_RESOURCE_ALUMINUM] Aluminium.[ENDCOLOR]</Text>
+		</Replace>
 		<!--Lua浮动文字显示-->
 		<Replace Tag="LOC_APRICOT_ACADEMY_GREAT_PERSON_DETAIL" Language="en_US">
 			<Text>[COLOR:COLOR_FLOAT_FOOD]+{1_num} {2_text} points[ENDCOLOR]</Text>

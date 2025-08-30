@@ -101,7 +101,38 @@
 		<!--特殊晋升-->
 
 		<!--特殊项目-->
-
+		
+		<!--Warning-->
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_UNIT_IS_NIL" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]该单位不存在[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_NO_NEXT_STATE" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]需要相邻或位于城邦的市中心[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_TOKEN_INVAILD" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]您无法向该城邦派遣 [ICON_ENVOY] 使者[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_HAS_USED" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]本回合已发动[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_NO_COMBAT" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]无法获得 [ICON_Strength] 战斗力提升[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_CITY_IS_NIL" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]城市不存在[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_ANSTEEL_IS_PILLAGED" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]鞍山钢铁已遭到掠夺[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_EMPTY_BUILDQUEUE" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]该城市当前未进行任何生产[ENDCOLOR]</Text>
+		</Replace>
+        <Replace Tag="LOC_DRAGON_ACTION_REASON_LACK_IRON" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]没有足够数量的 [ICON_RESOURCE_IRON] 铁[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DRAGON_ACTION_REASON_LACK_ALUMINUM" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]没有足够数量的 [ICON_RESOURCE_ALUMINUM] 铝[ENDCOLOR]</Text>
+		</Replace>
 		<!--Lua浮动文字显示-->
 		<Replace Tag="LOC_APRICOT_ACADEMY_GREAT_PERSON_DETAIL" Language="zh_Hans_CN">
 			<Text>[COLOR:COLOR_FLOAT_FOOD]+{1_num} {2_text}点数[ENDCOLOR]</Text>

@@ -61,18 +61,6 @@
 		<Replace Tag="LOC_CHENHAI_GIVETOKEN_DETAIL" Language="zh_Hans_CN">
 			<Text>消耗此单位，向{1_Name}城邦派遣1名 [ICON_ENVOY] 使者</Text>
 		</Replace>
-		<Replace Tag="LOC_CHENHAI_GIVETOKEN_DISABLED" Language="zh_Hans_CN">
-			<Text>因下列原因，该命令不可用：</Text>
-		</Replace>
-		<Replace Tag="LOC_CHENHAI_GIVETOKEN_NOUNIT" Language="zh_Hans_CN">
-			<Text>[ICON_Bullet][COLOR_RED]该单位不存在[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_CHENHAI_GIVETOKEN_NONEXTSTATE" Language="zh_Hans_CN">
-			<Text>[ICON_Bullet][COLOR_RED]需要相邻或位于城邦的市中心[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_CHENHAI_GIVETOKEN_CANTGIVETOKEN" Language="zh_Hans_CN">
-			<Text>[ICON_Bullet][COLOR_RED]您无法向该城邦派遣 [ICON_ENVOY] 使者[ENDCOLOR]</Text>
-		</Replace>
 		<!--特殊加成-->
 
 		<!--领袖项目-->

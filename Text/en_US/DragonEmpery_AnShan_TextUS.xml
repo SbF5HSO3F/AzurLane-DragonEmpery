@@ -105,30 +105,6 @@
 		<Replace Tag="LOC_ANSTEEL_COST_ALUMINUM_NEED" Language="en_US">
 			<Text>Completion of {1_Name} production requires {2_num} {2_num : plural 1?point; other?points;} [ICON_RESOURCE_ALUMINUM] Aluminium to provide {3_num} [ICON_PRODUCTION] Production.</Text>
 		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOUNIT_WARNING" Language="en_US">
-			<Text>[COLOR_RED]Unit does not exist.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOCHARGE_WARNING" Language="en_US">
-			<Text>[COLOR_RED]This command has already been used by the unit this turn.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOCOMBAT_WARNING" Language="en_US">
-			<Text>[COLOR_RED]Unable to get [ICON_Strength] Combat Strength bonus.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOCITY_WARNING" Language="en_US">
-			<Text>[COLOR_RED]The city does not exist.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOANSTEEL_WARNING" Language="en_US">
-			<Text>[COLOR_RED]Ansteel has been pillaged.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOBUILDINGQUEUE_WARNING" Language="en_US">
-			<Text>[COLOR_RED]This city is not currently producing anything.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOIRON_WARNING" Language="en_US">
-			<Text>[COLOR_RED]There are not enough [ICON_RESOURCE_IRON] Iron.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_ANSTEEL_NOALUMINUM_WARNING" Language="en_US">
-			<Text>[COLOR_RED]There are not enough [ICON_RESOURCE_ALUMINUM] Aluminium.[ENDCOLOR]</Text>
-		</Replace>
 		<!--外交对话-->
 		<!--同意宣布友谊-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_AN_SHAN_DD101_ANY" Language="en_US">

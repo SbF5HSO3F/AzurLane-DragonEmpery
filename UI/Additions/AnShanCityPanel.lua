@@ -98,13 +98,13 @@ AnShanCityPanel = {
                     detail.IronDisable = IronAmount < detail.IronCost
                     detail.AluminumDisable = AluminumAmount < detail.AluminumCost
                 else
-                    detail.Reason = Locale.Lookup('LOC_ANSTEEL_NOBUILDINGQUEUE_WARNING')
+                    detail.Reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_EMPTY_BUILDQUEUE')
                 end
             else
-                detail.Reason = Locale.Lookup('LOC_ANSTEEL_NOANSTEEL_WARNING')
+                detail.Reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_ANSTEEL_IS_PILLAGED')
             end
         else
-            detail.Reason = Locale.Lookup('LOC_ANSTEEL_NOCITY_WARNING')
+            detail.Reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_CITY_IS_NIL')
         end
         return detail
     end,
@@ -138,8 +138,8 @@ AnShanCityPanel = {
                         tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. reason
                         tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. reason
                     else
-                        tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOIRON_WARNING')
-                        tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOALUMINUM_WARNING')
+                        tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_DRAGON_ACTION_REASON_LACK_IRON')
+                        tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_DRAGON_ACTION_REASON_LACK_ALUMINUM')
                     end
                 else
                     --set the iron button
@@ -151,7 +151,7 @@ AnShanCityPanel = {
                     tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' ..
                         Locale.Lookup('LOC_ANSTEEL_COST_IRON_NEED', detail.ItemName, detail.IronCost, detail.IronOffer)
                     if ironDisable then
-                        tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOIRON_WARNING')
+                        tooltip1 = tooltip1 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_DRAGON_ACTION_REASON_LACK_IRON')
                     end
                     --set the Aluminum button
                     local aluminumDisable = detail.AluminumDisable
@@ -163,7 +163,7 @@ AnShanCityPanel = {
                         Locale.Lookup('LOC_ANSTEEL_COST_ALUMINUM_NEED', detail.ItemName, detail.AluminumCost,
                             detail.AluminumOffer)
                     if aluminumDisable then
-                        tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_ANSTEEL_NOALUMINUM_WARNING')
+                        tooltip2 = tooltip2 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_DRAGON_ACTION_REASON_LACK_ALUMINUM')
                     end
                 end
                 --set the tooltip

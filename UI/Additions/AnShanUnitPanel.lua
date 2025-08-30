@@ -22,7 +22,7 @@ function AnShanGetUnitButtonDetail(pUnit)
         --limit once per turn
         local turn = pUnit:GetProperty('AnShanCombatTurn') or 0
         if turn >= Game.GetCurrentGameTurn() then
-            detail.reason = Locale.Lookup('LOC_ANSTEEL_NOCHARGE_WARNING')
+            detail.reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_HAS_USED')
         else
             --get the adjacnet unit max base combat
             local tPlot = Map.GetAdjacentPlots(pUnit:GetX(), pUnit:GetY())
@@ -49,12 +49,12 @@ function AnShanGetUnitButtonDetail(pUnit)
                 detail.reason = Locale.Lookup('LOC_ANSTEEL_UNIT_COMBAT_DETAIL', combat)
             else
                 -- no combat improve, disabled
-                detail.reason = Locale.Lookup('LOC_ANSTEEL_NOCOMBAT_WARNING')
+                detail.reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_NO_COMBAT')
             end
         end
     else
         -- no unit, disabled
-        detail.reason = Locale.Lookup('LOC_ANSTEEL_NOUNIT_WARNING')
+        detail.reason = Locale.Lookup('LOC_DRAGON_ACTION_REASON_UNIT_IS_NIL')
     end
 
     return detail
